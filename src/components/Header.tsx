@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { Logo } from './Logo';
 import { Menu, X, ChevronDown, Sparkles, Zap, Bot, MessageSquare, BarChart3, ArrowRight, Layers } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
 
 interface HeaderProps {
-  onOpenConsultation: () => void;
+  onOpenConsultation?: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [solutionsDropdownOpen, setSolutionsDropdownOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,28 +22,37 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
   }, []);
 
   const solutions = [
-    { name: 'Marketing Digital', desc: 'Google, Meta, LinkedIn y Funnels de conversión', href: '#servicios', icon: BarChart3 },
-    { name: 'SEO & Posicionamiento GEO', desc: 'Visibilidad orgánica y citabilidad en IA', href: '#servicios', icon: Sparkles },
-    { name: 'Inteligencia Artificial', desc: 'Agentes, asistentes y automatización cognitiva', href: '#servicios', icon: Bot },
-    { name: 'Automatización de Procesos', desc: 'Flujos sin intervención manual 24/7', href: '#servicios', icon: Zap },
-    { name: 'CRM & WhatsApp API', desc: 'Gestión y trazabilidad de leads de punta a punta', href: '#servicios', icon: MessageSquare },
-    { name: 'Content OS (Contenido IA)', desc: 'Sistema operativo de producción multicanal', href: '#servicios', icon: Layers },
+    { name: 'Marketing Digital', desc: 'Google, Meta, LinkedIn y Funnels de conversión', href: '/agencia-marketing-digital', icon: BarChart3 },
+    { name: 'SEO & Posicionamiento GEO', desc: 'Visibilidad orgánica y citabilidad en IA', href: '/agencia-seo-posicionamiento', icon: Sparkles },
+    { name: 'Inteligencia Artificial', desc: 'Modelos RAG y automatización cognitiva', href: '/inteligencia-artificial-empresas', icon: Bot },
+    { name: 'Agentes de IA', desc: 'Asistentes comerciales y atención 24/7', href: '/agentes-inteligencia-artificial', icon: Bot },
+    { name: 'Automatización de Procesos', desc: 'Flujos sin intervención manual 24/7', href: '/automatizacion-de-procesos', icon: Zap },
+    { name: 'CRM & WhatsApp API', desc: 'Gestión y trazabilidad de leads de punta a punta', href: '/crm-whatsapp-ventas', icon: MessageSquare },
+    { name: 'Content OS (Contenido IA)', desc: 'Sistema operativo de producción multicanal', href: '/contenido-inteligencia-artificial', icon: Layers },
   ];
+
+  const handleConsultationClick = () => {
+    if (onOpenConsultation) {
+      onOpenConsultation();
+    } else {
+      navigate('/contacto');
+    }
+  };
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/90 backdrop-blur-md shadow-sm py-3 border-b border-gray-100'
-          : 'bg-transparent py-5'
+          ? 'bg-white/95 backdrop-blur-md shadow-sm py-3 border-b border-gray-100'
+          : 'bg-white/80 backdrop-blur-sm py-4 border-b border-gray-100/50'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <Logo variant="horizontal" />
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-1 xl:space-x-2">
@@ -58,7 +69,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
 
               {solutionsDropdownOpen && (
                 <div 
-                  className="absolute top-full left-0 w-80 bg-white rounded-2xl shadow-xl border border-gray-100 py-3 px-2 transition-all duration-200 animate-in fade-in slide-in-from-top-2"
+                  className="absolute top-full left-0 w-84 bg-white rounded-2xl shadow-xl border border-gray-100 py-3 px-2 transition-all duration-200 animate-in fade-in slide-in-from-top-2 z-50"
                 >
                   <div className="px-3 py-1.5 mb-1 border-b border-gray-50">
                     <span className="text-[11px] font-bold text-gray-400 uppercase tracking-wider">
@@ -69,9 +80,9 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
                     {solutions.map((item, idx) => {
                       const Icon = item.icon;
                       return (
-                        <a
+                        <Link
                           key={idx}
-                          href={item.href}
+                          to={item.href}
                           onClick={() => setSolutionsDropdownOpen(false)}
                           className="flex items-start gap-3 p-2.5 rounded-xl hover:bg-slate-50 transition-colors group"
                         >
@@ -86,7 +97,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
                               {item.desc}
                             </div>
                           </div>
-                        </a>
+                        </Link>
                       );
                     })}
                   </div>
@@ -94,53 +105,60 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
               )}
             </div>
 
-            <a
-              href="#por-que-tecnogen"
+            <Link
+              to="/agencia-marketing-digital"
               className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-tg-blue transition-colors rounded-lg hover:bg-gray-50"
             >
-              ¿Por qué TecnoGen?
-            </a>
+              Marketing Digital
+            </Link>
 
-            <a
-              href="#servicios"
+            <Link
+              to="/agencia-seo-posicionamiento"
               className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-tg-blue transition-colors rounded-lg hover:bg-gray-50"
             >
-              Servicios
-            </a>
+              SEO & GEO
+            </Link>
 
-            <a
-              href="#proceso"
+            <Link
+              to="/inteligencia-artificial-empresas"
               className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-tg-blue transition-colors rounded-lg hover:bg-gray-50"
             >
-              Proceso
-            </a>
+              IA & Agentes
+            </Link>
 
-            <a
-              href="#casos"
+            <Link
+              to="/automatizacion-de-procesos"
               className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-tg-blue transition-colors rounded-lg hover:bg-gray-50"
             >
-              Casos de Éxito
-            </a>
+              Automatización
+            </Link>
 
-            <a
-              href="#nosotros"
+            <Link
+              to="/crm-whatsapp-ventas"
+              className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-tg-blue transition-colors rounded-lg hover:bg-gray-50"
+            >
+              CRM & WhatsApp
+            </Link>
+
+            <Link
+              to="/sobre-nosotros"
               className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-tg-blue transition-colors rounded-lg hover:bg-gray-50"
             >
               Nosotros
-            </a>
+            </Link>
           </nav>
 
           {/* Action CTAs */}
           <div className="hidden sm:flex items-center gap-3">
-            <a
-              href="#contacto"
+            <Link
+              to="/contacto"
               className="px-4 py-2 text-sm font-semibold text-tg-dark hover:text-tg-blue transition-colors"
             >
               Contacto
-            </a>
+            </Link>
             
             <button
-              onClick={onOpenConsultation}
+              onClick={handleConsultationClick}
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-tg-blue hover:bg-blue-700 text-white font-montserrat font-bold text-xs tracking-wide uppercase transition-all duration-200 shadow-md shadow-blue-500/20 hover:shadow-lg hover:shadow-blue-500/30 hover:-translate-y-0.5 active:translate-y-0"
             >
               <span>Agenda una consultoría</span>
@@ -163,57 +181,85 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
 
       {/* Mobile Menu Dropdown */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-white border-b border-gray-200 px-4 pt-3 pb-6 space-y-3 shadow-2xl animate-in slide-in-from-top duration-200">
+        <div className="lg:hidden bg-white border-b border-gray-200 px-4 pt-3 pb-6 space-y-3 shadow-2xl animate-in slide-in-from-top duration-200 max-h-[85vh] overflow-y-auto">
           <div className="space-y-1">
-            <a
-              href="#servicios"
+            <Link
+              to="/"
               onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-2.5 text-base font-semibold text-gray-800 rounded-lg hover:bg-blue-50 hover:text-tg-blue"
+              className="block px-3 py-2 text-base font-semibold text-gray-800 rounded-lg hover:bg-blue-50 hover:text-tg-blue"
             >
-              Soluciones & Servicios
-            </a>
-            <a
-              href="#por-que-tecnogen"
+              Inicio
+            </Link>
+            <Link
+              to="/agencia-marketing-digital"
               onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-2.5 text-base font-semibold text-gray-800 rounded-lg hover:bg-blue-50 hover:text-tg-blue"
+              className="block px-3 py-2 text-base font-semibold text-gray-800 rounded-lg hover:bg-blue-50 hover:text-tg-blue"
             >
-              ¿Por qué TecnoGen?
-            </a>
-            <a
-              href="#proceso"
+              Marketing Digital & Funnels
+            </Link>
+            <Link
+              to="/agencia-seo-posicionamiento"
               onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-2.5 text-base font-semibold text-gray-800 rounded-lg hover:bg-blue-50 hover:text-tg-blue"
+              className="block px-3 py-2 text-base font-semibold text-gray-800 rounded-lg hover:bg-blue-50 hover:text-tg-blue"
             >
-              Nuestro Proceso
-            </a>
-            <a
-              href="#casos"
+              SEO & Posicionamiento GEO
+            </Link>
+            <Link
+              to="/inteligencia-artificial-empresas"
               onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-2.5 text-base font-semibold text-gray-800 rounded-lg hover:bg-blue-50 hover:text-tg-blue"
+              className="block px-3 py-2 text-base font-semibold text-gray-800 rounded-lg hover:bg-blue-50 hover:text-tg-blue"
             >
-              Casos de Éxito
-            </a>
-            <a
-              href="#nosotros"
+              Inteligencia Artificial para Empresas
+            </Link>
+            <Link
+              to="/agentes-inteligencia-artificial"
               onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-2.5 text-base font-semibold text-gray-800 rounded-lg hover:bg-blue-50 hover:text-tg-blue"
+              className="block px-3 py-2 text-base font-semibold text-gray-800 rounded-lg hover:bg-blue-50 hover:text-tg-blue"
             >
-              Sobre TecnoGen
-            </a>
-            <a
-              href="#contacto"
+              Agentes Autónomos de IA
+            </Link>
+            <Link
+              to="/automatizacion-de-procesos"
               onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-2.5 text-base font-semibold text-gray-800 rounded-lg hover:bg-blue-50 hover:text-tg-blue"
+              className="block px-3 py-2 text-base font-semibold text-gray-800 rounded-lg hover:bg-blue-50 hover:text-tg-blue"
+            >
+              Automatización de Procesos
+            </Link>
+            <Link
+              to="/crm-whatsapp-ventas"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-2 text-base font-semibold text-gray-800 rounded-lg hover:bg-blue-50 hover:text-tg-blue"
+            >
+              CRM & WhatsApp Comercial
+            </Link>
+            <Link
+              to="/contenido-inteligencia-artificial"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-2 text-base font-semibold text-gray-800 rounded-lg hover:bg-blue-50 hover:text-tg-blue"
+            >
+              Content OS (Contenido con IA)
+            </Link>
+            <Link
+              to="/sobre-nosotros"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-2 text-base font-semibold text-gray-800 rounded-lg hover:bg-blue-50 hover:text-tg-blue"
+            >
+              Sobre Nosotros
+            </Link>
+            <Link
+              to="/contacto"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-2 text-base font-semibold text-gray-800 rounded-lg hover:bg-blue-50 hover:text-tg-blue"
             >
               Contacto Directo
-            </a>
+            </Link>
           </div>
 
           <div className="pt-3 border-t border-gray-100 flex flex-col gap-2">
             <button
               onClick={() => {
                 setMobileMenuOpen(false);
-                onOpenConsultation();
+                handleConsultationClick();
               }}
               className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-tg-blue text-white font-montserrat font-bold text-sm shadow-md"
             >

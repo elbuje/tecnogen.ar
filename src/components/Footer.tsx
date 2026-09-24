@@ -1,6 +1,7 @@
 import React from 'react';
 import { Logo } from './Logo';
 import { Linkedin, Instagram, Youtube } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
   return (
@@ -12,7 +13,9 @@ export const Footer: React.FC = () => {
           
           {/* Col 1: Brand & Slogan (5 cols) */}
           <div className="lg:col-span-5 space-y-4">
-            <Logo variant="horizontal" />
+            <Link to="/">
+              <Logo variant="horizontal" />
+            </Link>
             <p className="text-sm text-gray-600 max-w-sm leading-relaxed">
               Agencia tecnológica de crecimiento empresarial. Integramos marketing digital, inteligencia artificial y automatización para hacer crecer empresas.
             </p>
@@ -27,12 +30,13 @@ export const Footer: React.FC = () => {
               Sistemas & Soluciones
             </h4>
             <ul className="space-y-2 text-xs sm:text-sm text-gray-600">
-              <li><a href="#servicios" className="hover:text-tg-blue transition-colors">Marketing Digital & Ads</a></li>
-              <li><a href="#servicios" className="hover:text-tg-blue transition-colors">SEO & Posicionamiento GEO</a></li>
-              <li><a href="#servicios" className="hover:text-tg-blue transition-colors">Inteligencia Artificial & Agentes</a></li>
-              <li><a href="#servicios" className="hover:text-tg-blue transition-colors">Automatización de Procesos</a></li>
-              <li><a href="#servicios" className="hover:text-tg-blue transition-colors">CRM & WhatsApp Cloud API</a></li>
-              <li><a href="#servicios" className="hover:text-tg-blue transition-colors">Content OS (Producción IA)</a></li>
+              <li><Link to="/agencia-marketing-digital" className="hover:text-tg-blue transition-colors">Marketing Digital & Funnels</Link></li>
+              <li><Link to="/agencia-seo-posicionamiento" className="hover:text-tg-blue transition-colors">SEO & Posicionamiento GEO</Link></li>
+              <li><Link to="/inteligencia-artificial-empresas" className="hover:text-tg-blue transition-colors">Inteligencia Artificial</Link></li>
+              <li><Link to="/agentes-inteligencia-artificial" className="hover:text-tg-blue transition-colors">Agentes de IA Autónomos</Link></li>
+              <li><Link to="/automatizacion-de-procesos" className="hover:text-tg-blue transition-colors">Automatización de Procesos</Link></li>
+              <li><Link to="/crm-whatsapp-ventas" className="hover:text-tg-blue transition-colors">CRM & WhatsApp Cloud API</Link></li>
+              <li><Link to="/contenido-inteligencia-artificial" className="hover:text-tg-blue transition-colors">Content OS (Producción IA)</Link></li>
             </ul>
           </div>
 
@@ -42,11 +46,9 @@ export const Footer: React.FC = () => {
               Navegación
             </h4>
             <ul className="space-y-2 text-xs sm:text-sm text-gray-600">
-              <li><a href="#por-que-tecnogen" className="hover:text-tg-blue transition-colors">¿Por qué TecnoGen?</a></li>
-              <li><a href="#proceso" className="hover:text-tg-blue transition-colors">Proceso 4 Pasos</a></li>
-              <li><a href="#casos" className="hover:text-tg-blue transition-colors">Casos de Éxito</a></li>
-              <li><a href="#nosotros" className="hover:text-tg-blue transition-colors">Sobre Nosotros</a></li>
-              <li><a href="#contacto" className="hover:text-tg-blue transition-colors">Contacto</a></li>
+              <li><Link to="/" className="hover:text-tg-blue transition-colors">Inicio</Link></li>
+              <li><Link to="/sobre-nosotros" className="hover:text-tg-blue transition-colors">Sobre Nosotros</Link></li>
+              <li><Link to="/contacto" className="hover:text-tg-blue transition-colors">Contacto</Link></li>
             </ul>
           </div>
 
@@ -86,13 +88,13 @@ export const Footer: React.FC = () => {
             </div>
             <div className="pt-2 text-[11px] text-gray-500">
               Buenos Aires, Argentina<br />
-              Atención en toda Latinoamérica
+              Atención a toda Latinoamérica
             </div>
           </div>
 
         </div>
 
-        {/* Bottom Subfooter matching Image 04 */}
+        {/* Bottom Subfooter */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
           <div>
             © {new Date().getFullYear()} TecnoGen. Todos los derechos reservados.

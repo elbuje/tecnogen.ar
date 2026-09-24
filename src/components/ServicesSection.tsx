@@ -11,6 +11,7 @@ import {
   X,
   Sparkles
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface ServiceItem {
   id: string;
@@ -21,6 +22,7 @@ interface ServiceItem {
   headline: string;
   color: string;
   accentBg: string;
+  seoUrl: string;
   includes: string[];
   message: string;
   details: {
@@ -48,6 +50,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenConsulta
       summary: 'Google Ads, Meta Ads, LinkedIn Ads, funnels y optimización constante de conversiones orientadas a generar leads de alto valor.',
       color: 'text-tg-blue',
       accentBg: 'bg-blue-50',
+      seoUrl: '/agencia-marketing-digital',
       message: 'Conseguimos que las personas correctas encuentren, conozcan y contacten tu empresa.',
       includes: [
         'Google Ads & Campañas de Búsqueda',
@@ -78,6 +81,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenConsulta
       summary: 'SEO técnico, arquitectura transaccional y optimización GEO para posicionar en Google y ser citados por motores de IA.',
       color: 'text-tg-cyan',
       accentBg: 'bg-cyan-50',
+      seoUrl: '/agencia-seo-posicionamiento',
       message: 'Construimos visibilidad que sigue generando oportunidades incluso cuando dejás de pagar por cada clic.',
       includes: [
         'SEO Técnico y Core Web Vitals',
@@ -108,6 +112,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenConsulta
       summary: 'Agentes autónomos, asistentes comerciales 24/7, RAG y bases de conocimiento que ahorran tiempo y potencian decisiones.',
       color: 'text-tg-purple',
       accentBg: 'bg-purple-50',
+      seoUrl: '/inteligencia-artificial-empresas',
       message: 'Encontramos dónde la IA puede ahorrar tiempo, mejorar decisiones o generar nuevas oportunidades.',
       includes: [
         'Agentes de IA Autónomos para Tareas Específicas',
@@ -138,6 +143,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenConsulta
       summary: 'Conexión de APIs, webhooks, correo, bases de datos y flujos entre plataformas para eliminar tareas manuales repetitivas.',
       color: 'text-amber-500',
       accentBg: 'bg-amber-50',
+      seoUrl: '/automatizacion-de-procesos',
       message: 'Hacemos que procesos que hoy dependen de personas funcionen automáticamente.',
       includes: [
         'Integración entre CRM, WhatsApp y Correos',
@@ -168,6 +174,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenConsulta
       summary: 'Implementación de Kommo/CRM, WhatsApp Business Cloud API, calificación automática y embudos de ventas claros.',
       color: 'text-tg-blue',
       accentBg: 'bg-blue-50',
+      seoUrl: '/crm-whatsapp-ventas',
       message: 'Desde que entra una consulta hasta que se convierte en cliente.',
       includes: [
         'Implementación y Personalización de CRM (Kommo)',
@@ -198,6 +205,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenConsulta
       summary: 'Flujo estructurado: Idea → Estructura → Copy → Identidad Visual → Aprobación → Publicación para LinkedIn, Instagram y Blogs.',
       color: 'text-emerald-500',
       accentBg: 'bg-emerald-50',
+      seoUrl: '/contenido-inteligencia-artificial',
       message: 'Construimos un sistema continuo de creación de contenido para posicionar a tu empresa como líder de su sector.',
       includes: [
         'Content OS: Workflow de Producción Asistida por IA',
@@ -225,7 +233,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenConsulta
     <section id="servicios" className="py-24 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Header matching Image 04 */}
+        {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl text-left">
             <span className="text-xs font-montserrat font-bold text-gray-400 uppercase tracking-widest block mb-2">
@@ -239,16 +247,16 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenConsulta
             </p>
           </div>
 
-          <a
-            href="#contacto"
+          <Link
+            to="/agencia-marketing-digital"
             className="inline-flex items-center gap-2 text-sm font-montserrat font-bold text-tg-blue hover:text-blue-800 transition-colors uppercase tracking-wider"
           >
-            <span>Ver todos los servicios</span>
+            <span>Ver páginas dedicadas SEO</span>
             <ArrowRight className="w-4 h-4" />
-          </a>
+          </Link>
         </div>
 
-        {/* 6 Services Grid matching Image 04 */}
+        {/* 6 Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((s) => {
             const Icon = s.icon;
@@ -286,13 +294,21 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenConsulta
                   </div>
                 </div>
 
-                <button
-                  onClick={() => setSelectedService(s)}
-                  className="inline-flex items-center gap-2 text-xs font-montserrat font-bold text-tg-blue hover:text-blue-800 uppercase tracking-wider group-hover:translate-x-1 transition-transform"
-                >
-                  <span>Saber más</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </button>
+                <div className="flex items-center justify-between pt-4 border-t border-gray-50">
+                  <button
+                    onClick={() => setSelectedService(s)}
+                    className="text-xs font-semibold text-gray-500 hover:text-tg-dark transition-colors"
+                  >
+                    Detalle rápido
+                  </button>
+                  <Link
+                    to={s.seoUrl}
+                    className="inline-flex items-center gap-1.5 text-xs font-montserrat font-bold text-tg-blue hover:text-blue-800 uppercase tracking-wider group-hover:translate-x-1 transition-transform"
+                  >
+                    <span>Ver Landing SEO</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                </div>
               </div>
             );
           })}
@@ -375,23 +391,33 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenConsulta
             </div>
 
             {/* Action Buttons in Modal */}
-            <div className="pt-6 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-end gap-3">
-              <button
+            <div className="pt-6 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <Link
+                to={selectedService.seoUrl}
                 onClick={() => setSelectedService(null)}
-                className="w-full sm:w-auto px-5 py-2.5 rounded-xl text-gray-600 hover:bg-gray-100 font-montserrat font-semibold text-xs transition-colors"
+                className="text-xs font-montserrat font-bold text-tg-blue hover:text-blue-800 uppercase tracking-wider"
               >
-                Cerrar
-              </button>
-              <button
-                onClick={() => {
-                  setSelectedService(null);
-                  onOpenConsultation();
-                }}
-                className="w-full sm:w-auto px-6 py-3 rounded-xl bg-tg-blue hover:bg-blue-700 text-white font-montserrat font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-blue-500/20 transition-all"
-              >
-                <span>Solicitar diagnóstico para {selectedService.title}</span>
-                <ArrowRight className="w-4 h-4" />
-              </button>
+                Abrir Landing SEO completa →
+              </Link>
+
+              <div className="flex items-center gap-2 w-full sm:w-auto">
+                <button
+                  onClick={() => setSelectedService(null)}
+                  className="px-4 py-2.5 rounded-xl text-gray-600 hover:bg-gray-100 font-montserrat font-semibold text-xs transition-colors"
+                >
+                  Cerrar
+                </button>
+                <button
+                  onClick={() => {
+                    setSelectedService(null);
+                    onOpenConsultation();
+                  }}
+                  className="px-5 py-3 rounded-xl bg-tg-blue hover:bg-blue-700 text-white font-montserrat font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-blue-500/20 transition-all"
+                >
+                  <span>Solicitar diagnóstico</span>
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+              </div>
             </div>
 
           </div>
