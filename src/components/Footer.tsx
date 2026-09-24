@@ -1,106 +1,87 @@
 import React from 'react';
 import { Logo } from './Logo';
 import { Linkedin, Instagram, Youtube } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
+  const scrollTo = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <footer className="bg-white border-t border-gray-200 pt-16 pb-12 text-left">
+    <footer className="bg-white border-t border-gray-100 pt-12 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Main Footer Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-gray-100">
+        {/* Main Footer Row (Exact Image 04) */}
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8">
           
-          {/* Col 1: Brand & Slogan (5 cols) */}
-          <div className="lg:col-span-5 space-y-4">
-            <Link to="/">
-              <Logo variant="horizontal" />
-            </Link>
-            <p className="text-sm text-gray-600 max-w-sm leading-relaxed">
-              Agencia tecnológica de crecimiento empresarial. Integramos marketing digital, inteligencia artificial y automatización para hacer crecer empresas.
-            </p>
-            <div className="pt-2 text-xs font-semibold text-tg-blue">
-              Ideas inteligentes para un mayor mañana.
-            </div>
+          {/* Left: Logo */}
+          <div>
+            <Logo variant="horizontal" size="sm" />
           </div>
 
-          {/* Col 2: Solutions (3 cols) */}
-          <div className="lg:col-span-3 space-y-3">
-            <h4 className="font-montserrat font-bold text-xs text-gray-900 uppercase tracking-wider">
-              Sistemas & Soluciones
-            </h4>
-            <ul className="space-y-2 text-xs sm:text-sm text-gray-600">
-              <li><Link to="/agencia-marketing-digital" className="hover:text-tg-blue transition-colors">Marketing Digital & Funnels</Link></li>
-              <li><Link to="/agencia-seo-posicionamiento" className="hover:text-tg-blue transition-colors">SEO & Posicionamiento GEO</Link></li>
-              <li><Link to="/inteligencia-artificial-empresas" className="hover:text-tg-blue transition-colors">Inteligencia Artificial</Link></li>
-              <li><Link to="/agentes-inteligencia-artificial" className="hover:text-tg-blue transition-colors">Agentes de IA Autónomos</Link></li>
-              <li><Link to="/automatizacion-de-procesos" className="hover:text-tg-blue transition-colors">Automatización de Procesos</Link></li>
-              <li><Link to="/crm-whatsapp-ventas" className="hover:text-tg-blue transition-colors">CRM & WhatsApp Cloud API</Link></li>
-              <li><Link to="/contenido-inteligencia-artificial" className="hover:text-tg-blue transition-colors">Content OS (Producción IA)</Link></li>
-            </ul>
-          </div>
+          {/* Middle: Links matching Image 04 (Soluciones, Servicios, Recursos, Nosotros, Contacto) */}
+          <nav className="flex flex-wrap items-center justify-center gap-6 text-xs sm:text-sm font-medium text-gray-600 font-inter">
+            <button onClick={() => scrollTo('servicios')} className="hover:text-tg-blue transition-colors">
+              Soluciones
+            </button>
+            <button onClick={() => scrollTo('servicios')} className="hover:text-tg-blue transition-colors">
+              Servicios
+            </button>
+            <button onClick={() => scrollTo('recursos')} className="hover:text-tg-blue transition-colors">
+              Recursos
+            </button>
+            <button onClick={() => scrollTo('nosotros')} className="hover:text-tg-blue transition-colors">
+              Nosotros
+            </button>
+            <button onClick={() => scrollTo('contacto')} className="hover:text-tg-blue transition-colors">
+              Contacto
+            </button>
+          </nav>
 
-          {/* Col 3: Navigation & Company (2 cols) */}
-          <div className="lg:col-span-2 space-y-3">
-            <h4 className="font-montserrat font-bold text-xs text-gray-900 uppercase tracking-wider">
-              Navegación
-            </h4>
-            <ul className="space-y-2 text-xs sm:text-sm text-gray-600">
-              <li><Link to="/" className="hover:text-tg-blue transition-colors">Inicio</Link></li>
-              <li><Link to="/sobre-nosotros" className="hover:text-tg-blue transition-colors">Sobre Nosotros</Link></li>
-              <li><Link to="/contacto" className="hover:text-tg-blue transition-colors">Contacto</Link></li>
-            </ul>
-          </div>
-
-          {/* Col 4: Direct Channels (2 cols) */}
-          <div className="lg:col-span-2 space-y-3">
-            <h4 className="font-montserrat font-bold text-xs text-gray-900 uppercase tracking-wider">
-              Conectemos
-            </h4>
-            <div className="flex items-center gap-3 text-gray-500">
-              <a
-                href="https://www.linkedin.com/company/tecnogen"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-gray-50 hover:bg-blue-50 hover:text-tg-blue border border-gray-200 flex items-center justify-center transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-4 h-4" />
-              </a>
-              <a
-                href="https://www.instagram.com/tecnogen"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-gray-50 hover:bg-pink-50 hover:text-pink-600 border border-gray-200 flex items-center justify-center transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-4 h-4" />
-              </a>
-              <a
-                href="https://www.youtube.com/@tecnogen"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-gray-50 hover:bg-red-50 hover:text-red-600 border border-gray-200 flex items-center justify-center transition-colors"
-                aria-label="YouTube"
-              >
-                <Youtube className="w-4 h-4" />
-              </a>
-            </div>
-            <div className="pt-2 text-[11px] text-gray-500">
-              Buenos Aires, Argentina<br />
-              Atención a toda Latinoamérica
-            </div>
+          {/* Right: Social Icons (LinkedIn, Instagram, YouTube) */}
+          <div className="flex items-center gap-4 text-gray-600">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-tg-blue transition-colors"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="w-4 h-4" />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-pink-600 transition-colors"
+              aria-label="Instagram"
+            >
+              <Instagram className="w-4 h-4" />
+            </a>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-red-600 transition-colors"
+              aria-label="YouTube"
+            >
+              <Youtube className="w-4 h-4" />
+            </a>
           </div>
 
         </div>
 
-        {/* Bottom Subfooter */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+        {/* Bottom Subfooter Line (Exact Image 04) */}
+        <div className="pt-6 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-gray-400 font-inter">
           <div>
-            © {new Date().getFullYear()} TecnoGen. Todos los derechos reservados.
+            © 2026 TecnoGen. Todos los derechos reservados.
           </div>
-          <div className="text-gray-400 font-medium">
-            Tecnología e inteligencia para hacer crecer negocios.
+          <div className="flex items-center gap-2">
+            <span>Tecnología e inteligencia para hacer crecer negocios.</span>
+            <span className="w-6 h-0.5 bg-tg-blue inline-block rounded-full" />
           </div>
         </div>
 

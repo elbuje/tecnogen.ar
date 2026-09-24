@@ -1,58 +1,56 @@
 import React from 'react';
 
 interface LogoProps {
-  variant?: 'horizontal' | 'vertical' | 'icon-only' | 'footer';
+  variant?: 'horizontal' | 'vertical' | 'icon-only';
   isDark?: boolean;
   className?: string;
+  size?: 'sm' | 'md' | 'lg';
 }
 
 export const Logo: React.FC<LogoProps> = ({
   variant = 'horizontal',
   isDark = false,
   className = '',
+  size = 'md',
 }) => {
-  // Isotype SVG (Stylized TG interconnected monogram)
-  const Isotype = ({ size = 40 }: { size?: number }) => (
+  // Exact SVG vector representation of the TecnoGen Isotype from Brand Manual
+  const Isotype = ({ dimension = 38 }: { dimension?: number }) => (
     <svg
-      width={size}
-      height={size}
-      viewBox="0 0 120 120"
+      width={dimension}
+      height={dimension}
+      viewBox="0 0 100 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="flex-shrink-0 transition-transform duration-300 hover:scale-105"
+      className="flex-shrink-0"
     >
       <defs>
-        <linearGradient id="tgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#2563EB" />
+        <linearGradient id="tgLogoGrad" x1="10%" y1="0%" x2="90%" y2="100%">
+          <stop offset="0%" stopColor="#1E60ED" />
+          <stop offset="60%" stopColor="#2563EB" />
           <stop offset="100%" stopColor="#06B6D4" />
         </linearGradient>
-        <filter id="tgGlow" x="-20%" y="-20%" width="140%" height="140%">
-          <feDropShadow dx="0" dy="2" stdDeviation="4" floodColor="#06B6D4" floodOpacity="0.25" />
-        </filter>
       </defs>
-      
-      {/* Top T-bar with sharp sleek cut */}
+
+      {/* Top T wing/bar */}
       <path
-        d="M16 28 C16 23.5817 19.5817 20 24 20 H100 C104.418 20 108 23.5817 108 28 V38 C108 42.4183 104.418 46 100 46 H76 V100 C76 104.418 72.4183 108 68 108 H52 C47.5817 108 44 104.418 44 100 V46 H24 C19.5817 46 16 42.4183 16 38 V28 Z"
-        fill="url(#tgGradient)"
-        filter="url(#tgGlow)"
+        d="M20 30 L42 16 H86 C89.3 16 92 18.7 92 22 V31 C92 34.3 89.3 37 86 37 H28 C23.5 37 20 34 20 30 Z"
+        fill="url(#tgLogoGrad)"
       />
-      
-      {/* Dynamic G loop wrap connecting seamlessly */}
+
+      {/* Main G curved loop */}
       <path
-        d="M52 56 H96 C100.418 56 104 59.5817 104 64 V92 C104 96.4183 100.418 100 96 100 H52 C47.5817 100 44 96.4183 44 92 V76 C44 71.5817 47.5817 68 52 68 H80 V84 H64 V84 H56 V88 H92 V72 H52 V56 Z"
-        fill="url(#tgGradient)"
+        d="M38 37 C34 37 31 40 31 44 V68 C31 81 41 90 55 90 H72 C83 90 92 82 92 70 V58 C92 54.7 89.3 52 86 52 H64 C60.7 52 58 54.7 58 58 V62 C58 64.2 59.8 66 62 66 H76 V70 C76 75 72 78 67 78 H55 C47 78 43 73 43 65 V46 C43 41 40 37 38 37 Z"
+        fill="url(#tgLogoGrad)"
       />
-      
-      {/* Accent dot / spark indicator */}
-      <circle cx="88" cy="33" r="4" fill="#FFFFFF" opacity="0.9" />
     </svg>
   );
+
+  const iconDim = size === 'sm' ? 32 : size === 'lg' ? 52 : 40;
 
   if (variant === 'icon-only') {
     return (
       <div className={`inline-flex items-center ${className}`}>
-        <Isotype size={44} />
+        <Isotype dimension={iconDim} />
       </div>
     );
   }
@@ -60,12 +58,12 @@ export const Logo: React.FC<LogoProps> = ({
   if (variant === 'vertical') {
     return (
       <div className={`inline-flex flex-col items-center text-center ${className}`}>
-        <Isotype size={56} />
+        <Isotype dimension={60} />
         <div className="mt-3">
-          <span className={`font-montserrat font-extrabold text-2xl tracking-tight ${isDark ? 'text-white' : 'text-tg-dark'}`}>
-            Tecno<span className="text-tg-blue">Gen</span>
+          <span className={`font-montserrat font-extrabold text-3xl tracking-tight leading-none ${isDark ? 'text-white' : 'text-[#0B1F3B]'}`}>
+            TecnoGen
           </span>
-          <p className="text-[10px] tracking-wider uppercase font-semibold text-tg-cyan mt-0.5">
+          <p className="text-[11px] font-medium tracking-wide text-gray-500 mt-1">
             Marketing + IA + Automatización
           </p>
         </div>
@@ -74,16 +72,14 @@ export const Logo: React.FC<LogoProps> = ({
   }
 
   return (
-    <div className={`inline-flex items-center gap-3 select-none ${className}`}>
-      <Isotype size={variant === 'footer' ? 38 : 42} />
-      <div className="flex flex-col">
-        <div className="flex items-baseline">
-          <span className={`font-montserrat font-extrabold text-2xl tracking-tight leading-none ${isDark ? 'text-white' : 'text-tg-dark'}`}>
-            Tecno<span className="text-tg-blue">Gen</span>
-          </span>
-        </div>
-        <span className={`text-[9px] sm:text-[10px] tracking-wider font-semibold uppercase mt-1 leading-none ${isDark ? 'text-gray-300' : 'text-gray-500'}`}>
-          Marketing <span className="text-tg-blue">+</span> IA <span className="text-tg-cyan">+</span> Automatización
+    <div className={`inline-flex items-center gap-3.5 select-none ${className}`}>
+      <Isotype dimension={iconDim} />
+      <div className="flex flex-col text-left">
+        <span className={`font-montserrat font-extrabold text-2xl tracking-[-0.03em] leading-none ${isDark ? 'text-white' : 'text-[#0B1F3B]'}`}>
+          TecnoGen
+        </span>
+        <span className={`text-[10px] font-medium tracking-[0.02em] mt-1 leading-none ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
+          Marketing + IA + Automatización
         </span>
       </div>
     </div>
