@@ -24,7 +24,7 @@ export const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
           
           {/* Logo */}
           <a href="#" className="flex items-center">
-            <Logo variant="horizontal" size="md" className="h-9 sm:h-10" />
+            <Logo size="md" />
           </a>
 
           {/* Desktop Nav - EXACTLY as in Image 04: Soluciones, Servicios, Casos de éxito, Recursos, Nosotros */}

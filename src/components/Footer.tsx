@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
           
           {/* Left: Logo */}
           <div>
-            <Logo variant="horizontal" size="sm" className="h-8" />
+            <Logo size="sm" />
           </div>
 
           {/* Middle: Links matching Image 04 (Soluciones, Servicios, Recursos, Nosotros, Contacto) */}
