@@ -99,6 +99,8 @@ export const ContenidoIAPage: React.FC = () => {
               Guiones estratégicos, edición acelerada por IA y formatos dinámicos para Instagram Reels, TikTok y YouTube Shorts.
             </p>
           </div>
+        </div>
+
         {/* TecnoGen Studio Feature Card */}
         <div className="bg-gradient-to-r from-blue-900 to-slate-900 rounded-3xl p-8 sm:p-10 text-white mb-20 flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl">
           <div className="space-y-3 text-left max-w-xl">
