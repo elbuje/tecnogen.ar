@@ -17,3 +17,6 @@
   - Banner institucional en Azul Nocturno con marca de agua y CTAs.
   - Footer corporativo completo.
 - **SEO/GEO**: Integración de metadatos OpenGraph, Twitter Cards, y datos estructurados Schema.org (`Organization`, `Service`, `FAQPage`, `BreadcrumbList`).
+- **GIT**: Creación del repositorio oficial en GitHub [github.com/elbuje/tecnogen.ar](https://github.com/elbuje/tecnogen.ar) y vinculación con rama `main`.
+- **PROD**: Despliegue automático en Ploi (`errante` `72.61.34.92`) mediante pipeline Git con SSL HTTPS activo y respuesta `HTTP 200 OK`.
+

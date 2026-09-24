@@ -27,11 +27,13 @@
   - Sitio `tecnogen.ar` creado en servidor `errante` (`72.61.34.92` - ID `105871`).
   - Certificado SSL Let's Encrypt solicitado y activo con HTTPS.
   - Script de despliegue configurado para Git.
-- [x] **Repositorio Git Local:** Inicializado y con todos los cambios commiteados en `main`.
+- [x] **Repositorio GitHub Oficial:** [github.com/elbuje/tecnogen.ar](https://github.com/elbuje/tecnogen.ar) creado, sincronizado y vinculado como origen de CI/CD.
+- [x] **Despliegue en Producción Vía Git:** Script en Ploi ejecuta `git pull`, `npm install` y `npm run build` en cada push.
+- [x] **Verificación HTTP:** `https://tecnogen.ar/` y landings SEO activas respondiendo `200 OK`.
 
 ---
 
-## 📋 Siguiente Paso para Deploy Automático
-- Crear el repositorio remoto en GitHub: `https://github.com/elbuje/tecnogen.ar.git` (o `elbuje/tecnogen.git`).
-- Ejecutar `git remote add origin https://github.com/elbuje/tecnogen.ar.git && git push -u origin main`.
-- Enlazar el repositorio en el panel de Ploi para auto-deploy continuo.
+## 🌐 URLs de Referencia
+- **Producción:** [https://tecnogen.ar](https://tecnogen.ar)
+- **Repositorio Git:** [https://github.com/elbuje/tecnogen.ar](https://github.com/elbuje/tecnogen.ar)
+- **Local Dev:** `http://localhost:5193` (vía `hvtunnels.sh`)

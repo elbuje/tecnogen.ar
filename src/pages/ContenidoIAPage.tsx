@@ -99,9 +99,28 @@ export const ContenidoIAPage: React.FC = () => {
               Guiones estratégicos, edición acelerada por IA y formatos dinámicos para Instagram Reels, TikTok y YouTube Shorts.
             </p>
           </div>
+        {/* TecnoGen Studio Feature Card */}
+        <div className="bg-gradient-to-r from-blue-900 to-slate-900 rounded-3xl p-8 sm:p-10 text-white mb-20 flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl">
+          <div className="space-y-3 text-left max-w-xl">
+            <span className="text-xs font-montserrat font-bold tracking-widest text-cyan-400 uppercase">
+              PLATAFORMA EXCLUSIVA
+            </span>
+            <h2 className="font-montserrat font-extrabold text-2xl sm:text-3xl tracking-tight text-white">
+              TecnoGen Studio: Plataforma de Contenido con IA
+            </h2>
+            <p className="text-sm sm:text-base text-gray-300 font-inter">
+              Nuestra plataforma propietaria para centralizar la ideación, creación, diseño y distribución multicanal de contenidos estratégicos.
+            </p>
+          </div>
+          <div className="flex-shrink-0 bg-white/10 p-6 rounded-2xl backdrop-blur-md border border-white/10">
+            <img
+              src="/brand/tecnogen-studio-logo-white.png"
+              alt="TecnoGen Studio"
+              className="h-16 w-auto object-contain"
+            />
+          </div>
         </div>
 
-        {/* Detailed Scope */}
         <div className="bg-white rounded-3xl p-8 sm:p-12 border border-gray-200/80 shadow-sm text-left mb-20">
           <h2 className="font-montserrat font-bold text-2xl sm:text-3xl text-tg-dark mb-6">
             El Flujo de Trabajo Content OS
