@@ -377,9 +377,9 @@ export const MentalidadMarketingPage: React.FC = () => {
               <div className="space-y-5">
                 <div className="relative rounded-2xl overflow-hidden aspect-square bg-slate-800 border border-white/10">
                   <img
-                    src="/events/flyer-mentalidad-marketing.jpg"
+                    src="/events/anthony_altuna.jpg"
                     alt="Anthony Altuna - Neurocoach y Consultor en Neuroventas"
-                    className="w-full h-full object-cover object-left-bottom group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent" />
                   <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
@@ -434,7 +434,7 @@ export const MentalidadMarketingPage: React.FC = () => {
                   <img
                     src="/events/fede_nowback.jpg"
                     alt="Fede Nowback - Mentor de Marca Personal y Negocios Digitales"
-                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent" />
                   <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
@@ -495,9 +495,9 @@ export const MentalidadMarketingPage: React.FC = () => {
               <div className="space-y-5">
                 <div className="relative rounded-2xl overflow-hidden aspect-square bg-slate-800 border border-white/10">
                   <img
-                    src="/events/flyer-mentalidad-marketing.jpg"
+                    src="/events/christian_cencherle.jpg"
                     alt="Christian Cencherle - Empresario y Referente de Liderazgo"
-                    className="w-full h-full object-cover object-right-bottom group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent" />
                   <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
