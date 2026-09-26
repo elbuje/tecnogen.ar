@@ -8,7 +8,7 @@ tags:
   - automatizacion
   - web
   - identidad
-last_updated: 2026-09-24
+last_updated: 2026-09-26
 ---
 
 # 🚀 TecnoGen (`tecnogen.ar`) — Documentación Central
@@ -48,6 +48,7 @@ graph TD
 
 ## 📅 Historial de Sesiones
 
+- [[2026-09-26-landing-mentalidad-marketing\|2026-09-26: Landing Page Evento "Mentalidad y Marketing — Neuroventas con IA" y Aislamiento de Navegación]]
 - [[2026-09-24-inicializacion-web-tecnogen\|2026-09-24: Inicialización del Proyecto y Desarrollo del Sitio Web Oficial]]
 
 ---

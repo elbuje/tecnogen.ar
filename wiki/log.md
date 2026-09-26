@@ -1,5 +1,12 @@
 # 📜 Bitácora de Cambios (Changelog) - TecnoGen
 
+## [2026-09-26] - Landing Evento "Mentalidad y Marketing — Neuroventas con IA"
+- **FEAT**: Creación de la página y landing page oficial para el evento del 10 de octubre: `/Mentalidad-Marketing-Neuroventas-con-IA` (con alias lowercase).
+- **MEDIA**: Integración exclusiva de los flyers cargados por el usuario para Fede Nowback, Anthony Altuna y Christian Cencherle.
+- **PHONE**: Configuración del canal oficial de WhatsApp y reservas al número `+54 9 11 7061-0766`.
+- **UI/UX**: Aislamiento total de la navegación (ocultamiento de Header, Footer y botón flotante corporativo en esta landing) para una experiencia limpia y enfocada.
+- **PROD**: Despliegue y validación en el servidor de producción Ploi.
+
 ## [2026-09-24] - Inicialización y Creación de la Web Oficial TecnoGen
 - **INIT**: Instalación del estándar LLM Wiki (Capa 2) y vinculación con MetaWiki Global (Capa 1).
 - **INFRA**: Asignación de puertos Dev (`5193` para Vite Dev y `8019` para Preview). Actualización de `PORT_REGISTRY.md`, `SERVER_CONFIG.md` y scripts `hvtunnels.sh`.
