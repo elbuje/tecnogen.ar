@@ -53,6 +53,16 @@ const seoRoutes = [
     path: 'contacto',
     title: 'Contacto & Agendamiento de Consultoría | TecnoGen',
     description: 'Agendá una sesión de consultoría técnica sin cargo con TecnoGen. Hablemos de cómo implementar marketing, IA y automatizaciones en tu empresa.'
+  },
+  {
+    path: 'Mentalidad-Marketing-Neuroventas-con-IA',
+    title: 'Mentalidad y Marketing — Neuroventas con IA | Evento Presencial 10 de Octubre',
+    description: 'Evento presencial exclusivo para dueños de negocio y emprendedores: Anthony Altuna, Fede Nowback y Christian Cencherle en CABA. 10 de octubre de 10:00 a 17:00 hs.'
+  },
+  {
+    path: 'mentalidad-marketing-neuroventas-con-ia',
+    title: 'Mentalidad y Marketing — Neuroventas con IA | Evento Presencial 10 de Octubre',
+    description: 'Evento presencial exclusivo para dueños de negocio y emprendedores: Anthony Altuna, Fede Nowback y Christian Cencherle en CABA. 10 de octubre de 10:00 a 17:00 hs.'
   }
 ];
 

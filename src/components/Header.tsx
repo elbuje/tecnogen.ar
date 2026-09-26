@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Logo } from './Logo';
 import { Menu, X } from 'lucide-react';
 
+import { Link } from 'react-router-dom';
+
 interface HeaderProps {
   onContactClick?: () => void;
 }
@@ -18,54 +20,63 @@ export const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 py-4 transition-all">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 py-3.5 transition-all">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
           {/* Logo */}
-          <a href="#" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <Logo size="md" />
-          </a>
+          </Link>
 
-          {/* Desktop Nav - EXACTLY as in Image 04: Soluciones, Servicios, Casos de éxito, Recursos, Nosotros */}
-          <nav className="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-700">
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex items-center space-x-7 text-sm font-medium text-gray-700">
             <button
               onClick={() => scrollTo('servicios')}
-              className="hover:text-tg-blue transition-colors font-inter"
+              className="hover:text-tg-blue transition-colors font-inter cursor-pointer"
             >
               Soluciones
             </button>
             <button
               onClick={() => scrollTo('servicios')}
-              className="hover:text-tg-blue transition-colors font-inter"
+              className="hover:text-tg-blue transition-colors font-inter cursor-pointer"
             >
               Servicios
             </button>
             <button
               onClick={() => scrollTo('casos')}
-              className="hover:text-tg-blue transition-colors font-inter"
+              className="hover:text-tg-blue transition-colors font-inter cursor-pointer"
             >
               Casos de éxito
             </button>
             <button
-              onClick={() => scrollTo('recursos')}
-              className="hover:text-tg-blue transition-colors font-inter"
-            >
-              Recursos
-            </button>
-            <button
               onClick={() => scrollTo('nosotros')}
-              className="hover:text-tg-blue transition-colors font-inter"
+              className="hover:text-tg-blue transition-colors font-inter cursor-pointer"
             >
               Nosotros
             </button>
+
+            {/* Highlighted Event Link */}
+            <Link
+              to="/Mentalidad-Marketing-Neuroventas-con-IA"
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-700 hover:bg-amber-500/20 font-montserrat font-bold text-xs tracking-wide transition-all shadow-sm"
+            >
+              <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+              <span>Evento 10 Oct</span>
+            </Link>
           </nav>
 
-          {/* CTA Button: Contáctanos (Image 04) */}
-          <div className="hidden md:block">
+          {/* CTA Button: Contáctanos */}
+          <div className="hidden md:flex items-center gap-3">
+            <Link
+              to="/Mentalidad-Marketing-Neuroventas-con-IA"
+              className="px-4 py-2.5 rounded-lg bg-slate-900 hover:bg-black text-amber-300 font-montserrat font-bold text-xs tracking-wide transition-all shadow-sm"
+            >
+              🎟️ Entradas
+            </Link>
             <button
               onClick={onContactClick || (() => scrollTo('contacto'))}
-              className="px-6 py-2.5 rounded-lg bg-tg-blue hover:bg-blue-700 text-white font-montserrat font-bold text-xs tracking-wide transition-all shadow-sm"
+              className="px-5 py-2.5 rounded-lg bg-tg-blue hover:bg-blue-700 text-white font-montserrat font-bold text-xs tracking-wide transition-all shadow-sm cursor-pointer"
             >
               Contáctanos
             </button>

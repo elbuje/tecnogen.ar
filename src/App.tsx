@@ -12,6 +12,7 @@ import { CRMWhatsAppPage } from './pages/CRMWhatsAppPage';
 import { ContenidoIAPage } from './pages/ContenidoIAPage';
 import { AboutPage } from './pages/AboutPage';
 import { ContactPage } from './pages/ContactPage';
+import { MentalidadMarketingPage } from './pages/MentalidadMarketingPage';
 import { MessageSquare } from 'lucide-react';
 
 export const App: React.FC = () => {
@@ -34,6 +35,12 @@ export const App: React.FC = () => {
             <Route path="/contenido-inteligencia-artificial" element={<ContenidoIAPage />} />
             <Route path="/sobre-nosotros" element={<AboutPage />} />
             <Route path="/contacto" element={<ContactPage />} />
+
+            {/* Event Landing: Mentalidad y Marketing — Neuroventas con IA */}
+            <Route path="/Mentalidad-Marketing-Neuroventas-con-IA" element={<MentalidadMarketingPage />} />
+            <Route path="/mentalidad-marketing-neuroventas-con-ia" element={<MentalidadMarketingPage />} />
+            <Route path="/mentalidad-marketing" element={<MentalidadMarketingPage />} />
+
             {/* Fallback */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
