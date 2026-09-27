@@ -5,6 +5,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const distDir = path.resolve(__dirname, '../dist');
+const publicDir = path.resolve(__dirname, '../public');
 
 const baseHtml = fs.readFileSync(path.join(distDir, 'index.html'), 'utf-8');
 
@@ -53,16 +54,6 @@ const seoRoutes = [
     path: 'contacto',
     title: 'Contacto & Agendamiento de Consultoría | TecnoGen',
     description: 'Agendá una sesión de consultoría técnica sin cargo con TecnoGen. Hablemos de cómo implementar marketing, IA y automatizaciones en tu empresa.'
-  },
-  {
-    path: 'Mentalidad-Marketing-Neuroventas-con-IA',
-    title: 'Mentalidad y Marketing — Neuroventas con IA | Evento Presencial 10 de Octubre',
-    description: 'Evento presencial exclusivo para dueños de negocio y emprendedores: Anthony Altuna, Fede Nowback y Christian Cencherle en CABA. 10 de octubre de 10:00 a 17:00 hs.'
-  },
-  {
-    path: 'mentalidad-marketing-neuroventas-con-ia',
-    title: 'Mentalidad y Marketing — Neuroventas con IA | Evento Presencial 10 de Octubre',
-    description: 'Evento presencial exclusivo para dueños de negocio y emprendedores: Anthony Altuna, Fede Nowback y Christian Cencherle en CABA. 10 de octubre de 10:00 a 17:00 hs.'
   }
 ];
 
@@ -103,5 +94,28 @@ seoRoutes.forEach(route => {
   fs.writeFileSync(path.join(distDir, `${route.path}.html`), customHtml);
   console.log(`✅ SEO Page generated: /${route.path}/index.html and /${route.path}.html`);
 });
+
+// Copy custom standalone event landing files ensuring they NEVER get overwritten by SPA shell
+const standaloneSource = path.join(publicDir, 'Mentalidad-Marketing-Neuroventas-con-IA.html');
+if (fs.existsSync(standaloneSource)) {
+  const standaloneHtml = fs.readFileSync(standaloneSource, 'utf-8');
+  
+  // Destination variants
+  const dests = [
+    path.join(distDir, 'Mentalidad-Marketing-Neuroventas-con-IA.html'),
+    path.join(distDir, 'mentalidad-marketing-neuroventas-con-ia.html'),
+    path.join(distDir, 'Mentalidad-Marketing-Neuroventas-con-IA', 'index.html'),
+    path.join(distDir, 'mentalidad-marketing-neuroventas-con-ia', 'index.html')
+  ];
+
+  dests.forEach(dest => {
+    const parent = path.dirname(dest);
+    if (!fs.existsSync(parent)) {
+      fs.mkdirSync(parent, { recursive: true });
+    }
+    fs.writeFileSync(dest, standaloneHtml);
+  });
+  console.log('✅ Standalone Event Landing properly copied to all target paths in dist.');
+}
 
 console.log('🎉 All SEO landing pages and index.php fallback created successfully.');
