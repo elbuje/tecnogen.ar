@@ -1,43 +1,36 @@
-# 📌 Estado del Proyecto: TecnoGen Web (`tecnogen.ar`)
+# Status del Proyecto — TecnoGen (tecnogen.ar)
 
-**Última Actualización:** 2026-09-26  
-**Ambiente de Desarrollo:** `http://localhost:5193` (Túnel SSH Hostinger VPS `72.62.107.109`)  
-**Ambiente de Producción:** `https://tecnogen.ar` (Ploi `errante` `72.61.34.92` / Site ID: `411124`)  
-**Estado General:** 🚀 Código Base, Rutas SEO y Landing del Evento "Mentalidad y Marketing" 100% Listas
-
----
-
-## 🎯 Tareas Completadas
-- [x] **LLM Wiki Standard:** 3 capas de conocimiento instaladas y sincronizadas con MetaWiki Global.
-- [x] **Infraestructura & Puertos:** Puerto `5193` (Vite Dev) y scripts `hvtunnels.sh` actualizados.
-- [x] **Sistema de Diseño:** Montserrat + Inter, paleta oficial TecnoGen y landing nocturna con acentos dorados / fuego para eventos.
-- [x] **Landing Page Evento Presencial:**
-  - Ruta: `/Mentalidad-Marketing-Neuroventas-con-IA` (y aliases `/mentalidad-marketing-neuroventas-con-ia`)
-  - Standalone HTML generado en `public/Mentalidad-Marketing-Neuroventas-con-IA.html` (listo para `fedenowback.com.ar` y `tecnogen.ar`).
-  - Flyer oficial integrado, countdown en vivo, perfiles de los 3 speakers (Anthony Altuna, Fede Nowback, Christian Cencherle), cronograma detallado (10:00 a 17:00 hs), ubicación (Lavalle 362, Piso 7, CABA) y formulario con checkout/reserva por WhatsApp oficial.
-- [x] **Rutas y Landings SEO Dedicadas:**
-  - `/` (Home)
-  - `/agencia-marketing-digital`
-  - `/agencia-seo-posicionamiento`
-  - `/inteligencia-artificial-empresas`
-  - `/agentes-inteligencia-artificial`
-  - `/automatizacion-de-procesos`
-  - `/crm-whatsapp-ventas`
-  - `/contenido-inteligencia-artificial`
-  - `/sobre-nosotros`
-  - `/contacto`
-  - `/Mentalidad-Marketing-Neuroventas-con-IA` (Evento 10 de Octubre)
-- [x] **Configuración en Producción (Ploi):**
-  - Sitio `tecnogen.ar` creado en servidor `errante` (`72.61.34.92` - ID `105871`).
-  - Certificado SSL Let's Encrypt solicitado y activo con HTTPS.
-  - Script de despliegue configurado para Git.
-- [x] **Repositorio GitHub Oficial:** [github.com/elbuje/tecnogen.ar](https://github.com/elbuje/tecnogen.ar) creado, sincronizado y vinculado como origen de CI/CD.
-- [x] **Despliegue en Producción Vía Git:** Script en Ploi ejecuta `git pull`, `npm install` y `npm run build` en cada push.
-- [x] **Verificación HTTP:** `https://tecnogen.ar/` y landings SEO activas respondiendo `200 OK`.
+**Última actualización:** 27 de Septiembre de 2026  
+**Ecosistema:** Hostinger VPS KVM 4 (`72.62.107.109`) / Ploi Producción `errante` (`72.61.34.92`)  
+**Dominio Oficial:** [https://tecnogen.ar](https://tecnogen.ar)
 
 ---
 
-## 🌐 URLs de Referencia
-- **Producción:** [https://tecnogen.ar](https://tecnogen.ar)
-- **Repositorio Git:** [https://github.com/elbuje/tecnogen.ar](https://github.com/elbuje/tecnogen.ar)
-- **Local Dev:** `http://localhost:5193` (vía `hvtunnels.sh`)
+## 🎯 Arquitectura Tecnológica & Migración
+- **Stack:** **PHP 8.x nativo modular** (siguiendo el estándar de arquitectura de `fedenowback`).
+- **Frontend & Estilos:** CSS Vanilla modular + JavaScript Vanilla sin dependencias pesadas ni node_modules.
+- **Ruteo:** Front Controller (`public/index.php`) con URLs amigables, sitemap dinámico (`/sitemap.xml`) y robots.txt.
+- **Landing del Evento 10 de Octubre:** `/Mentalidad-Marketing-Neuroventas-con-IA` (HTML5 standalone y view PHP integrada con los retratos individuales limpios, manifiesto y firmas).
+
+---
+
+## 📁 Estructura del Repositorio
+- `includes/`: `config.php`, `seo_helper.php` (Schema.org JSON-LD, OpenGraph, WhatsApp CRO).
+- `views/`: Vistas modulares de todas las páginas de servicios e institucional.
+  - `layout/`: `header.php`, `footer.php`.
+- `public/`: Webroot Nginx conteniendo `index.php`, `assets/` (CSS/JS) y `events_new/` (imágenes).
+
+---
+
+## 🌐 Rutas Principales
+- `/`: Home & Soluciones Integrales
+- `/agencia-marketing-digital`: Marketing Digital & Funnels
+- `/agencia-seo-posicionamiento`: SEO & Optimización en IA (GEO)
+- `/inteligencia-artificial-empresas`: IA para Empresas & RAG
+- `/agentes-inteligencia-artificial`: Agentes Autónomos 24/7
+- `/automatizacion-de-procesos`: Automatización de Flujos
+- `/crm-whatsapp-ventas`: CRM Kommo & WhatsApp API Oficial
+- `/contenido-inteligencia-artificial`: Content OS con IA
+- `/sobre-nosotros`: Identidad & Unión TecnoBrain + GEN de Negocio
+- `/contacto`: Agendamiento de Consultoría
+- `/Mentalidad-Marketing-Neuroventas-con-IA`: Landing Evento Presencial 10 de Octubre
