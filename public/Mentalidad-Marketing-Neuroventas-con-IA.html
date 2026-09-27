@@ -1,1745 +1,526 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mentalidad y Marketing — Neuroventas con IA | Evento Presencial 10 de Octubre</title>
-  <meta name="description" content="Una jornada presencial para dueños de negocio y emprendedores con Anthony Altuna, Fede Nowback y Christian Cencherle. Sábado 10 de octubre, Lavalle 362, CABA.">
-  <meta name="keywords" content="Mentalidad y Marketing, Neuroventas con IA, Anthony Altuna, Fede Nowback, Christian Cencherle, Evento Presencial CABA">
-  <meta name="robots" content="index, follow">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Mentalidad y Marketing — Neuroventas con IA">
-  <meta property="og:description" content="Evento presencial exclusivo para dueños de negocio y emprendedores en CABA. 10 de octubre de 10:00 a 17:00 hs.">
-  <meta property="og:image" content="/events_new/hero-speakers-group-hires.jpg">
-
-  <!-- Google Fonts -->
+  <meta name="description" content="Una jornada presencial para dueños de negocio y emprendedores con Anthony Sánchez Altuna, Fede Nowback y Christian Cencherle. 10 de octubre, Lavalle 362, CABA.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap" rel="stylesheet">
   <style>
-    /* RESET & BASE */
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    html {
-      scroll-behavior: smooth;
-      font-size: 16px;
-      background-color: #070707;
-      color: #EDE8DF;
-    }
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #080808;
-      color: #EDE8DF;
-      line-height: 1.55;
-      overflow-x: hidden;
-      -webkit-font-smoothing: antialiased;
-    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',sans-serif;background:#080808;color:#EDE8DF;line-height:1.5;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    .sf{font-family:'Playfair Display',Georgia,serif}
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
 
-    /* TYPOGRAPHY */
-    .font-serif {
-      font-family: 'Playfair Display', Georgia, serif;
-    }
-    .font-cinzel {
-      font-family: 'Cinzel', serif;
-    }
+    /* Gold text */
+    .gt{background:linear-gradient(135deg,#F5D680,#D4AF37 50%,#AA820A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;display:inline}
 
-    /* GOLD STYLES */
-    .gold-gradient-text {
-      background: linear-gradient(135deg, #F5D680 0%, #D4AF37 50%, #AA820A 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      display: inline-block;
-    }
-    .gold-metallic-text {
-      background: linear-gradient(180deg, #FFFFFF 0%, #F5E5BE 30%, #D4AF37 70%, #946F1A 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      display: inline-block;
-    }
-    .gold-border {
-      border: 1px solid rgba(212, 175, 55, 0.35);
-    }
-    .gold-border-glow {
-      border: 1px solid rgba(212, 175, 55, 0.5);
-      box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
-    }
-    .gold-glow-hover:hover {
-      border-color: rgba(212, 175, 55, 0.8);
-      box-shadow: 0 10px 30px rgba(212, 175, 55, 0.25);
-    }
+    /* Button gold */
+    .bg{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#ECC868,#D4AF37 50%,#9E7915);color:#080808;font-weight:800;font-size:14px;letter-spacing:.6px;text-transform:uppercase;padding:15px 32px;border-radius:999px;border:none;cursor:pointer;box-shadow:0 8px 28px rgba(212,175,55,.35);transition:all .2s}
+    .bg:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(212,175,55,.55)}
 
-    /* BUTTONS */
-    .btn-gold {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      background: linear-gradient(135deg, #ECC868 0%, #D4AF37 50%, #9E7915 100%);
-      color: #080808;
-      font-family: 'Inter', sans-serif;
-      font-weight: 800;
-      font-size: 15px;
-      letter-spacing: 0.8px;
-      text-transform: uppercase;
-      padding: 16px 36px;
-      border-radius: 9999px;
-      text-decoration: none;
-      border: none;
-      cursor: pointer;
-      box-shadow: 0 8px 30px rgba(212, 175, 55, 0.35);
-      transition: all 0.25s ease;
-    }
-    .btn-gold:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 40px rgba(212, 175, 55, 0.55);
-      background: linear-gradient(135deg, #F5D680 0%, #DEBA46 50%, #B89222 100%);
-    }
-    .btn-gold:active {
-      transform: translateY(1px);
-    }
+    /* Badge pill */
+    .bp{display:inline-flex;align-items:center;gap:6px;border:1px solid rgba(212,175,55,.4);background:rgba(212,175,55,.08);color:#D4AF37;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:6px 14px;border-radius:999px}
 
-    .badge-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      border: 1px solid rgba(212, 175, 55, 0.4);
-      background: rgba(212, 175, 55, 0.08);
-      color: #D4AF37;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      padding: 6px 14px;
-      border-radius: 9999px;
-    }
+    /* Container */
+    .cx{max-width:1160px;margin:0 auto;padding:0 24px}
 
-    /* CONTAINER */
-    .container {
-      width: 100%;
-      max-width: 1160px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    .container-wide {
-      width: 100%;
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
+    /* ===== HERO ===== */
+    .hero{position:relative;padding:50px 0 0;overflow:hidden;background:radial-gradient(ellipse at 70% 40%,rgba(212,175,55,.1),transparent 65%),#080808}
+    .hero-g{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:end}
+    .hero-txt{padding-bottom:50px;z-index:2}
+    .hero-tag{font-size:10px;letter-spacing:3.5px;color:#D4AF37;font-weight:700;text-transform:uppercase;margin-bottom:14px}
+    .hero-h1{font-size:clamp(36px,5vw,64px);line-height:1.02;font-weight:800;color:#fff;margin-bottom:18px;letter-spacing:-1px}
+    .hero-h1 .sub{display:block}
+    .hero-desc{font-size:15px;line-height:1.65;color:rgba(237,232,223,.8);max-width:480px;margin-bottom:24px}
+    .hero-meta{display:flex;gap:20px;align-items:center;margin-bottom:26px;flex-wrap:wrap}
+    .hero-meta-item{display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(237,232,223,.85);font-weight:500}
+    .hero-meta-item .ic{color:#D4AF37;font-size:16px}
+    .hero-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
 
-    /* NAVBAR */
-    .top-nav {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(8, 8, 8, 0.92);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(212, 175, 55, 0.15);
-      padding: 14px 0;
-    }
-    .nav-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .nav-logo {
-      text-decoration: none;
-      display: flex;
-      flex-direction: column;
-    }
-    .nav-logo-main {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 16px;
-      font-weight: 700;
-      color: #FFFFFF;
-      letter-spacing: 0.5px;
-    }
-    .nav-logo-sub {
-      font-family: 'Inter', sans-serif;
-      font-size: 9px;
-      letter-spacing: 2px;
-      color: #D4AF37;
-      text-transform: uppercase;
-      font-weight: 700;
-    }
-    .nav-btn {
-      padding: 9px 20px;
-      font-size: 12px;
-      letter-spacing: 0.5px;
-    }
+    /* Hero right: speakers photo */
+    .hero-img-area{position:relative;z-index:2}
+    .hero-speakers-img{width:100%;height:auto;display:block}
+    /* Floating keywords top right */
+    .hero-kw{position:absolute;top:10px;right:20px;text-align:right;z-index:5}
+    .hero-kw span{display:block;font-size:10px;letter-spacing:2px;color:rgba(237,232,223,.45);text-transform:uppercase;font-weight:600;line-height:1.8}
 
-    /* HERO SECTION */
-    .hero-section {
-      position: relative;
-      padding: 60px 0 70px;
-      overflow: hidden;
-      background: radial-gradient(circle at 75% 30%, rgba(212, 175, 55, 0.12) 0%, rgba(8, 8, 8, 0) 65%),
-                  linear-gradient(180deg, #080808 0%, #110E08 50%, #080808 100%);
-    }
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 40px;
-      align-items: center;
-    }
-    .hero-content {
-      z-index: 2;
-    }
-    .hero-tagline {
-      font-size: 11px;
-      letter-spacing: 3.5px;
-      color: #D4AF37;
-      font-weight: 700;
-      text-transform: uppercase;
-      margin-bottom: 16px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .hero-title {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(38px, 4.8vw, 62px);
-      line-height: 1.05;
-      font-weight: 700;
-      color: #FFFFFF;
-      margin-bottom: 20px;
-      letter-spacing: -0.5px;
-    }
-    .hero-desc {
-      font-size: 16px;
-      line-height: 1.6;
-      color: rgba(237, 232, 223, 0.82);
-      max-width: 540px;
-      margin-bottom: 28px;
-    }
-    .hero-meta-bar {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      padding: 16px;
-      background: rgba(255, 255, 255, 0.025);
-      border: 1px solid rgba(212, 175, 55, 0.2);
-      border-radius: 12px;
-      margin-bottom: 30px;
-    }
-    .meta-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-    }
-    .meta-icon {
-      color: #D4AF37;
-      font-size: 18px;
-      line-height: 1;
-      margin-top: 2px;
-    }
-    .meta-label {
-      font-size: 13px;
-      font-weight: 700;
-      color: #FFFFFF;
-      margin-bottom: 2px;
-    }
-    .meta-sub {
-      font-size: 11px;
-      color: rgba(237, 232, 223, 0.6);
-    }
-    .hero-actions {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
+    /* Speaker signatures under hero photo */
+    .hero-sigs{display:flex;justify-content:space-between;padding:16px 10px 0;gap:10px}
+    .hero-sig{text-align:center;flex:1}
+    .hero-sig-name{font-family:'Playfair Display',serif;font-size:14px;font-weight:600;color:#fff;font-style:italic;margin-bottom:2px}
+    .hero-sig-topic{font-size:8.5px;letter-spacing:1.5px;color:#D4AF37;text-transform:uppercase;font-weight:700}
 
-    /* HERO IMAGE & SIGNATURES */
-    .hero-image-wrap {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    .hero-image-glow {
-      position: absolute;
-      width: 320px;
-      height: 320px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(212, 175, 55, 0.22) 0%, rgba(212, 175, 55, 0) 70%);
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      pointer-events: none;
-    }
-    .hero-image {
-      width: 100%;
-      max-width: 460px;
-      height: auto;
-      border-radius: 16px;
-      display: block;
-      position: relative;
-      z-index: 2;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-      border: 1px solid rgba(212, 175, 55, 0.25);
-    }
-    .hero-speakers-names {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 8px;
-      width: 100%;
-      max-width: 460px;
-      margin-top: 14px;
-      text-align: center;
-    }
-    .hero-speaker-sig {
-      padding: 6px 4px;
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(212, 175, 55, 0.15);
-      border-radius: 8px;
-    }
-    .hero-speaker-sig-name {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 12px;
-      font-weight: 700;
-      color: #FFFFFF;
-      margin-bottom: 2px;
-    }
-    .hero-speaker-sig-topic {
-      font-size: 8.5px;
-      letter-spacing: 1px;
-      color: #D4AF37;
-      text-transform: uppercase;
-      font-weight: 700;
-    }
+    /* ===== MANIFIESTO ===== */
+    .mani{padding:80px 0;background:linear-gradient(180deg,#0C0A06,#12100A 50%,#080808);border-top:1px solid rgba(212,175,55,.12)}
+    .mani-g{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+    .mani-h{font-size:clamp(26px,3.2vw,40px);line-height:1.15;font-weight:800;color:#fff;text-transform:uppercase}
+    .mani-h .gold{display:block;margin-top:4px}
+    .mani-p{font-size:14.5px;line-height:1.7;color:rgba(237,232,223,.8);margin-bottom:14px}
+    .mani-p strong{color:#fff}
 
-    /* PILLS / KEYWORDS BAR */
-    .keywords-bar {
-      padding: 24px 0;
-      background: #0B0B0B;
-      border-top: 1px solid rgba(212, 175, 55, 0.12);
-      border-bottom: 1px solid rgba(212, 175, 55, 0.12);
-    }
-    .keywords-grid {
-      display: grid;
-      grid-template-columns: repeat(8, 1fr);
-      gap: 10px;
-    }
-    .keyword-pill {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 12px 6px;
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(212, 175, 55, 0.12);
-      border-radius: 10px;
-      text-align: center;
-      transition: all 0.2s;
-    }
-    .keyword-pill:hover {
-      border-color: rgba(212, 175, 55, 0.4);
-      background: rgba(212, 175, 55, 0.05);
-      transform: translateY(-2px);
-    }
-    .keyword-icon {
-      font-size: 20px;
-      margin-bottom: 4px;
-    }
-    .keyword-text {
-      font-size: 11px;
-      font-weight: 600;
-      color: rgba(237, 232, 223, 0.9);
-      letter-spacing: 0.2px;
-    }
+    /* ===== SPEAKERS ===== */
+    .spk{padding:80px 0;background:#080808}
+    .sec-lab{font-size:10px;letter-spacing:3.5px;color:#D4AF37;text-transform:uppercase;font-weight:700;margin-bottom:6px}
+    .sec-hdr{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:40px}
+    .sec-title{font-size:clamp(26px,3.4vw,42px);font-weight:700;color:#fff;line-height:1.12}
+    .sec-aside{font-size:10px;letter-spacing:1.5px;color:rgba(212,175,55,.7);text-transform:uppercase;font-weight:700;text-align:right;max-width:300px}
+    .spk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 
-    /* MANIFIESTO SECTION */
-    .manifiesto-section {
-      position: relative;
-      padding: 90px 0;
-      background: linear-gradient(180deg, #080808 0%, #120D06 50%, #080808 100%);
-      overflow: hidden;
-    }
-    .manifiesto-bg {
-      position: absolute;
-      inset: 0;
-      background-image: url(/events_new/manifiesto-bg.jpg);
-      background-size: cover;
-      background-position: center;
-      opacity: 0.18;
-      mix-blend-mode: luminosity;
-    }
-    .manifiesto-grid {
-      position: relative;
-      z-index: 2;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-      align-items: center;
-    }
-    .manifiesto-left h2 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(28px, 3.4vw, 42px);
-      line-height: 1.15;
-      font-weight: 800;
-      color: #FFFFFF;
-      text-transform: uppercase;
-      letter-spacing: -0.5px;
-    }
-    .manifiesto-left h2 span {
-      background: linear-gradient(135deg, #F5D680 0%, #D4AF37 50%, #AA820A 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      display: block;
-      margin-top: 4px;
-    }
-    .manifiesto-right p {
-      font-size: 15px;
-      line-height: 1.7;
-      color: rgba(237, 232, 223, 0.85);
-      margin-bottom: 16px;
-    }
-    .manifiesto-right strong {
-      color: #FFFFFF;
-    }
+    /* Speaker Card */
+    .sc{background:rgba(15,15,15,.9);border:1px solid rgba(212,175,55,.18);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:all .3s}
+    .sc:hover{transform:translateY(-5px);border-color:rgba(212,175,55,.5);box-shadow:0 14px 35px rgba(0,0,0,.7),0 0 20px rgba(212,175,55,.1)}
+    .sc-img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 20%}
+    .sc-body{padding:22px 20px;display:flex;flex-direction:column;flex-grow:1}
+    .sc-name{font-size:18px;font-weight:700;color:#fff;margin-bottom:2px}
+    .sc-role{font-size:11px;color:rgba(237,232,223,.55);margin-bottom:4px;font-style:italic}
+    .sc-role-detail{font-size:11.5px;color:rgba(237,232,223,.6);margin-bottom:14px;line-height:1.4}
+    .sc-bulls{list-style:none;margin-bottom:16px}
+    .sc-bulls li{position:relative;padding-left:14px;font-size:12px;color:rgba(237,232,223,.75);margin-bottom:5px;line-height:1.35}
+    .sc-bulls li::before{content:"•";position:absolute;left:2px;color:#D4AF37;font-weight:bold}
+    .sc-badge{margin-top:auto;padding:10px 12px;background:rgba(212,175,55,.07);border:1px solid rgba(212,175,55,.3);border-radius:8px;text-align:center}
+    .sc-badge-t{font-size:10px;font-weight:800;letter-spacing:1px;color:#D4AF37;text-transform:uppercase;line-height:1.4}
+    .sc-desc{font-size:11.5px;line-height:1.5;color:rgba(237,232,223,.6);margin-top:12px}
 
-    /* SPEAKERS SECTION */
-    .speakers-section {
-      padding: 90px 0;
-      background: #080808;
-      position: relative;
-    }
-    .section-header {
-      margin-bottom: 48px;
-    }
-    .section-label {
-      font-size: 11px;
-      letter-spacing: 3.5px;
-      color: #D4AF37;
-      text-transform: uppercase;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-    .section-title-wrap {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .section-title {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(28px, 3.6vw, 44px);
-      font-weight: 700;
-      color: #FFFFFF;
-      line-height: 1.15;
-    }
-    .section-tagline {
-      font-size: 11px;
-      letter-spacing: 2px;
-      color: rgba(212, 175, 55, 0.85);
-      font-weight: 700;
-      text-transform: uppercase;
-      max-width: 380px;
-      text-align: right;
-    }
+    /* ===== QUÉ TE LLEVAS ===== */
+    .tkw{padding:80px 0;background:linear-gradient(180deg,#080808,#100C05 50%,#080808);border-top:1px solid rgba(212,175,55,.1)}
+    .tkw-g{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:36px}
+    .tkw-c{background:rgba(255,255,255,.02);border:1px solid rgba(212,175,55,.18);border-radius:12px;padding:20px 14px;text-align:center;transition:all .25s}
+    .tkw-c:hover{border-color:rgba(212,175,55,.45);transform:translateY(-3px);background:rgba(212,175,55,.03)}
+    .tkw-ic{width:44px;height:44px;border-radius:50%;background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.25);display:flex;align-items:center;justify-content:center;font-size:20px;margin:0 auto 12px}
+    .tkw-t{font-size:12.5px;font-weight:700;color:#fff;margin-bottom:6px;line-height:1.25}
+    .tkw-d{font-size:11px;color:rgba(237,232,223,.55);line-height:1.4}
 
-    /* SPEAKER CARDS */
-    .speakers-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
-    }
-    .speaker-card {
-      background: rgba(18, 18, 18, 0.7);
-      border: 1px solid rgba(212, 175, 55, 0.22);
-      border-radius: 18px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      transition: all 0.3s ease;
-      position: relative;
-    }
-    .speaker-card:hover {
-      transform: translateY(-6px);
-      border-color: rgba(212, 175, 55, 0.55);
-      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 25px rgba(212, 175, 55, 0.12);
-    }
-    .speaker-photo-wrap {
-      position: relative;
-      width: 100%;
-      padding-top: 85%;
-      overflow: hidden;
-      background: #0E0E0E;
-    }
-    .speaker-photo {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center 15%;
-      transition: transform 0.4s ease;
-    }
-    .speaker-card:hover .speaker-photo {
-      transform: scale(1.04);
-    }
-    .speaker-photo-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(8, 8, 8, 0) 50%, rgba(18, 18, 18, 0.95) 100%);
-    }
+    /* ===== AGENDA ===== */
+    .agd{padding:80px 0;background:#080808}
+    .agd-g{display:grid;grid-template-columns:.85fr 1.15fr;gap:36px;align-items:start}
+    .agd-side{position:relative;border-radius:14px;overflow:hidden;border:1px solid rgba(212,175,55,.2);aspect-ratio:4/5}
+    .agd-side img{width:100%;height:100%;object-fit:cover}
+    .agd-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,8,.1),rgba(8,8,8,.85));display:flex;flex-direction:column;justify-content:flex-end;padding:24px}
+    .agd-overlay h3{font-size:18px;font-weight:700;color:#fff;margin-bottom:4px}
+    .agd-overlay p{font-size:11px;color:#D4AF37;letter-spacing:1px;text-transform:uppercase}
+    .tl{display:flex;flex-direction:column;gap:14px}
+    .tl-item{display:flex;gap:16px;padding:14px 16px;background:rgba(255,255,255,.02);border:1px solid rgba(212,175,55,.12);border-radius:10px}
+    .tl-item:hover{border-color:rgba(212,175,55,.35)}
+    .tl-time{padding:5px 10px;background:rgba(212,175,55,.1);border:1px solid rgba(212,175,55,.3);border-radius:6px;font-weight:800;font-size:12px;color:#D4AF37;white-space:nowrap;height:fit-content}
+    .tl-body h4{font-size:13.5px;font-weight:700;color:#fff;margin-bottom:3px}
+    .tl-body p{font-size:11.5px;color:rgba(237,232,223,.65);line-height:1.4}
+    .tl-spk{font-weight:600;color:#D4AF37}
 
-    .speaker-body {
-      padding: 24px 22px;
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-    }
-    .speaker-name-styled {
-      margin-bottom: 6px;
-    }
-    .speaker-first-name {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 26px;
-      font-weight: 700;
-      color: #FFFFFF;
-      display: block;
-      line-height: 1.05;
-    }
-    .speaker-last-name {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 26px;
-      font-weight: 800;
-      line-height: 1.05;
-      background: linear-gradient(135deg, #F5D680 0%, #D4AF37 50%, #9E7915 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      display: inline-block;
-    }
-    .speaker-role {
-      font-size: 12px;
-      color: rgba(237, 232, 223, 0.65);
-      margin-bottom: 16px;
-      line-height: 1.4;
-      font-style: italic;
-    }
-    .speaker-bullets {
-      list-style: none;
-      margin-bottom: 20px;
-    }
-    .speaker-bullets li {
-      position: relative;
-      padding-left: 18px;
-      font-size: 13px;
-      color: rgba(237, 232, 223, 0.8);
-      margin-bottom: 7px;
-      line-height: 1.4;
-    }
-    .speaker-bullets li::before {
-      content: "•";
-      position: absolute;
-      left: 4px;
-      color: #D4AF37;
-      font-weight: bold;
-      font-size: 15px;
-    }
+    /* ===== PRICING ===== */
+    .prc{padding:80px 0;background:linear-gradient(180deg,#080808,#150E06 50%,#080808);border-top:1px solid rgba(212,175,55,.12)}
+    .prc-g{display:grid;grid-template-columns:1.1fr .95fr .95fr;gap:20px;margin-top:36px;align-items:stretch}
+    .pc{background:rgba(18,18,18,.85);border:1px solid rgba(212,175,55,.18);border-radius:16px;padding:28px 22px;display:flex;flex-direction:column;position:relative}
+    .pc.feat{border:2px solid #D4AF37;background:radial-gradient(circle at 50% 0%,rgba(212,175,55,.14),rgba(18,18,18,.95) 70%);box-shadow:0 14px 45px rgba(212,175,55,.18)}
+    .pc-ribbon{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#ECC868,#D4AF37 50%,#9E7915);color:#080808;font-size:9px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase;padding:4px 14px;border-radius:999px;white-space:nowrap}
+    .pc-tier{font-size:11px;font-weight:800;letter-spacing:2px;color:#D4AF37;text-transform:uppercase;margin-bottom:4px}
+    .pc-val{font-size:11px;color:rgba(237,232,223,.5);margin-bottom:16px}
+    .pc-old{font-size:14px;text-decoration:line-through;color:rgba(237,232,223,.35);margin-bottom:2px}
+    .pc-amt{font-size:38px;font-weight:800;color:#fff;line-height:1;margin-bottom:6px}
+    .pc.feat .pc-amt{background:linear-gradient(135deg,#fff,#F5E5BE 40%,#D4AF37);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .pc-sav{display:inline-block;font-size:10px;font-weight:700;color:#22C55E;background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25);padding:3px 9px;border-radius:999px;margin-bottom:20px;align-self:flex-start}
+    .pc-feat{list-style:none;margin:auto 0 22px}
+    .pc-feat li{position:relative;padding-left:18px;font-size:11.5px;color:rgba(237,232,223,.75);margin-bottom:6px}
+    .pc-feat li::before{content:"✓";position:absolute;left:0;color:#D4AF37;font-weight:bold;font-size:12px}
+    .pay-bar{margin-top:30px;padding:14px 18px;background:rgba(255,255,255,.02);border:1px solid rgba(212,175,55,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap}
+    .pay-bar .lbl{font-size:10px;letter-spacing:1.5px;color:#D4AF37;text-transform:uppercase;font-weight:700}
+    .pay-bar .items{display:flex;gap:16px;flex-wrap:wrap}
+    .pay-bar .items span{font-size:11.5px;color:rgba(237,232,223,.7)}
 
-    .speaker-badge-box {
-      margin-top: auto;
-      padding: 12px 14px;
-      background: rgba(212, 175, 55, 0.08);
-      border: 1px solid rgba(212, 175, 55, 0.35);
-      border-radius: 10px;
-      margin-bottom: 12px;
-    }
-    .speaker-badge-title {
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 1px;
-      color: #D4AF37;
-      text-transform: uppercase;
-      line-height: 1.35;
-      text-align: center;
-    }
-    .speaker-desc {
-      font-size: 12.5px;
-      line-height: 1.5;
-      color: rgba(237, 232, 223, 0.7);
-      margin-bottom: 14px;
-    }
-    .speaker-socials {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding-top: 10px;
-      border-top: 1px solid rgba(255, 255, 255, 0.06);
-    }
-    .speaker-socials span {
-      font-size: 11px;
-      color: rgba(212, 175, 55, 0.7);
-      font-weight: 600;
-    }
+    /* ===== FAQ ===== */
+    .faq{padding:80px 0;background:#080808}
+    .faq-g{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start}
+    .faq-list{display:flex;flex-direction:column;gap:10px}
+    .fq{background:rgba(255,255,255,.02);border:1px solid rgba(212,175,55,.15);border-radius:10px;overflow:hidden}
+    .fq.active{border-color:rgba(212,175,55,.45);background:rgba(212,175,55,.03)}
+    .fq-q{width:100%;padding:15px 18px;background:none;border:none;color:#fff;font-size:13.5px;font-weight:600;text-align:left;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:10px;font-family:'Inter',sans-serif}
+    .fq-q .tog{color:#D4AF37;font-size:18px;transition:transform .2s}
+    .fq.active .fq-q .tog{transform:rotate(45deg)}
+    .fq-a{max-height:0;overflow:hidden;transition:max-height .3s,padding .3s;padding:0 18px;font-size:12.5px;line-height:1.55;color:rgba(237,232,223,.7)}
+    .fq.active .fq-a{max-height:220px;padding:0 18px 18px}
 
-    /* QUÉ TE LLEVAS SECTION */
-    .takeaways-section {
-      padding: 90px 0;
-      background: linear-gradient(180deg, #080808 0%, #100C05 50%, #080808 100%);
-      border-top: 1px solid rgba(212, 175, 55, 0.12);
-    }
-    .takeaways-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 18px;
-      margin-top: 40px;
-    }
-    .takeaway-card {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(212, 175, 55, 0.2);
-      border-radius: 14px;
-      padding: 24px 18px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      transition: all 0.25s ease;
-    }
-    .takeaway-card:hover {
-      border-color: rgba(212, 175, 55, 0.5);
-      background: rgba(212, 175, 55, 0.04);
-      transform: translateY(-4px);
-    }
-    .takeaway-icon-wrap {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background: rgba(212, 175, 55, 0.1);
-      border: 1px solid rgba(212, 175, 55, 0.3);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 22px;
-      margin-bottom: 16px;
-      color: #D4AF37;
-    }
-    .takeaway-title {
-      font-size: 14px;
-      font-weight: 700;
-      color: #FFFFFF;
-      margin-bottom: 8px;
-      line-height: 1.3;
-    }
-    .takeaway-desc {
-      font-size: 12px;
-      color: rgba(237, 232, 223, 0.65);
-      line-height: 1.45;
-    }
+    /* ===== FINAL CTA ===== */
+    .fcta{position:relative;padding:90px 0;text-align:center;border-top:1px solid rgba(212,175,55,.12);background:linear-gradient(180deg,#080808,#150E06 50%,#080808);overflow:hidden}
+    .fcta-bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.1}
+    .fcta-in{position:relative;z-index:2;max-width:640px;margin:0 auto}
+    .fcta-title{font-size:clamp(30px,4.2vw,50px);line-height:1.08;font-weight:700;color:#fff;margin-bottom:14px}
+    .fcta-desc{font-size:14.5px;color:rgba(237,232,223,.7);margin-bottom:28px;line-height:1.6}
+    .orgs{margin-top:50px;padding-top:32px;border-top:1px solid rgba(212,175,55,.12)}
+    .orgs-lab{font-size:9.5px;letter-spacing:3px;color:rgba(212,175,55,.7);text-transform:uppercase;font-weight:700;margin-bottom:16px}
+    .orgs-logos{display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap;font-size:13px;color:rgba(237,232,223,.6);font-weight:600;letter-spacing:.5px}
 
-    /* AGENDA SECTION */
-    .agenda-section {
-      padding: 90px 0;
-      background: #080808;
-      position: relative;
-    }
-    .agenda-grid {
-      display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
-      gap: 40px;
-      align-items: center;
-    }
-    .agenda-visual {
-      position: relative;
-      border-radius: 18px;
-      overflow: hidden;
-      border: 1px solid rgba(212, 175, 55, 0.25);
-    }
-    .agenda-visual img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      filter: brightness(0.9);
-    }
-    .agenda-visual-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(8,8,8,0.2) 0%, rgba(8,8,8,0.85) 100%);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 28px;
-    }
-    .agenda-visual-quote {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 20px;
-      font-weight: 700;
-      color: #FFFFFF;
-      margin-bottom: 6px;
-    }
-    .agenda-visual-sub {
-      font-size: 12px;
-      color: #D4AF37;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
+    .foot{padding:24px;background:#040404;border-top:1px solid rgba(255,255,255,.04);text-align:center;font-size:11px;color:rgba(237,232,223,.35)}
 
-    .timeline {
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-    }
-    .timeline-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 20px;
-      padding: 18px 20px;
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(212, 175, 55, 0.15);
-      border-radius: 12px;
-      transition: all 0.2s;
-    }
-    .timeline-item:hover {
-      border-color: rgba(212, 175, 55, 0.4);
-      background: rgba(212, 175, 55, 0.03);
-    }
-    .timeline-time-badge {
-      padding: 6px 12px;
-      background: rgba(212, 175, 55, 0.12);
-      border: 1px solid rgba(212, 175, 55, 0.35);
-      border-radius: 8px;
-      font-weight: 800;
-      font-size: 13px;
-      color: #D4AF37;
-      white-space: nowrap;
-    }
-    .timeline-content h4 {
-      font-size: 15px;
-      font-weight: 700;
-      color: #FFFFFF;
-      margin-bottom: 4px;
-    }
-    .timeline-content p {
-      font-size: 12.5px;
-      color: rgba(237, 232, 223, 0.7);
-      line-height: 1.4;
-    }
-    .timeline-speaker {
-      font-weight: 600;
-      color: #D4AF37;
-    }
+    /* Mobile sticky */
+    .mob-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:99;background:rgba(10,10,10,.96);backdrop-filter:blur(10px);border-top:1px solid rgba(212,175,55,.3);padding:10px 16px;box-shadow:0 -6px 20px rgba(0,0,0,.8)}
+    .mob-bar-in{display:flex;align-items:center;justify-content:space-between;gap:10px}
+    .mob-bar .price{font-size:17px;font-weight:800;color:#fff}
+    .mob-bar .tag{font-size:9px;color:#D4AF37;text-transform:uppercase;font-weight:700;letter-spacing:1px}
 
-    /* PRICING SECTION */
-    .pricing-section {
-      padding: 90px 0;
-      background: linear-gradient(180deg, #080808 0%, #150E06 50%, #080808 100%);
-      border-top: 1px solid rgba(212, 175, 55, 0.15);
+    /* ===== RESPONSIVE ===== */
+    @media(max-width:1024px){
+      .hero-g{grid-template-columns:1fr;text-align:center}
+      .hero-txt{padding-bottom:30px}
+      .hero-desc{margin:0 auto 24px}
+      .hero-meta{justify-content:center}
+      .hero-actions{justify-content:center}
+      .hero-kw{display:none}
+      .mani-g{grid-template-columns:1fr;gap:24px}
+      .spk-grid{grid-template-columns:1fr;max-width:420px;margin:0 auto}
+      .tkw-g{grid-template-columns:repeat(2,1fr)}
+      .agd-g{grid-template-columns:1fr}
+      .agd-side{aspect-ratio:16/9}
+      .prc-g{grid-template-columns:1fr;max-width:420px;margin:0 auto}
+      .faq-g{grid-template-columns:1fr}
+      .sec-hdr{flex-direction:column;align-items:flex-start}
+      .sec-aside{text-align:left}
     }
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 0.95fr 0.9fr;
-      gap: 24px;
-      margin-top: 40px;
-      align-items: stretch;
-    }
-    .pricing-card {
-      background: rgba(20, 20, 20, 0.8);
-      border: 1px solid rgba(212, 175, 55, 0.2);
-      border-radius: 18px;
-      padding: 32px 24px;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-    }
-    .pricing-card.featured {
-      border: 2px solid #D4AF37;
-      background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.15) 0%, rgba(20, 20, 20, 0.95) 75%);
-      box-shadow: 0 16px 50px rgba(212, 175, 55, 0.2);
-      transform: scale(1.02);
-    }
-    .pricing-ribbon {
-      position: absolute;
-      top: -13px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: linear-gradient(135deg, #ECC868 0%, #D4AF37 50%, #9E7915 100%);
-      color: #080808;
-      font-size: 10px;
-      font-weight: 900;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      padding: 5px 16px;
-      border-radius: 9999px;
-      white-space: nowrap;
-      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
-    }
-    .pricing-tier {
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 2px;
-      color: #D4AF37;
-      text-transform: uppercase;
-      margin-bottom: 6px;
-    }
-    .pricing-validity {
-      font-size: 11.5px;
-      color: rgba(237, 232, 223, 0.55);
-      margin-bottom: 20px;
-    }
-    .pricing-old-price {
-      font-size: 16px;
-      text-decoration: line-through;
-      color: rgba(237, 232, 223, 0.4);
-      margin-bottom: 2px;
-    }
-    .pricing-amount {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 42px;
-      font-weight: 800;
-      color: #FFFFFF;
-      line-height: 1;
-      margin-bottom: 8px;
-    }
-    .pricing-card.featured .pricing-amount {
-      background: linear-gradient(135deg, #FFFFFF 0%, #F5E5BE 40%, #D4AF37 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .pricing-savings {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 700;
-      color: #22C55E;
-      background: rgba(34, 197, 94, 0.1);
-      border: 1px solid rgba(34, 197, 94, 0.3);
-      padding: 3px 10px;
-      border-radius: 9999px;
-      margin-bottom: 24px;
-      align-self: flex-start;
-    }
-    .pricing-features {
-      list-style: none;
-      margin-bottom: 28px;
-      margin-top: auto;
-    }
-    .pricing-features li {
-      position: relative;
-      padding-left: 20px;
-      font-size: 12.5px;
-      color: rgba(237, 232, 223, 0.8);
-      margin-bottom: 8px;
-    }
-    .pricing-features li::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      color: #D4AF37;
-      font-weight: bold;
-    }
-
-    /* PAYMENT METHODS BAR */
-    .payment-bar {
-      margin-top: 36px;
-      padding: 16px 20px;
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(212, 175, 55, 0.15);
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 28px;
-      flex-wrap: wrap;
-    }
-    .payment-label {
-      font-size: 11px;
-      letter-spacing: 2px;
-      color: #D4AF37;
-      text-transform: uppercase;
-      font-weight: 700;
-    }
-    .payment-items {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .payment-method {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 12px;
-      color: rgba(237, 232, 223, 0.8);
-    }
-
-    /* FAQ SECTION */
-    .faq-section {
-      padding: 90px 0;
-      background: #080808;
-    }
-    .faq-grid {
-      display: grid;
-      grid-template-columns: 0.85fr 1.15fr;
-      gap: 50px;
-      align-items: flex-start;
-    }
-    .faq-list {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .faq-item {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(212, 175, 55, 0.18);
-      border-radius: 12px;
-      overflow: hidden;
-      transition: all 0.2s;
-    }
-    .faq-item.active {
-      border-color: rgba(212, 175, 55, 0.5);
-      background: rgba(212, 175, 55, 0.03);
-    }
-    .faq-question {
-      width: 100%;
-      padding: 18px 20px;
-      background: none;
-      border: none;
-      color: #FFFFFF;
-      font-size: 14.5px;
-      font-weight: 600;
-      text-align: left;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-    }
-    .faq-toggle-icon {
-      color: #D4AF37;
-      font-size: 20px;
-      transition: transform 0.25s ease;
-    }
-    .faq-item.active .faq-toggle-icon {
-      transform: rotate(45deg);
-    }
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease, padding 0.3s ease;
-      padding: 0 20px;
-      font-size: 13.5px;
-      line-height: 1.6;
-      color: rgba(237, 232, 223, 0.75);
-    }
-    .faq-item.active .faq-answer {
-      max-height: 250px;
-      padding: 0 20px 20px 20px;
-    }
-
-    /* FINAL CTA & FOOTER */
-    .final-cta-section {
-      position: relative;
-      padding: 100px 0;
-      background: linear-gradient(180deg, #080808 0%, #150E06 50%, #080808 100%);
-      overflow: hidden;
-      text-align: center;
-      border-top: 1px solid rgba(212, 175, 55, 0.15);
-    }
-    .final-cta-bg {
-      position: absolute;
-      inset: 0;
-      background-image: url(/events_new/footer-audience.jpg);
-      background-size: cover;
-      background-position: center;
-      opacity: 0.12;
-    }
-    .final-cta-content {
-      position: relative;
-      z-index: 2;
-      max-width: 680px;
-      margin: 0 auto;
-    }
-    .final-cta-title {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(32px, 4.5vw, 54px);
-      line-height: 1.1;
-      font-weight: 700;
-      color: #FFFFFF;
-      margin-bottom: 16px;
-    }
-    .final-cta-desc {
-      font-size: 15.5px;
-      color: rgba(237, 232, 223, 0.75);
-      margin-bottom: 32px;
-      line-height: 1.6;
-    }
-
-    /* ORGANIZERS & FOOTER */
-    .organizers-bar {
-      margin-top: 60px;
-      padding-top: 40px;
-      border-top: 1px solid rgba(212, 175, 55, 0.15);
-    }
-    .organizers-label {
-      font-size: 10.5px;
-      letter-spacing: 3px;
-      color: rgba(212, 175, 55, 0.8);
-      text-transform: uppercase;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-    .organizers-logos {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 36px;
-      flex-wrap: wrap;
-    }
-    .org-logo-item {
-      font-family: 'Cinzel', serif;
-      font-size: 15px;
-      letter-spacing: 1.5px;
-      color: rgba(237, 232, 223, 0.7);
-      font-weight: 600;
-    }
-
-    .footer-bar {
-      padding: 28px 0;
-      background: #040404;
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
-      text-align: center;
-      font-size: 12px;
-      color: rgba(237, 232, 223, 0.4);
-    }
-
-    /* MOBILE STICKY CTA */
-    .mobile-sticky-bar {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 99;
-      background: rgba(10, 10, 10, 0.95);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border-top: 1px solid rgba(212, 175, 55, 0.3);
-      padding: 12px 16px;
-      box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.8);
-    }
-    .mobile-sticky-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-    }
-    .mobile-sticky-info {
-      display: flex;
-      flex-direction: column;
-    }
-    .mobile-sticky-price {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 18px;
-      font-weight: 800;
-      color: #FFFFFF;
-    }
-    .mobile-sticky-tag {
-      font-size: 9.5px;
-      color: #D4AF37;
-      text-transform: uppercase;
-      font-weight: 700;
-    }
-
-    /* RESPONSIVE BREAKPOINTS */
-    @media (max-width: 1024px) {
-      .hero-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-      .hero-tagline {
-        justify-content: center;
-      }
-      .hero-desc {
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .hero-meta-bar {
-        max-width: 580px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .hero-actions {
-        justify-content: center;
-      }
-      .hero-image-wrap {
-        margin-top: 30px;
-      }
-      .keywords-grid {
-        grid-template-columns: repeat(4, 1fr);
-      }
-      .manifiesto-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-      }
-      .speakers-grid {
-        grid-template-columns: 1fr;
-        max-width: 480px;
-        margin: 0 auto;
-      }
-      .takeaways-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .agenda-grid {
-        grid-template-columns: 1fr;
-      }
-      .pricing-grid {
-        grid-template-columns: 1fr;
-        max-width: 460px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .faq-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .hero-meta-bar {
-        grid-template-columns: 1fr;
-        gap: 12px;
-        text-align: left;
-      }
-      .keywords-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .takeaways-grid {
-        grid-template-columns: 1fr;
-      }
-      .mobile-sticky-bar {
-        display: block;
-      }
-      body {
-        padding-bottom: 70px;
-      }
-      .nav-btn {
-        display: none;
-      }
+    @media(max-width:640px){
+      .tkw-g{grid-template-columns:1fr}
+      .hero-meta{flex-direction:column;align-items:center;gap:10px}
+      .mob-bar{display:block}
+      body{padding-bottom:60px}
     }
   </style>
 </head>
 <body>
 
-  <!-- TOP NAVBAR -->
-  <header class="top-nav">
-    <div class="container nav-inner">
-      <a href="#hero" class="nav-logo">
-        <span class="nav-logo-main">MENTALIDAD Y MARKETING</span>
-        <span class="nav-logo-sub">NEUROVENTAS CON IA</span>
-      </a>
-      <div style="display: flex; align-items: center; gap: 16px;">
-        <span class="badge-pill" style="display: none;" id="nav-badge">👥 CUPOS LIMITADOS</span>
-        <a href="#entradas" class="btn-gold nav-btn">Quiero mi entrada →</a>
-      </div>
-    </div>
-  </header>
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="cx">
+    <div class="hero-g">
+      <div class="hero-txt">
+        <div class="hero-tag">EVENTO PRESENCIAL</div>
+        <h1 class="hero-h1 sf">
+          <span class="sub">Mentalidad</span>
+          <span class="sub">y Marketing</span>
+          <span class="sub gt">Neuroventas con IA</span>
+        </h1>
+        <p class="hero-desc">Una jornada para transformar la forma en que pensás, comunicás y vendés tu negocio, con neurociencia, inteligencia artificial, marca personal y casos reales.</p>
 
-  <!-- HERO SECTION -->
-  <section id="hero" class="hero-section">
-    <div class="container">
-      <div class="hero-grid">
-        <!-- Text Content -->
-        <div class="hero-content">
-          <div class="hero-tagline">
-            <span>◆</span> EVENTO PRESENCIAL <span>◆</span>
-          </div>
-          <h1 class="hero-title">
-            Mentalidad<br>
-            y Marketing<br>
-            <span class="gold-gradient-text">Neuroventas con IA</span>
-          </h1>
-          <p class="hero-desc">
-            Una jornada para transformar la forma en que pensás, comunicás y vendés tu negocio, con neurociencia, inteligencia artificial, marca personal y casos reales.
-          </p>
-
-          <!-- Meta bar -->
-          <div class="hero-meta-bar">
-            <div class="meta-item">
-              <span class="meta-icon">📅</span>
-              <div>
-                <div class="meta-label">10 de octubre</div>
-                <div class="meta-sub">Sábado · Presencial</div>
-              </div>
-            </div>
-            <div class="meta-item">
-              <span class="meta-icon">⏰</span>
-              <div>
-                <div class="meta-label">10:00 a 17:00 hs</div>
-                <div class="meta-sub">Break de 13 a 14 hs</div>
-              </div>
-            </div>
-            <div class="meta-item">
-              <span class="meta-icon">📍</span>
-              <div>
-                <div class="meta-label">Lavalle 362, Piso 7</div>
-                <div class="meta-sub">Microcentro, CABA</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Actions -->
-          <div class="hero-actions">
-            <a href="#entradas" class="btn-gold">Reservar mi lugar →</a>
-            <span class="badge-pill">👥 CUPOS LIMITADOS</span>
-          </div>
+        <div class="hero-meta">
+          <div class="hero-meta-item"><span class="ic">📅</span> 10 de octubre</div>
+          <div class="hero-meta-item"><span class="ic">⏰</span> 10:00 a 17:00 hs<span style="color:rgba(237,232,223,.5);margin-left:4px;font-size:11px">(Break de 13 a 14 hs)</span></div>
+          <div class="hero-meta-item"><span class="ic">📍</span> Lavalle 362, Piso 7<span style="color:rgba(237,232,223,.5);margin-left:4px;font-size:11px">Microcentro, CABA</span></div>
         </div>
 
-        <!-- Hero Speakers Composition -->
-        <div class="hero-image-wrap">
-          <div class="hero-image-glow"></div>
-          <img
-            src="/events_new/hero-speakers-group-hires.jpg"
-            alt="Speakers: Fede Nowback, Anthony Sánchez Altuna, Christian Cencherle"
-            class="hero-image"
-          >
-          <div class="hero-speakers-names">
-            <div class="hero-speaker-sig">
-              <div class="hero-speaker-sig-name">Fede Nowback</div>
-              <div class="hero-speaker-sig-topic">Marca Personal</div>
-            </div>
-            <div class="hero-speaker-sig">
-              <div class="hero-speaker-sig-name">Anthony Altuna</div>
-              <div class="hero-speaker-sig-topic">Neuroventas & IA</div>
-            </div>
-            <div class="hero-speaker-sig">
-              <div class="hero-speaker-sig-name">C. Cencherle</div>
-              <div class="hero-speaker-sig-topic">Trayectoria</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- KEYWORDS BAR -->
-  <section class="keywords-bar">
-    <div class="container">
-      <div class="keywords-grid">
-        <div class="keyword-pill">
-          <span class="keyword-icon">🧠</span>
-          <span class="keyword-text">Mentalidad</span>
-        </div>
-        <div class="keyword-pill">
-          <span class="keyword-icon">📈</span>
-          <span class="keyword-text">Marketing</span>
-        </div>
-        <div class="keyword-pill">
-          <span class="keyword-icon">🎯</span>
-          <span class="keyword-text">Neuroventas</span>
-        </div>
-        <div class="keyword-pill">
-          <span class="keyword-icon">⚡</span>
-          <span class="keyword-text">IA Aplicada</span>
-        </div>
-        <div class="keyword-pill">
-          <span class="keyword-icon">📸</span>
-          <span class="keyword-text">Contenido</span>
-        </div>
-        <div class="keyword-pill">
-          <span class="keyword-icon">💼</span>
-          <span class="keyword-text">Casos Reales</span>
-        </div>
-        <div class="keyword-pill">
-          <span class="keyword-icon">🤝</span>
-          <span class="keyword-text">Networking</span>
-        </div>
-        <div class="keyword-pill">
-          <span class="keyword-icon">🚀</span>
-          <span class="keyword-text">Crecimiento</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MANIFIESTO SECTION -->
-  <section class="manifiesto-section">
-    <div class="manifiesto-bg"></div>
-    <div class="container">
-      <div class="manifiesto-grid">
-        <div class="manifiesto-left">
-          <h2>
-            No necesitás más información.
-            <span>Necesitás saber cómo usarla para vender.</span>
-          </h2>
-        </div>
-        <div class="manifiesto-right">
-          <p>
-            Hoy tenemos más herramientas que nunca. Pero tener acceso a ellas no significa saber utilizarlas estratégicamente.
-          </p>
-          <p>
-            <strong>Mentalidad y Marketing — Neuroventas con IA</strong> es una experiencia presencial para dueños de negocio y emprendedores que quieren entender cómo toman decisiones sus clientes, cómo comunicar valor y cómo utilizar la inteligencia artificial y las redes sociales para vender más, con casos reales y herramientas concretas.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SPEAKERS SECTION -->
-  <section id="speakers" class="speakers-section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-label">SPEAKERS</div>
-        <div class="section-title-wrap">
-          <h2 class="section-title">
-            Tres miradas. Un mismo objetivo:<br>
-            <span class="gold-gradient-text">hacer crecer tu negocio.</span>
-          </h2>
-          <div class="section-tagline">
-            Experiencia real · Conocimientos aplicables · Resultados
-          </div>
+        <div class="hero-actions">
+          <a href="#entradas" class="bg">Reservar mi lugar →</a>
+          <span class="bp">👥 CUPOS LIMITADOS</span>
         </div>
       </div>
 
-      <div class="speakers-grid">
-        <!-- Anthony Card -->
-        <div class="speaker-card">
-          <div class="speaker-photo-wrap">
-            <img src="/events_new/speaker-anthony-card.jpg" alt="Anthony Sánchez Altuna" class="speaker-photo">
-            <div class="speaker-photo-overlay"></div>
-          </div>
-          <div class="speaker-body">
-            <div class="speaker-name-styled">
-              <span class="speaker-first-name">Anthony</span>
-              <span class="speaker-last-name">Altuna</span>
-            </div>
-            <div class="speaker-role">Economista · Empresario · Especialista en Marketing Digital</div>
-            <ul class="speaker-bullets">
-              <li>Dueño de una clínica dental y de una agencia de marketing.</li>
-              <li>Director de GEN (Gestión Empresarial de Negocios).</li>
-              <li>Formado junto a Jürgen Klaric.</li>
-            </ul>
-            <div class="speaker-badge-box">
-              <div class="speaker-badge-title">NEUROVENTAS Y NEUROMARKETING CON IA</div>
-            </div>
-            <p class="speaker-desc">
-              Herramientas de diseño, contenido y campañas publicitarias en redes sociales, con ejemplos y métricas reales de sus propios negocios.
-            </p>
-            <div class="speaker-socials">
-              <span>◆ Neuroventas & IA</span>
-            </div>
-          </div>
+      <div class="hero-img-area">
+        <div class="hero-kw">
+          <span>IDEAS</span>
+          <span>HERRAMIENTAS</span>
+          <span>CASOS REALES</span>
+          <span>RESULTADOS</span>
         </div>
-
-        <!-- Fede Card -->
-        <div class="speaker-card">
-          <div class="speaker-photo-wrap">
-            <img src="/events_new/speaker-fede-card.jpg" alt="Fede Nowback" class="speaker-photo">
-            <div class="speaker-photo-overlay"></div>
+        <img src="/events_new/speakers-hero.jpg" alt="Fede Nowback, Anthony Sánchez Altuna, Christian Cencherle" class="hero-speakers-img">
+        <div class="hero-sigs">
+          <div class="hero-sig">
+            <div class="hero-sig-name sf">Fede Nowback</div>
+            <div class="hero-sig-topic">MARCA PERSONAL Y MENTALIDAD</div>
           </div>
-          <div class="speaker-body">
-            <div class="speaker-name-styled">
-              <span class="speaker-first-name">Fede</span>
-              <span class="speaker-last-name">Nowback</span>
-            </div>
-            <div class="speaker-role">Productor · Creador de contenido · Referente en Marca Personal</div>
-            <ul class="speaker-bullets">
-              <li>Marca personal consolidada.</li>
-              <li>Referente e influencer en redes sociales.</li>
-              <li>Especialista en comunicación magnética.</li>
-            </ul>
-            <div class="speaker-badge-box">
-              <div class="speaker-badge-title">MARCA PERSONAL, MENTALIDAD Y VENTAS</div>
-            </div>
-            <p class="speaker-desc">
-              Cómo vender a través de redes sociales, humanizar tu marca personal, trabajar la mentalidad y la autoconfianza, y dar los primeros pasos para vender online.
-            </p>
-            <div class="speaker-socials">
-              <span>◆ Marca Personal</span>
-            </div>
+          <div class="hero-sig">
+            <div class="hero-sig-name sf">Anthony Sánchez Altuna</div>
+            <div class="hero-sig-topic">NEUROVENTAS CON IA</div>
           </div>
-        </div>
-
-        <!-- Christian Card -->
-        <div class="speaker-card">
-          <div class="speaker-photo-wrap">
-            <img src="/events_new/speaker-christian-card.jpg" alt="Christian Cencherle" class="speaker-photo">
-            <div class="speaker-photo-overlay"></div>
-          </div>
-          <div class="speaker-body">
-            <div class="speaker-name-styled">
-              <span class="speaker-first-name">Christian</span>
-              <span class="speaker-last-name">Cencherle</span>
-            </div>
-            <div class="speaker-role">Empresario · Más de 25 años en el mercado argentino</div>
-            <ul class="speaker-bullets">
-              <li>Referente del rubro lanas y confección.</li>
-              <li>Dos locales estratégicos (Palermo y Lomas de Zamora).</li>
-              <li>Liderazgo resiliente en economías complejas.</li>
-            </ul>
-            <div class="speaker-badge-box">
-              <div class="speaker-badge-title">EMPRENDER CUANDO LA TEORÍA SE TERMINA</div>
-            </div>
-            <p class="speaker-desc">
-              Charla motivacional basada en su trayectoria de más de 25 años construyendo y sosteniendo una empresa en el mercado argentino.
-            </p>
-            <div class="speaker-socials">
-              <span>◆ Trayectoria Empresarial</span>
-            </div>
+          <div class="hero-sig">
+            <div class="hero-sig-name sf">Christian Cencherle</div>
+            <div class="hero-sig-topic">TRAYECTORIA EMPRESARIAL</div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- QUÉ TE LLEVAS SECTION -->
-  <section class="takeaways-section">
-    <div class="container">
-      <div class="section-header" style="text-align: center;">
-        <div class="section-label">QUÉ TE LLEVÁS</div>
-        <h2 class="section-title" style="margin-bottom: 12px;">
-          Ideas que podés <span class="gold-gradient-text">implementar.</span>
-        </h2>
-        <p style="font-size: 15px; color: rgba(237, 232, 223, 0.7); max-width: 600px; margin: 0 auto;">
-          Vas a salir del evento con herramientas concretas, inspiración y contactos para seguir haciendo crecer tu negocio.
-        </p>
-      </div>
-
-      <div class="takeaways-grid">
-        <div class="takeaway-card">
-          <div class="takeaway-icon-wrap">💻</div>
-          <div class="takeaway-title">Herramientas prácticas de IA</div>
-          <div class="takeaway-desc">Aplicadas directamente a tus redes sociales y flujos de ventas.</div>
-        </div>
-        <div class="takeaway-card">
-          <div class="takeaway-icon-wrap">📊</div>
-          <div class="takeaway-title">Casos reales y métricas</div>
-          <div class="takeaway-desc">De campañas publicitarias y negocios implementados con éxito.</div>
-        </div>
-        <div class="takeaway-card">
-          <div class="takeaway-icon-wrap">🧠</div>
-          <div class="takeaway-title">Estrategias de neuroventas</div>
-          <div class="takeaway-desc">Y neuromarketing para entender cómo toma decisiones tu cliente.</div>
-        </div>
-        <div class="takeaway-card">
-          <div class="takeaway-icon-wrap">👤</div>
-          <div class="takeaway-title">Construcción de marca personal</div>
-          <div class="takeaway-desc">Cómo humanizar tu comunicación para generar autoridad y confianza.</div>
-        </div>
-        <div class="takeaway-card">
-          <div class="takeaway-icon-wrap">👥</div>
-          <div class="takeaway-title">Networking de alto valor</div>
-          <div class="takeaway-desc">Conexión con otros dueños de negocio, comerciantes y emprendedores.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- AGENDA SECTION -->
-  <section id="agenda" class="agenda-section">
-    <div class="container">
-      <div class="agenda-grid">
-        <!-- Visual -->
-        <div class="agenda-visual">
-          <img src="/events_new/agenda-auditorium.jpg" alt="Auditorio de conferencias">
-          <div class="agenda-visual-overlay">
-            <div class="agenda-visual-quote">Ideas reales para negocios reales.</div>
-            <div class="agenda-visual-sub">Herramientas que podés aplicar desde el día siguiente</div>
-          </div>
-        </div>
-
-        <!-- Timeline -->
-        <div>
-          <div class="section-label">AGENDA DEL EVENTO</div>
-          <h2 class="section-title" style="margin-bottom: 24px;">
-            Un día, <span class="gold-gradient-text">todo lo que necesitás.</span>
-          </h2>
-
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-time-badge">10:00</div>
-              <div class="timeline-content">
-                <h4>Apertura: Neuroventas y marketing con IA</h4>
-                <p><span class="timeline-speaker">Anthony Sánchez Altuna</span> — Inteligencia artificial aplicada a redes, anuncios, creación de contenido y neuroventas.</p>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-time-badge">13:00</div>
-              <div class="timeline-content">
-                <h4>Break & Networking (1 hora)</h4>
-                <p>Almuerzo libre y espacio para conectar con otros asistentes y speakers.</p>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-time-badge">14:00</div>
-              <div class="timeline-content">
-                <h4>Bloque especial: Trayectoria & Mentalidad</h4>
-                <p><span class="timeline-speaker">Christian Cencherle:</span> Charla motivacional para empresarios (más de 25 años de trayectoria).</p>
-                <p style="margin-top: 4px;"><span class="timeline-speaker">Fede Nowback:</span> Marca personal, mentalidad y cómo vender desde redes sociales.</p>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-time-badge">17:00</div>
-              <div class="timeline-content">
-                <h4>Cierre del evento</h4>
-                <p>Conclusiones finales, ronda de preguntas y oferta especial para asistentes.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRICING / ENTRADAS SECTION -->
-  <section id="entradas" class="pricing-section">
-    <div class="container">
-      <div class="section-header" style="text-align: center;">
-        <div class="section-label">TU INVERSIÓN</div>
-        <h2 class="section-title" style="margin-bottom: 10px;">
-          Asegurá tu lugar <span class="gold-gradient-text">antes del 30 de septiembre.</span>
-        </h2>
-        <p style="font-size: 15px; color: rgba(237, 232, 223, 0.7); max-width: 540px; margin: 0 auto;">
-          Evento presencial con cupos estrictamente limitados para garantizar una experiencia personalizada.
-        </p>
-      </div>
-
-      <div class="pricing-grid">
-        <!-- Preventa Card -->
-        <div class="pricing-card featured">
-          <div class="pricing-ribbon">⭐ PREVENTA EXCLUSIVA</div>
-          <div class="pricing-tier">PREVENTA</div>
-          <div class="pricing-validity">HASTA EL 30 DE SEPTIEMBRE</div>
-          <div class="pricing-old-price">$200.000</div>
-          <div class="pricing-amount">$150.000</div>
-          <div class="pricing-savings">Ahorrás $50.000</div>
-
-          <ul class="pricing-features">
-            <li>Acceso a la jornada completa (10 a 17 hs)</li>
-            <li>Las 3 charlas y talleres de los speakers</li>
-            <li>Acceso a sesión de networking</li>
-            <li>Material complementario digital</li>
-            <li>Certificado de asistencia</li>
-          </ul>
-
-          <a href="https://wa.me/5491170610766?text=Hola%2C%20quiero%20reservar%20mi%20lugar%20con%20precio%20de%20PREVENTA%20($150.000)%20para%20el%20evento%20Mentalidad%20y%20Marketing%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="btn-gold" style="width: 100%;">
-            Quiero mi entrada →
-          </a>
-        </div>
-
-        <!-- Precio General Card -->
-        <div class="pricing-card">
-          <div class="pricing-tier">PRECIO DE LISTA</div>
-          <div class="pricing-validity">DESDE EL 1 DE OCTUBRE</div>
-          <div style="height: 22px;"></div>
-          <div class="pricing-amount">$200.000</div>
-          <div style="font-size: 12px; color: rgba(237, 232, 223, 0.5); margin-bottom: 24px;">Precio regular</div>
-
-          <ul class="pricing-features">
-            <li>Acceso a la jornada completa (10 a 17 hs)</li>
-            <li>Las 3 charlas y talleres de los speakers</li>
-            <li>Acceso a sesión de networking</li>
-            <li>Material complementario digital</li>
-          </ul>
-
-          <a href="https://wa.me/5491170610766?text=Hola%2C%20quiero%20consultar%20por%20entradas%20para%20el%20evento%20Mentalidad%20y%20Marketing%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="btn-gold" style="background: rgba(255, 255, 255, 0.08); color: #FFFFFF; border: 1px solid rgba(212, 175, 55, 0.4); box-shadow: none;">
-            Consultar entrada
-          </a>
-        </div>
-
-        <!-- Comunidad Fede Nowback Card -->
-        <div class="pricing-card">
-          <div class="pricing-tier">COMUNIDAD FEDE NOWBACK</div>
-          <div class="pricing-validity">BENEFICIO PARA ALUMNOS / SEGUIDORES</div>
-          <div style="font-size: 18px; font-weight: 700; color: #D4AF37; margin: 18px 0 8px;">Valor Especial</div>
-          <p style="font-size: 13px; color: rgba(237, 232, 223, 0.7); line-height: 1.5; margin-bottom: 24px;">
-            Si formás parte de la comunidad de Fede Nowback, accedés a un descuento exclusivo para el evento.
-          </p>
-
-          <ul class="pricing-features">
-            <li>Acceso completo a toda la jornada</li>
-            <li>Descuento exclusivo de comunidad</li>
-            <li>Ubicaciones preferenciales</li>
-          </ul>
-
-          <a href="https://wa.me/5491170610766?text=Hola%2C%20soy%20de%20la%20comunidad%20de%20Fede%20Nowback%20y%20quiero%20mi%20descuento%20especial%20para%20el%20evento%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="btn-gold" style="background: rgba(212, 175, 55, 0.15); color: #D4AF37; border: 1px solid rgba(212, 175, 55, 0.5); box-shadow: none;">
-            Consultá para acceder →
-          </a>
-        </div>
-      </div>
-
-      <!-- Payment Methods -->
-      <div class="payment-bar">
-        <span class="payment-label">MEDIOS DE PAGO:</span>
-        <div class="payment-items">
-          <div class="payment-method"><span>💵</span> Efectivo</div>
-          <div class="payment-method"><span>🏦</span> Transferencia</div>
-          <div class="payment-method"><span>💳</span> Tarjeta de crédito / débito</div>
-          <div class="payment-method"><span>💻</span> Pago online</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ SECTION -->
-  <section class="faq-section">
-    <div class="container">
-      <div class="faq-grid">
-        <div>
-          <div class="section-label">PREGUNTAS FRECUENTES</div>
-          <h2 class="section-title" style="margin-bottom: 16px;">
-            Todo lo que<br>
-            <span class="gold-gradient-text">necesitás saber.</span>
-          </h2>
-          <p style="font-size: 14px; color: rgba(237, 232, 223, 0.7); line-height: 1.6; margin-bottom: 24px;">
-            ¿Tenés alguna consulta puntual? Escribinos por WhatsApp y te asesoramos al instante.
-          </p>
-          <a href="https://wa.me/5491170610766?text=Hola%2C%20tengo%20una%20consulta%20sobre%20el%20evento%20Mentalidad%20y%20Marketing%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="btn-gold" style="font-size: 13px; padding: 12px 24px;">
-            💬 Chatear al +54 9 11 7061-0766
-          </a>
-        </div>
-
-        <div class="faq-list">
-          <div class="faq-item active">
-            <button class="faq-question" onclick="toggleFaq(this)">
-              <span>¿Dónde se realiza el evento?</span>
-              <span class="faq-toggle-icon">+</span>
-            </button>
-            <div class="faq-answer">
-              El evento se realizará en Lavalle 362, Piso 7, Microcentro, Ciudad Autónoma de Buenos Aires. En una sala moderna y equipada con todas las comodidades.
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-              <span>¿Qué incluye la entrada?</span>
-              <span class="faq-toggle-icon">+</span>
-            </button>
-            <div class="faq-answer">
-              Incluye el acceso completo a la jornada presencial (10:00 a 17:00 hs), las exposiciones de Anthony Altuna, Fede Nowback y Christian Cencherle, espacio de networking y material digital descargable.
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-              <span>¿Puedo cancelar o transferir mi inscripción?</span>
-              <span class="faq-toggle-icon">+</span>
-            </button>
-            <div class="faq-answer">
-              Las entradas son transferibles notificando por WhatsApp hasta 48 horas antes del evento con los datos del nuevo asistente.
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-              <span>¿Hay estacionamiento cerca?</span>
-              <span class="faq-toggle-icon">+</span>
-            </button>
-            <div class="faq-answer">
-              Sí, hay múltiples cocheras y estacionamientos privados sobre Lavalle, Corrientes, Florida y San Martín a pocos metros del lugar.
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-              <span>¿A quién está dirigido?</span>
-              <span class="faq-toggle-icon">+</span>
-            </button>
-            <div class="faq-answer">
-              A dueños de negocio, comerciantes, profesionales independientes, emprendedores y líderes comerciales que quieran potenciar sus ventas usando redes sociales, marca personal e inteligencia artificial.
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-              <span>¿Cómo se realiza el pago?</span>
-              <span class="faq-toggle-icon">+</span>
-            </button>
-            <div class="faq-answer">
-              Podés abonar por transferencia bancaria directa en pesos, tarjeta de crédito/débito o en efectivo. Al contactarnos por WhatsApp te enviamos los datos de pago al instante.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FINAL CTA & CLOSING BANNER -->
-  <section class="final-cta-section">
-    <div class="final-cta-bg"></div>
-    <div class="container">
-      <div class="final-cta-content">
-        <div class="hero-tagline" style="justify-content: center;">
-          <span>◆</span> SÁBADO 10 DE OCTUBRE · CABA <span>◆</span>
-        </div>
-        <h2 class="final-cta-title">
-          Tu negocio también puede<br>
-          <span class="gold-gradient-text">ir más lejos.</span>
-        </h2>
-        <p class="final-cta-desc">
-          Un día para inspirarte, aprender herramientas prácticas y conectar con personas que impulsan sus proyectos todos los días.
-        </p>
-        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
-          <a href="#entradas" class="btn-gold" style="font-size: 16px; padding: 18px 44px;">
-            Quiero mi entrada →
-          </a>
-        </div>
-
-        <div style="margin-top: 24px; font-size: 14px; color: rgba(212, 175, 55, 0.85); font-weight: 600;">
-          💬 WhatsApp Oficial: +54 9 11 7061-0766
-        </div>
-
-        <!-- Organizers -->
-        <div class="organizers-bar">
-          <div class="organizers-label">ORGANIZAN</div>
-          <div class="organizers-logos">
-            <div class="org-logo-item">GEN · Gestión de Negocios</div>
-            <div class="org-logo-item">TecnoBrain</div>
-            <div class="org-logo-item">Cencherle Lanas</div>
-            <div class="org-logo-item">Fede Nowback</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer-bar">
-    <div class="container">
-      <p>© 2026 · Mentalidad y Marketing — Neuroventas con IA · Todos los derechos reservados.</p>
-    </div>
-  </footer>
-
-  <!-- MOBILE STICKY BOTTOM BAR -->
-  <div class="mobile-sticky-bar">
-    <div class="mobile-sticky-inner">
-      <div class="mobile-sticky-info">
-        <span class="mobile-sticky-tag">PREVENTA 10 OCT</span>
-        <span class="mobile-sticky-price">$150.000</span>
-      </div>
-      <a href="#entradas" class="btn-gold" style="padding: 10px 20px; font-size: 13px;">
-        Reservar →
-      </a>
     </div>
   </div>
+</section>
 
-  <script>
-    // FAQ Toggle
-    function toggleFaq(btn) {
-      const item = btn.parentElement;
-      const isActive = item.classList.contains('active');
-      
-      // Close all
-      document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('active'));
-      
-      // Toggle clicked
-      if (!isActive) {
-        item.classList.add('active');
-      }
-    }
-  </script>
+<!-- ===== MANIFIESTO ===== -->
+<section class="mani">
+  <div class="cx">
+    <div class="mani-g">
+      <div>
+        <h2 class="mani-h sf">
+          No necesitás más información.
+          <span class="gt gold">Necesitás saber cómo usarla para vender.</span>
+        </h2>
+      </div>
+      <div>
+        <p class="mani-p">Hoy tenemos más herramientas que nunca. Pero tener acceso a ellas no significa saber utilizarlas estratégicamente.</p>
+        <p class="mani-p"><strong>Mentalidad y Marketing — Neuroventas con IA</strong> es una experiencia presencial para dueños de negocio y emprendedores que quieren entender cómo toman decisiones sus clientes, cómo comunicar valor y cómo utilizar la inteligencia artificial y las redes sociales para vender más, con casos reales y herramientas concretas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SPEAKERS ===== -->
+<section class="spk" id="speakers">
+  <div class="cx">
+    <div class="sec-lab">SPEAKERS</div>
+    <div class="sec-hdr">
+      <h2 class="sec-title sf">Tres miradas. Un mismo objetivo:<br><span class="gt">hacer crecer tu negocio.</span></h2>
+      <div class="sec-aside">EXPERIENCIA REAL ·<br>CONOCIMIENTOS APLICABLES ·<br>RESULTADOS</div>
+    </div>
+
+    <div class="spk-grid">
+      <!-- Anthony -->
+      <div class="sc">
+        <img src="/events_new/portrait-anthony.jpg" alt="Anthony Sánchez Altuna" class="sc-img">
+        <div class="sc-body">
+          <div class="sc-name sf">Anthony Sánchez Altuna</div>
+          <div class="sc-role">Economista · Empresario · Especialista en Marketing Digital</div>
+          <ul class="sc-bulls">
+            <li>Dueño de una clínica dental y de una agencia de Marketing Digital.</li>
+            <li>Director de GEN (Gestión Empresarial de Negocios).</li>
+            <li>Formado junto a Jürgen Klaric.</li>
+          </ul>
+          <div class="sc-badge"><div class="sc-badge-t">NEUROVENTAS Y<br>NEUROMARKETING CON IA</div></div>
+          <p class="sc-desc">Herramientas de diseño, contenido y campañas publicitarias en redes sociales, con ejemplos y métricas reales de sus propios negocios.</p>
+        </div>
+      </div>
+
+      <!-- Fede -->
+      <div class="sc">
+        <img src="/events_new/portrait-fede.jpg" alt="Fede Nowback" class="sc-img">
+        <div class="sc-body">
+          <div class="sc-name sf">Fede Novak</div>
+          <div class="sc-role">Productor · Creador de contenido · Referente en Marca Personal</div>
+          <ul class="sc-bulls">
+            <li>Marca personal consolidada.</li>
+            <li>Referente e influencer en redes sociales.</li>
+          </ul>
+          <div class="sc-badge"><div class="sc-badge-t">MARCA PERSONAL,<br>MENTALIDAD Y VENTAS<br>EN REDES SOCIALES</div></div>
+          <p class="sc-desc">Cómo vender a través de redes sociales, humanizar tu marca, la mentalidad y la autoconfianza, y dar los primeros pasos para vender online.</p>
+        </div>
+      </div>
+
+      <!-- Christian -->
+      <div class="sc">
+        <img src="/events_new/portrait-christian.jpg" alt="Christian Cencherle" class="sc-img">
+        <div class="sc-body">
+          <div class="sc-name sf">Christian Cencherle</div>
+          <div class="sc-role">Empresario · Más de 25 años en el mercado</div>
+          <ul class="sc-bulls">
+            <li>Referente rubro lanas y confección.</li>
+            <li>Dos locales (Palermo y Lomas de Zamora).</li>
+          </ul>
+          <div class="sc-badge"><div class="sc-badge-t">EMPRENDER CUANDO<br>LA TEORÍA SE TERMINA</div></div>
+          <p class="sc-desc">Charla motivacional basada en su trayectoria de más de 25 años construyendo y sosteniendo una empresa en el mercado argentino.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== QUÉ TE LLEVAS ===== -->
+<section class="tkw">
+  <div class="cx">
+    <div style="text-align:center;margin-bottom:0">
+      <div class="sec-lab">QUÉ TE LLEVÁS</div>
+      <h2 class="sec-title sf" style="margin-bottom:10px">Ideas que podés <span class="gt">implementar.</span></h2>
+      <p style="font-size:14px;color:rgba(237,232,223,.65);max-width:520px;margin:0 auto">Vas a salir del evento con herramientas concretas, inspiración y contactos para seguir haciendo crecer tu negocio.</p>
+    </div>
+    <div class="tkw-g">
+      <div class="tkw-c"><div class="tkw-ic">💻</div><div class="tkw-t">Herramientas prácticas de IA</div><div class="tkw-d">Aplicadas a redes sociales y ventas.</div></div>
+      <div class="tkw-c"><div class="tkw-ic">📊</div><div class="tkw-t">Casos reales y métricas</div><div class="tkw-d">De campañas publicitarias reales, implementadas.</div></div>
+      <div class="tkw-c"><div class="tkw-ic">🧠</div><div class="tkw-t">Estrategias de neuroventas</div><div class="tkw-d">Y neuromarketing.</div></div>
+      <div class="tkw-c"><div class="tkw-ic">👤</div><div class="tkw-t">Cómo construir tu marca personal</div><div class="tkw-d">Autoridad y confianza.</div></div>
+      <div class="tkw-c"><div class="tkw-ic">🤝</div><div class="tkw-t">Networking</div><div class="tkw-d">Conexión con dueños de negocio y emprendedores.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AGENDA ===== -->
+<section class="agd" id="agenda">
+  <div class="cx">
+    <div class="agd-g">
+      <div>
+        <div class="sec-lab">AGENDA</div>
+        <h2 class="sec-title sf" style="margin-bottom:20px">Un día, todo<br>lo que necesitás.</h2>
+      </div>
+      <div>
+        <div class="tl">
+          <div class="tl-item">
+            <div class="tl-time">10:00</div>
+            <div class="tl-body">
+              <h4>Apertura: Neuroventas y marketing con IA</h4>
+              <p><span class="tl-spk">Anthony Sánchez Altuna</span></p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-time">13:00</div>
+            <div class="tl-body">
+              <h4>Break (1 hora)</h4>
+              <p>Almuerzo y networking</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-time">14:00</div>
+            <div class="tl-body">
+              <h4>Charla motivacional</h4>
+              <p><span class="tl-spk">Christian Cencherle</span></p>
+              <h4 style="margin-top:8px">Marca personal y mentalidad</h4>
+              <p><span class="tl-spk">Fede Nowback</span></p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-time">17:00</div>
+            <div class="tl-body">
+              <h4>Cierre del evento</h4>
+              <p>Conclusiones y oferta especial del día.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section class="prc" id="entradas">
+  <div class="cx">
+    <div style="text-align:center;margin-bottom:0">
+      <div class="sec-lab">TU INVERSIÓN</div>
+      <h2 class="sec-title sf" style="margin-bottom:10px">Asegurá tu lugar <span class="gt">antes del 30 de septiembre.</span></h2>
+    </div>
+
+    <div class="prc-g">
+      <!-- Preventa -->
+      <div class="pc feat">
+        <div class="pc-ribbon">⭐ PREVENTA</div>
+        <div class="pc-tier">PREVENTA</div>
+        <div class="pc-val">HASTA EL 30 DE SEPTIEMBRE</div>
+        <div class="pc-old">$200.000</div>
+        <div class="pc-amt sf">$150.000</div>
+        <div class="pc-sav">Ahorrás $50.000</div>
+        <ul class="pc-feat">
+          <li>Jornada completa (10 a 17 hs)</li>
+          <li>3 charlas y talleres</li>
+          <li>Sesión de networking</li>
+          <li>Material digital</li>
+          <li>Certificado de asistencia</li>
+        </ul>
+        <a href="https://wa.me/5491170610766?text=Hola%2C%20quiero%20reservar%20mi%20lugar%20con%20PREVENTA%20($150.000)%20para%20el%20evento%20Mentalidad%20y%20Marketing%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="bg" style="width:100%;justify-content:center">Quiero mi entrada →</a>
+      </div>
+
+      <!-- Precio lista -->
+      <div class="pc">
+        <div class="pc-tier">PRECIO DE LISTA</div>
+        <div class="pc-val">10 DE OCTUBRE</div>
+        <div style="height:18px"></div>
+        <div class="pc-amt sf">$200.000</div>
+        <div style="font-size:11px;color:rgba(237,232,223,.45);margin-bottom:20px">Precio regular</div>
+        <ul class="pc-feat">
+          <li>Jornada completa (10 a 17 hs)</li>
+          <li>3 charlas y talleres</li>
+          <li>Sesión de networking</li>
+          <li>Material digital</li>
+        </ul>
+        <a href="https://wa.me/5491170610766?text=Hola%2C%20quiero%20consultar%20por%20entradas%20para%20el%20evento%20Mentalidad%20y%20Marketing%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="bg" style="width:100%;justify-content:center;background:rgba(255,255,255,.06);color:#fff;border:1px solid rgba(212,175,55,.35);box-shadow:none">Consultar entrada</a>
+      </div>
+
+      <!-- Comunidad Fede -->
+      <div class="pc">
+        <div class="pc-tier">COMUNIDAD FEDE NOWBACK</div>
+        <div class="pc-val">BENEFICIO EXCLUSIVO</div>
+        <div style="font-size:16px;font-weight:700;color:#D4AF37;margin:14px 0 6px">Valor Especial</div>
+        <p style="font-size:12px;color:rgba(237,232,223,.6);line-height:1.5;margin-bottom:20px">Si formás parte de la comunidad de Fede Nowback, consultá para acceder.</p>
+        <ul class="pc-feat">
+          <li>Acceso completo</li>
+          <li>Descuento de comunidad</li>
+          <li>Ubicaciones preferenciales</li>
+        </ul>
+        <a href="https://wa.me/5491170610766?text=Hola%2C%20soy%20de%20la%20comunidad%20de%20Fede%20Nowback%20y%20quiero%20mi%20descuento%20para%20el%20evento%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="bg" style="width:100%;justify-content:center;background:rgba(212,175,55,.12);color:#D4AF37;border:1px solid rgba(212,175,55,.45);box-shadow:none">Consultá para acceder →</a>
+      </div>
+    </div>
+
+    <div class="pay-bar">
+      <span class="lbl">MEDIOS DE PAGO:</span>
+      <div class="items">
+        <span>💵 Efectivo</span>
+        <span>🏦 Transferencia</span>
+        <span>💳 Tarjeta de crédito</span>
+        <span>💻 Pago online</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq">
+  <div class="cx">
+    <div class="faq-g">
+      <div>
+        <div class="sec-lab">PREGUNTAS FRECUENTES</div>
+        <h2 class="sec-title sf" style="margin-bottom:14px">Todo lo que<br><span class="gt">necesitás saber.</span></h2>
+        <p style="font-size:13px;color:rgba(237,232,223,.6);line-height:1.6;margin-bottom:20px">¿Tenés alguna consulta puntual? Escribinos por WhatsApp.</p>
+        <a href="https://wa.me/5491170610766?text=Hola%2C%20tengo%20una%20consulta%20sobre%20el%20evento%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="bg" style="font-size:12px;padding:10px 20px">💬 +54 9 11 7061-0766</a>
+      </div>
+      <div class="faq-list">
+        <div class="fq active"><button class="fq-q" onclick="toggleFaq(this)"><span>¿Qué es mentalidad y ventas?</span><span class="tog">+</span></button><div class="fq-a">Es un evento presencial de un día completo donde 3 speakers comparten herramientas, experiencias y estrategias de neuroventas, marca personal e inteligencia artificial aplicadas a negocios reales.</div></div>
+        <div class="fq"><button class="fq-q" onclick="toggleFaq(this)"><span>¿Qué tipo de contenido hay?</span><span class="tog">+</span></button><div class="fq-a">Charlas de neuroventas con IA, marca personal y mentalidad, y una charla motivacional con más de 25 años de trayectoria empresarial. Todo con casos reales y métricas.</div></div>
+        <div class="fq"><button class="fq-q" onclick="toggleFaq(this)"><span>¿Hay estacionamiento cerca?</span><span class="tog">+</span></button><div class="fq-a">Sí, hay múltiples cocheras sobre Lavalle, Corrientes, Florida y San Martín a pocos metros del lugar.</div></div>
+        <div class="fq"><button class="fq-q" onclick="toggleFaq(this)"><span>¿A quién está dirigido?</span><span class="tog">+</span></button><div class="fq-a">A dueños de negocio, comerciantes, profesionales independientes, emprendedores y líderes comerciales que quieran potenciar sus ventas.</div></div>
+        <div class="fq"><button class="fq-q" onclick="toggleFaq(this)"><span>¿Cómo es el pago?</span><span class="tog">+</span></button><div class="fq-a">Podés abonar por transferencia bancaria, tarjeta de crédito/débito o efectivo. Al contactarnos por WhatsApp te enviamos los datos de pago al instante.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="fcta">
+  <div class="cx">
+    <div class="fcta-in">
+      <div class="hero-tag" style="margin-bottom:14px">EVENTO PRESENCIAL</div>
+      <h2 class="fcta-title sf">
+        <span class="gt">Mentalidad y Marketing</span><br>Neuroventas con IA
+      </h2>
+      <div class="hero-meta" style="justify-content:center;margin-bottom:24px">
+        <div class="hero-meta-item"><span class="ic">📅</span> 10 de octubre</div>
+        <div class="hero-meta-item"><span class="ic">⏰</span> 10:00 a 17:00 hs</div>
+        <div class="hero-meta-item"><span class="ic">📍</span> Lavalle 362, Piso 7</div>
+      </div>
+      <div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:14px">
+        <a href="#entradas" class="bg" style="font-size:15px;padding:16px 40px">Reservar mi lugar →</a>
+        <span class="bp">👥 CUPOS LIMITADOS</span>
+      </div>
+
+      <div class="orgs">
+        <div class="orgs-lab">ORGANIZAN</div>
+        <div class="orgs-logos">
+          <span>GEN</span>
+          <span>✦ tecnobrain</span>
+          <span>✦ Cencherle</span>
+          <span>✦ Fede Nowback</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">© 2026 · Mentalidad y Marketing — Neuroventas con IA · Todos los derechos reservados.</footer>
+
+<!-- Mobile sticky bar -->
+<div class="mob-bar">
+  <div class="mob-bar-in">
+    <div><div class="tag">PREVENTA 10 OCT</div><div class="price sf">$150.000</div></div>
+    <a href="#entradas" class="bg" style="padding:9px 18px;font-size:12px">Reservar →</a>
+  </div>
+</div>
+
+<script>
+function toggleFaq(btn){
+  var item=btn.parentElement;
+  var active=item.classList.contains('active');
+  document.querySelectorAll('.fq').forEach(function(el){el.classList.remove('active')});
+  if(!active)item.classList.add('active');
+}
+</script>
 </body>
 </html>
