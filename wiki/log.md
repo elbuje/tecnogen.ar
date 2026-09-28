@@ -1,5 +1,13 @@
 # 📜 Bitácora de Cambios (Changelog) - TecnoGen
 
+## [2026-09-27] - Reestructuración Total y Migración a PHP 8.x Modular (Estándar Fedenowback)
+- **REFACTOR**: Eliminación completa de la infraestructura React/Vite/node_modules/Tailwind y migración integral al stack **PHP 8.x nativo modular** basado en el estándar de `fedenowback.com.ar`.
+- **ROUTING**: Implementación del Front Controller en `public/index.php` con Clean URLs, manejo de 404, sitemap dinámico (`/sitemap.xml`) y robots.txt.
+- **STRUCTURE**: Creación de `includes/config.php` y helper avanzado `includes/seo_helper.php` con Schema.org JSON-LD (`Organization`, `Service`, `BreadcrumbList`, `FAQPage`).
+- **VIEWS**: Reconstrucción de todas las páginas a vistas PHP modulares en `views/` (`index.php`, `marketing-digital.php`, `seo-posicionamiento.php`, `inteligencia-artificial.php`, `agentes-ia.php`, `automatizacion.php`, `crm-whatsapp.php`, `contenido-ia.php`, `sobre-nosotros.php`, `contacto.php` y `landing-evento.php`).
+- **ASSETS**: Sistema de diseño CSS puro en `public/assets/css/style.css` y JavaScript vanilla en `public/assets/js/main.js`.
+- **PROD**: Despliegue en producción Ploi (`errante` `72.61.34.92`) vía commit `201b3d5`.
+
 ## [2026-09-26] - Landing Evento "Mentalidad y Marketing — Neuroventas con IA"
 - **FEAT**: Creación de la página y landing page oficial para el evento del 10 de octubre: `/Mentalidad-Marketing-Neuroventas-con-IA` (con alias lowercase).
 - **MEDIA**: Integración exclusiva de los flyers cargados por el usuario para Fede Nowback, Anthony Altuna y Christian Cencherle.
@@ -11,19 +19,4 @@
 - **INIT**: Instalación del estándar LLM Wiki (Capa 2) y vinculación con MetaWiki Global (Capa 1).
 - **INFRA**: Asignación de puertos Dev (`5193` para Vite Dev y `8019` para Preview). Actualización de `PORT_REGISTRY.md`, `SERVER_CONFIG.md` y scripts `hvtunnels.sh`.
 - **DESIGN**: Implementación del sistema de diseño basado en el Manual de Identidad Visual de TecnoGen (Montserrat + Inter, paleta Azul Profundo, Azul Eléctrico, Cian, Gris Claro, Gris Carbón).
-- **FEAT**: Maquetación y desarrollo interactivo de la página principal según las especificaciones del briefing y layouts del manual de marca:
-  - Header con navegación interactiva, selector de soluciones y CTA.
-  - Hero Section con diseño idéntico al manual de marca (titular, badge flotante de métricas, dual CTA).
-  - Bloque "¿Por qué TecnoGen?" con los 4 pilares esenciales.
-  - Selector interactivo "¿Qué querés mejorar?" adaptado a los dolores del cliente.
-  - Sección de las 6 Grandes Soluciones (Marketing Digital, SEO, IA, Automatización, CRM+WhatsApp, Contenido/Content OS) con vistas en detalle.
-  - Diagrama de flujo interactivo "De la idea al resultado: Automatiza. Escala. Crece."
-  - Casos reales cuantificados (WhatsApp AI, Leads B2B, SEO Transaccional).
-  - Bloque de métricas y prueba social (+150 clientes, +300% crecimiento, 98% satisfacción, +5 años).
-  - Formulario inteligente de calificación de leads con demostración de "TecnoGen funcionando sobre TecnoGen".
-  - Banner institucional en Azul Nocturno con marca de agua y CTAs.
-  - Footer corporativo completo.
-- **SEO/GEO**: Integración de metadatos OpenGraph, Twitter Cards, y datos estructurados Schema.org (`Organization`, `Service`, `FAQPage`, `BreadcrumbList`).
-- **GIT**: Creación del repositorio oficial en GitHub [github.com/elbuje/tecnogen.ar](https://github.com/elbuje/tecnogen.ar) y vinculación con rama `main`.
-- **PROD**: Despliegue automático en Ploi (`errante` `72.61.34.92`) mediante pipeline Git con SSL HTTPS activo y respuesta `HTTP 200 OK`.
-
+- **FEAT**: Maquetación y desarrollo interactivo de la página principal según las especificaciones del briefing y layouts del manual de marca.

@@ -7,8 +7,9 @@ tags:
   - ia
   - automatizacion
   - web
+  - php
   - identidad
-last_updated: 2026-09-26
+last_updated: 2026-09-28
 ---
 
 # 🚀 TecnoGen (`tecnogen.ar`) — Documentación Central
@@ -25,7 +26,7 @@ last_updated: 2026-09-26
 graph TD
     MetaWiki["🌐 MetaWiki Global (~/.agent/wiki/)"] --> ProjectWiki["📁 Wiki TecnoGen (tecnogen.ar/wiki/)"]
     ProjectWiki --> N1["🎨 [[identidad_marca|Identidad de Marca]]"]
-    ProjectWiki --> N2["💻 [[arquitectura_web|Arquitectura Web]]"]
+    ProjectWiki --> N2["💻 [[arquitectura_web|Arquitectura Web (PHP 8.x Modular)]]"]
     ProjectWiki --> N3["⚡ [[soluciones_servicios|Soluciones y Servicios]]"]
     ProjectWiki --> N4["🔍 [[estrategia_seo_geo|Estrategia SEO & GEO]]"]
     ProjectWiki --> N5["🖥️ [[infraestructura_dev_prod|Infraestructura Dev & Prod]]"]
@@ -39,7 +40,7 @@ graph TD
 | Nodo | Descripción | Estado |
 |:-----|:------------|:-------|
 | [[identidad_marca\|Identidad de Marca]] | Manual de marca, isotipo TG, paleta cromática, tipografías y tono de voz | ✅ Completo |
-| [[arquitectura_web\|Arquitectura Web]] | Estructura frontend, diseño de componentes, sistema de diseño CSS y rendimiento | ✅ Completo |
+| [[arquitectura_web\|Arquitectura Web]] | Estructura PHP 8.x nativo modular (Estándar Fedenowback), Vistas, CSS Vanilla y Front Controller | ✅ Actualizado |
 | [[soluciones_servicios\|Soluciones y Servicios]] | Los 6 pilares comerciales, flujos y arquitectura de conversión | ✅ Completo |
 | [[estrategia_seo_geo\|Estrategia SEO & GEO]] | Datos estructurados Schema.org, entidades, optimización para motores de IA | ✅ Completo |
 | [[infraestructura_dev_prod\|Infraestructura Dev & Prod]] | Servidores Dev (Hostinger VPS `72.62.107.109`), Prod (Ploi `errante`), puertos y túneles SSH | ✅ Completo |
@@ -48,6 +49,7 @@ graph TD
 
 ## 📅 Historial de Sesiones
 
+- [[2026-09-27-migracion-arquitectura-php-fedenowback\|2026-09-27: Reestructuración Total y Migración a Arquitectura PHP Nativo Modular (Estándar Fedenowback)]]
 - [[2026-09-26-landing-mentalidad-marketing\|2026-09-26: Landing Page Evento "Mentalidad y Marketing — Neuroventas con IA" y Aislamiento de Navegación]]
 - [[2026-09-24-inicializacion-web-tecnogen\|2026-09-24: Inicialización del Proyecto y Desarrollo del Sitio Web Oficial]]
 

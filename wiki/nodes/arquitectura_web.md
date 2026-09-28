@@ -1,56 +1,81 @@
 ---
 title: Arquitectura Web y Sistema de Diseño Frontend
-description: Estructura técnica de tecnogen.ar, componentes, CSS modular y experiencia interactiva
+description: Estructura técnica de tecnogen.ar en PHP 8.x Nativo Modular (Estándar Fedenowback), Vistas Modulares, CSS Vanilla y Front Controller
 tags:
   - web
-  - react
-  - vite
+  - php
+  - architecture
   - css
   - performance
+  - fedenowback
 ---
 
-# 💻 Arquitectura Web y Sistema de Diseño
+# 💻 Arquitectura Web y Sistema de Diseño (PHP 8.x Modular)
 
-## 🧱 Stack Tecnológico
+## 🧱 Stack Tecnológico Actual
 
-- **Core & Runtime:** React + Vite (Fast HMR, bundle optimizado).
-- **Estilos:** Vanilla CSS / Tokens CSS estructurados en `index.css` siguiendo fielmente la guía de estilos de TecnoGen.
-- **Iconografía:** Lucide Icons optimizados y escalables.
-- **Tipografías:** Google Fonts (`Montserrat` para Headings + `Inter` para cuerpo de texto).
-- **SEO & Structured Data:** JSON-LD inyectado para `Organization`, `Service`, `FAQPage`, `BreadcrumbList`.
+El proyecto migró el 27 de Septiembre de 2026 de React/Vite a **PHP 8.x Nativo Modular** siguiendo la arquitectura y estándar de rendimiento de `fedenowback.com.ar`:
+
+- **Core & Runtime:** PHP 8.x nativo sin frameworks pesados ni dependencias de npm/node_modules.
+- **Ruteo & Front Controller:** `public/index.php` con enrutamiento dinámico amigable (Clean URLs), manejo de errores 404, `/sitemap.xml` dinámico y `robots.txt`.
+- **Configuración Global:** `includes/config.php` (URLs, teléfonos de contacto, parámetros canónicos).
+- **SEO & Microdatos:** `includes/seo_helper.php` con inyección de meta tags OpenGraph, Twitter Cards y Schema.org JSON-LD (`Organization`, `Service`, `BreadcrumbList`, `FAQPage`).
+- **Estilos:** Vanilla CSS modular en `public/assets/css/style.css` con variables CSS de la identidad corporativa de TecnoGen.
+- **Interactividad:** JavaScript Vanilla en `public/assets/js/main.js` (selector de dolores/soluciones, FAQ acordeón, tracking y WhatsApp CRO).
+- **Tipografías:** Google Fonts (`Montserrat` para encabezados + `Inter` para cuerpo de texto).
 
 ---
 
-## 🎨 Jerarquía Visual y Componentes
+## 📁 Estructura del Repositorio
 
-1. **Header Sticky:**
-   - Logotipo vectorizado SVG de TecnoGen con isotipo estilizado TG en degradado azul-cian.
-   - Navegación interactiva con anclas inteligentes (`#soluciones`, `#por-que-tecnogen`, `#servicios`, `#proceso`, `#casos`, `#contacto`).
-   - Botón CTA principal de alto contraste (`Agenda una consultoría`).
+```
+tecnogen.ar/
+├── includes/
+│   ├── config.php          # Configuración global, variables de entorno y metadatos
+│   └── seo_helper.php      # Helper de SEO, OpenGraph y Schema.org JSON-LD
+├── public/
+│   ├── index.php           # Front Controller y despachador de rutas
+│   ├── assets/
+│   │   ├── css/style.css   # Sistema de diseño CSS completo
+│   │   └── js/main.js      # Lógica interactiva cliente
+│   └── events_new/         # Flyers y retratos optimizados del evento
+├── views/
+│   ├── layout/
+│   │   ├── header.php      # Encabezado modular y navegación
+│   │   └── footer.php      # Pie de página institucional
+│   ├── index.php           # Home page
+│   ├── marketing-digital.php
+│   ├── seo-posicionamiento.php
+│   ├── inteligencia-artificial.php
+│   ├── agentes-ia.php
+│   ├── automatizacion.php
+│   ├── crm-whatsapp.php
+│   ├── contenido-ia.php
+│   ├── sobre-nosotros.php
+│   ├── contacto.php
+│   └── landing-evento.php  # Landing de evento 10 de octubre (/Mentalidad-Marketing-Neuroventas-con-IA)
+├── wiki/                   # LLM Wiki viva del proyecto
+└── status.md               # Estado operativo actual
+```
 
-2. **Hero Section:**
-   - Título de impacto: `Ideas inteligentes para un mayor mañana`.
-   - Propuesta de valor clara y concisa.
-   - Dual CTA (`Agenda una consultoría →` y `Conocé nuestras soluciones`).
-   - Card flotante con estética moderna, imagen corporativa con degradado, badge `TECNOLOGÍA QUE IMPULSA PERSONAS` y métricas.
+---
 
-3. **¿Por qué TecnoGen?:**
-   - 4 tarjetas modulares con micro-interacciones hover (Estrategias inteligentes, Procesos automatizados, Crecimiento sostenible, Un equipo que te acompaña).
+## 🎨 Sistema de Diseño y Componentes
 
-4. **Selector Interactivo de Dolores / Objetivos:**
-   - Tabs interactivas (`Conseguir más clientes`, `Automatizar procesos`, `Implementar IA`, `Mejorar ventas`, `Generar contenido`, `Posicionar mi empresa`) que actualizan dinámicamente el diagnóstico y la solución recomendada.
+1. **Header Sticky Modular (`views/layout/header.php`):**
+   - Logotipo vectorial SVG de TecnoGen con isotipo estilizado TG en degradado azul-cian.
+   - Navegación con selector de soluciones desplegable y botón CTA de contacto.
 
-5. **6 Tarjetas de Soluciones (Deep Cards):**
-   - Con badges de acento, lista de capacidades, y modal/drawer interactivo con detalle paso a paso.
+2. **Hero Section (`views/index.php`):**
+   - Titular: *Ideas inteligentes para un mayor mañana*.
+   - Propuesta de valor: *Marketing + IA + Automatización*.
+   - Métricas destacadas y CTAs de alta conversión a WhatsApp.
 
-6. **Diagrama de Proceso Interactivo:**
-   - Etapas numeradas (01 Captura → 02 Inteligencia → 03 Automatiza → 04 Resultados) con desglose en tiempo real.
+3. **Selector Interactivo de Soluciones:**
+   - Tabs dinámicas por objetivos del cliente con diagnóstico y soluciones recomendadas.
 
-7. **Casos Reales con Métricas:**
-   - Comparativas cuantificables (problema → implementación → resultado numérico).
+4. **Vistas de Servicios Específicos:**
+   - Páginas dedicadas con SEO on-page, tablas de capacidades y llamadas a la acción directas.
 
-8. **Formulario Inteligente de Calificación:**
-   - Simulación en vivo de IA lead qualification y scoring.
-
-9. **Banner Institucional & Footer:**
-   - Fondo Azul Profundo con marca de agua SVG y links directos a WhatsApp, LinkedIn y redes.
+5. **Landing de Evento Aislada (`views/landing-evento.php`):**
+   - Vista standalone sin header/footer corporativo con countdown y venta directa.
