@@ -1,5 +1,11 @@
 # 📜 Bitácora de Cambios (Changelog) - TecnoGen
 
+## [2026-09-28] - Actualización de Precios Evento y Auditoría LLM Wiki
+- **PRICING**: Actualización del esquema de precios para el evento presencial del 10 de octubre: Preventa exclusiva a **$80.000** (hasta el 3 de octubre, ahorro de $70.000) y Precio de lista a **$150.000** (luego del 3 de octubre).
+- **CRO**: Actualización de los mensajes preconfigurados de WhatsApp hacia `+54 9 11 7061-0766`.
+- **WIKI**: Sincronización y registro de la sesión pendiente del 27 de Septiembre (migración total a PHP 8.x nativo modular fedenowback) y actualización del nodo `arquitectura_web.md`.
+- **PROD**: Despliegue en Ploi Producción (`errante` `72.61.34.92`) verificado en vivo.
+
 ## [2026-09-27] - Reestructuración Total y Migración a PHP 8.x Modular (Estándar Fedenowback)
 - **REFACTOR**: Eliminación completa de la infraestructura React/Vite/node_modules/Tailwind y migración integral al stack **PHP 8.x nativo modular** basado en el estándar de `fedenowback.com.ar`.
 - **ROUTING**: Implementación del Front Controller en `public/index.php` con Clean URLs, manejo de 404, sitemap dinámico (`/sitemap.xml`) y robots.txt.
