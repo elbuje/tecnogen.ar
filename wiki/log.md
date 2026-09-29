@@ -1,5 +1,12 @@
 # 📜 Bitácora de Cambios (Changelog) - TecnoGen
 
+## [2026-09-29] - Rediseño Manifiesto, Ajustes Mobile Hero, Footer Oficial y Banner OG
+- **MANIFIESTO**: Rediseño integral de la sección a banner panorámico full-width con silueta centrada y nítida (`manifiesto-skyline-clean.jpg`), texto en Playfair Display a la izquierda y copy descriptivo con glassmorphism a la derecha.
+- **MEDIA & OG**: Generación de tarjeta Open Graph de alta resolución 1200x630 px (`og-image-evento.jpg`) con tipografía nítida para redes y WhatsApp. Reemplazo de imágenes por fotografías limpias en auditorio (`agenda-auditorium.jpg`) y CTA (`cta-audience.jpg`).
+- **HERO MOBILE**: Optimización del grid responsivo de firmas para que los nombres de los 3 speakers queden centrados y exactamente debajo de cada rostro en celulares.
+- **FOOTER**: Ajuste exclusivo de organizadores en el pie de página a **TecnoGen** (*Marketing + IA*) y **Fede NowBack**.
+- **DEPLOY**: Creación de rama `dev`, merge a `main` y despliegue en servidor de producción Ploi (`errante` `72.61.34.92`) vía SSH.
+
 ## [2026-09-28] - Actualización de Precios Evento y Auditoría LLM Wiki
 - **PRICING**: Actualización del esquema de precios para el evento presencial del 10 de octubre: Preventa exclusiva a **$80.000** (hasta el 3 de octubre, ahorro de $70.000) y Precio de lista a **$150.000** (luego del 3 de octubre).
 - **CRO**: Actualización de los mensajes preconfigurados de WhatsApp hacia `+54 9 11 7061-0766`.

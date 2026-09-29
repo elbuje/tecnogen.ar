@@ -49,7 +49,8 @@ graph TD
 
 ## 📅 Historial de Sesiones
 
-- [[2026-09-28-actualizacion-precios-landing-evento\|2026-09-28: Actualización de Precios Landing Evento y Auditoría LLM Wiki]]
+- [[2026-09-29-rediseño-manifiesto-speakers-agenda|2026-09-29: Rediseño Manifiesto, Imágenes Limpias de Agenda/CTA y Corrección Fede NowBack]]
+- [[2026-09-28-actualizacion-precios-landing-evento|2026-09-28: Actualización de Precios Landing Evento y Auditoría LLM Wiki]]
 - [[2026-09-27-migracion-arquitectura-php-fedenowback\|2026-09-27: Reestructuración Total y Migración a Arquitectura PHP Nativo Modular (Estándar Fedenowback)]]
 - [[2026-09-26-landing-mentalidad-marketing\|2026-09-26: Landing Page Evento "Mentalidad y Marketing — Neuroventas con IA" y Aislamiento de Navegación]]
 - [[2026-09-24-inicializacion-web-tecnogen\|2026-09-24: Inicialización del Proyecto y Desarrollo del Sitio Web Oficial]]
