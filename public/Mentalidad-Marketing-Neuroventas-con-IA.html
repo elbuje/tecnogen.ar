@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mentalidad y Marketing — Neuroventas con IA | Evento Presencial 10 de Octubre</title>
-  <meta name="description" content="Una jornada presencial para transformar la forma en que pensás, comunicás y vendés tu negocio con Anthony Sánchez Altuna, Fede Novak y Christian Cencherle. 10 de octubre, Lavalle 362, Piso 7, Microcentro, CABA.">
-  <meta name="keywords" content="Mentalidad y Marketing, Neuroventas con IA, Fede Novak, Anthony Sánchez Altuna, Christian Cencherle, evento presencial CABA, marketing con IA, neuroventas, marca personal">
+  <meta name="description" content="Una jornada presencial para transformar la forma en que pensás, comunicás y vendés tu negocio con Anthony Sánchez Altuna, Fede NowBack y Christian Cencherle. 10 de octubre, Lavalle 362, Piso 7, Microcentro, CABA.">
+  <meta name="keywords" content="Mentalidad y Marketing, Neuroventas con IA, Fede NowBack, Anthony Sánchez Altuna, Christian Cencherle, evento presencial CABA, marketing con IA, neuroventas, marca personal">
   <link rel="canonical" href="https://tecnogen.ar/Mentalidad-Marketing-Neuroventas-con-IA">
   
   <!-- Open Graph -->
@@ -301,63 +301,78 @@
        SECTION 2: MANIFIESTO BANNER
        =================================================== */
     .mani {
-      padding: 85px 0;
-      background: linear-gradient(180deg, #0A0805 0%, #151008 50%, #080808 100%);
-      border-top: 1px solid rgba(212, 175, 55, 0.12);
-      border-bottom: 1px solid rgba(212, 175, 55, 0.12);
-    }
-    .mani-grid {
-      display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      gap: 46px;
-      align-items: center;
-    }
-    .mani-left {
       position: relative;
-      border-radius: 18px;
+      background: #060606;
+      border-top: 1px solid rgba(212, 175, 55, 0.15);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.15);
       overflow: hidden;
-      border: 1px solid rgba(212, 175, 55, 0.25);
-      box-shadow: 0 20px 50px rgba(0,0,0,0.85);
     }
-    .mani-left img {
-      width: 100%;
-      height: 380px;
-      object-fit: cover;
-      object-position: center;
-    }
-    .mani-left-overlay {
+    .mani-bg {
       position: absolute;
       inset: 0;
-      background: linear-gradient(90deg, rgba(8,8,8,0.95) 0%, rgba(8,8,8,0.65) 55%, transparent 100%),
-                  linear-gradient(180deg, transparent 40%, rgba(8,8,8,0.9) 100%);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 38px;
+      z-index: 1;
     }
-    .mani-left-h {
-      font-size: clamp(23px, 2.9vw, 35px);
+    .mani-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+      opacity: 0.82;
+    }
+    .mani-bg-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(6,6,6,0.96) 0%, rgba(6,6,6,0.78) 32%, rgba(6,6,6,0.22) 50%, rgba(6,6,6,0.8) 68%, rgba(6,6,6,0.98) 100%),
+                  linear-gradient(180deg, rgba(6,6,6,0.9) 0%, transparent 20%, transparent 80%, rgba(6,6,6,0.95) 100%);
+    }
+    .mani-content {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 50px;
+      align-items: center;
+      min-height: 440px;
+      padding-top: 65px;
+      padding-bottom: 65px;
+    }
+    .mani-title-col {
+      padding-right: 15px;
+    }
+    .mani-headline {
+      font-size: clamp(26px, 3.2vw, 42px);
       font-weight: 800;
       color: #FFFFFF;
       line-height: 1.15;
       text-transform: uppercase;
-      max-width: 380px;
+      letter-spacing: -0.01em;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.9);
     }
-    .mani-left-h .gold-part {
+    .mani-headline .gold-part {
       display: block;
       margin-top: 6px;
+      background: linear-gradient(135deg, #D4AF37 0%, #F5E086 50%, #AA7C11 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: none;
     }
-    .mani-right { padding: 10px 0; }
+    .mani-text-col {
+      padding: 10px 0;
+      max-width: 520px;
+    }
     .mani-p1 {
-      font-size: 16px;
+      font-size: 16.5px;
       line-height: 1.65;
-      color: rgba(237, 232, 223, 0.88);
+      color: rgba(237, 232, 223, 0.92);
       margin-bottom: 22px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.9);
     }
     .mani-p2 {
       font-size: 14.5px;
       line-height: 1.7;
-      color: rgba(237, 232, 223, 0.75);
+      color: rgba(237, 232, 223, 0.78);
+      text-shadow: 0 2px 10px rgba(0,0,0,0.9);
     }
     .mani-p2 strong { color: #FFFFFF; font-weight: 600; }
 
@@ -1040,7 +1055,8 @@
       }
       .hero-speakers-col { min-height: auto; }
       .hero-signatures { grid-template-columns: repeat(3, 1fr); margin-top: 15px; }
-      .mani-grid { grid-template-columns: 1fr; gap: 30px; }
+      .mani-content { grid-template-columns: 1fr; gap: 32px; min-height: auto; padding-top: 50px; padding-bottom: 50px; }
+      .mani-bg-overlay { background: linear-gradient(180deg, rgba(6,6,6,0.95) 0%, rgba(6,6,6,0.72) 40%, rgba(6,6,6,0.96) 100%); }
       .spk-grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
       .tkw-grid { grid-template-columns: repeat(2, 1fr); }
       .agd-grid { grid-template-columns: 1fr; }
@@ -1068,7 +1084,7 @@
   <header class="hero">
     <!-- Real Official Speakers Background Composition -->
     <div class="hero-bg-speakers">
-      <img src="/events_new/hero-real-speakers-clean.jpg" alt="Fede Novak, Anthony Sánchez Altuna, Christian Cencherle">
+      <img src="/events_new/hero-real-speakers-clean.jpg" alt="Fede NowBack, Anthony Sánchez Altuna, Christian Cencherle">
     </div>
 
     <div class="cx">
@@ -1132,7 +1148,7 @@
         <div class="hero-speakers-col">
           <div class="hero-signatures">
             <div class="hero-sig-item">
-              <div class="hero-sig-name">Fede Novak</div>
+              <div class="hero-sig-name">Fede NowBack</div>
               <div class="hero-sig-role">MARCA PERSONAL<br>Y MENTALIDAD</div>
             </div>
             <div class="hero-sig-item">
@@ -1153,22 +1169,23 @@
        SECTION 2: MANIFIESTO
        =================================================== -->
   <section class="mani">
+    <div class="mani-bg">
+      <img src="/events_new/manifiesto-skyline-clean.jpg" alt="Visión estratégica empresarial">
+      <div class="mani-bg-overlay"></div>
+    </div>
     <div class="cx">
-      <div class="mani-grid">
-        <!-- Left Image Card with Integrated Text -->
-        <div class="mani-left">
-          <img src="/events_new/manifiesto-skyline.jpg" alt="Visión estratégica empresarial">
-          <div class="mani-left-overlay">
-            <h2 class="mani-left-h sf">
-              NO NECESITÁS<br>
-              MÁS INFORMACIÓN,<br>
-              <span class="gold-part gold-gradient">NECESITÁS SABER CÓMO USARLA PARA VENDER.</span>
-            </h2>
-          </div>
+      <div class="mani-content">
+        <!-- Left Headline -->
+        <div class="mani-title-col">
+          <h2 class="mani-headline sf">
+            NO NECESITÁS<br>
+            MÁS INFORMACIÓN.<br>
+            <span class="gold-part gold-gradient">NECESITÁS SABER<br>CÓMO USARLA<br>PARA VENDER.</span>
+          </h2>
         </div>
 
-        <!-- Right Content -->
-        <div class="mani-right">
+        <!-- Right Content Superimposed -->
+        <div class="mani-text-col">
           <p class="mani-p1">
             Hoy tenemos más herramientas que nunca. Pero tener acceso a ellas no significa saber utilizarlas estratégicamente.
           </p>
@@ -1220,13 +1237,13 @@
           </div>
         </div>
 
-        <!-- Speaker 2: Fede Novak -->
+        <!-- Speaker 2: Fede NowBack -->
         <div class="spk-card">
           <div class="spk-img-wrap">
-            <img src="/events_new/speaker-fede-clean.jpg" alt="Fede Novak" class="spk-img">
+            <img src="/events_new/speaker-fede-clean.jpg" alt="Fede NowBack" class="spk-img">
           </div>
           <div class="spk-body">
-            <h3 class="spk-name sf gold-gradient">Fede Novak</h3>
+            <h3 class="spk-name sf gold-gradient">Fede NowBack</h3>
             <p class="spk-tagline">Productor · Creador de contenido · Referente en Marca Personal</p>
             <ul class="spk-bullets">
               <li>Marca personal consolidada.</li>
@@ -1368,7 +1385,7 @@
             <div class="agd-dot"></div>
             <span class="agd-time">14:00</span>
             <h3 class="agd-item-title">Charla motivacional & Marca personal y mentalidad</h3>
-            <div class="agd-item-speaker">Christian Cencherle & Fede Novak</div>
+            <div class="agd-item-speaker">Christian Cencherle & Fede NowBack</div>
             <p class="agd-item-desc">Más de 25 años superando crisis empresariales en Argentina + Estrategias de posicionamiento en redes sociales y mentalidad ganadora.</p>
           </div>
 
@@ -1432,17 +1449,17 @@
           </a>
         </div>
 
-        <!-- Card 3: Comunidad Fede Novak -->
+        <!-- Card 3: Comunidad Fede NowBack -->
         <div class="prc-card">
           <div class="prc-comunidad-box">
             <div class="prc-comunidad-icon">
               <svg class="gold-svg-icon" style="width:42px;height:42px;" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
             </div>
-            <div class="prc-title" style="color: #D4AF37; margin-bottom: 8px;">COMUNIDAD FEDE NOVAK</div>
+            <div class="prc-title" style="color: #D4AF37; margin-bottom: 8px;">COMUNIDAD FEDE NOWBACK</div>
             <p style="font-size: 13.5px; color: rgba(237,232,223,0.7); margin-bottom: 24px; line-height: 1.5;">
               Valor y acceso especial exclusivo para miembros de la comunidad.
             </p>
-            <a href="https://wa.me/5491170610766?text=Hola%2C%20soy%20de%20la%20comunidad%20de%20Fede%20Novak%20y%20quiero%20acceder%20al%20valor%20especial%20para%20el%20evento%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="btn-gold" style="padding: 13px 22px; font-size: 12px;">
+            <a href="https://wa.me/5491170610766?text=Hola%2C%20soy%20de%20la%20comunidad%20de%20Fede%20NowBack%20y%20quiero%20acceder%20al%20valor%20especial%20para%20el%20evento%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="btn-gold" style="padding: 13px 22px; font-size: 12px;">
               Consultá para acceder
             </a>
           </div>
@@ -1624,9 +1641,9 @@
           <span>LANAS</span>
         </div>
 
-        <!-- Fede Novak -->
+        <!-- Fede NowBack -->
         <div class="org-brand fede">
-          Fede Novak
+          Fede NowBack
         </div>
       </div>
     </div>
