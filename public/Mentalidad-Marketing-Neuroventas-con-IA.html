@@ -316,37 +316,38 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center 30%;
-      opacity: 0.82;
+      object-position: center 25%;
+      opacity: 0.95;
     }
     .mani-bg-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(90deg, rgba(6,6,6,0.96) 0%, rgba(6,6,6,0.78) 32%, rgba(6,6,6,0.22) 50%, rgba(6,6,6,0.8) 68%, rgba(6,6,6,0.98) 100%),
-                  linear-gradient(180deg, rgba(6,6,6,0.9) 0%, transparent 20%, transparent 80%, rgba(6,6,6,0.95) 100%);
+      background: linear-gradient(90deg, #060606 0%, rgba(6,6,6,0.85) 24%, rgba(6,6,6,0.08) 40%, rgba(6,6,6,0.08) 60%, rgba(6,6,6,0.85) 76%, #060606 100%),
+                  linear-gradient(180deg, rgba(6,6,6,0.8) 0%, transparent 20%, transparent 80%, rgba(6,6,6,0.9) 100%);
     }
     .mani-content {
       position: relative;
       z-index: 2;
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 50px;
+      display: flex;
+      justify-content: space-between;
       align-items: center;
-      min-height: 440px;
-      padding-top: 65px;
-      padding-bottom: 65px;
+      min-height: 480px;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      gap: 30px;
     }
     .mani-title-col {
-      padding-right: 15px;
+      flex: 0 0 380px;
+      max-width: 380px;
     }
     .mani-headline {
-      font-size: clamp(26px, 3.2vw, 42px);
+      font-size: clamp(25px, 3vw, 38px);
       font-weight: 800;
       color: #FFFFFF;
       line-height: 1.15;
       text-transform: uppercase;
       letter-spacing: -0.01em;
-      text-shadow: 0 4px 20px rgba(0,0,0,0.9);
+      text-shadow: 0 4px 20px rgba(0,0,0,0.95);
     }
     .mani-headline .gold-part {
       display: block;
@@ -358,20 +359,27 @@
       text-shadow: none;
     }
     .mani-text-col {
-      padding: 10px 0;
-      max-width: 520px;
+      flex: 0 0 430px;
+      max-width: 430px;
+      padding: 24px 28px;
+      background: rgba(8, 8, 8, 0.45);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 14px;
+      border: 1px solid rgba(212, 175, 55, 0.15);
+      box-shadow: 0 16px 36px rgba(0,0,0,0.6);
     }
     .mani-p1 {
-      font-size: 16.5px;
+      font-size: 15.5px;
       line-height: 1.65;
-      color: rgba(237, 232, 223, 0.92);
-      margin-bottom: 22px;
+      color: rgba(237, 232, 223, 0.95);
+      margin-bottom: 18px;
       text-shadow: 0 2px 10px rgba(0,0,0,0.9);
     }
     .mani-p2 {
-      font-size: 14.5px;
+      font-size: 14px;
       line-height: 1.7;
-      color: rgba(237, 232, 223, 0.78);
+      color: rgba(237, 232, 223, 0.82);
       text-shadow: 0 2px 10px rgba(0,0,0,0.9);
     }
     .mani-p2 strong { color: #FFFFFF; font-weight: 600; }
@@ -1055,7 +1063,8 @@
       }
       .hero-speakers-col { min-height: auto; }
       .hero-signatures { grid-template-columns: repeat(3, 1fr); margin-top: 15px; }
-      .mani-content { grid-template-columns: 1fr; gap: 32px; min-height: auto; padding-top: 50px; padding-bottom: 50px; }
+      .mani-content { flex-direction: column; align-items: flex-start; gap: 32px; min-height: auto; padding-top: 50px; padding-bottom: 50px; }
+      .mani-title-col, .mani-text-col { flex: 1 1 100%; max-width: 100%; }
       .mani-bg-overlay { background: linear-gradient(180deg, rgba(6,6,6,0.95) 0%, rgba(6,6,6,0.72) 40%, rgba(6,6,6,0.96) 100%); }
       .spk-grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
       .tkw-grid { grid-template-columns: repeat(2, 1fr); }
