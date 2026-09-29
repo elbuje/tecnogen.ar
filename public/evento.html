@@ -1,1062 +1,1664 @@
 <!DOCTYPE html>
-<html lang="es-AR">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mentalidad y Marketing — Neuroventas con IA | Evento Presencial 10 de Octubre</title>
-  <meta name="description" content="Intensivo presencial exclusivo para dueños de negocio y emprendedores con Anthony Altuna, Fede Nowback y Christian Cencherle. Lavalle 362, Piso 7, CABA. 10 de Octubre.">
-  <meta name="keywords" content="Mentalidad y Marketing, Neuroventas con IA, Fede Nowback, Anthony Altuna, Christian Cencherle, evento presencial CABA, marketing con IA, neuroventas">
-  <meta name="author" content="TecnoGen / Fede Nowback">
-  <meta name="robots" content="index, follow, max-image-preview:large">
-
+  <meta name="description" content="Una jornada presencial para transformar la forma en que pensás, comunicás y vendés tu negocio con Anthony Sánchez Altuna, Fede Novak y Christian Cencherle. 10 de octubre, Lavalle 362, Piso 7, Microcentro, CABA.">
+  <meta name="keywords" content="Mentalidad y Marketing, Neuroventas con IA, Fede Novak, Anthony Sánchez Altuna, Christian Cencherle, evento presencial CABA, marketing con IA, neuroventas, marca personal">
+  <link rel="canonical" href="https://tecnogen.ar/Mentalidad-Marketing-Neuroventas-con-IA">
+  
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="es_AR">
-  <meta property="og:site_name" content="Mentalidad y Marketing — Neuroventas con IA">
-  <meta property="og:title" content="Mentalidad y Marketing — Neuroventas con IA | Evento Presencial">
-  <meta property="og:description" content="10 de Octubre en CABA • Anthony Altuna, Fede Nowback y Christian Cencherle. Intensivo para dueños de negocio y emprendedores.">
-  <meta property="og:image" content="/events/flyer-mentalidad-marketing.jpg">
-
+  <meta property="og:url" content="https://tecnogen.ar/Mentalidad-Marketing-Neuroventas-con-IA">
+  <meta property="og:title" content="Mentalidad y Marketing — Neuroventas con IA | 10 de Octubre">
+  <meta property="og:description" content="Evento presencial en CABA. Neurociencia, Inteligencia Artificial, Marca Personal y casos reales para hacer crecer tu negocio.">
+  <meta property="og:image" content="https://tecnogen.ar/events_new/hero-real-speakers.jpg">
+  
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet">
+  
   <style>
-    :root {
-      --bg: #07090e;
-      --bg-alt: #0c0f17;
-      --card: rgba(17, 22, 33, 0.92);
-      --card-hover: rgba(23, 30, 46, 0.98);
-      --border: rgba(255, 255, 255, 0.08);
-      --border-gold: rgba(251, 191, 36, 0.35);
-      
-      --gold: #fbbf24;
-      --gold-light: #fde68a;
-      --gold-dark: #d97706;
-      --fire: #ff5500;
-      --text: #f8fafc;
-      --text-muted: #94a3b8;
-      --text-sub: #cbd5e1;
-      
-      --radius: 18px;
-      --radius-sm: 10px;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
+    /* RESET & BASE */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
     body {
-      background-color: var(--bg);
-      color: var(--text);
-      font-family: 'Inter', sans-serif;
-      line-height: 1.6;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #080808;
+      color: #EDE8DF;
+      line-height: 1.55;
       overflow-x: hidden;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      position: relative;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    /* TYPOGRAPHY */
+    .sf { font-family: 'Playfair Display', Georgia, serif; }
+    .cz { font-family: 'Cinzel', serif; }
+    .hw { font-family: 'Alex Brush', cursive; }
+
+    /* GOLD STYLES & GRADIENTS */
+    .gold-gradient {
+      background: linear-gradient(135deg, #FBF0D2 0%, #D4AF37 45%, #AA820A 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+    .gold-text { color: #D4AF37; }
+    .gold-subtle { color: #E8D399; }
+
+    /* BUTTONS */
+    .btn-gold {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #ECC868 0%, #D4AF37 50%, #9E7915 100%);
+      color: #080808;
+      font-weight: 800;
+      font-size: 13.5px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 15px 32px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 8px 30px rgba(212, 175, 55, 0.35);
+      transition: all 0.25s ease;
+      white-space: nowrap;
+    }
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(212, 175, 55, 0.55);
+      background: linear-gradient(135deg, #F5D680 0%, #DEBA46 50%, #B89222 100%);
     }
 
-    .ambient-glow {
+    /* BADGES */
+    .badge-cupos {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(18, 18, 18, 0.85);
+      border: 1px solid rgba(212, 175, 55, 0.45);
+      color: #D4AF37;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      padding: 12px 20px;
+      border-radius: 999px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      white-space: nowrap;
+    }
+
+    /* CONTAINER */
+    .cx { max-width: 1220px; margin: 0 auto; padding: 0 24px; position: relative; }
+
+    /* ===================================================
+       HERO SECTION (Full screen unified composition)
+       =================================================== */
+    .hero {
+      position: relative;
+      background: #080808;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding: 50px 0 35px;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+    }
+
+    /* Hero Background Composite Speakers (Full Bleed on the right) */
+    .hero-bg-speakers {
       position: absolute;
       top: 0;
-      left: 0;
       right: 0;
-      height: 750px;
-      background: radial-gradient(circle at 50% 15%, rgba(251, 191, 36, 0.15) 0%, rgba(255, 85, 0, 0.05) 45%, transparent 70%);
+      bottom: 0;
+      width: 58%;
+      max-width: 900px;
+      pointer-events: none;
+      z-index: 1;
+      overflow: hidden;
+    }
+    .hero-bg-speakers img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 15%, black 45%), linear-gradient(to top, transparent 0%, black 20%);
+      mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 15%, black 45%), linear-gradient(to top, transparent 0%, black 20%);
+      filter: contrast(1.05) brightness(0.95);
+    }
+
+    /* Hero Radial Glow */
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
       pointer-events: none;
       z-index: 0;
     }
 
-    .container {
-      width: 100%;
-      max-width: 1160px;
-      margin: 0 auto;
-      padding: 0 20px;
+    /* Top Bar in Hero (Keywords on right) */
+    .hero-top-bar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 15px;
       position: relative;
-      z-index: 1;
+      z-index: 3;
     }
-
-    /* Navigation */
-    .top-nav {
-      padding: 20px 0;
-      border-bottom: 1px solid var(--border);
-      background: rgba(7, 9, 14, 0.85);
-      backdrop-filter: blur(12px);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    .nav-flex {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .brand-logo {
+    .hero-top-keywords {
       display: flex;
       align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      color: #fff;
+      gap: 14px;
+      font-size: 10px;
+      letter-spacing: 2.2px;
+      color: #D4AF37;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .hero-top-keywords .kw-sep {
+      width: 1px;
+      height: 12px;
+      background: rgba(212, 175, 55, 0.35);
     }
 
-    .brand-badge {
-      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
-      color: #000;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 900;
-      font-size: 0.72rem;
-      padding: 4px 8px;
-      border-radius: 6px;
-      letter-spacing: 1px;
+    /* Hero Layout Grid */
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+      z-index: 2;
     }
 
-    .brand-text {
-      font-family: 'Montserrat', sans-serif;
+    /* Hero Text Column */
+    .hero-content {
+      padding-right: 15px;
+    }
+    .hero-tag {
+      font-size: 11px;
+      letter-spacing: 3.5px;
+      color: #D4AF37;
       font-weight: 800;
-      font-size: 1.1rem;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .hero-h1 {
+      font-size: clamp(42px, 5.2vw, 70px);
+      line-height: 1.02;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 20px;
       letter-spacing: -0.5px;
     }
-
-    .btn-nav-wa {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid var(--border-gold);
-      color: var(--gold-light);
-      padding: 8px 18px;
-      border-radius: 9999px;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: 0.8rem;
-      text-decoration: none;
-      transition: all 0.3s;
-    }
-
-    .btn-nav-wa:hover {
-      background: var(--gold);
-      color: #000;
-      box-shadow: 0 0 20px rgba(251, 191, 36, 0.4);
-    }
-
-    /* Hero */
-    .hero {
-      padding: 60px 0 80px;
-      text-align: center;
-    }
-
-    .badge-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(251, 191, 36, 0.1);
-      border: 1px solid var(--border-gold);
-      padding: 8px 20px;
-      border-radius: 9999px;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.75rem;
-      font-weight: 800;
-      color: var(--gold);
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      margin-bottom: 24px;
-    }
-
-    .h1-title {
-      font-family: 'Montserrat', sans-serif;
-      font-size: clamp(2.2rem, 5.5vw, 4.2rem);
-      font-weight: 900;
-      line-height: 1.1;
-      letter-spacing: -1px;
-      margin-bottom: 20px;
-    }
-
-    .gold-grad {
-      background: linear-gradient(135deg, #fef08a 0%, #fbbf24 50%, #d97706 100%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .hero-h1 .hero-h1-gold {
       display: block;
-      margin-top: 6px;
-    }
-
-    .hero-lead {
-      font-size: clamp(1.05rem, 2vw, 1.25rem);
-      color: var(--text-sub);
-      max-width: 820px;
-      margin: 0 auto 36px;
-    }
-
-    /* Info Badges */
-    .event-info-bar {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 14px;
-      max-width: 840px;
-      margin: 0 auto 36px;
-    }
-
-    .info-badge-card {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 14px 18px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: 0.9rem;
-      color: var(--gold-light);
-    }
-
-    /* Countdown */
-    .countdown-box {
-      background: rgba(13, 17, 26, 0.95);
-      border: 1px solid var(--border-gold);
-      border-radius: 24px;
-      padding: 24px;
-      max-width: 480px;
-      margin: 0 auto 40px;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
-    }
-
-    .countdown-title {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.72rem;
-      font-weight: 800;
-      color: var(--gold);
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      margin-bottom: 14px;
-    }
-
-    .countdown-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-    }
-
-    .countdown-unit {
-      background: #000;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 12px;
-      padding: 10px 6px;
-    }
-
-    .countdown-num {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.8rem;
-      font-weight: 900;
-      color: #fff;
-      line-height: 1;
-    }
-
-    .countdown-label {
-      font-size: 0.68rem;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      font-weight: 600;
       margin-top: 4px;
     }
+    .hero-desc {
+      font-size: 15.5px;
+      line-height: 1.65;
+      color: rgba(237, 232, 223, 0.82);
+      max-width: 500px;
+      margin-bottom: 30px;
+    }
 
-    /* Action Buttons */
+    /* Meta Details Bar (with Gold SVG icons) */
+    .hero-meta-bar {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      background: rgba(20, 20, 20, 0.6);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      padding: 12px 20px;
+      border-radius: 12px;
+      width: fit-content;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+    .hero-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 12.5px;
+      color: #EDE8DF;
+      font-weight: 500;
+    }
+    .hero-meta-item strong {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .hero-meta-item .sub-note {
+      font-size: 11px;
+      color: rgba(237, 232, 223, 0.55);
+      margin-left: 2px;
+    }
+    .hero-meta-sep {
+      width: 1px;
+      height: 20px;
+      background: rgba(212, 175, 55, 0.25);
+    }
+    .gold-svg-icon {
+      width: 17px;
+      height: 17px;
+      stroke: #D4AF37;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0;
+    }
+
+    /* CTA Actions */
     .hero-actions {
       display: flex;
-      justify-content: center;
+      align-items: center;
       gap: 16px;
       flex-wrap: wrap;
     }
 
-    .btn-gold {
-      background: linear-gradient(135deg, #fef08a 0%, #fbbf24 50%, #f59e0b 100%);
-      color: #05070a;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 900;
-      font-size: 0.92rem;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      padding: 16px 36px;
-      border-radius: 14px;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      box-shadow: 0 8px 30px rgba(251, 191, 36, 0.35);
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      border: none;
-      cursor: pointer;
-    }
-
-    .btn-gold:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 40px rgba(251, 191, 36, 0.5);
-    }
-
-    .btn-outline {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      color: #fff;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: 0.92rem;
-      padding: 16px 30px;
-      border-radius: 14px;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      transition: all 0.3s;
-    }
-
-    .btn-outline:hover {
-      background: rgba(255, 255, 255, 0.1);
-      border-color: #fff;
-    }
-
-    /* Flyer Showcase */
-    .flyer-card-section {
-      margin-top: 60px;
-      background: linear-gradient(180deg, rgba(251, 191, 36, 0.1) 0%, rgba(13, 17, 26, 0.95) 100%);
-      border: 1px solid var(--border-gold);
-      border-radius: 28px;
-      padding: 30px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.8);
-    }
-
-    .flyer-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 36px;
-      align-items: center;
-      text-align: left;
-    }
-
-    @media (max-width: 840px) {
-      .flyer-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-    }
-
-    .flyer-img-wrap {
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-    }
-
-    .flyer-img-wrap img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    /* Sections General */
-    .section {
-      padding: 90px 0;
-      position: relative;
-    }
-
-    .sec-header {
-      text-align: center;
-      max-width: 750px;
-      margin: 0 auto 56px;
-    }
-
-    .sec-tag {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.75rem;
-      font-weight: 800;
-      color: var(--gold);
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      display: block;
-      margin-bottom: 8px;
-    }
-
-    .sec-title {
-      font-family: 'Montserrat', sans-serif;
-      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-      font-weight: 900;
-      letter-spacing: -0.5px;
-      margin-bottom: 14px;
-    }
-
-    .sec-desc {
-      color: var(--text-muted);
-      font-size: 1rem;
-    }
-
-    /* Pillars */
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 24px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 36px 30px;
+    /* Hero Right Signatures (Anchored at the bottom under the speaker portraits) */
+    .hero-speakers-col {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      transition: all 0.3s;
+      justify-content: flex-end;
+      height: 100%;
+      min-height: 440px;
+      position: relative;
     }
-
-    .card:hover {
-      border-color: var(--border-gold);
-      transform: translateY(-4px);
+    .hero-signatures {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      width: 100%;
+      text-align: center;
+      margin-top: auto;
+      padding-top: 20px;
+      background: linear-gradient(180deg, transparent 0%, rgba(8,8,8,0.8) 100%);
+      border-radius: 12px;
     }
-
-    .card-icon {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
+    .hero-sig-item { padding: 4px 6px; }
+    .hero-sig-name {
+      font-family: 'Alex Brush', cursive;
+      font-size: 27px;
+      color: #FFFFFF;
+      line-height: 1.1;
+      margin-bottom: 2px;
+      white-space: nowrap;
     }
-
-    .card-h3 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.3rem;
+    .hero-sig-role {
+      font-size: 8.5px;
+      letter-spacing: 1.6px;
+      color: #D4AF37;
+      text-transform: uppercase;
       font-weight: 800;
-      margin-bottom: 12px;
-      color: #fff;
+      line-height: 1.3;
     }
 
-    .card-p {
-      color: var(--text-sub);
-      font-size: 0.92rem;
+    /* ===================================================
+       SECTION 2: MANIFIESTO BANNER
+       =================================================== */
+    .mani {
+      padding: 85px 0;
+      background: linear-gradient(180deg, #0A0805 0%, #151008 50%, #080808 100%);
+      border-top: 1px solid rgba(212, 175, 55, 0.12);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.12);
+    }
+    .mani-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 46px;
+      align-items: center;
+    }
+    .mani-left {
+      position: relative;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.85);
+    }
+    .mani-left img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      object-position: center;
+    }
+    .mani-left-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(8,8,8,0.95) 0%, rgba(8,8,8,0.65) 55%, transparent 100%),
+                  linear-gradient(180deg, transparent 40%, rgba(8,8,8,0.9) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 38px;
+    }
+    .mani-left-h {
+      font-size: clamp(23px, 2.9vw, 35px);
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.15;
+      text-transform: uppercase;
+      max-width: 380px;
+    }
+    .mani-left-h .gold-part {
+      display: block;
+      margin-top: 6px;
+    }
+    .mani-right { padding: 10px 0; }
+    .mani-p1 {
+      font-size: 16px;
+      line-height: 1.65;
+      color: rgba(237, 232, 223, 0.88);
+      margin-bottom: 22px;
+    }
+    .mani-p2 {
+      font-size: 14.5px;
+      line-height: 1.7;
+      color: rgba(237, 232, 223, 0.75);
+    }
+    .mani-p2 strong { color: #FFFFFF; font-weight: 600; }
+
+    /* ===================================================
+       SECTION 3: SPEAKERS
+       =================================================== */
+    .spk { padding: 95px 0; background: #080808; }
+    .sec-hdr {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 48px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .sec-tag {
+      font-size: 11px;
+      letter-spacing: 3.2px;
+      color: #D4AF37;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .sec-title {
+      font-size: clamp(28px, 3.8vw, 44px);
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.12;
+    }
+    .sec-sub-right {
+      font-size: 10.5px;
+      letter-spacing: 2px;
+      color: rgba(212, 175, 55, 0.85);
+      text-transform: uppercase;
+      font-weight: 800;
+      text-align: right;
       line-height: 1.6;
     }
 
-    /* Speaker Cards */
-    .speaker-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px;
+    .spk-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .spk-card {
+      background: rgba(15, 15, 15, 0.95);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      border-radius: 18px;
+      overflow: hidden;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      transition: all 0.3s ease;
     }
-
-    .speaker-card:hover {
-      border-color: var(--border-gold);
+    .spk-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(212, 175, 55, 0.55);
+      box-shadow: 0 20px 45px rgba(0,0,0,0.8), 0 0 25px rgba(212, 175, 55, 0.15);
     }
-
-    .speaker-photo {
-      border-radius: 14px;
-      overflow: hidden;
-      aspect-ratio: 1/1;
-      margin-bottom: 20px;
+    .spk-img-wrap {
       position: relative;
+      width: 100%;
+      aspect-ratio: 1.1 / 1;
       background: #000;
+      overflow: hidden;
     }
-
-    .speaker-photo img {
+    .spk-img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center top;
+      transition: transform 0.4s ease;
+    }
+    .spk-card:hover .spk-img { transform: scale(1.03); }
+
+    .spk-body {
+      padding: 26px 22px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .spk-name {
+      font-size: 20px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+    }
+    .spk-tagline {
+      font-size: 12px;
+      color: rgba(237, 232, 223, 0.6);
+      margin-bottom: 18px;
+    }
+    .spk-bullets {
+      list-style: none;
+      margin-bottom: 22px;
+    }
+    .spk-bullets li {
+      position: relative;
+      padding-left: 16px;
+      font-size: 12.5px;
+      color: rgba(237, 232, 223, 0.82);
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    .spk-bullets li::before {
+      content: "•";
+      position: absolute;
+      left: 2px;
+      color: #D4AF37;
+      font-weight: bold;
     }
 
-    .speaker-role {
-      font-size: 0.75rem;
+    .spk-talk-box {
+      margin-top: auto;
+      padding: 12px 14px;
+      background: rgba(212, 175, 55, 0.06);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .spk-talk-title {
+      font-size: 11px;
       font-weight: 800;
-      color: var(--gold);
+      letter-spacing: 1.2px;
+      color: #D4AF37;
       text-transform: uppercase;
-      font-family: 'Montserrat', sans-serif;
-      margin-top: 4px;
+      line-height: 1.4;
+    }
+    .spk-talk-desc {
+      font-size: 12px;
+      line-height: 1.5;
+      color: rgba(237, 232, 223, 0.68);
     }
 
-    /* Schedule */
-    .schedule-item {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 20px 24px;
+    /* ===================================================
+       SECTION 4: QUÉ TE LLEVÁS (5 cards with Gold SVGs)
+       =================================================== */
+    .tkw {
+      padding: 95px 0;
+      background: linear-gradient(180deg, #080808 0%, #110D06 50%, #080808 100%);
+      border-top: 1px solid rgba(212, 175, 55, 0.1);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    }
+    .tkw-intro {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 44px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .tkw-desc {
+      font-size: 14.5px;
+      color: rgba(237, 232, 223, 0.78);
+      max-width: 460px;
+      line-height: 1.6;
+    }
+    .tkw-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+    }
+    .tkw-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      border-radius: 14px;
+      padding: 28px 16px;
+      text-align: center;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .tkw-card:hover {
+      border-color: rgba(212, 175, 55, 0.55);
+      transform: translateY(-4px);
+      background: rgba(212, 175, 55, 0.04);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+    }
+    .tkw-icon-box {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: rgba(212, 175, 55, 0.08);
+      border: 1px solid rgba(212, 175, 55, 0.3);
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 20px;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+    .tkw-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+      line-height: 1.35;
+    }
+    .tkw-text {
+      font-size: 11.5px;
+      color: rgba(237, 232, 223, 0.65);
+      line-height: 1.45;
+    }
+
+    /* ===================================================
+       SECTION 5: AGENDA
+       =================================================== */
+    .agd { padding: 95px 0; background: #080808; }
+    .agd-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 48px;
+      align-items: start;
+    }
+    .agd-photo {
+      position: relative;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(212, 175, 55, 0.22);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.7);
+    }
+    .agd-photo img {
+      width: 100%;
+      height: 330px;
+      object-fit: cover;
+    }
+    .agd-timeline {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      padding-left: 32px;
+    }
+    .agd-timeline::before {
+      content: "";
+      position: absolute;
+      left: 9px;
+      top: 15px;
+      bottom: 25px;
+      width: 2px;
+      background: linear-gradient(180deg, #D4AF37 0%, rgba(212,175,55,0.2) 100%);
+    }
+    .agd-item {
+      position: relative;
+      margin-bottom: 30px;
+    }
+    .agd-item:last-child { margin-bottom: 0; }
+    .agd-dot {
+      position: absolute;
+      left: -32px;
+      top: 3px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #080808;
+      border: 2px solid #D4AF37;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .agd-dot::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #D4AF37;
+    }
+    .agd-time {
+      display: inline-block;
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #D4AF37;
+      margin-bottom: 4px;
+      letter-spacing: 1px;
+    }
+    .agd-item-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 3px;
+    }
+    .agd-item-speaker {
+      font-size: 12.5px;
+      color: rgba(212, 175, 55, 0.92);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .agd-item-desc {
+      font-size: 12px;
+      color: rgba(237, 232, 223, 0.65);
+      line-height: 1.45;
+    }
+
+    /* ===================================================
+       SECTION 6: TU INVERSIÓN (Precios & Medios de Pago)
+       =================================================== */
+    .prc {
+      padding: 95px 0;
+      background: linear-gradient(180deg, #080808 0%, #150E06 50%, #080808 100%);
+      border-top: 1px solid rgba(212, 175, 55, 0.12);
+    }
+    .prc-grid {
+      display: grid;
+      grid-template-columns: 1.18fr 0.91fr 0.91fr;
+      gap: 22px;
+      margin-top: 40px;
+      align-items: stretch;
+    }
+    .prc-card {
+      background: rgba(18, 18, 18, 0.9);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      border-radius: 18px;
+      padding: 34px 26px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .prc-card.featured {
+      border: 2px solid #D4AF37;
+      background: radial-gradient(circle at 50% 0%, rgba(212,175,55,0.18), rgba(18,18,18,0.96) 70%);
+      box-shadow: 0 16px 50px rgba(212, 175, 55, 0.22);
+    }
+    .prc-badge-feat {
+      position: absolute;
+      top: -13px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #ECC868 0%, #D4AF37 50%, #9E7915 100%);
+      color: #080808;
+      font-size: 9.5px;
+      font-weight: 900;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      padding: 5px 18px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+    .prc-title {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: #D4AF37;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .prc-sub {
+      font-size: 11.5px;
+      color: rgba(237, 232, 223, 0.55);
+      margin-bottom: 18px;
+    }
+    .prc-old {
+      font-size: 16px;
+      text-decoration: line-through;
+      color: rgba(237, 232, 223, 0.38);
+      margin-bottom: 2px;
+    }
+    .prc-amount {
+      font-size: 44px;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .prc-card.featured .prc-amount {
+      background: linear-gradient(135deg, #FFFFFF 0%, #F5E5BE 40%, #D4AF37 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .prc-save {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      color: #22C55E;
+      background: rgba(34, 197, 94, 0.12);
+      border: 1px solid rgba(34, 197, 94, 0.35);
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 24px;
+      align-self: flex-start;
+    }
+    .prc-features {
+      list-style: none;
+      margin: auto 0 24px;
+    }
+    .prc-features li {
+      position: relative;
+      padding-left: 20px;
+      font-size: 12px;
+      color: rgba(237, 232, 223, 0.82);
+      margin-bottom: 8px;
+    }
+    .prc-features li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #D4AF37;
+      font-weight: bold;
+      font-size: 13px;
+    }
+    .prc-comunidad-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      height: 100%;
+    }
+    .prc-comunidad-icon {
       margin-bottom: 14px;
     }
 
-    .schedule-time {
-      background: #000;
-      color: var(--gold);
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 800;
-      font-size: 0.82rem;
-      padding: 8px 14px;
-      border-radius: 8px;
-      white-space: nowrap;
-    }
-
-    /* Reservation Form */
-    .reserva-card {
-      background: linear-gradient(180deg, #111622 0%, #07090e 100%);
-      border: 2px solid var(--border-gold);
-      border-radius: 28px;
-      padding: 48px 36px;
-      max-width: 680px;
-      margin: 0 auto;
-      text-align: center;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.8);
-    }
-
-    .form-group {
-      margin-bottom: 16px;
-      text-align: left;
-    }
-
-    .form-label {
-      display: block;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.72rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      color: var(--text-sub);
-      margin-bottom: 6px;
-      letter-spacing: 0.5px;
-    }
-
-    .form-input, .form-select {
-      width: 100%;
-      padding: 14px 18px;
-      background: rgba(0, 0, 0, 0.6);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      border-radius: 12px;
-      color: #fff;
-      font-size: 0.95rem;
-      font-family: 'Inter', sans-serif;
-      outline: none;
-      transition: all 0.3s;
-    }
-
-    .form-input:focus, .form-select:focus {
-      border-color: var(--gold);
-      box-shadow: 0 0 15px rgba(251, 191, 36, 0.2);
-    }
-
-    /* FAQ */
-    .faq-item {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid var(--border);
+    /* Medios de Pago Bar */
+    .pay-methods-bar {
+      margin-top: 38px;
+      padding: 18px 26px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(212, 175, 55, 0.18);
       border-radius: 14px;
-      margin-bottom: 12px;
-      overflow: hidden;
-    }
-
-    .faq-q {
-      padding: 20px;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 800;
-      font-size: 0.98rem;
-      cursor: pointer;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      user-select: none;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
     }
-
-    .faq-a {
-      padding: 0 20px 20px;
-      font-size: 0.92rem;
-      color: var(--text-sub);
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
-      padding-top: 14px;
-    }
-
-    /* Floating WhatsApp */
-    .floating-wa {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      z-index: 999;
-      background: #25d366;
-      color: #fff;
-      padding: 14px 22px;
-      border-radius: 9999px;
-      font-family: 'Montserrat', sans-serif;
+    .pay-methods-bar .lbl {
+      font-size: 10.5px;
+      letter-spacing: 2px;
+      color: #D4AF37;
+      text-transform: uppercase;
       font-weight: 800;
-      font-size: 0.85rem;
-      text-decoration: none;
+    }
+    .pay-methods-bar .items {
       display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .pay-methods-bar .item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: rgba(237, 232, 223, 0.8);
+    }
+
+    /* ===================================================
+       SECTION 7: PREGUNTAS FRECUENTES (FAQ)
+       =================================================== */
+    .faq { padding: 95px 0; background: #080808; }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 48px;
+      align-items: start;
+    }
+    .faq-left { display: flex; flex-direction: column; gap: 18px; }
+    .faq-left-p {
+      font-size: 14.5px;
+      color: rgba(237, 232, 223, 0.72);
+      line-height: 1.55;
+    }
+    .faq-wa-btn {
+      display: inline-flex;
       align-items: center;
       gap: 10px;
-      box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
-      transition: all 0.3s;
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      color: #FFFFFF;
+      font-weight: 700;
+      font-size: 13.5px;
+      padding: 14px 26px;
+      border-radius: 999px;
+      width: fit-content;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.25);
+      transition: all 0.25s ease;
+      margin-top: 6px;
+    }
+    .faq-wa-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.4);
     }
 
-    .floating-wa:hover {
-      transform: scale(1.05);
+    .faq-list { display: flex; flex-direction: column; gap: 12px; }
+    .faq-item {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(212, 175, 55, 0.16);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all 0.25s ease;
+    }
+    .faq-item.active {
+      border-color: rgba(212, 175, 55, 0.5);
+      background: rgba(212, 175, 55, 0.03);
+    }
+    .faq-question {
+      width: 100%;
+      padding: 18px 22px;
+      background: none;
+      border: none;
+      color: #FFFFFF;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-family: 'Inter', sans-serif;
+    }
+    .faq-question .icon {
+      color: #D4AF37;
+      font-size: 20px;
+      line-height: 1;
+      transition: transform 0.25s ease;
+      font-weight: 300;
+    }
+    .faq-item.active .faq-question .icon {
+      transform: rotate(45deg);
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      padding: 0 22px;
+      font-size: 13px;
+      line-height: 1.6;
+      color: rgba(237, 232, 223, 0.75);
+    }
+    .faq-item.active .faq-answer {
+      max-height: 240px;
+      padding: 0 22px 20px;
+    }
+
+    /* ===================================================
+       SECTION 8: PRE-FOOTER CTA BANNER
+       =================================================== */
+    .fcta {
+      position: relative;
+      padding: 90px 0;
+      border-top: 1px solid rgba(212, 175, 55, 0.15);
+      background: linear-gradient(180deg, #080808 0%, #181008 50%, #080808 100%);
+      overflow: hidden;
+    }
+    .fcta-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('/events_new/cta-audience.jpg');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.12;
+      filter: saturate(0.8);
+    }
+    .fcta-inner {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .fcta-left { max-width: 600px; }
+    .fcta-tag {
+      font-size: 10.5px;
+      letter-spacing: 3px;
+      color: #D4AF37;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .fcta-h {
+      font-size: clamp(26px, 3.4vw, 42px);
+      line-height: 1.1;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 14px;
+    }
+    .fcta-meta {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+      font-size: 12.5px;
+      color: rgba(237, 232, 223, 0.85);
+    }
+    .fcta-meta-item { display: flex; align-items: center; gap: 7px; }
+    .fcta-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 12px;
+    }
+
+    /* ===================================================
+       SECTION 9: ORGANIZAN FOOTER
+       =================================================== */
+    .org-bar {
+      padding: 36px 0;
+      background: #040404;
+      border-top: 1px solid rgba(212, 175, 55, 0.15);
+      text-align: center;
+    }
+    .org-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 44px;
+      flex-wrap: wrap;
+    }
+    .org-label {
+      font-size: 10.5px;
+      letter-spacing: 3px;
+      color: #D4AF37;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+    .org-brand {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #FFFFFF;
+    }
+    .org-brand.gen {
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+      letter-spacing: 1.5px;
+      color: #FFFFFF;
+      line-height: 1.1;
+      text-align: left;
+    }
+    .org-brand.gen span {
+      display: block;
+      font-size: 8px;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      color: rgba(237, 232, 223, 0.6);
+    }
+    .org-brand.tecnobrain {
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .org-brand.tecnobrain .tb-icon { color: #38BDF8; font-size: 17px; }
+    .org-brand.cencherle {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 17px;
+      letter-spacing: 1px;
+      color: #EDE8DF;
+      line-height: 1.1;
+      text-align: center;
+    }
+    .org-brand.cencherle span {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 8px;
+      font-weight: 800;
+      letter-spacing: 2.5px;
+      color: #D4AF37;
+    }
+    .org-brand.fede {
+      font-family: 'Alex Brush', cursive;
+      font-size: 29px;
+      color: #F5D680;
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 991px) {
+      .hero { padding: 40px 0 30px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 30px; }
+      .hero-bg-speakers {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        height: 380px;
+        margin: 20px auto 0;
+      }
+      .hero-bg-speakers img {
+        -webkit-mask-image: linear-gradient(to top, transparent 0%, black 25%);
+        mask-image: linear-gradient(to top, transparent 0%, black 25%);
+      }
+      .hero-speakers-col { min-height: auto; }
+      .hero-signatures { grid-template-columns: repeat(3, 1fr); margin-top: 15px; }
+      .mani-grid { grid-template-columns: 1fr; gap: 30px; }
+      .spk-grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
+      .tkw-grid { grid-template-columns: repeat(2, 1fr); }
+      .agd-grid { grid-template-columns: 1fr; }
+      .prc-grid { grid-template-columns: 1fr; max-width: 480px; margin: 30px auto 0; }
+      .faq-grid { grid-template-columns: 1fr; gap: 30px; }
+      .fcta-inner { flex-direction: column; align-items: flex-start; }
+      .fcta-actions { align-items: flex-start; }
+    }
+
+    @media (max-width: 640px) {
+      .tkw-grid { grid-template-columns: 1fr; }
+      .hero-top-keywords { display: none; }
+      .hero-meta-bar { flex-direction: column; align-items: flex-start; gap: 10px; width: 100%; }
+      .hero-meta-sep { display: none; }
+      .hero-signatures { grid-template-columns: 1fr; gap: 14px; }
+      .org-inner { flex-direction: column; gap: 20px; }
     }
   </style>
 </head>
 <body>
 
-  <div class="ambient-glow"></div>
-
-  <!-- Top Bar -->
-  <nav class="top-nav">
-    <div class="container nav-flex">
-      <a href="/" class="brand-logo">
-        <span class="brand-badge">EVENTO</span>
-        <span class="brand-text">MENTALIDAD & MARKETING</span>
-      </a>
-      <a href="https://wa.me/5491138205570?text=Hola!%20Quiero%20consultar%20por%20las%20entradas%20del%20evento%20Mentalidad%20y%20Marketing%20del%2010%20de%20Octubre." target="_blank" rel="noopener noreferrer" class="btn-nav-wa">
-        💬 Consultar Cupos
-      </a>
+  <!-- ===================================================
+       HERO SECTION (Full width composite banner)
+       =================================================== -->
+  <header class="hero">
+    <!-- Speakers Background Composition (Desktop & Tablet) -->
+    <div class="hero-bg-speakers">
+      <img src="/events_new/hero-real-speakers.jpg" alt="Fede Novak, Anthony Sánchez Altuna, Christian Cencherle">
     </div>
-  </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      
-      <div class="badge-pill">
-        📍 Evento Presencial • 10 de Octubre en Buenos Aires
-      </div>
-
-      <h1 class="h1-title">
-        Mentalidad y Marketing
-        <span class="gold-grad">Neuroventas con IA</span>
-      </h1>
-
-      <p class="hero-lead">
-        El intensivo presencial para <strong>Dueños de Negocio y Emprendedores</strong> que buscan romper sus techos de facturación integrando psicología de compra, autoridad de marca y herramientas de Inteligencia Artificial.
-      </p>
-
-      <!-- Quick Info Strip -->
-      <div class="event-info-bar">
-        <div class="info-badge-card">
-          <span>📅</span>
-          <span>10 de Octubre</span>
-        </div>
-        <div class="info-badge-card">
-          <span>⏰</span>
-          <span>10:00 a 17:00 hs</span>
-        </div>
-        <div class="info-badge-card">
-          <span>📍</span>
-          <span>Lavalle 362, Piso 7 (CABA)</span>
+    <div class="cx">
+      <!-- Top Keywords Stack -->
+      <div class="hero-top-bar">
+        <div class="hero-top-keywords">
+          <span>IDEAS</span>
+          <span class="kw-sep"></span>
+          <span>HERRAMIENTAS</span>
+          <span class="kw-sep"></span>
+          <span>CASOS REALES</span>
+          <span class="kw-sep"></span>
+          <span>RESULTADOS</span>
         </div>
       </div>
 
-      <!-- Live Countdown -->
-      <div class="countdown-box">
-        <div class="countdown-title">🔥 Faltan para el Evento</div>
-        <div class="countdown-grid">
-          <div class="countdown-unit">
-            <div class="countdown-num" id="cd-days">--</div>
-            <div class="countdown-label">Días</div>
+      <div class="hero-grid">
+        <!-- Hero Left Text & Info -->
+        <div class="hero-content">
+          <div class="hero-tag">✦ EVENTO PRESENCIAL</div>
+          <h1 class="hero-h1 sf">
+            Mentalidad<br>
+            y Marketing
+            <span class="hero-h1-gold gold-gradient">Neuroventas con IA</span>
+          </h1>
+          <p class="hero-desc">
+            Una jornada para transformar la forma en que pensás, comunicás y vendés tu negocio, con neurociencia, inteligencia artificial, marca personal y casos reales.
+          </p>
+
+          <!-- Meta bar with Gold SVG Icons -->
+          <div class="hero-meta-bar">
+            <div class="hero-meta-item">
+              <svg class="gold-svg-icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <span><strong>10 de octubre</strong></span>
+            </div>
+            <div class="hero-meta-sep"></div>
+            <div class="hero-meta-item">
+              <svg class="gold-svg-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span><strong>10:00 a 17:00 hs</strong> <span class="sub-note">(Break de 13 a 14 hs)</span></span>
+            </div>
+            <div class="hero-meta-sep"></div>
+            <div class="hero-meta-item">
+              <svg class="gold-svg-icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span><strong>Lavalle 362, Piso 7</strong> <span class="sub-note">(Microcentro, CABA)</span></span>
+            </div>
           </div>
-          <div class="countdown-unit">
-            <div class="countdown-num" id="cd-hours">--</div>
-            <div class="countdown-label">Horas</div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions">
+            <a href="https://wa.me/5491170610766?text=Hola%2C%20quiero%20reservar%20mi%20lugar%20en%20el%20evento%20Mentalidad%20y%20Marketing%20-%20Neuroventas%20con%20IA%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="btn-gold">
+              RESERVAR MI LUGAR →
+            </a>
+            <div class="badge-cupos">
+              <svg class="gold-svg-icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              <span>CUPOS LIMITADOS</span>
+            </div>
           </div>
-          <div class="countdown-unit">
-            <div class="countdown-num" id="cd-minutes">--</div>
-            <div class="countdown-label">Min</div>
-          </div>
-          <div class="countdown-unit">
-            <div class="countdown-num" id="cd-seconds">--</div>
-            <div class="countdown-label">Seg</div>
+        </div>
+
+        <!-- Hero Right Column: Signatures underneath portraits -->
+        <div class="hero-speakers-col">
+          <div class="hero-signatures">
+            <div class="hero-sig-item">
+              <div class="hero-sig-name">Fede Novak</div>
+              <div class="hero-sig-role">MARCA PERSONAL<br>Y MENTALIDAD</div>
+            </div>
+            <div class="hero-sig-item">
+              <div class="hero-sig-name">Anthony Sánchez Altuna</div>
+              <div class="hero-sig-role">NEUROVENTAS<br>CON IA</div>
+            </div>
+            <div class="hero-sig-item">
+              <div class="hero-sig-name">Christian Cencherle</div>
+              <div class="hero-sig-role">TRAYECTORIA<br>EMPRESARIAL</div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+  </header>
 
-      <!-- CTA Hero -->
-      <div class="hero-actions">
-        <a href="#reservar" class="btn-gold">
-          🎟️ Reservar Mi Entrada
-        </a>
-        <a href="https://wa.me/5491138205570?text=Hola!%20Quiero%20consultar%20por%20las%20entradas%20del%20evento%20Mentalidad%20y%20Marketing%20del%2010%20de%20Octubre." target="_blank" rel="noopener noreferrer" class="btn-outline">
-          💬 Consultar por WhatsApp
-        </a>
+  <!-- ===================================================
+       SECTION 2: MANIFIESTO
+       =================================================== -->
+  <section class="mani">
+    <div class="cx">
+      <div class="mani-grid">
+        <!-- Left Image Card with Integrated Text -->
+        <div class="mani-left">
+          <img src="/events_new/manifiesto-skyline.jpg" alt="Visión estratégica empresarial">
+          <div class="mani-left-overlay">
+            <h2 class="mani-left-h sf">
+              NO NECESITÁS<br>
+              MÁS INFORMACIÓN,<br>
+              <span class="gold-part gold-gradient">NECESITÁS SABER CÓMO USARLA PARA VENDER.</span>
+            </h2>
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="mani-right">
+          <p class="mani-p1">
+            Hoy tenemos más herramientas que nunca. Pero tener acceso a ellas no significa saber utilizarlas estratégicamente.
+          </p>
+          <p class="mani-p2">
+            <strong>Mentalidad y Marketing — Neuroventas con IA</strong> es una <strong>experiencia presencial para dueños de negocio y emprendedores</strong> que quieren entender cómo toman decisiones sus clientes, cómo comunicar valor y cómo utilizar la inteligencia artificial y las redes sociales para vender más, con casos reales y herramientas concretas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       SECTION 3: SPEAKERS
+       =================================================== -->
+  <section class="spk" id="speakers">
+    <div class="cx">
+      <div class="sec-hdr">
+        <div>
+          <div class="sec-tag">SPEAKERS</div>
+          <h2 class="sec-title sf">Tres miradas. Un mismo objetivo:<br>hacer crecer tu negocio.</h2>
+        </div>
+        <div class="sec-sub-right">
+          EXPERIENCIA REAL,<br>
+          CONOCIMIENTOS APLICABLES,<br>
+          RESULTADOS.
+        </div>
       </div>
 
-      <!-- Flyer Showcase -->
-      <div class="flyer-card-section">
-        <div class="flyer-grid">
-          <div class="flyer-img-wrap">
-            <img src="/events/flyer-mentalidad-marketing.jpg" alt="Flyer Oficial Mentalidad y Marketing - Neuroventas con IA">
+      <div class="spk-grid">
+        <!-- Speaker 1: Anthony -->
+        <div class="spk-card">
+          <div class="spk-img-wrap">
+            <img src="/events_new/speaker-anthony-clean.jpg" alt="Anthony Sánchez Altuna" class="spk-img">
           </div>
-          <div>
-            <span class="sec-tag">Jornada Intensiva de Alto Impacto</span>
-            <h3 style="font-family: 'Montserrat', sans-serif; font-size: 1.8rem; font-weight: 900; margin-bottom: 14px; color: #fff;">
-              3 Mentores Referentes en el Mismo Escenario
-            </h3>
-            <p style="color: var(--text-sub); font-size: 0.95rem; margin-bottom: 20px;">
-              Una jornada completa pensada para que te lleves un plan de acción concreto: cómo estructurar tu mentalidad para crecer sin quemarte, cómo crear contenidos que venden de verdad y cómo usar la Inteligencia Artificial con Neuroventas para cerrar tratos de alto valor.
-            </p>
-            <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem; color: var(--gold-light); margin-bottom: 24px;">
-              <li>✓ Acceso presencial de 10:00 a 17:00 hs con coffee breaks</li>
-              <li>✓ Espacio de preguntas directas y mentoría abierta</li>
-              <li>✓ Networking estratégico con dueños de negocio y emprendedores</li>
+          <div class="spk-body">
+            <h3 class="spk-name sf gold-gradient">Anthony Sánchez Altuna</h3>
+            <p class="spk-tagline">Economista · Empresario · Especialista en Marketing Digital</p>
+            <ul class="spk-bullets">
+              <li>Dueño de una clínica dental y de una agencia de marketing.</li>
+              <li>Director de GEN (Gestión Empresarial de Negocios).</li>
+              <li>Formado junto a Jürgen Klarić.</li>
             </ul>
-            <a href="#reservar" class="btn-gold" style="padding: 12px 26px; font-size: 0.85rem;">
-              Asegurar Mi Lugar Ahora
-            </a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- 3 Pilares -->
-  <section class="section" style="background: rgba(255,255,255,0.01);">
-    <div class="container">
-      <div class="sec-header">
-        <span class="sec-tag">Ejes Estratégicos</span>
-        <h2 class="sec-title">Lo que vas a aprender y dominar</h2>
-        <p class="sec-desc">Un temario práctico diseñado para transformar los tres pilares críticos de cualquier negocio moderno.</p>
-      </div>
-
-      <div class="grid-3">
-        <div class="card">
-          <div>
-            <div class="card-icon">🧠</div>
-            <span class="sec-tag">Eje 01 • Mentalidad</span>
-            <h3 class="card-h3">Mentalidad de Dueño & Escalamiento</h3>
-            <p class="card-p">
-              Cómo superar el autoempleo, blindar tu enfoque bajo presión y construir una estructura de liderazgo que te permita delegar y hacer crecer tu facturación sin límites.
-            </p>
-          </div>
-          <div style="margin-top: 24px; padding-top: 14px; border-top: 1px solid var(--border); font-size: 0.8rem; color: var(--gold); font-weight: 700;">
-            Mentor: Christian Cencherle
-          </div>
-        </div>
-
-        <div class="card">
-          <div>
-            <div class="card-icon">🎬</div>
-            <span class="sec-tag">Eje 02 • Marketing</span>
-            <h3 class="card-h3">Marca Personal con Intención de Compra</h3>
-            <p class="card-p">
-              El método paso a paso para vencer el miedo a la cámara, crear guiones que atrapan prospectos calificados y convertir seguidores en compradores constantes sin perseguir a nadie.
-            </p>
-          </div>
-          <div style="margin-top: 24px; padding-top: 14px; border-top: 1px solid var(--border); font-size: 0.8rem; color: var(--gold); font-weight: 700;">
-            Mentor: Fede Nowback
-          </div>
-        </div>
-
-        <div class="card">
-          <div>
-            <div class="card-icon">⚡</div>
-            <span class="sec-tag">Eje 03 • Neuroventas & IA</span>
-            <h3 class="card-h3">Neuroventas & Cierres con IA</h3>
-            <p class="card-p">
-              Neurociencia de la decisión del comprador combinada con agentes y herramientas de Inteligencia Artificial para automatizar la prospección y multiplicar cierres comerciales.
-            </p>
-          </div>
-          <div style="margin-top: 24px; padding-top: 14px; border-top: 1px solid var(--border); font-size: 0.8rem; color: var(--gold); font-weight: 700;">
-            Mentor: Anthony Altuna
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Speakers -->
-  <section class="section" id="speakers">
-    <div class="container">
-      <div class="sec-header">
-        <span class="sec-tag">Panel de Expositores</span>
-        <h2 class="sec-title">Conocé a los Speakers</h2>
-        <p class="sec-desc">Referentes de trayectoria comprobada en la práctica de negocios, ventas y comunicación.</p>
-      </div>
-
-      <div class="grid-3">
-        <!-- Anthony Altuna -->
-        <div class="speaker-card">
-          <div>
-            <div class="speaker-photo">
-              <img src="/events/anthony_altuna.jpg" alt="Anthony Altuna">
+            <div class="spk-talk-box">
+              <div class="spk-talk-title">NEUROVENTAS Y NEUROMARKETING CON IA</div>
             </div>
-            <h3 style="font-family: 'Montserrat', sans-serif; font-size: 1.4rem; font-weight: 900; color: #fff;">Anthony Altuna</h3>
-            <div class="speaker-role">Economista & Neurocoach Profesional</div>
-            <p style="color: var(--text-sub); font-size: 0.88rem; margin-top: 12px; line-height: 1.6;">
-              Especialista en Neuroventas, conferencista internacional y ex-embajador formador BIIA Lab en Argentina. Experto en psicología de decisión y aplicación de IA en embudos comerciales.
+            <p class="spk-talk-desc">
+              Herramientas de diseño, contenido y campañas publicitarias en redes sociales, con ejemplos y métricas reales de sus propios negocios.
             </p>
-          </div>
-          <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid var(--border);">
-            <a href="https://www.instagram.com/gendenegocio/" target="_blank" rel="noopener noreferrer" style="color: #f472b6; font-size: 0.85rem; font-weight: 700; text-decoration: none;">
-              📸 @gendenegocio
-            </a>
           </div>
         </div>
 
-        <!-- Fede Nowback -->
-        <div class="speaker-card" style="border-color: var(--border-gold);">
-          <div>
-            <div class="speaker-photo">
-              <img src="/events/fede_nowback.jpg" alt="Fede Nowback">
-            </div>
-            <h3 style="font-family: 'Montserrat', sans-serif; font-size: 1.4rem; font-weight: 900; color: #fff;">Fede Nowback</h3>
-            <div class="speaker-role">Estratega de Marca Personal & Creador</div>
-            <p style="color: var(--text-sub); font-size: 0.88rem; margin-top: 12px; line-height: 1.6;">
-              +10 años en producción y medios, mentor de marcas personales y creador del Método Nowback. Enseña a comunicar con autoridad y transformar contenido en ventas predecibles.
-            </p>
+        <!-- Speaker 2: Fede Novak -->
+        <div class="spk-card">
+          <div class="spk-img-wrap">
+            <img src="/events_new/speaker-fede-clean.jpg" alt="Fede Novak" class="spk-img">
           </div>
-          <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid var(--border); display: flex; justify-content: space-between;">
-            <a href="https://www.instagram.com/fedenowback/" target="_blank" rel="noopener noreferrer" style="color: #f472b6; font-size: 0.85rem; font-weight: 700; text-decoration: none;">
-              📸 @fedenowback
-            </a>
-            <a href="https://fedenowback.com.ar" style="color: var(--gold); font-size: 0.85rem; font-weight: 700; text-decoration: none;">
-              🌐 Web Oficial
-            </a>
+          <div class="spk-body">
+            <h3 class="spk-name sf gold-gradient">Fede Novak</h3>
+            <p class="spk-tagline">Productor · Creador de contenido · Referente en Marca Personal</p>
+            <ul class="spk-bullets">
+              <li>Marca personal consolidada.</li>
+              <li>Referente e influencer en redes sociales.</li>
+            </ul>
+            <div class="spk-talk-box">
+              <div class="spk-talk-title">MARCA PERSONAL, MENTALIDAD Y VENTAS EN REDES SOCIALES</div>
+            </div>
+            <p class="spk-talk-desc">
+              Cómo vender a través de redes sociales, humanizar tu marca personal, trabajar la mentalidad y la autoconfianza, y dar los primeros pasos para vender online.
+            </p>
           </div>
         </div>
 
-        <!-- Christian Cencherle -->
-        <div class="speaker-card">
-          <div>
-            <div class="speaker-photo">
-              <img src="/events/christian_cencherle.jpg" alt="Christian Cencherle">
-            </div>
-            <h3 style="font-family: 'Montserrat', sans-serif; font-size: 1.4rem; font-weight: 900; color: #fff;">Christian Cencherle</h3>
-            <div class="speaker-role">Empresario & Referente de Liderazgo</div>
-            <p style="color: var(--text-sub); font-size: 0.88rem; margin-top: 12px; line-height: 1.6;">
-              Titular de Cencherle Lanas. Líder en transformación de empresas tradicionales al entorno digital, cultura del trabajo, disciplina operativa y mentalidad de acero para dueños de negocio.
-            </p>
+        <!-- Speaker 3: Christian Cencherle -->
+        <div class="spk-card">
+          <div class="spk-img-wrap">
+            <img src="/events_new/speaker-christian-clean.jpg" alt="Christian Cencherle" class="spk-img">
           </div>
-          <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid var(--border);">
-            <a href="https://www.instagram.com/christian_cencherle/" target="_blank" rel="noopener noreferrer" style="color: #f472b6; font-size: 0.85rem; font-weight: 700; text-decoration: none;">
-              📸 @christian_cencherle
-            </a>
+          <div class="spk-body">
+            <h3 class="spk-name sf gold-gradient">Christian Cencherle</h3>
+            <p class="spk-tagline">Empresario · Más de 25 años en el mercado</p>
+            <ul class="spk-bullets">
+              <li>Referente del rubro lanas.</li>
+              <li>Dos locales (Palermo y Lomas de Zamora).</li>
+            </ul>
+            <div class="spk-talk-box">
+              <div class="spk-talk-title">EMPRENDER CUANDO LA TEORÍA SE TERMINA</div>
+            </div>
+            <p class="spk-talk-desc">
+              Charla motivacional basada en su trayectoria de más de 25 años construyendo una empresa en el mercado argentino.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Cronograma -->
-  <section class="section" style="background: rgba(255,255,255,0.015);">
-    <div class="container" style="max-width: 860px;">
-      <div class="sec-header">
-        <span class="sec-tag">Agenda Completa</span>
-        <h2 class="sec-title">Cronograma de la Jornada</h2>
-        <p class="sec-desc">Jueves 10 de Octubre de 10:00 a 17:00 hs en Lavalle 362, Piso 7, CABA.</p>
-      </div>
-
-      <div class="schedule-item">
+  <!-- ===================================================
+       SECTION 4: QUÉ TE LLEVÁS (5 Gold SVG Cards)
+       =================================================== -->
+  <section class="tkw" id="beneficios">
+    <div class="cx">
+      <div class="tkw-intro">
         <div>
-          <h4 style="font-family: 'Montserrat', sans-serif; font-weight: 800; color: #fff;">09:30 - 10:00 | Acreditaciones & Bienvenida</h4>
-          <p style="color: var(--text-muted); font-size: 0.85rem;">Recepción, entrega de identificaciones y café de bienvenida.</p>
+          <div class="sec-tag">QUÉ TE LLEVÁS</div>
+          <h2 class="sec-title sf">Ideas que podés<br>implementar.</h2>
         </div>
-        <div class="schedule-time">09:30 hs</div>
-      </div>
-
-      <div class="schedule-item" style="border-color: var(--border-gold);">
-        <div>
-          <h4 style="font-family: 'Montserrat', sans-serif; font-weight: 800; color: #fff;">10:00 - 11:30 | Bloque 1: Mentalidad de Crecimiento & Liderazgo</h4>
-          <p style="color: var(--gold-light); font-size: 0.85rem;">Christian Cencherle: Romper techos mentales y liderar como dueño.</p>
-        </div>
-        <div class="schedule-time">10:00 hs</div>
-      </div>
-
-      <div class="schedule-item">
-        <div>
-          <h4 style="font-family: 'Montserrat', sans-serif; font-weight: 800; color: #fff;">11:45 - 13:00 | Bloque 2: Marca Personal & Contenido con Intención</h4>
-          <p style="color: var(--text-muted); font-size: 0.85rem;">Fede Nowback: Estructura de guiones, confianza ante cámara y ventas por DM.</p>
-        </div>
-        <div class="schedule-time">11:45 hs</div>
-      </div>
-
-      <div class="schedule-item" style="opacity: 0.8;">
-        <div>
-          <h4 style="font-family: 'Montserrat', sans-serif; font-weight: 800; color: var(--text-sub);">13:00 - 14:00 | Break de Almuerzo & Networking</h4>
-          <p style="color: var(--text-muted); font-size: 0.85rem;">Pausa libre para almorzar y conectar con otros emprendedores.</p>
-        </div>
-        <div class="schedule-time">13:00 hs</div>
-      </div>
-
-      <div class="schedule-item" style="border-color: var(--border-gold);">
-        <div>
-          <h4 style="font-family: 'Montserrat', sans-serif; font-weight: 800; color: #fff;">14:00 - 15:30 | Bloque 3: Neuroventas & Cierres de Alto Impacto con IA</h4>
-          <p style="color: var(--gold-light); font-size: 0.85rem;">Anthony Altuna: Neurociencia de compras, automatizaciones y agentes de IA.</p>
-        </div>
-        <div class="schedule-time">14:00 hs</div>
-      </div>
-
-      <div class="schedule-item">
-        <div>
-          <h4 style="font-family: 'Montserrat', sans-serif; font-weight: 800; color: #fff;">15:45 - 16:45 | Panel Abierto de Preguntas & Mentoría</h4>
-          <p style="color: var(--text-muted); font-size: 0.85rem;">Los 3 speakers responden las dudas directas de tu negocio.</p>
-        </div>
-        <div class="schedule-time">15:45 hs</div>
-      </div>
-
-      <div class="schedule-item">
-        <div>
-          <h4 style="font-family: 'Montserrat', sans-serif; font-weight: 800; color: #fff;">16:45 - 17:00 | Cierre Oficial, Fotos & Despedida</h4>
-          <p style="color: var(--text-muted); font-size: 0.85rem;">Conclusiones y foto grupal oficial.</p>
-        </div>
-        <div class="schedule-time">16:45 hs</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Reserva Form -->
-  <section class="section" id="reservar">
-    <div class="container">
-      <div class="reserva-card">
-        <span class="sec-tag">Cupos Estrictamente Limitados</span>
-        <h2 style="font-family: 'Montserrat', sans-serif; font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 900; margin-bottom: 12px; color: #fff;">
-          Asegurá Tu Entrada al Evento
-        </h2>
-        <p style="color: var(--text-sub); font-size: 0.95rem; margin-bottom: 32px;">
-          Ingresá tus datos para coordinar tu acreditación y confirmar tu cupo directamente por WhatsApp con nuestro equipo.
+        <p class="tkw-desc">
+          Vas a salir del evento con herramientas concretas, inspiración y contactos para seguir haciendo crecer tu negocio.
         </p>
+      </div>
 
-        <form id="reservaForm" onsubmit="enviarReserva(event)">
-          <div class="form-group">
-            <label class="form-label">Nombre y Apellido *</label>
-            <input type="text" id="r_nombre" class="form-input" required placeholder="Ej. Juan Pérez">
+      <div class="tkw-grid">
+        <!-- Item 1: IA -->
+        <div class="tkw-card">
+          <div class="tkw-icon-box">
+            <svg class="gold-svg-icon" style="width:24px;height:24px" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+          </div>
+          <h3 class="tkw-title">Herramientas prácticas de IA</h3>
+          <p class="tkw-text">aplicadas a redes sociales y ventas.</p>
+        </div>
+
+        <!-- Item 2: Casos reales -->
+        <div class="tkw-card">
+          <div class="tkw-icon-box">
+            <svg class="gold-svg-icon" style="width:24px;height:24px" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line><line x1="2" y1="20" x2="22" y2="20"></line></svg>
+          </div>
+          <h3 class="tkw-title">Casos reales y métricas</h3>
+          <p class="tkw-text">de campañas implementadas.</p>
+        </div>
+
+        <!-- Item 3: Neuroventas -->
+        <div class="tkw-card">
+          <div class="tkw-icon-box">
+            <svg class="gold-svg-icon" style="width:24px;height:24px" viewBox="0 0 24 24"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-5.04z"></path><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-5.04z"></path></svg>
+          </div>
+          <h3 class="tkw-title">Estrategias de neuroventas</h3>
+          <p class="tkw-text">y neuromarketing.</p>
+        </div>
+
+        <!-- Item 4: Marca personal -->
+        <div class="tkw-card">
+          <div class="tkw-icon-box">
+            <svg class="gold-svg-icon" style="width:24px;height:24px" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </div>
+          <h3 class="tkw-title">Cómo construir y humanizar</h3>
+          <p class="tkw-text">tu marca personal.</p>
+        </div>
+
+        <!-- Item 5: Networking -->
+        <div class="tkw-card">
+          <div class="tkw-icon-box">
+            <svg class="gold-svg-icon" style="width:24px;height:24px" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h3 class="tkw-title">Networking</h3>
+          <p class="tkw-text">con otros dueños de negocio y emprendedores.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       SECTION 5: AGENDA
+       =================================================== -->
+  <section class="agd" id="agenda">
+    <div class="cx">
+      <div class="agd-grid">
+        <!-- Left: Auditorium Stage Photo -->
+        <div class="agd-left">
+          <div class="sec-tag">AGENDA</div>
+          <h2 class="sec-title sf" style="margin-bottom: 20px;">Un día, todo<br>lo que necesitás.</h2>
+          <div class="agd-photo">
+            <img src="/events_new/agenda-auditorium.jpg" alt="Auditorio del evento presencial">
+          </div>
+        </div>
+
+        <!-- Right: Timeline -->
+        <div class="agd-timeline">
+          <!-- Item 1 -->
+          <div class="agd-item">
+            <div class="agd-dot"></div>
+            <span class="agd-time">10:00</span>
+            <h3 class="agd-item-title">Apertura: Neuroventas y marketing con IA</h3>
+            <div class="agd-item-speaker">Anthony Sánchez Altuna</div>
+            <p class="agd-item-desc">Fundamentos de neurociencia aplicados al proceso de compra y cómo integrar herramientas de IA en tu estrategia comercial.</p>
           </div>
 
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
-            <div class="form-group">
-              <label class="form-label">Email *</label>
-              <input type="email" id="r_email" class="form-input" required placeholder="tu@email.com">
-            </div>
-            <div class="form-group">
-              <label class="form-label">WhatsApp *</label>
-              <input type="tel" id="r_telefono" class="form-input" required placeholder="+54 9 11 ...">
-            </div>
+          <!-- Item 2 -->
+          <div class="agd-item">
+            <div class="agd-dot"></div>
+            <span class="agd-time">13:00</span>
+            <h3 class="agd-item-title">Break (1 hora)</h3>
+            <p class="agd-item-desc">Almuerzo libre y espacio de networking con los disertantes y otros emprendedores.</p>
           </div>
 
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
-            <div class="form-group">
-              <label class="form-label">Empresa / Negocio</label>
-              <input type="text" id="r_empresa" class="form-input" placeholder="Nombre de tu proyecto">
-            </div>
-            <div class="form-group">
-              <label class="form-label">Rubro</label>
-              <select id="r_rubro" class="form-select">
-                <option value="Servicios Profesionales">Servicios / Consultoría</option>
-                <option value="Comercio / Ecommerce">Comercio / E-commerce</option>
-                <option value="Industria / Fabricación">Industria / Fabricación</option>
-                <option value="Inmobiliario / Construcción">Inmobiliario / Construcción</option>
-                <option value="Salud / Bienestar">Salud / Estética / Bienestar</option>
-                <option value="Tecnología">Tecnología / Software</option>
-                <option value="Otro">Otro Rubro</option>
-              </select>
-            </div>
+          <!-- Item 3 -->
+          <div class="agd-item">
+            <div class="agd-dot"></div>
+            <span class="agd-time">14:00</span>
+            <h3 class="agd-item-title">Charla motivacional & Marca personal y mentalidad</h3>
+            <div class="agd-item-speaker">Christian Cencherle & Fede Novak</div>
+            <p class="agd-item-desc">Más de 25 años superando crisis empresariales en Argentina + Estrategias de posicionamiento en redes sociales y mentalidad ganadora.</p>
           </div>
 
-          <div style="margin-top: 24px;">
-            <button type="submit" class="btn-gold" style="width: 100%; justify-content: center;">
-              💬 Solicitar Entrada por WhatsApp
+          <!-- Item 4 -->
+          <div class="agd-item">
+            <div class="agd-dot"></div>
+            <span class="agd-time">17:00</span>
+            <h3 class="agd-item-title">Cierre del evento</h3>
+            <p class="agd-item-desc">Conclusiones, sesión de preguntas y respuestas, y oferta especial exclusiva para los asistentes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       SECTION 6: TU INVERSIÓN (Pricing & Payment methods)
+       =================================================== -->
+  <section class="prc" id="entradas">
+    <div class="cx">
+      <div style="text-align: center;">
+        <div class="sec-tag">TU INVERSIÓN</div>
+        <h2 class="sec-title sf">Asegurá tu lugar <span style="font-weight:400; font-size:0.65em; color:rgba(237,232,223,0.65);">antes del 3 de octubre.</span></h2>
+      </div>
+
+      <div class="prc-grid">
+        <!-- Card 1: Preventa -->
+        <div class="prc-card featured">
+          <div class="prc-badge-feat">PREVENTA EXCLUSIVA</div>
+          <div class="prc-title">PREVENTA</div>
+          <div class="prc-sub">HASTA EL 3 DE OCTUBRE</div>
+          <div class="prc-old">$150.000</div>
+          <div class="prc-amount">$80.000</div>
+          <div class="prc-save">Ahorrás $70.000</div>
+          <ul class="prc-features">
+            <li>Acceso completo a toda la jornada (10 a 17 hs)</li>
+            <li>Las 3 charlas y workshops prácticos</li>
+            <li>Espacio de networking exclusivo</li>
+            <li>Material complementario en PDF</li>
+            <li>Certificado digital de asistencia</li>
+          </ul>
+          <a href="https://wa.me/5491170610766?text=Hola%2C%20quiero%20aprovechar%20la%20preventa%20de%20%2480.000%20para%20el%20evento%20Mentalidad%20y%20Marketing%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="btn-gold">
+            RESERVAR PREVENTA →
+          </a>
+        </div>
+
+        <!-- Card 2: Precio de Lista -->
+        <div class="prc-card">
+          <div class="prc-title" style="color: #fff;">PRECIO DE LISTA</div>
+          <div class="prc-sub">LUEGO DEL 3 DE OCTUBRE</div>
+          <div class="prc-amount" style="margin-top: 26px;">$150.000</div>
+          <ul class="prc-features" style="margin-top: 36px;">
+            <li>Acceso completo a la jornada presencial</li>
+            <li>Las 3 charlas y workshops prácticos</li>
+            <li>Espacio de networking</li>
+            <li>Material complementario</li>
+            <li>Certificado digital de asistencia</li>
+          </ul>
+          <a href="https://wa.me/5491170610766?text=Hola%2C%20quiero%20reservar%20mi%20entrada%20para%20el%20evento%20Mentalidad%20y%20Marketing%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="btn-gold" style="background: rgba(255,255,255,0.08); color: #fff; border: 1px solid rgba(212,175,55,0.35);">
+            RESERVAR ENTRADA →
+          </a>
+        </div>
+
+        <!-- Card 3: Comunidad Fede Novak -->
+        <div class="prc-card">
+          <div class="prc-comunidad-box">
+            <div class="prc-comunidad-icon">
+              <svg class="gold-svg-icon" style="width:42px;height:42px;" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <div class="prc-title" style="color: #D4AF37; margin-bottom: 8px;">COMUNIDAD FEDE NOVAK</div>
+            <p style="font-size: 13.5px; color: rgba(237,232,223,0.7); margin-bottom: 24px; line-height: 1.5;">
+              Valor y acceso especial exclusivo para miembros de la comunidad.
+            </p>
+            <a href="https://wa.me/5491170610766?text=Hola%2C%20soy%20de%20la%20comunidad%20de%20Fede%20Novak%20y%20quiero%20acceder%20al%20valor%20especial%20para%20el%20evento%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="btn-gold" style="padding: 13px 22px; font-size: 12px;">
+              Consultá para acceder
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Medios de Pago Bar with SVGs -->
+      <div class="pay-methods-bar">
+        <div class="lbl">MEDIOS DE PAGO</div>
+        <div class="items">
+          <div class="item">
+            <svg class="gold-svg-icon" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"></rect><circle cx="12" cy="12" r="2"></circle><path d="M6 12h.01M18 12h.01"></path></svg>
+            <span>Efectivo</span>
+          </div>
+          <div class="item">
+            <svg class="gold-svg-icon" viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+            <span>Transferencia</span>
+          </div>
+          <div class="item">
+            <svg class="gold-svg-icon" viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+            <span>Tarjeta de crédito</span>
+          </div>
+          <div class="item">
+            <svg class="gold-svg-icon" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            <span>Pago online directo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       SECTION 7: PREGUNTAS FRECUENTES (FAQ)
+       =================================================== -->
+  <section class="faq" id="faq">
+    <div class="cx">
+      <div class="faq-grid">
+        <div class="faq-left">
+          <div class="sec-tag">PREGUNTAS FRECUENTES</div>
+          <h2 class="sec-title sf">Todo lo que<br>necesitás saber.</h2>
+          <p class="faq-left-p">
+            ¿Tenés alguna duda puntual sobre el evento, la ubicación o los métodos de pago? Escribinos directamente por WhatsApp y te asesoramos al instante.
+          </p>
+          <a href="https://wa.me/5491170610766?text=Hola%2C%20tengo%20una%20consulta%20sobre%20el%20evento%20Mentalidad%20y%20Marketing%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="faq-wa-btn">
+            <span>Consultar por WhatsApp</span>
+          </a>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item active">
+            <button class="faq-question" type="button">
+              <span>¿Dónde se realiza el evento?</span>
+              <span class="icon">+</span>
             </button>
+            <div class="faq-answer">
+              El evento se llevará a cabo en <strong>Lavalle 362, Piso 7</strong>, en pleno Microcentro de la Ciudad Autónoma de Buenos Aires (CABA). Una ubicación estratégica y de fácil acceso en transporte público o vehículo particular.
+            </div>
           </div>
-        </form>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>¿Qué incluye la entrada?</span>
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Incluye el acceso presencial a la jornada completa de 10:00 a 17:00 hs, las disertaciones de los tres oradores, sesión de preguntas y respuestas, material digital complementario y acceso al espacio de networking. (El almuerzo durante el break es libre).
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>¿Puedo cancelar mi inscripción?</span>
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Por cuestiones de capacidad y reserva del auditorio, las inscripciones no son reembolsables. Sin embargo, podés transferir tu lugar a otra persona notificándonos con al menos 48 horas de anticipación por WhatsApp.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>¿Hay estacionamiento cerca?</span>
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Sí, sobre la calle Lavalle, Av. Corrientes, San Martín y Reconquista hay múltiples estacionamientos comerciales funcionando durante todo el día a menos de 100 metros del edificio.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>¿A quién está dirigido?</span>
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              A dueños de negocio, comerciantes, profesionales independientes, creadores de contenido, directores de agencias y emprendedores que buscan aplicar neurociencia, herramientas de inteligencia artificial y marca personal para multiplicar sus ventas reales.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>¿Cómo se realiza el pago?</span>
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Podés abonar por transferencia bancaria directa, tarjeta de crédito o efectivo. Al hacer clic en cualquiera de los botones de reserva se te redirige a WhatsApp donde el equipo te enviará los datos de pago y confirmará tu acreditación inmediata.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="section" style="padding-top: 20px;">
-    <div class="container" style="max-width: 780px;">
-      <div class="sec-header">
-        <span class="sec-tag">Preguntas Frecuentes</span>
-        <h2 class="sec-title">Dudas Comunes</h2>
-      </div>
+  <!-- ===================================================
+       SECTION 8: PRE-FOOTER CTA
+       =================================================== -->
+  <section class="fcta">
+    <div class="fcta-bg"></div>
+    <div class="cx">
+      <div class="fcta-inner">
+        <div class="fcta-left">
+          <div class="fcta-tag">EVENTO PRESENCIAL</div>
+          <h2 class="fcta-h sf">
+            Mentalidad y Marketing<br>
+            <span class="gold-gradient">Neuroventas con IA</span>
+          </h2>
+          <div class="fcta-meta">
+            <div class="fcta-meta-item">
+              <svg class="gold-svg-icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <span>10 de octubre</span>
+            </div>
+            <div class="fcta-meta-item">
+              <svg class="gold-svg-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>10:00 a 17:00 hs (Break de 13 a 14 hs)</span>
+            </div>
+            <div class="fcta-meta-item">
+              <svg class="gold-svg-icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Lavalle 362, Piso 7 (Microcentro, CABA)</span>
+            </div>
+          </div>
+        </div>
 
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          <span>¿Cuándo y dónde es el evento?</span>
-          <span>▼</span>
-        </div>
-        <div class="faq-a" style="display: block;">
-          El evento se realizará el 10 de octubre de 10:00 a 17:00 hs en Lavalle 362, Piso 7, Microcentro, CABA. Habrá un receso de almuerzo/networking de 13:00 a 14:00 hs.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          <span>¿A quién está dirigido?</span>
-          <span>▼</span>
-        </div>
-        <div class="faq-a" style="display: none;">
-          A dueños de negocio, directores de empresa, profesionales independientes y emprendedores que buscan escalar sus ventas con marca personal, neuroventas e inteligencia artificial.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          <span>¿Cómo abono mi entrada?</span>
-          <span>▼</span>
-        </div>
-        <div class="faq-a" style="display: none;">
-          Al completar el formulario o escribirnos por WhatsApp oficial (+54 9 11 3820-5570), te compartiremos las opciones de transferencia bancaria y acreditación inmediata.
+        <div class="fcta-actions">
+          <div class="badge-cupos">
+            <svg class="gold-svg-icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            <span>CUPOS LIMITADOS</span>
+          </div>
+          <a href="https://wa.me/5491170610766?text=Hola%2C%20quiero%20asegurar%20mi%20lugar%20en%20el%20evento%20Mentalidad%20y%20Marketing%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="btn-gold">
+            RESERVAR MI LUGAR →
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Floating WhatsApp -->
-  <a href="https://wa.me/5491138205570?text=Hola!%20Quiero%20asegurar%20mi%20lugar%20para%20el%20evento%20Mentalidad%20y%20Marketing%20del%2010%20de%20Octubre." target="_blank" rel="noopener noreferrer" class="floating-wa">
-    <span>💬</span>
-    <span>Reservar por WhatsApp</span>
-  </a>
+  <!-- ===================================================
+       SECTION 9: ORGANIZADORES FOOTER
+       =================================================== -->
+  <footer class="org-bar">
+    <div class="cx">
+      <div class="org-inner">
+        <div class="org-label">ORGANIZAN:</div>
+        
+        <!-- GEN -->
+        <div class="org-brand gen">
+          GEN
+          <span>Gestión Empresarial<br>de Negocios</span>
+        </div>
 
-  <!-- Countdown Script -->
+        <!-- TecnoBrain -->
+        <div class="org-brand tecnobrain">
+          <span class="tb-icon">⚡</span>
+          <span>tecnobrain</span>
+        </div>
+
+        <!-- Cencherle LANAS -->
+        <div class="org-brand cencherle">
+          Cencherle
+          <span>LANAS</span>
+        </div>
+
+        <!-- Fede Novak -->
+        <div class="org-brand fede">
+          Fede Novak
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FAQ Interactive Accordion Script -->
   <script>
-    function updateEventCountdown() {
-      var targetDate = new Date('2026-10-10T10:00:00-03:00').getTime();
-      var now = new Date().getTime();
-      var distance = targetDate - now;
-
-      if (distance > 0) {
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        document.getElementById('cd-days').innerText = days;
-        document.getElementById('cd-hours').innerText = hours;
-        document.getElementById('cd-minutes').innerText = minutes;
-        document.getElementById('cd-seconds').innerText = seconds;
-      }
-    }
-    updateEventCountdown();
-    setInterval(updateEventCountdown, 1000);
-
-    function toggleFaq(el) {
-      var answer = el.nextElementSibling;
-      if (answer.style.display === 'none' || answer.style.display === '') {
-        answer.style.display = 'block';
-      } else {
-        answer.style.display = 'none';
-      }
-    }
-
-    function enviarReserva(e) {
-      e.preventDefault();
-      var nombre = document.getElementById('r_nombre').value;
-      var email = document.getElementById('r_email').value;
-      var tel = document.getElementById('r_telefono').value;
-      var emp = document.getElementById('r_empresa').value || 'Emprendimiento';
-      var rubro = document.getElementById('r_rubro').value || 'General';
-
-      var msg = "¡Hola! Quiero reservar mi lugar para el evento *Mentalidad y Marketing — Neuroventas con IA* (10 de Octubre).\n\n*Mis Datos:*\n• Nombre: " + nombre + "\n• Email: " + email + "\n• WhatsApp: " + tel + "\n• Empresa: " + emp + "\n• Rubro: " + rubro;
-      
-      window.open("https://wa.me/5491138205570?text=" + encodeURIComponent(msg), '_blank');
-    }
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        const isActive = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    });
   </script>
-
 </body>
 </html>
