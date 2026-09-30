@@ -9,7 +9,7 @@ tags:
   - web
   - php
   - identidad
-last_updated: 2026-09-28
+last_updated: 2026-09-30
 ---
 
 # 🚀 TecnoGen (`tecnogen.ar`) — Documentación Central
@@ -30,6 +30,7 @@ graph TD
     ProjectWiki --> N3["⚡ [[soluciones_servicios|Soluciones y Servicios]]"]
     ProjectWiki --> N4["🔍 [[estrategia_seo_geo|Estrategia SEO & GEO]]"]
     ProjectWiki --> N5["🖥️ [[infraestructura_dev_prod|Infraestructura Dev & Prod]]"]
+    ProjectWiki --> N6["🎟️ [[landing_evento|Landing Evento 10 Octubre & Pagos]]"]
     ProjectWiki --> Sessions["📅 Sesiones de Trabajo"]
 ```
 
@@ -44,11 +45,14 @@ graph TD
 | [[soluciones_servicios\|Soluciones y Servicios]] | Los 6 pilares comerciales, flujos y arquitectura de conversión | ✅ Completo |
 | [[estrategia_seo_geo\|Estrategia SEO & GEO]] | Datos estructurados Schema.org, entidades, optimización para motores de IA | ✅ Completo |
 | [[infraestructura_dev_prod\|Infraestructura Dev & Prod]] | Servidores Dev (Hostinger VPS `72.62.107.109`), Prod (Ploi `errante`), puertos y túneles SSH | ✅ Completo |
+| [[landing_evento\|Landing Evento & Pagos]] | Landing del evento 10 de octubre, pasarela Mercado Pago, transferencias, efectivo y CWV | ✅ Completo |
 
 ---
 
 ## 📅 Historial de Sesiones
 
+- [[2026-09-30-pasarela-pagos-mercadopago-transferencia|2026-09-30: Integración de Medios de Pago (Mercado Pago, Transferencia y Efectivo)]]
+- [[2026-09-30-optimizacion-pagespeed-cwv-landing|2026-09-30: Optimización Extrema PageSpeed & Core Web Vitals (Auto-hospedaje WOFF2 & Responsive WebP)]]
 - [[2026-09-29-rediseño-manifiesto-speakers-agenda|2026-09-29: Rediseño Manifiesto, Imágenes Limpias de Agenda/CTA y Corrección Fede NowBack]]
 - [[2026-09-28-actualizacion-precios-landing-evento|2026-09-28: Actualización de Precios Landing Evento y Auditoría LLM Wiki]]
 - [[2026-09-27-migracion-arquitectura-php-fedenowback\|2026-09-27: Reestructuración Total y Migración a Arquitectura PHP Nativo Modular (Estándar Fedenowback)]]
