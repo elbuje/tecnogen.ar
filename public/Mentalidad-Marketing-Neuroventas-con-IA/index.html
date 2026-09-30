@@ -24,17 +24,13 @@
   <meta name="twitter:description" content="Evento presencial en CABA. Neurociencia, Inteligencia Artificial, Marca Personal y casos reales para hacer crecer tu negocio.">
   <meta name="twitter:image" content="https://tecnogen.ar/events_new/og-mentalidad-marketing-ia-10oct.jpg">
   
-  <!-- Preload Critical Hero Image & Preconnect Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="image" href="/events_new/hero-real-speakers-clean.webp" fetchpriority="high" type="image/webp">
+  <!-- Preload Critical Local WebP Hero Images (Zero external network delay) -->
+  <link rel="preload" as="image" href="/events_new/hero-real-speakers-clean-mobile.webp" media="(max-width: 768px)" fetchpriority="high" type="image/webp">
+  <link rel="preload" as="image" href="/events_new/hero-real-speakers-clean.webp" media="(min-width: 769px)" fetchpriority="high" type="image/webp">
 
-  <!-- Asynchronous Google Fonts (Non-blocking FCP optimization) -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@700;800&family=Inter:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@700;800&family=Inter:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&display=swap" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@700;800&family=Inter:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&display=swap">
-  </noscript>
+  <!-- Preload Critical Local Fonts (Same-origin HTTP/2 multiplexing) -->
+  <link rel="preload" as="font" href="/assets/fonts/playfair-display-latin-700.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="/assets/fonts/alex-brush-latin.woff2" type="font/woff2" crossorigin>
 
   <!-- Schema.org Event JSON-LD -->
   <script type="application/ld+json">
@@ -105,11 +101,34 @@
   </script>
   
   <style>
+    /* LOCAL SELF-HOSTED FONTS */
+    @font-face {
+      font-family: 'Playfair Display';
+      font-style: normal;
+      font-weight: 700 800;
+      font-display: swap;
+      src: url('/assets/fonts/playfair-display-latin-700.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Cinzel';
+      font-style: normal;
+      font-weight: 700 800;
+      font-display: swap;
+      src: url('/assets/fonts/cinzel-latin-700.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Alex Brush';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('/assets/fonts/alex-brush-latin.woff2') format('woff2');
+    }
+
     /* RESET & BASE */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; font-size: 16px; }
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       background: #080808;
       color: #EDE8DF;
       line-height: 1.55;
@@ -1276,7 +1295,10 @@
         <!-- Hero Right Column: Speakers Image + Signatures directly underneath -->
         <div class="hero-speakers-col">
           <div class="hero-bg-speakers">
-            <img src="/events_new/hero-real-speakers-clean.webp" alt="Anthony Altuna, Fede NowBack, Christian Cencherle" width="819" height="355" fetchpriority="high" decoding="async">
+            <picture>
+              <source media="(max-width: 768px)" srcset="/events_new/hero-real-speakers-clean-mobile.webp" width="520" height="225" type="image/webp">
+              <img src="/events_new/hero-real-speakers-clean.webp" alt="Anthony Altuna, Fede NowBack, Christian Cencherle" width="819" height="355" fetchpriority="high" decoding="async">
+            </picture>
           </div>
           <div class="hero-signatures">
             <div class="hero-sig-item">

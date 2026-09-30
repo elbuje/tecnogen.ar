@@ -1,12 +1,11 @@
 # 📜 Bitácora de Cambios (Changelog) - TecnoGen
 
-## [2026-09-30] - Optimización Integral PageSpeed & Core Web Vitals (Mobile 95-100 Score Target)
-- **FCP & RENDER-BLOCKING**: Eliminación del bloqueo síncrono de fuentes de Google mediante carga asíncrona (`preload` + `media="print"`), optimización de pesos y fallback instantáneo del sistema.
-- **LCP**: Preload en `<head>` de la imagen Hero de oradores WebP (`fetchpriority="high"`, `decoding="async"`).
-- **CLS (0.188 ➔ 0.000)**: Estabilización métrica mediante `aspect-ratio` rígidos en todos los contenedores de imágenes y reserva de altura mínima en firmas móviles de oradores.
-- **PERF**: Inclusión de `content-visibility: auto` con `contain-intrinsic-size` en secciones off-screen.
-- **A11Y (97 ➔ 100)**: Inclusión de `aria-hidden` en SVGs decorativos, `aria-expanded`/`aria-controls` en acordeón FAQ y mejora de contraste.
-- **GEO & AGENTIC**: Marcado Schema.org `Event` JSON-LD y creación de `/public/llms.txt`.
+## [2026-09-30] - Optimización Extrema PageSpeed & Core Web Vitals (Auto-hospedaje WOFF2 & Responsive WebP)
+- **FONTS**: Eliminación completa de peticiones externas a Google Fonts (`fonts.googleapis.com` y `fonts.gstatic.com`). Descarga y auto-alojamiento local en `/public/assets/fonts/` con `@font-face` nativos multiplexados por HTTP/2 y stack tipográfico de sistema nativo ultra veloz para el cuerpo.
+- **MEDIA RESPONSIVE**: Generación de WebP ultraligero para móviles (`hero-real-speakers-clean-mobile.webp` a 12.9 KB) servido mediante `<picture>` condicional.
+- **FCP / LCP**: Preload local del WebP mobile y de las fuentes WOFF2 críticas.
+- **CLS (0.000)**: Estabilización métrica mediante `aspect-ratio` rígidos en todos los contenedores de imágenes y reserva de altura mínima en firmas móviles de oradores.
+- **A11Y & AGENTIC**: Atributos `aria-hidden`, `aria-expanded`, datos estructurados Schema.org `Event` JSON-LD y `/public/llms.txt`.
 - **CACHE**: Encabezados `Cache-Control: public, max-age=31536000, immutable` y `ETag` en `public/index.php`.
 
 ## [2026-09-29] - Rediseño Manifiesto, Ajustes Mobile Hero, Footer Oficial y Banner OG
