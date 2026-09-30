@@ -1,5 +1,12 @@
 # 📜 Bitácora de Cambios (Changelog) - TecnoGen
 
+## [2026-09-30] - Integración de Pasarela de Pagos (Mercado Pago, Transferencia y Efectivo)
+- **MERCADO PAGO**: Generación e integración de links de checkout directo para la cuenta `mmujica@tecnobrain.com.ar` con los montos exactos de $80.000 (Preventa) y $150.000 (Precio de Lista).
+- **TRANSFERENCIA BANCARIA**: Incorporación del panel de datos bancarios de **Anthony Altuna** (Alias `ia.master.argentina`, CBU `0150512201000132174449`, CUIL `23953241099`, CA $ `0512/01132174/44`) con botones de copiado rápido interactivo en 1 clic.
+- **PAGO EN EFECTIVO**: Información y recepción presencial en oficinas de Microcentro (Lavalle 362, Piso 7) de 9:00 a 18:00 hs con botón de aviso por WhatsApp.
+- **FAQ & CTAs**: Actualización de la respuesta a la pregunta frecuente de pagos y redirección de los botones Hero y Pre-footer hacia la sección `#entradas` / `#datos-pago`.
+- **PROD DEPLOY**: Sincronización en archivos espejo y despliegue a producción Ploi (`errante` `72.61.34.92`).
+
 ## [2026-09-30] - Optimización Extrema PageSpeed & Core Web Vitals (Auto-hospedaje WOFF2 & Responsive WebP)
 - **FONTS**: Eliminación completa de peticiones externas a Google Fonts (`fonts.googleapis.com` y `fonts.gstatic.com`). Descarga y auto-alojamiento local en `/public/assets/fonts/` con `@font-face` nativos multiplexados por HTTP/2 y stack tipográfico de sistema nativo ultra veloz para el cuerpo.
 - **MEDIA RESPONSIVE**: Generación de WebP ultraligero para móviles (`hero-real-speakers-clean-mobile.webp` a 12.9 KB) servido mediante `<picture>` condicional.
