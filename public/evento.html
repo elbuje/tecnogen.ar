@@ -952,6 +952,301 @@
       color: rgba(237, 232, 223, 0.88);
     }
 
+    /* Pricing Actions & Buttons */
+    .prc-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: auto;
+      width: 100%;
+    }
+    .btn-block {
+      width: 100%;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .btn-alt-payment {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 9px 14px;
+      background: rgba(212, 175, 55, 0.08);
+      border: 1px dashed rgba(212, 175, 55, 0.4);
+      border-radius: 999px;
+      font-size: 11.5px;
+      font-weight: 600;
+      color: #E8D399;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-alt-payment:hover {
+      background: rgba(212, 175, 55, 0.18);
+      border-color: #D4AF37;
+      color: #FFFFFF;
+    }
+    .prc-wa-link {
+      font-size: 11px;
+      color: rgba(237, 232, 223, 0.7);
+      text-align: center;
+      text-decoration: underline;
+      transition: color 0.2s ease;
+      display: inline-block;
+      margin-top: 2px;
+    }
+    .prc-wa-link:hover {
+      color: #25D366;
+    }
+
+    /* Payment Hub Grid */
+    .payment-hub {
+      margin-top: 45px;
+      padding: 40px 32px;
+      background: rgba(18, 18, 18, 0.9);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      border-radius: 20px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7);
+      scroll-margin-top: 40px;
+    }
+    .payment-hub-header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .payment-hub-title {
+      font-size: clamp(20px, 2.6vw, 30px);
+      color: #FFFFFF;
+      margin: 8px 0;
+      font-weight: 700;
+    }
+    .payment-hub-desc {
+      font-size: 13.5px;
+      color: rgba(237, 232, 223, 0.8);
+      max-width: 620px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+    .payment-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      align-items: stretch;
+    }
+    .payment-box {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      border-radius: 16px;
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .payment-box:hover {
+      border-color: rgba(212, 175, 55, 0.45);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+    .payment-box.featured-box {
+      border-color: rgba(212, 175, 55, 0.45);
+      background: linear-gradient(180deg, rgba(212, 175, 55, 0.06) 0%, rgba(18, 18, 18, 0.8) 100%);
+    }
+    .payment-box-head {
+      margin-bottom: 16px;
+    }
+    .payment-box-badge {
+      display: inline-block;
+      font-size: 9px;
+      letter-spacing: 1.5px;
+      font-weight: 800;
+      color: #22C55E;
+      background: rgba(34, 197, 94, 0.1);
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      padding: 3px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+    .payment-box-badge.gold {
+      color: #D4AF37;
+      background: rgba(212, 175, 55, 0.1);
+      border-color: rgba(212, 175, 55, 0.35);
+    }
+    .payment-box-icon {
+      margin-bottom: 8px;
+    }
+    .payment-box-head h4 {
+      font-size: 17px;
+      color: #FFFFFF;
+      font-weight: 700;
+      margin-bottom: 6px;
+      font-family: 'Inter', sans-serif;
+    }
+    .payment-box-head p {
+      font-size: 12px;
+      color: rgba(237, 232, 223, 0.7);
+      line-height: 1.4;
+    }
+    .payment-data-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+      background: rgba(0, 0, 0, 0.35);
+      padding: 14px 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .pay-data-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 12px;
+      flex-wrap: wrap;
+    }
+    .pay-data-label {
+      color: rgba(237, 232, 223, 0.6);
+      font-size: 11px;
+    }
+    .pay-data-val {
+      color: #FFFFFF;
+      font-weight: 600;
+      font-size: 12px;
+    }
+    .pay-data-val.code {
+      font-family: monospace, Courier, sans-serif;
+      font-size: 12px;
+      color: #F5E5BE;
+      word-break: break-all;
+    }
+    .pay-data-val.gold {
+      color: #D4AF37;
+    }
+    .btn-copy {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: rgba(212, 175, 55, 0.15);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      color: #F5E5BE;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: 'Inter', sans-serif;
+    }
+    .btn-copy:hover {
+      background: #D4AF37;
+      color: #080808;
+    }
+    .btn-copy.copied {
+      background: #22C55E;
+      border-color: #22C55E;
+      color: #080808;
+    }
+    .payment-box-foot {
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .pay-instruction {
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+      font-size: 11px;
+      color: rgba(237, 232, 223, 0.75);
+      line-height: 1.35;
+    }
+    .btn-pay-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 18px;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      border-radius: 999px;
+      color: #FFFFFF;
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-pay-action:hover {
+      background: #D4AF37;
+      color: #080808;
+    }
+    .btn-pay-action.wa {
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      border: none;
+      color: #FFFFFF;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.25);
+    }
+    .btn-pay-action.wa:hover {
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+      transform: translateY(-1px);
+    }
+    .payment-mp-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .mp-tier {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      padding: 12px 14px;
+      border-radius: 12px;
+      gap: 10px;
+    }
+    .mp-tier-info {
+      display: flex;
+      flex-direction: column;
+    }
+    .mp-tier-name {
+      font-size: 11px;
+      color: rgba(237, 232, 223, 0.7);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .mp-tier-price {
+      font-size: 15px;
+      font-weight: 800;
+      color: #D4AF37;
+    }
+    .btn-mp-pay {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(135deg, #ECC868 0%, #D4AF37 50%, #9E7915 100%);
+      color: #080808;
+      font-size: 11.5px;
+      font-weight: 800;
+      padding: 9px 15px;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+    .btn-mp-pay:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);
+    }
+    .btn-mp-pay.secondary {
+      background: rgba(255, 255, 255, 0.1);
+      color: #FFFFFF;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+    .btn-mp-pay.secondary:hover {
+      background: rgba(212, 175, 55, 0.25);
+    }
+
     /* ===================================================
        SECTION 7: PREGUNTAS FRECUENTES (FAQ)
        =================================================== */
@@ -1041,7 +1336,7 @@
       color: rgba(237, 232, 223, 0.82);
     }
     .faq-item.active .faq-answer {
-      max-height: 240px;
+      max-height: 520px;
       padding: 0 22px 20px;
     }
 
@@ -1215,6 +1510,8 @@
       .tkw-grid { grid-template-columns: repeat(2, 1fr); }
       .agd-grid { grid-template-columns: 1fr; }
       .prc-grid { grid-template-columns: 1fr; max-width: 480px; margin: 30px auto 0; }
+      .payment-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+      .payment-hub { padding: 30px 18px; margin-top: 35px; }
       .faq-grid { grid-template-columns: 1fr; gap: 30px; }
       .fcta-inner { flex-direction: column; align-items: flex-start; }
       .fcta-actions { align-items: flex-start; }
@@ -1226,6 +1523,9 @@
       .hero-meta-bar { flex-direction: column; align-items: flex-start; gap: 10px; width: 100%; }
       .hero-meta-sep { display: none; }
       .org-inner { flex-direction: column; gap: 20px; }
+      .payment-box { padding: 20px 15px; }
+      .pay-data-row { flex-direction: column; align-items: flex-start; gap: 4px; }
+      .btn-copy { margin-top: 4px; }
     }
   </style>
 </head>
@@ -1282,7 +1582,7 @@
 
           <!-- Hero Action Buttons -->
           <div class="hero-actions">
-            <a href="https://wa.me/5491170610766?text=Hola%2C%20quiero%20reservar%20mi%20lugar%20en%20el%20evento%20Mentalidad%20y%20Marketing%20-%20Neuroventas%20con%20IA%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="btn-gold" aria-label="Reservar mi lugar para el evento vía WhatsApp">
+            <a href="#entradas" class="btn-gold" aria-label="Ver opciones de entradas y reservar mi lugar">
               RESERVAR MI LUGAR →
             </a>
             <div class="badge-cupos">
@@ -1581,9 +1881,17 @@
             <li>Material complementario en PDF</li>
             <li>Certificado digital de asistencia</li>
           </ul>
-          <a href="https://wa.me/5491170610766?text=Hola%2C%20quiero%20aprovechar%20la%20preventa%20de%20%2480.000%20para%20el%20evento%20Mentalidad%20y%20Marketing%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="btn-gold" aria-label="Reservar preventa exclusiva de $80.000 vía WhatsApp">
-            RESERVAR PREVENTA →
-          </a>
+          <div class="prc-actions">
+            <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=22567901-db498e19-b6be-4430-823f-b7959eaeacf8" target="_blank" rel="noopener noreferrer" class="btn-gold btn-block" aria-label="Pagar preventa de $80.000 con Mercado Pago">
+              <span>PAGAR CON MERCADO PAGO ($80.000) →</span>
+            </a>
+            <a href="#datos-pago" class="btn-alt-payment">
+              <span>🏦 Transferencia bancaria o efectivo</span>
+            </a>
+            <a href="https://wa.me/5491170610766?text=Hola%2C%20quiero%20aprovechar%20la%20preventa%20de%20%2480.000%20para%20el%20evento%20Mentalidad%20y%20Marketing%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="prc-wa-link" aria-label="Consultar preventa por WhatsApp">
+              ¿Dudas? Consultar por WhatsApp
+            </a>
+          </div>
         </div>
 
         <!-- Card 2: Precio de Lista -->
@@ -1598,9 +1906,17 @@
             <li>Material complementario</li>
             <li>Certificado digital de asistencia</li>
           </ul>
-          <a href="https://wa.me/5491170610766?text=Hola%2C%20quiero%20reservar%20mi%20entrada%20para%20el%20evento%20Mentalidad%20y%20Marketing%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="btn-gold" style="background: rgba(255,255,255,0.08); color: #fff; border: 1px solid rgba(212,175,55,0.35);" aria-label="Reservar entrada precio de lista vía WhatsApp">
-            RESERVAR ENTRADA →
-          </a>
+          <div class="prc-actions">
+            <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=22567901-7a88cd43-826d-483a-b3f7-9873f6e255ab" target="_blank" rel="noopener noreferrer" class="btn-gold btn-block" style="background: rgba(255,255,255,0.08); color: #fff; border: 1px solid rgba(212,175,55,0.35);" aria-label="Pagar entrada precio de lista de $150.000 con Mercado Pago">
+              <span>PAGAR CON MERCADO PAGO ($150.000) →</span>
+            </a>
+            <a href="#datos-pago" class="btn-alt-payment">
+              <span>🏦 Transferencia bancaria o efectivo</span>
+            </a>
+            <a href="https://wa.me/5491170610766?text=Hola%2C%20quiero%20reservar%20mi%20entrada%20para%20el%20evento%20Mentalidad%20y%20Marketing%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="prc-wa-link" aria-label="Consultar entrada por WhatsApp">
+              ¿Dudas? Consultar por WhatsApp
+            </a>
+          </div>
         </div>
 
         <!-- Card 3: Comunidad Fede NowBack -->
@@ -1614,31 +1930,185 @@
               Valor y acceso especial exclusivo para miembros de la comunidad.
             </p>
             <a href="https://wa.me/5491170610766?text=Hola%2C%20soy%20de%20la%20comunidad%20de%20Fede%20NowBack%20y%20quiero%20acceder%20al%20valor%20especial%20para%20el%20evento%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="btn-gold" style="padding: 13px 22px; font-size: 12px;" aria-label="Consultar acceso especial para la comunidad de Fede NowBack vía WhatsApp">
-              Consultá para acceder
+              CONSULTAR ACCESO ESPECIAL →
             </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hub de Métodos de Pago: Transferencia, Efectivo y Mercado Pago -->
+      <div class="payment-hub" id="datos-pago">
+        <div class="payment-hub-header">
+          <div class="sec-tag">FORMAS DE PAGO DISPONIBLES</div>
+          <h3 class="payment-hub-title sf">Datos para Transferencia, Efectivo y Mercado Pago</h3>
+          <p class="payment-hub-desc">Elegí la opción más conveniente para abonar tu entrada. Todas las opciones cuentan con confirmación inmediata de tu acreditación.</p>
+        </div>
+
+        <div class="payment-grid">
+          <!-- Card A: Transferencia Bancaria -->
+          <div class="payment-box">
+            <div class="payment-box-head">
+              <div class="payment-box-badge">ACREDITACIÓN RÁPIDA</div>
+              <div class="payment-box-icon">
+                <svg class="gold-svg-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+              </div>
+              <h4>Transferencia Bancaria</h4>
+              <p>Transferí directamente sin comisiones desde cualquier banco o billetera virtual.</p>
+            </div>
+
+            <div class="payment-data-list">
+              <div class="pay-data-row">
+                <span class="pay-data-label">Titular:</span>
+                <span class="pay-data-val">Anthony Altuna</span>
+              </div>
+              <div class="pay-data-row">
+                <span class="pay-data-label">Alias:</span>
+                <span class="pay-data-val code">ia.master.argentina</span>
+                <button class="btn-copy" onclick="copyToClipboard('ia.master.argentina', this)" type="button" aria-label="Copiar Alias">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <span>Copiar</span>
+                </button>
+              </div>
+              <div class="pay-data-row">
+                <span class="pay-data-label">CBU:</span>
+                <span class="pay-data-val code">0150512201000132174449</span>
+                <button class="btn-copy" onclick="copyToClipboard('0150512201000132174449', this)" type="button" aria-label="Copiar CBU">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <span>Copiar</span>
+                </button>
+              </div>
+              <div class="pay-data-row">
+                <span class="pay-data-label">CUIL / CUIT:</span>
+                <span class="pay-data-val code">23953241099</span>
+                <button class="btn-copy" onclick="copyToClipboard('23953241099', this)" type="button" aria-label="Copiar CUIL">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <span>Copiar</span>
+                </button>
+              </div>
+              <div class="pay-data-row">
+                <span class="pay-data-label">Cuenta:</span>
+                <span class="pay-data-val">CA $ 0512/01132174/44</span>
+              </div>
+            </div>
+
+            <div class="payment-box-foot">
+              <div class="pay-instruction">
+                <svg class="gold-svg-icon" style="width:14px;height:14px;flex-shrink:0;" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <span>Al realizar la transferencia, enviá el comprobante a nuestro WhatsApp para emitir tu credencial.</span>
+              </div>
+              <a href="https://wa.me/5491170610766?text=Hola%2C%20adjunto%20comprobante%20de%20transferencia%20bancaria%20para%20el%20evento%20Mentalidad%20y%20Marketing%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="btn-pay-action wa" aria-label="Enviar comprobante de transferencia por WhatsApp">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                <span>Enviar Comprobante</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card B: Pago en Efectivo -->
+          <div class="payment-box">
+            <div class="payment-box-head">
+              <div class="payment-box-badge">OFICINAS CABA</div>
+              <div class="payment-box-icon">
+                <svg class="gold-svg-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"></rect><circle cx="12" cy="12" r="2"></circle><path d="M6 12h.01M18 12h.01"></path></svg>
+              </div>
+              <h4>Pago en Efectivo</h4>
+              <p>Aboná en persona en nuestras oficinas de Microcentro antes del evento.</p>
+            </div>
+
+            <div class="payment-data-list">
+              <div class="pay-data-row">
+                <span class="pay-data-label">Ubicación:</span>
+                <span class="pay-data-val"><strong>Lavalle 362, Piso 7</strong></span>
+              </div>
+              <div class="pay-data-row">
+                <span class="pay-data-label">Zona:</span>
+                <span class="pay-data-val">Microcentro, CABA</span>
+              </div>
+              <div class="pay-data-row">
+                <span class="pay-data-label">Horario:</span>
+                <span class="pay-data-val gold">Lunes a Viernes de 9:00 a 18:00 hs</span>
+              </div>
+              <div class="pay-data-row">
+                <span class="pay-data-label">Recepción:</span>
+                <span class="pay-data-val">Edificio corporativo con seguridad</span>
+              </div>
+            </div>
+
+            <div class="payment-box-foot">
+              <div class="pay-instruction">
+                <svg class="gold-svg-icon" style="width:14px;height:14px;flex-shrink:0;" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <span>Avisanos por WhatsApp antes de acercarte para recibirte y tener tu pase listo.</span>
+              </div>
+              <a href="https://wa.me/5491170610766?text=Hola%2C%20quiero%20coordinar%20para%20abonar%20en%20efectivo%20en%20Lavalle%20362%20Piso%207%20de%209%20a%2018%20hs%20para%20el%20evento%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="btn-pay-action" aria-label="Coordinar pago en efectivo por WhatsApp">
+                <svg class="gold-svg-icon" style="width:15px;height:15px;" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Avisar Visita por WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card C: Mercado Pago Online -->
+          <div class="payment-box featured-box">
+            <div class="payment-box-head">
+              <div class="payment-box-badge gold">100% ONLINE & SEGURO</div>
+              <div class="payment-box-icon">
+                <svg class="gold-svg-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+              </div>
+              <h4>Mercado Pago</h4>
+              <p>Pagá con tarjeta de crédito, débito o tu saldo disponible de Mercado Pago.</p>
+            </div>
+
+            <div class="payment-mp-links">
+              <div class="mp-tier">
+                <div class="mp-tier-info">
+                  <span class="mp-tier-name">Entrada Preventa</span>
+                  <span class="mp-tier-price">$80.000 ARS</span>
+                </div>
+                <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=22567901-db498e19-b6be-4430-823f-b7959eaeacf8" target="_blank" rel="noopener noreferrer" class="btn-mp-pay" aria-label="Pagar preventa de $80.000 en Mercado Pago">
+                  <span>Pagar $80.000</span>
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <div class="mp-tier">
+                <div class="mp-tier-info">
+                  <span class="mp-tier-name">Precio de Lista</span>
+                  <span class="mp-tier-price">$150.000 ARS</span>
+                </div>
+                <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=22567901-7a88cd43-826d-483a-b3f7-9873f6e255ab" target="_blank" rel="noopener noreferrer" class="btn-mp-pay secondary" aria-label="Pagar precio regular de $150.000 en Mercado Pago">
+                  <span>Pagar $150.000</span>
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="payment-box-foot">
+              <div class="pay-instruction">
+                <svg class="gold-svg-icon" style="width:14px;height:14px;flex-shrink:0;" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <span>Acreditación automática en tiempo real al finalizar tu pago.</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Medios de Pago Bar with SVGs -->
       <div class="pay-methods-bar">
-        <div class="lbl">MEDIOS DE PAGO</div>
+        <div class="lbl">MEDIOS DE PAGO:</div>
         <div class="items">
           <div class="item">
             <svg class="gold-svg-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"></rect><circle cx="12" cy="12" r="2"></circle><path d="M6 12h.01M18 12h.01"></path></svg>
-            <span>Efectivo</span>
+            <span>Efectivo en Microcentro</span>
           </div>
           <div class="item">
             <svg class="gold-svg-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
-            <span>Transferencia</span>
+            <span>Transferencia Bancaria</span>
           </div>
           <div class="item">
             <svg class="gold-svg-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
-            <span>Tarjeta de crédito</span>
+            <span>Mercado Pago & Tarjetas</span>
           </div>
           <div class="item">
             <svg class="gold-svg-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-            <span>Pago online directo</span>
+            <span>Pago Online Inmediato</span>
           </div>
         </div>
       </div>
@@ -1719,7 +2189,13 @@
               <span class="icon" aria-hidden="true">+</span>
             </button>
             <div class="faq-answer" id="faq-ans-6">
-              Podés abonar por transferencia bancaria directa, tarjeta de crédito o efectivo. Al hacer clic en cualquiera de los botones de reserva se te redirige a WhatsApp donde el equipo te enviará los datos de pago y confirmará tu acreditación inmediata.
+              <p style="margin-bottom: 8px;">Contás con tres alternativas seguras y directas:</p>
+              <ul style="padding-left: 18px; margin-bottom: 8px; line-height: 1.6;">
+                <li><strong>1. Mercado Pago (Online):</strong> Aboná en 1 clic con tarjeta de crédito, débito o dinero en cuenta utilizando los botones de pago directo de esta web.</li>
+                <li><strong>2. Transferencia Bancaria Directa:</strong> A nombre de Anthony Altuna (Alias: <code style="color:#D4AF37; background:rgba(212,175,55,0.1); padding:2px 6px; border-radius:4px;">ia.master.argentina</code> | CBU: <code style="color:#D4AF37; background:rgba(212,175,55,0.1); padding:2px 6px; border-radius:4px;">0150512201000132174449</code> | CUIL: 23953241099 | CA $ 0512/01132174/44). Al transferir, enviá el comprobante a nuestro WhatsApp.</li>
+                <li><strong>3. Efectivo en Nuestras Oficinas:</strong> Lavalle 362, Piso 7 (Microcentro, CABA), de Lunes a Viernes de 9:00 a 18:00 hs (avisar previamente por WhatsApp).</li>
+              </ul>
+              <p>Cualquiera sea el método elegido, tu cupo queda confirmado y recibís tu credencial de acceso digital.</p>
             </div>
           </div>
         </div>
@@ -1761,7 +2237,7 @@
             <svg class="gold-svg-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
             <span>CUPOS LIMITADOS</span>
           </div>
-          <a href="https://wa.me/5491170610766?text=Hola%2C%20quiero%20asegurar%20mi%20lugar%20en%20el%20evento%20Mentalidad%20y%20Marketing%20del%2010%20de%20octubre." target="_blank" rel="noopener noreferrer" class="btn-gold" aria-label="Asegurar mi lugar en el evento vía WhatsApp">
+          <a href="#entradas" class="btn-gold" aria-label="Ver opciones de entradas y asegurar mi lugar">
             RESERVAR MI LUGAR →
           </a>
         </div>
@@ -1791,7 +2267,7 @@
     </div>
   </footer>
 
-  <!-- FAQ Interactive Accordion Script with A11y update -->
+  <!-- Interactive Scripts (Accordion & Copy to Clipboard) -->
   <script>
     document.querySelectorAll('.faq-question').forEach(button => {
       button.addEventListener('click', () => {
@@ -1808,6 +2284,43 @@
         }
       });
     });
+
+    function copyToClipboard(text, btnEl) {
+      function markSuccess() {
+        const origContent = btnEl.innerHTML;
+        btnEl.innerHTML = '<span>✓ Copiado</span>';
+        btnEl.classList.add('copied');
+        setTimeout(() => {
+          btnEl.innerHTML = origContent;
+          btnEl.classList.remove('copied');
+        }, 2000);
+      }
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(markSuccess).catch(() => fallbackCopy(text, markSuccess));
+      } else {
+        fallbackCopy(text, markSuccess);
+      }
+    }
+
+    function fallbackCopy(text, callback) {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.style.position = "fixed";
+      textArea.style.top = "-9999px";
+      textArea.style.left = "-9999px";
+      textArea.style.opacity = "0";
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        if (callback) callback();
+      } catch (err) {
+        console.error('No se pudo copiar el texto', err);
+      }
+      document.body.removeChild(textArea);
+    }
   </script>
 </body>
 </html>
