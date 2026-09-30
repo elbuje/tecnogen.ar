@@ -1,6 +1,6 @@
 # Status del Proyecto — TecnoGen (tecnogen.ar)
 
-**Última actualización:** 29 de Septiembre de 2026  
+**Última actualización:** 30 de Septiembre de 2026  
 **Ecosistema:** Hostinger VPS KVM 4 (`72.62.107.109`) / Ploi Producción `errante` (`72.61.34.92`)  
 **Dominio Oficial:** [https://tecnogen.ar](https://tecnogen.ar)
 
@@ -9,8 +9,8 @@
 ## 🎯 Arquitectura Tecnológica & Estado
 - **Stack:** **PHP 8.x nativo modular** (siguiendo el estándar de arquitectura y rendimiento de `fedenowback.com.ar`).
 - **Frontend & Estilos:** CSS Vanilla modular (`public/assets/css/style.css`) + JavaScript Vanilla (`public/assets/js/main.js`) sin dependencias pesadas ni node_modules.
-- **Ruteo:** Front Controller (`public/index.php`) con URLs amigables, sitemap dinámico (`/sitemap.xml`) y robots.txt.
-- **Landing del Evento 10 de Octubre:** `/Mentalidad-Marketing-Neuroventas-con-IA` (con precios actualizados, nuevo banner OG 1200x630, alineación móvil de firmas de speakers y footer oficial con TecnoGen & Fede NowBack).
+- **Ruteo & Cache:** Front Controller (`public/index.php`) con URLs amigables, sitemap dinámico (`/sitemap.xml`), robots.txt, `Cache-Control` inmutable (1 año para assets) y `ETag`.
+- **Landing del Evento 10 de Octubre:** `/Mentalidad-Marketing-Neuroventas-con-IA` (Optimizada a nivel Core Web Vitals: carga asíncrona de tipografías, preloads Hero LCP WebP, fijación de `aspect-ratio` rígidos, Schema.org `Event` JSON-LD y `llms.txt`).
 
 ---
 

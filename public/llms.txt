@@ -1,0 +1,29 @@
+# TecnoGen (https://tecnogen.ar)
+> Agencia y consultora líder en Inteligencia Artificial, Marketing Digital, Agentes Autónomos y Automatización de Procesos para empresas en Argentina y Latinoamérica.
+
+## Información de la Empresa
+- **Nombre:** TecnoGen (Unión estratégica entre TecnoBrain y GEN de Negocio)
+- **Sitio Web:** https://tecnogen.ar
+- **Email:** info@tecnogen.ar
+- **WhatsApp:** +54 9 11 7061-0766
+- **Sede:** Ciudad Autónoma de Buenos Aires (CABA), Argentina
+
+## Próximo Evento Destacado
+- **Evento:** Mentalidad y Marketing — Neuroventas con IA
+- **Fecha:** Viernes 10 de Octubre de 2026, 10:00 a 17:00 hs
+- **Lugar:** Lavalle 362, Piso 7, Microcentro, CABA, Argentina
+- **Oradores:**
+  - Anthony Altuna (Economista, Empresario, Director de GEN, Especialista en Neuroventas con IA)
+  - Fede NowBack (Creador de Contenido, Especialista en Marca Personal y Mentalidad)
+  - Christian Cencherle (Empresario con más de 25 años de trayectoria en Argentina)
+- **Inversión:** Preventa exclusiva $80.000 ARS (hasta el 3 de octubre) | Precio de lista $150.000 ARS.
+- **URL Oficial:** https://tecnogen.ar/Mentalidad-Marketing-Neuroventas-con-IA
+
+## Servicios Principales
+1. **Marketing Digital & Funnels:** Estrategia integral de captación, campañas pagas en Meta/Google, y embudos de alta conversión.
+2. **Posicionamiento SEO & GEO (Generative Engine Optimization):** Optimización para motores de búsqueda tradicionales y modelos de inteligencia artificial (ChatGPT, Perplexity, Gemini, Claude).
+3. **Inteligencia Artificial para Empresas:** Integración de LLMs, arquitecturas RAG sobre bases de conocimiento privadas y automatización empresarial.
+4. **Agentes de IA Autónomos:** Asistentes 24/7 para atención al cliente, ventas y soporte conectados a bases de datos y CRMs.
+5. **Automatización de Procesos & Workflows:** Conexión de sistemas, reducción de tareas manuales e integración con Make, n8n y APIs nativas.
+6. **CRM & WhatsApp API Oficial:** Implementación de Kommo CRM, WhatsApp Cloud API y seguimiento comercial automatizado.
+7. **Content OS con IA:** Sistema de generación, escalado y distribución de contenido multiplataforma.

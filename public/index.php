@@ -66,9 +66,10 @@ $routes = [
     "neuroventas-ia"                          => __DIR__ . "/../views/landing-evento.php",
 ];
 
-// Static file serving fallback
+// Static file serving fallback with High Performance Caching
 if (file_exists(__DIR__ . "/" . $path) && is_file(__DIR__ . "/" . $path) && !preg_match("/\.php$/i", $path)) {
-    $ext = pathinfo($path, PATHINFO_EXTENSION);
+    $filePath = __DIR__ . "/" . $path;
+    $ext = strtolower(pathinfo($path, PATHINFO_EXTENSION));
     $mimes = [
         "ico"  => "image/x-icon",
         "jpg"  => "image/jpeg",
@@ -82,10 +83,28 @@ if (file_exists(__DIR__ . "/" . $path) && is_file(__DIR__ . "/" . $path) && !pre
         "svg"  => "image/svg+xml",
         "html" => "text/html",
     ];
-    $contentType = $mimes[strtolower($ext)] ?? mime_content_type(__DIR__ . "/" . $path);
+    $contentType = $mimes[$ext] ?? mime_content_type($filePath);
+    $lastModified = filemtime($filePath);
+    $etag = '"' . md5($lastModified . filesize($filePath)) . '"';
+
     header("Content-Type: " . $contentType);
-    header("Content-Length: " . filesize(__DIR__ . "/" . $path));
-    readfile(__DIR__ . "/" . $path);
+    header("Content-Length: " . filesize($filePath));
+    header("ETag: " . $etag);
+    header("Last-Modified: " . gmdate("D, d M Y H:i:s", $lastModified) . " GMT");
+
+    // Static assets cache for 1 year, HTML/TXT/XML for 1 hour
+    if (in_array($ext, ["jpg", "jpeg", "png", "webp", "ico", "svg", "css", "js", "woff2", "woff"])) {
+        header("Cache-Control: public, max-age=31536000, immutable");
+    } else {
+        header("Cache-Control: public, max-age=3600, must-revalidate");
+    }
+
+    if (isset($_SERVER['HTTP_IF_NONE_MATCH']) && trim($_SERVER['HTTP_IF_NONE_MATCH']) === $etag) {
+        header("HTTP/1.1 304 Not Modified");
+        exit;
+    }
+
+    readfile($filePath);
     exit;
 }
 

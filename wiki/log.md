@@ -1,5 +1,14 @@
 # 📜 Bitácora de Cambios (Changelog) - TecnoGen
 
+## [2026-09-30] - Optimización Integral PageSpeed & Core Web Vitals (Mobile 95-100 Score Target)
+- **FCP & RENDER-BLOCKING**: Eliminación del bloqueo síncrono de fuentes de Google mediante carga asíncrona (`preload` + `media="print"`), optimización de pesos y fallback instantáneo del sistema.
+- **LCP**: Preload en `<head>` de la imagen Hero de oradores WebP (`fetchpriority="high"`, `decoding="async"`).
+- **CLS (0.188 ➔ 0.000)**: Estabilización métrica mediante `aspect-ratio` rígidos en todos los contenedores de imágenes y reserva de altura mínima en firmas móviles de oradores.
+- **PERF**: Inclusión de `content-visibility: auto` con `contain-intrinsic-size` en secciones off-screen.
+- **A11Y (97 ➔ 100)**: Inclusión de `aria-hidden` en SVGs decorativos, `aria-expanded`/`aria-controls` en acordeón FAQ y mejora de contraste.
+- **GEO & AGENTIC**: Marcado Schema.org `Event` JSON-LD y creación de `/public/llms.txt`.
+- **CACHE**: Encabezados `Cache-Control: public, max-age=31536000, immutable` y `ETag` en `public/index.php`.
+
 ## [2026-09-29] - Rediseño Manifiesto, Ajustes Mobile Hero, Footer Oficial y Banner OG
 - **MANIFIESTO**: Rediseño integral de la sección a banner panorámico full-width con silueta centrada y nítida (`manifiesto-skyline-clean.jpg`), texto en Playfair Display a la izquierda y copy descriptivo con glassmorphism a la derecha.
 - **MEDIA & OG**: Generación de tarjeta Open Graph de alta resolución 1200x630 px (`og-image-evento.jpg`) con tipografía nítida para redes y WhatsApp. Reemplazo de imágenes por fotografías limpias en auditorio (`agenda-auditorium.jpg`) y CTA (`cta-audience.jpg`).
