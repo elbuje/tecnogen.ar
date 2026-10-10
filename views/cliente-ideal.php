@@ -135,7 +135,7 @@ $page_data = [
       color: #1D4ED8;
       font-size: 0.78rem;
       font-weight: 600;
-      padding: 4px 10px;
+      padding: 5px 12px;
       border-radius: 6px;
       cursor: pointer;
       display: inline-flex;
@@ -567,7 +567,13 @@ $page_data = [
 
           <!-- ================= PASO 1 ================= -->
           <div class="wizard-step" id="step-1">
-            <span class="tg-result-badge" style="background: #EFF6FF; color: #2563EB;">PASO 1 DE 5: TU OFERTA & EL DETONANTE DE COMPRA</span>
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 8px;">
+              <span class="tg-result-badge" style="background: #EFF6FF; color: #2563EB; margin: 0;">PASO 1 DE 5: TU OFERTA & EL DETONANTE DE COMPRA</span>
+              <button type="button" class="tg-hint-btn" onclick="fillStepExamples(1)" style="background: #2563EB; color: #FFFFFF; border: none; padding: 6px 14px;">
+                ✨ Llenar todo el Paso 1 con ejemplo
+              </button>
+            </div>
+            
             <h2 style="font-size: 1.35rem; font-weight: 800; color: #0F172A; margin-bottom: 6px;">
               ¿Qué problema resuelves y en qué momento exacto te buscan?
             </h2>
@@ -581,7 +587,7 @@ $page_data = [
               </label>
               <div class="tg-field-help">Describe brevemente lo que vendes (ej: Agencia de Marketing, Software CRM, Consultoría Contable, Curso de Neuroventas).</div>
               <input type="text" id="inp-producto" class="tg-input" placeholder="Ej: Implementación de agentes de IA y automatizaciones de venta para empresas de servicios">
-              <button type="button" class="tg-hint-btn" onclick="fillExample('inp-producto', 'Servicio de consultoría y automatización con IA para captar clientes en empresas B2B')">
+              <button type="button" class="tg-hint-btn" onclick="fillExample('inp-producto')">
                 💡 Cargar ejemplo
               </button>
             </div>
@@ -592,7 +598,7 @@ $page_data = [
               </label>
               <div class="tg-field-help">¿Qué acontecimiento puntual ocurre en su día a día justo antes de decir: <em>"No aguanto más esto, necesito ayuda profesional ya"</em>?</div>
               <textarea id="inp-detonante" class="tg-textarea" placeholder="Ej: Su equipo comercial pierde 4 horas respondiendo consultas repetidas en WhatsApp y las ventas cayeron este mes."></textarea>
-              <button type="button" class="tg-hint-btn" onclick="fillExample('inp-detonante', 'Se satura contestando mensajes en WhatsApp a deshoras y siente que está perdiendo ventas frente a competidores con más tecnología')">
+              <button type="button" class="tg-hint-btn" onclick="fillExample('inp-detonante')">
                 💡 Cargar ejemplo
               </button>
             </div>
@@ -603,7 +609,7 @@ $page_data = [
               </label>
               <div class="tg-field-help">¿Cómo cambia su realidad concreta tras comprar tu solución? (Menos horas de trabajo, ingresos predecibles, tranquilidad).</div>
               <input type="text" id="inp-transformacion" class="tg-input" placeholder="Ej: Recupera 15 horas semanales y tiene un flujo automático de 20 reuniones de venta calificadas por mes">
-              <button type="button" class="tg-hint-btn" onclick="fillExample('inp-transformacion', 'Tener un sistema que califique prospectos y agende reuniones 24/7 sin depender de su presencia física')">
+              <button type="button" class="tg-hint-btn" onclick="fillExample('inp-transformacion')">
                 💡 Cargar ejemplo
               </button>
             </div>
@@ -617,7 +623,13 @@ $page_data = [
 
           <!-- ================= PASO 2 ================= -->
           <div class="wizard-step" id="step-2" style="display: none;">
-            <span class="tg-result-badge" style="background: #FDF4FF; color: #C026D3;">PASO 2 DE 5: MAPA DE EMPATÍA & VOZ DEL CLIENTE</span>
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 8px;">
+              <span class="tg-result-badge" style="background: #FDF4FF; color: #C026D3; margin: 0;">PASO 2 DE 5: MAPA DE EMPATÍA & VOZ DEL CLIENTE</span>
+              <button type="button" class="tg-hint-btn" onclick="fillStepExamples(2)" style="background: #C026D3; color: #FFFFFF; border: none; padding: 6px 14px;">
+                ✨ Llenar todo el Paso 2 con ejemplo
+              </button>
+            </div>
+
             <h2 style="font-size: 1.35rem; font-weight: 800; color: #0F172A; margin-bottom: 6px;">
               Entrando en la mente y emociones de tu comprador
             </h2>
@@ -631,7 +643,7 @@ $page_data = [
               </label>
               <div class="tg-field-help">¿Qué le quita el sueño o qué teme que pase si no resuelve este problema en los próximos 6 meses?</div>
               <textarea id="inp-miedos" class="tg-textarea" placeholder="Ej: Miedo a que su negocio quede obsoleto frente a la competencia, a no poder pagar sueldos o a quemarse de estrés trabajando sin parar."></textarea>
-              <button type="button" class="tg-hint-btn" onclick="fillExample('inp-miedos', 'Teme que su negocio se estanque, que la competencia más tecnificada se quede con sus clientes y no tener tiempo para su vida personal.')">
+              <button type="button" class="tg-hint-btn" onclick="fillExample('inp-miedos')">
                 💡 Cargar ejemplo
               </button>
             </div>
@@ -642,7 +654,7 @@ $page_data = [
               </label>
               <div class="tg-field-help">¿Qué le dicen sus socios, familiares o colegas? ¿Qué contenido ve en LinkedIn o Instagram que le genera presión?</div>
               <input type="text" id="inp-entorno" class="tg-input" placeholder="Ej: Sus socios le piden más rentabilidad; en redes ve que todos usan IA y siente que se está quedando atrás.">
-              <button type="button" class="tg-hint-btn" onclick="fillExample('inp-entorno', 'Escucha a otros dueños de negocio hablar de Inteligencia Artificial, pero no sabe por dónde empezar y le abruma la parte técnica.')">
+              <button type="button" class="tg-hint-btn" onclick="fillExample('inp-entorno')">
                 💡 Cargar ejemplo
               </button>
             </div>
@@ -653,7 +665,7 @@ $page_data = [
               </label>
               <div class="tg-field-help">Las quejas o expresiones exactas que repite habitualmente (palabras textuales entre comillas).</div>
               <input type="text" id="inp-frases" class="tg-input" placeholder="Ej: 'No doy abasto', 'Me llegan muchos curiosos pero nadie compra', 'No entiendo nada de tecnología'.">
-              <button type="button" class="tg-hint-btn" onclick="fillExample('inp-frases', '\"Gasto plata en publicidad y me mandan mensajes que no responden\", \"Siento que soy esclavo de mi propio negocio\"')">
+              <button type="button" class="tg-hint-btn" onclick="fillExample('inp-frases')">
                 💡 Cargar ejemplo
               </button>
             </div>
@@ -670,7 +682,13 @@ $page_data = [
 
           <!-- ================= PASO 3 ================= -->
           <div class="wizard-step" id="step-3" style="display: none;">
-            <span class="tg-result-badge" style="background: #FFFBEB; color: #D97706;">PASO 3 DE 5: MATRIZ DOLOR, DESEO & OBJECIONES</span>
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 8px;">
+              <span class="tg-result-badge" style="background: #FFFBEB; color: #D97706; margin: 0;">PASO 3 DE 5: MATRIZ DOLOR, DESEO & OBJECIONES</span>
+              <button type="button" class="tg-hint-btn" onclick="fillStepExamples(3)" style="background: #D97706; color: #FFFFFF; border: none; padding: 6px 14px;">
+                ✨ Llenar todo el Paso 3 con ejemplo
+              </button>
+            </div>
+
             <h2 style="font-size: 1.35rem; font-weight: 800; color: #0F172A; margin-bottom: 6px;">
               Los frenos y motivadores de compra
             </h2>
@@ -684,7 +702,7 @@ $page_data = [
               </label>
               <div class="tg-field-help">Lo que le sangra hoy en tiempo, dinero o desgaste de energía.</div>
               <textarea id="inp-dolores" class="tg-textarea" placeholder="1. Falta de predictibilidad en ventas.&#10;2. Pérdida de tiempo en tareas manuales repetitivas.&#10;3. Alto costo por lead en publicidad."></textarea>
-              <button type="button" class="tg-hint-btn" onclick="fillExample('inp-dolores', '1. No tiene tiempo para responder rápido a prospectos.&#10;2. Falta de seguimiento comercial estructurado.&#10;3. Caída en el margen de rentabilidad.')">
+              <button type="button" class="tg-hint-btn" onclick="fillExample('inp-dolores')">
                 💡 Cargar ejemplo
               </button>
             </div>
@@ -695,7 +713,7 @@ $page_data = [
               </label>
               <div class="tg-field-help">El resultado que le haría celebrar con champaña a fin de año.</div>
               <textarea id="inp-deseos" class="tg-textarea" placeholder="1. Facturar el doble con menos esfuerzo operativo.&#10;2. Delegar y sistematizar su negocio.&#10;3. Posicionarse como líder de su nicho."></textarea>
-              <button type="button" class="tg-hint-btn" onclick="fillExample('inp-deseos', '1. Flujo constante de clientes de alto valor.&#10;2. Procesos de venta automatizados.&#10;3. Paz mental y libertad de agenda.')">
+              <button type="button" class="tg-hint-btn" onclick="fillExample('inp-deseos')">
                 💡 Cargar ejemplo
               </button>
             </div>
@@ -706,7 +724,7 @@ $page_data = [
               </label>
               <div class="tg-field-help">¿Precio? ¿Miedo a que sea difícil? ¿Falta de tiempo? ¿Malas experiencias con otras agencias?</div>
               <textarea id="inp-objeciones" class="tg-textarea" placeholder="1. 'Ya contraté una agencia y no tuve resultados'.&#10;2. 'No tengo tiempo para aprender esto'.&#10;3. 'No sé si funcionará para mi tipo de negocio'."></textarea>
-              <button type="button" class="tg-hint-btn" onclick="fillExample('inp-objeciones', '1. Miedo a que la IA sea fría o despersonalizada.&#10;2. Duda sobre el retorno de inversión y el costo.&#10;3. Miedo a que sea muy complejo de configurar.')">
+              <button type="button" class="tg-hint-btn" onclick="fillExample('inp-objeciones')">
                 💡 Cargar ejemplo
               </button>
             </div>
@@ -968,11 +986,52 @@ $page_data = [
 
   <?php require __DIR__ . '/layout/footer.php'; ?>
 
-  <!-- Script de la App -->
+  <!-- Script de la App con Preset de Ejemplos -->
   <script>
     let currentStep = 1;
     let generatedPrompt = '';
     let isLeadCaptured = false;
+
+    // Presets de ejemplos sin caracteres conflictivos
+    const examplePresets = {
+      'inp-producto': 'Servicio de consultoría y automatización con IA para captar clientes en empresas B2B',
+      'inp-detonante': 'Se satura contestando mensajes en WhatsApp a deshoras y siente que está perdiendo ventas frente a competidores con más tecnología',
+      'inp-transformacion': 'Tener un sistema que califique prospectos y agende reuniones 24/7 sin depender de su presencia física',
+      'inp-miedos': 'Teme que su negocio se estanque, que la competencia más tecnificada se quede con sus clientes y no tener tiempo para su vida personal.',
+      'inp-entorno': 'Escucha a otros dueños de negocio hablar de Inteligencia Artificial, pero no sabe por dónde empezar y le abruma la parte técnica.',
+      'inp-frases': '"Gasto plata en publicidad y me mandan mensajes que no responden", "Siento que soy esclavo de mi propio negocio"',
+      'inp-dolores': '1. No tiene tiempo para responder rápido a prospectos.\n2. Falta de seguimiento comercial estructurado.\n3. Caída en el margen de rentabilidad.',
+      'inp-deseos': '1. Flujo constante de clientes de alto valor.\n2. Procesos de venta automatizados.\n3. Paz mental y libertad de agenda.',
+      'inp-objeciones': '1. Miedo a que la IA sea fría o despersonalizada.\n2. Duda sobre el retorno de inversión y el costo.\n3. Miedo a que sea muy complejo de configurar.'
+    };
+
+    function fillExample(fieldId) {
+      const text = examplePresets[fieldId];
+      const field = document.getElementById(fieldId);
+      if (field && text) {
+        field.value = text;
+        showToast('Ejemplo cargado en el campo');
+      }
+    }
+
+    function fillStepExamples(step) {
+      if (step === 1) {
+        fillExample('inp-producto');
+        fillExample('inp-detonante');
+        fillExample('inp-transformacion');
+        showToast('Paso 1 completado con ejemplos');
+      } else if (step === 2) {
+        fillExample('inp-miedos');
+        fillExample('inp-entorno');
+        fillExample('inp-frases');
+        showToast('Paso 2 completado con ejemplos');
+      } else if (step === 3) {
+        fillExample('inp-dolores');
+        fillExample('inp-deseos');
+        fillExample('inp-objeciones');
+        showToast('Paso 3 completado con ejemplos');
+      }
+    }
 
     function updateProgress(step) {
       const fill = document.getElementById('progress-fill');
@@ -1014,14 +1073,6 @@ $page_data = [
 
     function nextStep(step) {
       goToStep(step);
-    }
-
-    function fillExample(fieldId, text) {
-      const field = document.getElementById(fieldId);
-      if (field) {
-        field.value = text;
-        showToast('Ejemplo cargado en el campo');
-      }
     }
 
     function generatePromptAndNext() {
@@ -1210,7 +1261,7 @@ Para iniciar, responde presentándote brevemente desde tu personaje, describe qu
       };
 
       try {
-        // Usar la ruta PHP directa para garantizar compatibilidad total
+        // Enviar a guardar-avatar.php
         const response = await fetch('/api/guardar-avatar.php', {
           method: 'POST',
           headers: {
