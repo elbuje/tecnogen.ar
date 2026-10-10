@@ -868,6 +868,16 @@ $page_data = [
               </div>
             </div>
 
+            <!-- Descargo de Responsabilidad / Disclaimer Orientativo -->
+            <div style="background: #FFFBEB; border: 1px solid #FDE68A; border-left: 4px solid #D97706; border-radius: 10px; padding: 16px 20px; margin-top: 25px;">
+              <div style="font-size: 0.88rem; font-weight: 800; color: #92400E; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
+                <span>⚠️</span> Nota & Descargo de Responsabilidad
+              </div>
+              <p style="font-size: 0.82rem; color: #78350F; margin: 0; line-height: 1.5;">
+                Este diagnóstico, sus titulares sugeridos, ganchos de venta y arquetipos son de <strong>carácter estrictamente orientativo e ilustrativo</strong>. Se generan mediante Inteligencia Artificial a partir de los datos provistos y <strong>no constituyen un estudio de mercado formal, científico ni una auditoría exhaustiva</strong>. Toda estrategia debe ser revisada, validada y testeada con clientes reales en tu nicho antes de comprometer presupuestos o realizar inversiones comerciales.
+              </p>
+            </div>
+
             <!-- Lead Capture Card & PDF Unlocker -->
             <div id="lead-box-container" style="background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); border-radius: 16px; padding: 35px; color: #FFFFFF; text-align: center; margin-top: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.15); transition: all 0.3s ease;">
               <div class="tg-badge" style="background: rgba(56, 189, 248, 0.2); color: #38BDF8; margin-bottom: 14px;">
@@ -1019,6 +1029,14 @@ $page_data = [
     <div class="print-section">
       <div class="print-section-title">7. Mega-Prompt de Roleplay Inverso con Inteligencia Artificial</div>
       <div class="print-prompt" id="print-prompt"></div>
+    </div>
+
+    <!-- SECCIÓN 8: DESCARGO DE RESPONSABILIDAD / DISCLAIMER -->
+    <div class="print-section" style="border: 1px solid #CBD5E1; background: #F8FAFC; padding: 10px 14px; border-radius: 6px;">
+      <div style="font-weight: 800; font-size: 11px; color: #475569; margin-bottom: 2px;">⚠️ AVISO & DESCARGO DE RESPONSABILIDAD:</div>
+      <div style="font-size: 10px; color: #64748B; line-height: 1.4;">
+        Este informe y sus propuestas de copywriting/embudo son de carácter <strong>estrictamente orientativo e ilustrativo</strong>. Se generan de manera automatizada mediante Inteligencia Artificial en base a las variables suministradas por el usuario y <strong>no representan un estudio de mercado formal, muestreo estadístico ni asesoramiento profesional garantizado</strong>. Se recomienda testear y validar cada hipótesis comercial con el público objetivo antes de ejecutar campañas o inversiones.
+      </div>
     </div>
 
     <div class="print-footer">

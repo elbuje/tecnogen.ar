@@ -187,6 +187,12 @@ $html_usuario = <<<HTML
     <p style="font-size: 13px; color: #64748b;">Copiá y pegá este prompt en ChatGPT, Claude o Gemini para entrevistar a tu avatar en vivo:</p>
     <div class="prompt-box">{$prompt_safe}</div>
 
+    <!-- BLOQUE 7: DESCARGO DE RESPONSABILIDAD -->
+    <div style="background: #fffbeb; border: 1px solid #fde68a; border-left: 4px solid #d97706; border-radius: 8px; padding: 14px 18px; margin-top: 25px; font-size: 12px; color: #78350f; line-height: 1.45;">
+      <strong>⚠️ Nota & Descargo de Responsabilidad:</strong><br>
+      Este dossier, sus titulares y sugerencias estratégicas son de carácter <strong>estrictamente orientativo e ilustrativo</strong>. Fueron generados de forma automatizada mediante modelos de Inteligencia Artificial en base a las variables provistas y <strong>no constituyen un estudio de mercado formal ni una garantía de resultados</strong>. Se aconseja testear y validar cada hipótesis con prospectos reales antes de iniciar campañas publicitarias o inversiones comerciales.
+    </div>
+
     <!-- CTA TECNOGEN -->
     <div class="cta-banner">
       <h3 style="margin: 0 0 6px; color: #1e3a8a; font-size: 18px;">¿Querés implementar este Embudo con Agentes de IA en tu Negocio?</h3>
