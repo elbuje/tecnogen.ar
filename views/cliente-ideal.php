@@ -15,7 +15,7 @@ $page_data = [
 <head>
   <?php render_seo_head($page_data); ?>
   <style>
-    /* Estilos Generales y Específicos del Asistente */
+    /* Estilos Generales del Asistente */
     .tg-wizard-wrapper {
       max-width: 960px;
       margin: 0 auto;
@@ -239,7 +239,7 @@ $page_data = [
       line-height: 1.5;
     }
 
-    /* Dossier Grid */
+    /* Dossier Grid en Pantalla */
     .tg-dossier-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -311,6 +311,124 @@ $page_data = [
       align-items: center;
       gap: 10px;
       border-left: 4px solid #22C55E;
+    }
+
+    /* ==========================================================================
+       ESTILOS EXCLUSIVOS DE IMPRESIÓN (PDF LIMPIO)
+       ========================================================================== */
+    #print-document {
+      display: none;
+    }
+
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      
+      .tg-header, .tg-footer, .tg-hero, #como-funciona, .tg-steps-nav, 
+      .tg-progress-bar-container, .tg-app-card, .tg-faq-item, 
+      .tg-wa-float, #lead-form-wrap, .tg-btn, .tg-copy-btn, .tg-hint-btn, 
+      .tg-toast, section {
+        display: none !important;
+      }
+
+      #print-document, #print-document * {
+        visibility: visible !important;
+      }
+
+      #print-document {
+        display: block !important;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: #FFFFFF;
+        color: #0F172A;
+        padding: 20px 30px;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      .print-header {
+        border-bottom: 2px solid #2563EB;
+        padding-bottom: 12px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      .print-title {
+        font-size: 20px;
+        font-weight: 800;
+        color: #1E293B;
+        margin: 0 0 4px;
+      }
+
+      .print-subtitle {
+        font-size: 12px;
+        color: #64748B;
+        margin: 0;
+      }
+
+      .print-meta {
+        text-align: right;
+        font-size: 11px;
+        color: #475569;
+      }
+
+      .print-section {
+        margin-bottom: 18px;
+        page-break-inside: avoid;
+      }
+
+      .print-section-title {
+        font-size: 14px;
+        font-weight: 800;
+        color: #2563EB;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border-bottom: 1px solid #E2E8F0;
+        padding-bottom: 4px;
+        margin-bottom: 8px;
+      }
+
+      .print-box {
+        background: #F8FAFC;
+        border: 1px solid #CBD5E1;
+        border-radius: 6px;
+        padding: 10px 14px;
+        margin-bottom: 8px;
+      }
+
+      .print-box strong {
+        color: #0F172A;
+        display: block;
+        font-size: 12px;
+        margin-bottom: 2px;
+      }
+
+      .print-prompt {
+        background: #F1F5F9;
+        border: 1px solid #94A3B8;
+        border-radius: 6px;
+        padding: 12px;
+        font-family: monospace;
+        font-size: 11px;
+        white-space: pre-wrap;
+        word-break: break-word;
+        page-break-inside: avoid;
+      }
+
+      .print-footer {
+        margin-top: 30px;
+        border-top: 1px solid #E2E8F0;
+        padding-top: 10px;
+        text-align: center;
+        font-size: 11px;
+        color: #64748B;
+      }
     }
 
     @media (max-width: 768px) {
@@ -407,7 +525,7 @@ $page_data = [
             <strong style="color: #2563EB; display: block; margin-bottom: 4px;">Paso 1: Completa los campos</strong>
             Responde las preguntas de los 3 bloques. Si estás trabado, haz clic en <em>"💡 Cargar ejemplo"</em>.
           </div>
-          <div style="font-size: 0.88rem; color: #475569;">
+          <div style="font-size: 0.88rem; color: #2563EB;">
             <strong style="color: #2563EB; display: block; margin-bottom: 4px;">Paso 2: Genera tu Prompt</strong>
             El sistema ensambla automáticamente un Mega-Prompt estructurado con tus variables para Inteligencia Artificial.
           </div>
@@ -417,7 +535,7 @@ $page_data = [
           </div>
           <div style="font-size: 0.88rem; color: #475569;">
             <strong style="color: #2563EB; display: block; margin-bottom: 4px;">Paso 4: Recibe tu Dossier</strong>
-            Ingresa tu email para recibir el reporte consolidado en tu casilla y guardarlo en PDF.
+            Ingresa tu email para recibir el reporte consolidado en tu casilla y desbloquear la descarga en PDF.
           </div>
         </div>
       </div>
@@ -639,7 +757,7 @@ $page_data = [
                 ← Volver
               </button>
               <button type="button" class="tg-btn tg-btn-primary" onclick="showResultsDashboard()">
-                Ver Dossier Completo & Guardar →
+                Ver Dossier Completo & Desbloquear PDF →
               </button>
             </div>
           </div>
@@ -652,11 +770,11 @@ $page_data = [
                 🎯 Tu Dossier Estratégico de Cliente Ideal
               </h2>
               <p style="font-size: 0.92rem; color: #64748B; max-width: 620px; margin: 0 auto;">
-                Este es el resumen consolidado de la psicología de tu cliente. Puedes guardarlo, imprimirlo o recibirlo completo por correo electrónico.
+                Este es el resumen consolidado de la psicología de tu cliente. Completa tus datos a continuación para recibirlo en tu correo y <strong>desbloquear la descarga en PDF</strong>.
               </p>
             </div>
 
-            <!-- Dashboard Grid -->
+            <!-- Dashboard Grid en Pantalla -->
             <div class="tg-dossier-grid">
               <div class="tg-dossier-card" style="border-top: 4px solid #2563EB;">
                 <h4>🎯 1. Oferta & Detonante</h4>
@@ -687,16 +805,16 @@ $page_data = [
               </div>
             </div>
 
-            <!-- CTA Card: Enviar Reporte por Correo -->
-            <div style="background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); border-radius: 16px; padding: 35px; color: #FFFFFF; text-align: center; margin-top: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.15);">
+            <!-- Lead Capture Card & PDF Unlocker -->
+            <div id="lead-box-container" style="background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); border-radius: 16px; padding: 35px; color: #FFFFFF; text-align: center; margin-top: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.15); transition: all 0.3s ease;">
               <div class="tg-badge" style="background: rgba(56, 189, 248, 0.2); color: #38BDF8; margin-bottom: 14px;">
-                ✉️ ENVÍO DIRECTO A TU CASILLA
+                ✉️ RECIBIR EN TU CORREO & DESBLOQUEAR PDF
               </div>
               <h3 style="font-size: 1.35rem; font-weight: 800; color: #FFFFFF; margin-bottom: 8px;">
-                ¿Quieres recibir este Dossier Completo en tu Correo?
+                Ingresa tu Correo para Recibir tu Dossier y Desbloquear la Descarga
               </h3>
               <p style="font-size: 0.88rem; color: #94A3B8; max-width: 550px; margin: 0 auto 22px;">
-                Te enviamos el reporte detallado en formato imprimible con la guía de implementación y una copia de seguridad de tu prompt de IA.
+                Te enviamos el reporte detallado a tu casilla y habilitamos la opción para descargar o imprimir tu documento en PDF listo para compartir.
               </p>
 
               <div id="lead-form-wrap" style="max-width: 520px; margin: 0 auto;">
@@ -709,7 +827,7 @@ $page_data = [
                   <input type="text" id="lead-negocio" class="tg-input" placeholder="Tu Rubro o Empresa" style="background: #1E293B; color: #FFFFFF; border-color: #334155;">
                 </div>
                 <button type="button" id="btn-enviar-lead" class="tg-btn tg-btn-primary" style="width: 100%; padding: 14px; font-size: 1rem;" onclick="enviarReporteLead()">
-                  🚀 Enviar Mi Dossier de Cliente Ideal
+                  🚀 Enviar por Correo y Desbloquear PDF
                 </button>
                 <div id="lead-status-msg" style="margin-top: 15px; font-size: 0.9rem; display: none;"></div>
               </div>
@@ -726,12 +844,13 @@ $page_data = [
               </div>
             </div>
 
-            <div style="display: flex; justify-content: center; gap: 15px; margin-top: 25px;">
+            <!-- Botones de Acción Final -->
+            <div style="display: flex; justify-content: center; gap: 15px; margin-top: 25px; flex-wrap: wrap;">
               <button type="button" class="tg-btn" style="background: #E2E8F0; color: #475569;" onclick="goToStep(4)">
                 ← Volver al Prompt
               </button>
-              <button type="button" class="tg-btn" style="background: #0F172A; color: #FFFFFF;" onclick="window.print()">
-                🖨️ Imprimir / Guardar como PDF
+              <button type="button" id="btn-print-doc" class="tg-btn" style="background: #0F172A; color: #FFFFFF;" onclick="handlePrintClick()">
+                🔒 Descargar / Imprimir Dossier en PDF
               </button>
             </div>
           </div>
@@ -741,6 +860,80 @@ $page_data = [
 
     </div>
   </section>
+
+  <!-- ==========================================================================
+       PLANTILLA DE IMPRESIÓN EXCLUSIVA (SOLO VISIBLE AL IMPRIMIR / GUARDAR EN PDF)
+       ========================================================================== -->
+  <div id="print-document">
+    <div class="print-header">
+      <div>
+        <h1 class="print-title">Dossier Estratégico de Cliente Ideal</h1>
+        <p class="print-subtitle">Arquitectura Psicológica, Neuroventas & Mega-Prompt de IA · TecnoGen</p>
+      </div>
+      <div class="print-meta">
+        <strong>Preparado para:</strong> <span id="print-nombre">Usuario</span><br>
+        <strong>Rubro / Empresa:</strong> <span id="print-negocio">General</span><br>
+        <strong>Fecha:</strong> <?= date('d/m/Y') ?>
+      </div>
+    </div>
+
+    <div class="print-section">
+      <div class="print-section-title">1. Jobs To Be Done (JTBD) & Propuesta de Valor</div>
+      <div class="print-box">
+        <strong>Tu Producto / Servicio:</strong>
+        <span id="print-producto"></span>
+      </div>
+      <div class="print-box">
+        <strong>Momento Detonante de Compra (Trigger Event):</strong>
+        <span id="print-detonante"></span>
+      </div>
+      <div class="print-box">
+        <strong>Transformación Deseada (Progreso Real):</strong>
+        <span id="print-transformacion"></span>
+      </div>
+    </div>
+
+    <div class="print-section">
+      <div class="print-section-title">2. Mapa de Empatía & Voz del Cliente (VoC)</div>
+      <div class="print-box">
+        <strong>Miedos y Preocupaciones a las 3 AM:</strong>
+        <span id="print-miedos"></span>
+      </div>
+      <div class="print-box">
+        <strong>Entorno y Presiones que lo Rodean:</strong>
+        <span id="print-entorno"></span>
+      </div>
+      <div class="print-box">
+        <strong>Frases y Vocabulario Literal que Usa:</strong>
+        <span id="print-frases"></span>
+      </div>
+    </div>
+
+    <div class="print-section">
+      <div class="print-section-title">3. Matriz Dolor, Deseo & Objeciones de Compra</div>
+      <div class="print-box">
+        <strong>Dolores Principales (Pains):</strong>
+        <span id="print-dolores" style="white-space: pre-line;"></span>
+      </div>
+      <div class="print-box">
+        <strong>Deseos y Metas (Gains):</strong>
+        <span id="print-deseos" style="white-space: pre-line;"></span>
+      </div>
+      <div class="print-box">
+        <strong>Top Objeciones de Compra (Frenos de Decisión):</strong>
+        <span id="print-objeciones" style="white-space: pre-line;"></span>
+      </div>
+    </div>
+
+    <div class="print-section">
+      <div class="print-section-title">4. Mega-Prompt de Roleplay Inverso con Inteligencia Artificial</div>
+      <div class="print-prompt" id="print-prompt"></div>
+    </div>
+
+    <div class="print-footer">
+      Documento generado por <strong>TecnoGen</strong> (Marketing Digital, IA & Automatización) · https://tecnogen.ar · Lavalle 362, CABA, Argentina.
+    </div>
+  </div>
 
   <!-- Sección: Preguntas Frecuentes (FAQ) -->
   <section class="tg-section" style="background: #FFFFFF; border-top: 1px solid var(--light-border); padding: 50px 0;">
@@ -779,6 +972,7 @@ $page_data = [
   <script>
     let currentStep = 1;
     let generatedPrompt = '';
+    let isLeadCaptured = false;
 
     function updateProgress(step) {
       const fill = document.getElementById('progress-fill');
@@ -873,22 +1067,53 @@ Para iniciar, responde presentándote brevemente desde tu personaje, describe qu
         preview.textContent = generatedPrompt;
       }
 
+      // Preparar versión para imprimir
+      const printPrompt = document.getElementById('print-prompt');
+      if (printPrompt) {
+        printPrompt.textContent = generatedPrompt;
+      }
+
       goToStep(4);
     }
 
     function showResultsDashboard() {
-      // Poblar campos de resultados
-      document.getElementById('res-producto').textContent = document.getElementById('inp-producto').value.trim() || 'No especificado';
-      document.getElementById('res-detonante').textContent = document.getElementById('inp-detonante').value.trim() || 'No especificado';
-      document.getElementById('res-transformacion').textContent = document.getElementById('inp-transformacion').value.trim() || 'No especificado';
+      const prod = document.getElementById('inp-producto').value.trim() || 'No especificado';
+      const det = document.getElementById('inp-detonante').value.trim() || 'No especificado';
+      const trans = document.getElementById('inp-transformacion').value.trim() || 'No especificado';
       
-      document.getElementById('res-miedos').textContent = document.getElementById('inp-miedos').value.trim() || 'No especificado';
-      document.getElementById('res-entorno').textContent = document.getElementById('inp-entorno').value.trim() || 'No especificado';
-      document.getElementById('res-frases').textContent = document.getElementById('inp-frases').value.trim() || 'No especificado';
+      const miedos = document.getElementById('inp-miedos').value.trim() || 'No especificado';
+      const entorno = document.getElementById('inp-entorno').value.trim() || 'No especificado';
+      const frases = document.getElementById('inp-frases').value.trim() || 'No especificado';
       
-      document.getElementById('res-dolores').textContent = document.getElementById('inp-dolores').value.trim() || 'No especificado';
-      document.getElementById('res-deseos').textContent = document.getElementById('inp-deseos').value.trim() || 'No especificado';
-      document.getElementById('res-objeciones').textContent = document.getElementById('inp-objeciones').value.trim() || 'No especificado';
+      const dolores = document.getElementById('inp-dolores').value.trim() || 'No especificado';
+      const deseos = document.getElementById('inp-deseos').value.trim() || 'No especificado';
+      const objeciones = document.getElementById('inp-objeciones').value.trim() || 'No especificado';
+
+      // Dashboard Pantalla
+      document.getElementById('res-producto').textContent = prod;
+      document.getElementById('res-detonante').textContent = det;
+      document.getElementById('res-transformacion').textContent = trans;
+      
+      document.getElementById('res-miedos').textContent = miedos;
+      document.getElementById('res-entorno').textContent = entorno;
+      document.getElementById('res-frases').textContent = frases;
+      
+      document.getElementById('res-dolores').textContent = dolores;
+      document.getElementById('res-deseos').textContent = deseos;
+      document.getElementById('res-objeciones').textContent = objeciones;
+
+      // Documento Imprimible
+      document.getElementById('print-producto').textContent = prod;
+      document.getElementById('print-detonante').textContent = det;
+      document.getElementById('print-transformacion').textContent = trans;
+      
+      document.getElementById('print-miedos').textContent = miedos;
+      document.getElementById('print-entorno').textContent = entorno;
+      document.getElementById('print-frases').textContent = frases;
+      
+      document.getElementById('print-dolores').textContent = dolores;
+      document.getElementById('print-deseos').textContent = deseos;
+      document.getElementById('print-objeciones').textContent = objeciones;
 
       goToStep(5);
     }
@@ -916,6 +1141,27 @@ Para iniciar, responde presentándote brevemente desde tu personaje, describe qu
       }
     }
 
+    function handlePrintClick() {
+      if (!isLeadCaptured) {
+        // Bloqueado hasta dejar los datos
+        showToast('⚠️ Ingresa tu nombre y correo para desbloquear el PDF');
+        const leadBox = document.getElementById('lead-box-container');
+        if (leadBox) {
+          leadBox.scrollIntoView({ behavior: 'smooth' });
+          leadBox.style.boxShadow = '0 0 30px rgba(37, 99, 235, 0.5)';
+          setTimeout(() => {
+            leadBox.style.boxShadow = '0 15px 35px rgba(0,0,0,0.15)';
+          }, 2000);
+        }
+        const nameInput = document.getElementById('lead-nombre');
+        if (nameInput) nameInput.focus();
+        return;
+      }
+
+      // Desbloqueado: Imprimir el documento limpio
+      window.print();
+    }
+
     async function enviarReporteLead() {
       const nombre = document.getElementById('lead-nombre').value.trim();
       const email = document.getElementById('lead-email').value.trim();
@@ -923,6 +1169,7 @@ Para iniciar, responde presentándote brevemente desde tu personaje, describe qu
       const negocio = document.getElementById('lead-negocio').value.trim();
       const statusMsg = document.getElementById('lead-status-msg');
       const btn = document.getElementById('btn-enviar-lead');
+      const printBtn = document.getElementById('btn-print-doc');
 
       if (!nombre || !email) {
         statusMsg.style.display = 'block';
@@ -934,6 +1181,10 @@ Para iniciar, responde presentándote brevemente desde tu personaje, describe qu
       btn.disabled = true;
       btn.innerHTML = '⏳ Generando y enviando dossier...';
       statusMsg.style.display = 'none';
+
+      // Actualizar metadatos del documento imprimible
+      document.getElementById('print-nombre').textContent = nombre;
+      document.getElementById('print-negocio').textContent = negocio || 'No especificado';
 
       const payload = {
         nombre: nombre,
@@ -959,7 +1210,8 @@ Para iniciar, responde presentándote brevemente desde tu personaje, describe qu
       };
 
       try {
-        const response = await fetch('/api/guardar-avatar', {
+        // Usar la ruta PHP directa para garantizar compatibilidad total
+        const response = await fetch('/api/guardar-avatar.php', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -970,11 +1222,19 @@ Para iniciar, responde presentándote brevemente desde tu personaje, describe qu
         const result = await response.json();
 
         if (result.success) {
+          isLeadCaptured = true;
           statusMsg.style.display = 'block';
           statusMsg.style.color = '#22C55E';
-          statusMsg.innerHTML = '🎉 <strong>¡Listo!</strong> Tu dossier estratégico fue enviado a <strong>' + email + '</strong>. Revisa también tu carpeta de spam o promociones.';
+          statusMsg.innerHTML = '🎉 <strong>¡Listo!</strong> Tu dossier fue enviado a <strong>' + email + '</strong>.<br><span style="color: #38BDF8; font-size: 0.95rem; font-weight: 700;">✅ ¡PDF Desbloqueado! Ya puedes descargarlo o imprimirlo abajo.</span>';
           btn.innerHTML = '✅ ¡Enviado con Éxito!';
-          showToast('Dossier enviado a tu correo');
+          
+          // Actualizar botón de impresión
+          if (printBtn) {
+            printBtn.style.background = '#2563EB';
+            printBtn.innerHTML = '🖨️ Descargar / Imprimir Dossier en PDF';
+          }
+          
+          showToast('Dossier enviado y PDF desbloqueado');
         } else {
           statusMsg.style.display = 'block';
           statusMsg.style.color = '#EF4444';
@@ -985,7 +1245,7 @@ Para iniciar, responde presentándote brevemente desde tu personaje, describe qu
       } catch (err) {
         statusMsg.style.display = 'block';
         statusMsg.style.color = '#EF4444';
-        statusMsg.innerHTML = '⚠️ Hubo un problema de conexión. Por favor intentá nuevamente.';
+        statusMsg.innerHTML = '⚠️ Hubo un problema de conexión al procesar el envío. Por favor reintentá.';
         btn.disabled = false;
         btn.innerHTML = '🚀 Reintentar Envío';
       }
