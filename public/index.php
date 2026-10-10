@@ -58,6 +58,13 @@ $routes = [
     "nosotros"                            => __DIR__ . "/../views/sobre-nosotros.php",
     "contacto"                            => __DIR__ . "/../views/contacto.php",
     
+    // Herramienta Generador de Cliente Ideal con IA
+    "cliente-ideal"                       => __DIR__ . "/../views/cliente-ideal.php",
+    "generador-avatar"                    => __DIR__ . "/../views/cliente-ideal.php",
+    "avatar-ia"                           => __DIR__ . "/../views/cliente-ideal.php",
+    "avatar-ideal"                        => __DIR__ . "/../views/cliente-ideal.php",
+    "api/guardar-avatar"                  => __DIR__ . "/api/guardar-avatar.php",
+
     // Evento Presencial 10 de Octubre
     "Mentalidad-Marketing-Neuroventas-con-IA" => __DIR__ . "/../views/landing-evento.php",
     "mentalidad-marketing-neuroventas-con-ia" => __DIR__ . "/../views/landing-evento.php",
@@ -173,6 +180,12 @@ if ($path === "sitemap.xml") {
     <lastmod><?= date("Y-m-d") ?></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc><?= SITE_URL ?>/cliente-ideal</loc>
+    <lastmod><?= date("Y-m-d") ?></lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc><?= SITE_URL ?>/Mentalidad-Marketing-Neuroventas-con-IA</loc>

@@ -23,6 +23,7 @@ $current_slug = $current_slug ?? '';
         <li><a href="/agentes-inteligencia-artificial" class="tg-nav-link <?= $current_slug === 'agentes-inteligencia-artificial' ? 'active' : '' ?>">Agentes IA</a></li>
         <li><a href="/automatizacion-de-procesos" class="tg-nav-link <?= $current_slug === 'automatizacion-de-procesos' ? 'active' : '' ?>">Automatización</a></li>
         <li><a href="/crm-whatsapp-ventas" class="tg-nav-link <?= $current_slug === 'crm-whatsapp-ventas' ? 'active' : '' ?>">CRM & WhatsApp</a></li>
+        <li><a href="/cliente-ideal" class="tg-nav-link <?= $current_slug === 'cliente-ideal' ? 'active' : '' ?>" style="color: #06B6D4; font-weight: 700;">🎯 Avatar IA</a></li>
         <li><a href="/Mentalidad-Marketing-Neuroventas-con-IA" class="tg-nav-event-link">⚡ Evento 10 Oct</a></li>
       </ul>
     </nav>
@@ -39,6 +40,7 @@ $current_slug = $current_slug ?? '';
   <!-- Mobile Drawer Menu -->
   <div class="tg-mobile-menu" id="tg-mobile-menu">
     <a href="/" class="tg-nav-link <?= $current_slug === '' ? 'active' : '' ?>">Inicio</a>
+    <a href="/cliente-ideal" class="tg-nav-link <?= $current_slug === 'cliente-ideal' ? 'active' : '' ?>" style="color: #06B6D4; font-weight: 700;">🎯 Generador de Avatar con IA</a>
     <a href="/agencia-marketing-digital" class="tg-nav-link <?= $current_slug === 'agencia-marketing-digital' ? 'active' : '' ?>">Marketing Digital & Funnels</a>
     <a href="/agencia-seo-posicionamiento" class="tg-nav-link <?= $current_slug === 'agencia-seo-posicionamiento' ? 'active' : '' ?>">SEO & Posicionamiento en IA (GEO)</a>
     <a href="/inteligencia-artificial-empresas" class="tg-nav-link <?= $current_slug === 'inteligencia-artificial-empresas' ? 'active' : '' ?>">IA para Empresas & RAG</a>

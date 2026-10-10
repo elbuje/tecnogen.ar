@@ -40,6 +40,7 @@
       <div>
         <h4 class="tg-footer-title">Marketing & Crecimiento</h4>
         <ul class="tg-footer-links">
+          <li><a href="/cliente-ideal" class="tg-footer-link" style="color: #38BDF8; font-weight: 700;">🎯 Generador de Cliente Ideal con IA</a></li>
           <li><a href="/agencia-marketing-digital" class="tg-footer-link">Marketing Digital</a></li>
           <li><a href="/agencia-seo-posicionamiento" class="tg-footer-link">SEO & Motores IA (GEO)</a></li>
           <li><a href="/Mentalidad-Marketing-Neuroventas-con-IA" class="tg-footer-link" style="color: #F59E0B; font-weight: 700;">⚡ Evento Presencial 10 Oct</a></li>
