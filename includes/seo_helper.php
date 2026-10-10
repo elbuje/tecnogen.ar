@@ -55,8 +55,8 @@ function render_seo_head($page_data = []) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="/assets/css/style.css?v=1.0">
+  <!-- Stylesheet (Auto Cache-Busting) -->
+  <link rel="stylesheet" href="/assets/css/style.css?v=<?= file_exists(__DIR__ . '/../public/assets/css/style.css') ? filemtime(__DIR__ . '/../public/assets/css/style.css') : time() ?>">
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
