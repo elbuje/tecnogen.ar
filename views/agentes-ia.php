@@ -21,10 +21,15 @@ $page_data = [
 
   <section class="tg-hero">
     <div class="tg-container">
+      <!-- Breadcrumb -->
+      <div class="tg-breadcrumb">
+        <a href="/">Inicio</a> <span class="tg-sep">/</span> <span class="tg-current">Agentes de IA</span>
+      </div>
+
       <div class="tg-hero-grid">
         <div>
           <div class="tg-badge tg-badge-blue" style="margin-bottom: 20px;">
-            ✦ Fuerza Comercial Autónoma 24/7
+            ⚡ SOLUCIÓN 04 · AGENTES DE IA
           </div>
           <h1 class="tg-hero-title">
             Agentes de IA que <span class="tg-gradient-text">atienden, califican y venden</span> por vos.

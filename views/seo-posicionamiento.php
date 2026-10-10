@@ -21,10 +21,15 @@ $page_data = [
 
   <section class="tg-hero">
     <div class="tg-container">
+      <!-- Breadcrumb -->
+      <div class="tg-breadcrumb">
+        <a href="/">Inicio</a> <span class="tg-sep">/</span> <span class="tg-current">SEO & GEO</span>
+      </div>
+
       <div class="tg-hero-grid">
         <div>
           <div class="tg-badge tg-badge-blue" style="margin-bottom: 20px;">
-            ✦ SEO de 5 Capas & GEO
+            🔍 SOLUCIÓN 02 · SEO & GEO
           </div>
           <h1 class="tg-hero-title">
             Sé la primera respuesta en <span class="tg-gradient-text">Google y en la IA</span>.

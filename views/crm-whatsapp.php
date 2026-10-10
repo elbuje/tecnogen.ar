@@ -21,10 +21,15 @@ $page_data = [
 
   <section class="tg-hero">
     <div class="tg-container">
+      <!-- Breadcrumb -->
+      <div class="tg-breadcrumb">
+        <a href="/">Inicio</a> <span class="tg-sep">/</span> <span class="tg-current">CRM & WhatsApp</span>
+      </div>
+
       <div class="tg-hero-grid">
         <div>
           <div class="tg-badge tg-badge-blue" style="margin-bottom: 20px;">
-            ✦ Partner Oficial Kommo & Meta
+            💬 SOLUCIÓN 06 · CRM & WHATSAPP
           </div>
           <h1 class="tg-hero-title">
             El CRM definitivo para vender por <span class="tg-gradient-text">WhatsApp</span>.

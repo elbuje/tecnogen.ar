@@ -21,10 +21,15 @@ $page_data = [
 
   <section class="tg-hero">
     <div class="tg-container">
+      <!-- Breadcrumb -->
+      <div class="tg-breadcrumb">
+        <a href="/">Inicio</a> <span class="tg-sep">/</span> <span class="tg-current">Automatización de Procesos</span>
+      </div>
+
       <div class="tg-hero-grid">
         <div>
           <div class="tg-badge tg-badge-blue" style="margin-bottom: 20px;">
-            ✦ Eficiencia Operativa & Escala
+            ⚙️ SOLUCIÓN 05 · AUTOMATIZACIÓN
           </div>
           <h1 class="tg-hero-title">
             Eliminá tareas repetitivas y <span class="tg-gradient-text">escalá sin fricción</span>.

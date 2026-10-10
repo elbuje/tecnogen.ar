@@ -10,10 +10,9 @@
       
       <!-- Brand & Mission Col -->
       <div>
-        <div class="tg-logo" style="margin-bottom: 18px;">
-          <div class="tg-logo-mark">TG</div>
-          <div class="tg-logo-text" style="color: #ffffff;">Tecno<span style="color: #38BDF8;">Gen</span></div>
-        </div>
+        <a href="/" class="tg-logo" style="margin-bottom: 18px; display: inline-block;">
+          <img src="/brand/tecnogen-logo-white.png" alt="TecnoGen - Marketing • IA • Automatización" class="tg-footer-logo" width="160" height="45">
+        </a>
         <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-light-muted); margin-bottom: 20px;">
           La unión estratégica de <strong>TecnoBrain</strong> y <strong>GEN de Negocio</strong>. Desarrollamos infraestructura tecnológica de vanguardia, inteligencia artificial aplicada, CRM y marketing de alta conversión.
         </p>

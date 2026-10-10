@@ -21,10 +21,15 @@ $page_data = [
 
   <section class="tg-hero">
     <div class="tg-container">
+      <!-- Breadcrumb -->
+      <div class="tg-breadcrumb">
+        <a href="/">Inicio</a> <span class="tg-sep">/</span> <span class="tg-current">Content OS con IA</span>
+      </div>
+
       <div class="tg-hero-grid">
         <div>
           <div class="tg-badge tg-badge-blue" style="margin-bottom: 20px;">
-            ✦ Producción de Autoridad a Escala
+            ✍️ SOLUCIÓN 07 · CONTENT OS IA
           </div>
           <h1 class="tg-hero-title">
             Tu marca convertida en un <span class="tg-gradient-text">motor de contenido</span> con IA.
