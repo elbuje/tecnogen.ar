@@ -251,29 +251,38 @@ $html_notificacion = <<<HTML
 </html>
 HTML;
 
-// Headers para envío de correo
-$from_email = 'contacto@tecnogen.ar';
-$headers_user  = "MIME-Version: 1.0\r\n";
-$headers_user .= "Content-type: text/html; charset=UTF-8\r\n";
-$headers_user .= "From: TecnoGen <{$from_email}>\r\n";
-$headers_user .= "Reply-To: {$from_email}\r\n";
-$headers_user .= "X-Mailer: PHP/" . phpversion();
+require_once __DIR__ . '/../../includes/mailer.php';
 
-$headers_admin  = "MIME-Version: 1.0\r\n";
-$headers_admin .= "Content-type: text/html; charset=UTF-8\r\n";
-$headers_admin .= "From: TecnoGen Leads <{$from_email}>\r\n";
-$headers_admin .= "Reply-To: {$email}\r\n";
-$headers_admin .= "X-Mailer: PHP/" . phpversion();
+// Enviar correos mediante SMTP autenticado (Google Workspace / Gmail)
+$mail_user_sent = tg_send_mail(
+    $email,
+    "🎯 Tu Dossier Estratégico de Cliente Ideal & Plan de Copywriting - TecnoGen",
+    $html_usuario,
+    "TecnoGen • Marketing & IA",
+    "contacto@tecnogen.ar"
+);
 
-// Enviar correos
-$mail_user_sent = @mail($email, "🎯 Tu Dossier Estratégico de Cliente Ideal & Plan de Copywriting - TecnoGen", $html_usuario, $headers_user);
 $admin_email = 'mmujica@tecnobrain.com.ar';
-$mail_admin_sent = @mail($admin_email, "🔥 [Lead Avatar IA] {$nombre} ({$negocio})", $html_notificacion, $headers_admin);
+$mail_admin_sent = tg_send_mail(
+    $admin_email,
+    "🔥 [Lead Avatar IA] {$nombre} ({$negocio})",
+    $html_notificacion,
+    "TecnoGen Leads",
+    $email
+);
+
+// Fallback adicional si fuera necesario
+if (!$mail_user_sent) {
+    $from_email = 'contacto@tecnogen.ar';
+    $headers_user  = "MIME-Version: 1.0\r\nContent-type: text/html; charset=UTF-8\r\nFrom: TecnoGen <{$from_email}>\r\nReply-To: {$from_email}\r\n";
+    @mail($email, "🎯 Tu Dossier Estratégico de Cliente Ideal & Plan de Copywriting - TecnoGen", $html_usuario, $headers_user);
+}
 
 ob_clean();
 echo json_encode([
     'success' => true,
     'message' => '¡Dossier generado y enviado con éxito! Revisa tu casilla de correo electrónico.',
     'mail_sent' => $mail_user_sent,
+    'admin_mail_sent' => $mail_admin_sent,
     'lead_id' => $file_name
 ]);
