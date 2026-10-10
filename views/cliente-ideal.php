@@ -525,7 +525,7 @@ $page_data = [
             <strong style="color: #2563EB; display: block; margin-bottom: 4px;">Paso 1: Completa los campos</strong>
             Responde las preguntas de los 3 bloques. Si estás trabado, haz clic en <em>"💡 Cargar ejemplo"</em>.
           </div>
-          <div style="font-size: 0.88rem; color: #2563EB;">
+          <div style="font-size: 0.88rem; color: #475569;">
             <strong style="color: #2563EB; display: block; margin-bottom: 4px;">Paso 2: Genera tu Prompt</strong>
             El sistema ensambla automáticamente un Mega-Prompt estructurado con tus variables para Inteligencia Artificial.
           </div>
