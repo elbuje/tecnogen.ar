@@ -793,33 +793,78 @@ $page_data = [
             </div>
 
             <!-- Dashboard Grid en Pantalla -->
-            <div class="tg-dossier-grid">
-              <div class="tg-dossier-card" style="border-top: 4px solid #2563EB;">
-                <h4>🎯 1. Oferta & Detonante</h4>
-                <p><strong>Solución:</strong> <span id="res-producto"></span></p>
-                <p style="margin-top: 8px;"><strong>Momento Detonante:</strong> <span id="res-detonante"></span></p>
-                <p style="margin-top: 8px;"><strong>Progreso Deseado:</strong> <span id="res-transformacion"></span></p>
+            <div style="margin-bottom: 25px;">
+              <div class="tg-badge tg-badge-blue" style="margin-bottom: 12px; font-weight: 800;">
+                ✨ APORTES ESTRATÉGICOS GENERADOS POR LA IA & NEUROVENTAS
+              </div>
+              <h3 style="font-size: 1.25rem; font-weight: 800; color: #0F172A; margin-bottom: 14px;">
+                Entregables Tácticos Listos para Implementar
+              </h3>
+
+              <div class="tg-dossier-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <!-- Tarjeta 1: Diagnóstico Psicológico -->
+                <div class="tg-dossier-card" style="border-top: 4px solid #2563EB; background: #FFFFFF;">
+                  <h4 style="color: #1E40AF;">🧠 1. Diagnóstico & Arquetipo Psicológico</h4>
+                  <p><strong>Arquetipo:</strong> <span id="res-ia-arquetipo" style="color: #0F172A; font-weight: 600;"></span></p>
+                  <p style="margin-top: 8px;"><strong>Nivel de Consciencia (Eugene Schwartz):</strong> <span id="res-ia-consciencia" style="color: #0F172A;"></span></p>
+                  <p style="margin-top: 8px;"><strong>Botón Emocional Dominante:</strong> <span id="res-ia-boton" style="color: #0F172A;"></span></p>
+                </div>
+
+                <!-- Tarjeta 2: Titulares Landing Page -->
+                <div class="tg-dossier-card" style="border-top: 4px solid #A855F7; background: #FFFFFF;">
+                  <h4 style="color: #6B21A8;">✍️ 2. Titulares Ganadores para tu Landing Page (H1)</h4>
+                  <div id="res-ia-titulares" style="font-size: 0.86rem; color: #334155; line-height: 1.55; margin-top: 6px;"></div>
+                </div>
+
+                <!-- Tarjeta 3: Ganchos para Anuncios -->
+                <div class="tg-dossier-card" style="border-top: 4px solid #F59E0B; background: #FFFFFF;">
+                  <h4 style="color: #B45309;">📣 3. Ganchos & Anuncios para Redes (Meta / TikTok)</h4>
+                  <div id="res-ia-anuncios" style="font-size: 0.86rem; color: #334155; line-height: 1.55; margin-top: 6px;"></div>
+                </div>
+
+                <!-- Tarjeta 4: Desarme de Objeciones -->
+                <div class="tg-dossier-card" style="border-top: 4px solid #10B981; background: #FFFFFF;">
+                  <h4 style="color: #047857;">🛡️ 4. Guiones de Desarme de Objeciones (WhatsApp)</h4>
+                  <div id="res-ia-scripts" style="font-size: 0.86rem; color: #334155; line-height: 1.55; margin-top: 6px;"></div>
+                </div>
               </div>
 
-              <div class="tg-dossier-card" style="border-top: 4px solid #C026D3;">
-                <h4>🧠 2. Psicología & Empatía</h4>
-                <p><strong>Miedos 3 AM:</strong> <span id="res-miedos"></span></p>
-                <p style="margin-top: 8px;"><strong>Entorno:</strong> <span id="res-entorno"></span></p>
-                <p style="margin-top: 8px;"><strong>Vocabulario / Frases:</strong> <span id="res-frases"></span></p>
+              <!-- Estrategia de Embudo -->
+              <div style="background: #EFF6FF; border: 1px solid #BFDBFE; border-radius: 12px; padding: 18px 22px; margin-top: 15px;">
+                <h4 style="font-size: 0.98rem; font-weight: 800; color: #1E40AF; margin-bottom: 6px; display: flex; align-items: center; gap: 8px;">
+                  🚀 Arquitectura de Embudo Recomendada para este Avatar:
+                </h4>
+                <p id="res-ia-embudo" style="font-size: 0.88rem; color: #1E3A8A; margin: 0; line-height: 1.5;"></p>
               </div>
+            </div>
 
-              <div class="tg-dossier-card" style="border-top: 4px solid #D97706;">
-                <h4>⚡ 3. Dolores & Deseos</h4>
-                <p><strong>Dolores Principales:</strong></p>
-                <p id="res-dolores" style="white-space: pre-line;"></p>
-                <p style="margin-top: 8px;"><strong>Deseos y Metas:</strong></p>
-                <p id="res-deseos" style="white-space: pre-line;"></p>
-              </div>
+            <!-- Resumen de Datos Base Ingresados -->
+            <div style="margin-top: 25px;">
+              <h4 style="font-size: 1.05rem; font-weight: 800; color: #334155; margin-bottom: 12px;">
+                📋 Resumen de Datos Base Ingresados
+              </h4>
+              <div class="tg-dossier-grid">
+                <div class="tg-dossier-card" style="border-left: 3px solid #64748B;">
+                  <h4 style="font-size: 0.88rem;">🎯 Oferta & Detonante</h4>
+                  <p><strong>Solución:</strong> <span id="res-producto"></span></p>
+                  <p style="margin-top: 6px;"><strong>Detonante:</strong> <span id="res-detonante"></span></p>
+                  <p style="margin-top: 6px;"><strong>Transformación:</strong> <span id="res-transformacion"></span></p>
+                </div>
 
-              <div class="tg-dossier-card" style="border-top: 4px solid #EF4444;">
-                <h4>🛡️ 4. Top Objeciones</h4>
-                <p><strong>Por qué dudaría en pagar:</strong></p>
-                <p id="res-objeciones" style="white-space: pre-line;"></p>
+                <div class="tg-dossier-card" style="border-left: 3px solid #64748B;">
+                  <h4 style="font-size: 0.88rem;">🧠 Empatía & Voz</h4>
+                  <p><strong>Miedos 3 AM:</strong> <span id="res-miedos"></span></p>
+                  <p style="margin-top: 6px;"><strong>Entorno:</strong> <span id="res-entorno"></span></p>
+                  <p style="margin-top: 6px;"><strong>Frases Textuales:</strong> <span id="res-frases"></span></p>
+                </div>
+
+                <div class="tg-dossier-card" style="border-left: 3px solid #64748B;">
+                  <h4 style="font-size: 0.88rem;">⚡ Dolores & Objeciones</h4>
+                  <p><strong>Dolores Principales:</strong></p>
+                  <p id="res-dolores" style="white-space: pre-line; margin-bottom: 6px;"></p>
+                  <p><strong>Objeciones Detectadas:</strong></p>
+                  <p id="res-objeciones" style="white-space: pre-line;"></p>
+                </div>
               </div>
             </div>
 
@@ -832,7 +877,7 @@ $page_data = [
                 Ingresa tu Correo para Recibir tu Dossier y Desbloquear la Descarga
               </h3>
               <p style="font-size: 0.88rem; color: #94A3B8; max-width: 550px; margin: 0 auto 22px;">
-                Te enviamos el reporte detallado a tu casilla y habilitamos la opción para descargar o imprimir tu documento en PDF listo para compartir.
+                Te enviamos el reporte completo con todos los <strong>titulares, ganchos de anuncios, guiones de objeciones y el mega-prompt</strong> a tu casilla, y habilitamos la opción para descargar o imprimir tu documento ejecutivo en PDF.
               </p>
 
               <div id="lead-form-wrap" style="max-width: 520px; margin: 0 auto;">
@@ -885,8 +930,8 @@ $page_data = [
   <div id="print-document">
     <div class="print-header">
       <div>
-        <h1 class="print-title">Dossier Estratégico de Cliente Ideal</h1>
-        <p class="print-subtitle">Arquitectura Psicológica, Neuroventas & Mega-Prompt de IA · TecnoGen</p>
+        <h1 class="print-title">Dossier Estratégico de Cliente Ideal & Neuroventas</h1>
+        <p class="print-subtitle">Estrategia Táctica de Marketing, Copywriting de Alta Conversión & Mega-Prompt de IA · TecnoGen</p>
       </div>
       <div class="print-meta">
         <strong>Preparado para:</strong> <span id="print-nombre">Usuario</span><br>
@@ -895,61 +940,89 @@ $page_data = [
       </div>
     </div>
 
+    <!-- SECCIÓN 1: DIAGNÓSTICO ESTRATÉGICO IA -->
     <div class="print-section">
-      <div class="print-section-title">1. Jobs To Be Done (JTBD) & Propuesta de Valor</div>
+      <div class="print-section-title">1. Diagnóstico Psicológico & Arquetipo de Comprador</div>
       <div class="print-box">
-        <strong>Tu Producto / Servicio:</strong>
-        <span id="print-producto"></span>
+        <strong>Arquetipo del Comprador:</strong>
+        <span id="print-ia-arquetipo"></span>
       </div>
       <div class="print-box">
-        <strong>Momento Detonante de Compra (Trigger Event):</strong>
-        <span id="print-detonante"></span>
+        <strong>Nivel de Consciencia de Compra (Eugene Schwartz):</strong>
+        <span id="print-ia-consciencia"></span>
       </div>
       <div class="print-box">
-        <strong>Transformación Deseada (Progreso Real):</strong>
-        <span id="print-transformacion"></span>
+        <strong>Botón Emocional Primario (Disparador Biológico):</strong>
+        <span id="print-ia-boton"></span>
       </div>
     </div>
 
+    <!-- SECCIÓN 2: TITULARES H1 -->
     <div class="print-section">
-      <div class="print-section-title">2. Mapa de Empatía & Voz del Cliente (VoC)</div>
-      <div class="print-box">
-        <strong>Miedos y Preocupaciones a las 3 AM:</strong>
-        <span id="print-miedos"></span>
-      </div>
-      <div class="print-box">
-        <strong>Entorno y Presiones que lo Rodean:</strong>
-        <span id="print-entorno"></span>
-      </div>
-      <div class="print-box">
-        <strong>Frases y Vocabulario Literal que Usa:</strong>
-        <span id="print-frases"></span>
+      <div class="print-section-title">2. Titulares Ganadores para tu Landing Page (H1)</div>
+      <div class="print-box" style="background: #FAF5FF; border-color: #E9D5FF;">
+        <div id="print-ia-titulares" style="white-space: pre-line; line-height: 1.6;"></div>
       </div>
     </div>
 
+    <!-- SECCIÓN 3: ANUNCIOS Y GANCHOS -->
     <div class="print-section">
-      <div class="print-section-title">3. Matriz Dolor, Deseo & Objeciones de Compra</div>
-      <div class="print-box">
-        <strong>Dolores Principales (Pains):</strong>
-        <span id="print-dolores" style="white-space: pre-line;"></span>
-      </div>
-      <div class="print-box">
-        <strong>Deseos y Metas (Gains):</strong>
-        <span id="print-deseos" style="white-space: pre-line;"></span>
-      </div>
-      <div class="print-box">
-        <strong>Top Objeciones de Compra (Frenos de Decisión):</strong>
-        <span id="print-objeciones" style="white-space: pre-line;"></span>
+      <div class="print-section-title">3. Ganchos & Anuncios para Redes Sociales (Meta Ads / TikTok / LinkedIn)</div>
+      <div class="print-box" style="background: #FFFBEB; border-color: #FDE68A;">
+        <div id="print-ia-anuncios" style="white-space: pre-line; line-height: 1.6;"></div>
       </div>
     </div>
 
+    <!-- SECCIÓN 4: GUIONES DE OBJECIONES -->
     <div class="print-section">
-      <div class="print-section-title">4. Mega-Prompt de Roleplay Inverso con Inteligencia Artificial</div>
+      <div class="print-section-title">4. Guiones de Desarme de Objeciones (Venta Consultiva & WhatsApp)</div>
+      <div class="print-box" style="background: #F0FDF4; border-color: #BBF7D0;">
+        <div id="print-ia-scripts" style="white-space: pre-line; line-height: 1.6;"></div>
+      </div>
+    </div>
+
+    <!-- SECCIÓN 5: ESTRATEGIA DE EMBUDO -->
+    <div class="print-section">
+      <div class="print-section-title">5. Arquitectura de Embudo Recomendada</div>
+      <div class="print-box">
+        <span id="print-ia-embudo"></span>
+      </div>
+    </div>
+
+    <!-- SECCIÓN 6: RESUMEN DE RESPUESTAS BASE -->
+    <div class="print-section">
+      <div class="print-section-title">6. Mapeo Base (JTBD, Empatía & Matriz de Dolores)</div>
+      <div class="print-box">
+        <strong>Producto / Oferta:</strong> <span id="print-producto"></span>
+      </div>
+      <div class="print-box">
+        <strong>Detonante de Compra (Trigger Event):</strong> <span id="print-detonante"></span>
+      </div>
+      <div class="print-box">
+        <strong>Transformación Deseada (Progreso Real):</strong> <span id="print-transformacion"></span>
+      </div>
+      <div class="print-box">
+        <strong>Miedos 3 AM & Entorno:</strong> <span id="print-miedos"></span> | <span id="print-entorno"></span>
+      </div>
+      <div class="print-box">
+        <strong>Frases Literales (Voz del Cliente):</strong> <span id="print-frases"></span>
+      </div>
+      <div class="print-box">
+        <strong>Top Dolores:</strong> <span id="print-dolores" style="white-space: pre-line;"></span>
+      </div>
+      <div class="print-box">
+        <strong>Top Objeciones:</strong> <span id="print-objeciones" style="white-space: pre-line;"></span>
+      </div>
+    </div>
+
+    <!-- SECCIÓN 7: MEGA PROMPT -->
+    <div class="print-section">
+      <div class="print-section-title">7. Mega-Prompt de Roleplay Inverso con Inteligencia Artificial</div>
       <div class="print-prompt" id="print-prompt"></div>
     </div>
 
     <div class="print-footer">
-      Documento generado por <strong>TecnoGen</strong> (Marketing Digital, IA & Automatización) · https://tecnogen.ar · Lavalle 362, CABA, Argentina.
+      Documento Estratégico generado por <strong>TecnoGen</strong> (Marketing Digital, IA & Automatización) · https://tecnogen.ar · Lavalle 362, CABA, Argentina.
     </div>
   </div>
 
@@ -986,11 +1059,12 @@ $page_data = [
 
   <?php require __DIR__ . '/layout/footer.php'; ?>
 
-  <!-- Script de la App con Preset de Ejemplos -->
+  <!-- Script de la App con Motor Estratégico de IA & Neuroventas -->
   <script>
     let currentStep = 1;
     let generatedPrompt = '';
     let isLeadCaptured = false;
+    let strategicAnalysis = {};
 
     // Presets de ejemplos sin caracteres conflictivos
     const examplePresets = {
@@ -1075,6 +1149,62 @@ $page_data = [
       goToStep(step);
     }
 
+    // MOTOR INTELIGENTE DE NEUROVENTAS & COPYWRITING
+    function computeStrategicAnalysis(data) {
+      const prod = data.producto || 'tu servicio';
+      const trans = data.transformacion || 'escalar y automatizar tus resultados';
+      const det = data.detonante || 'perder tiempo en tareas repetitivas';
+      const miedos = data.miedos || 'quedarse atrás frente a la competencia';
+      const frases = data.frases || 'No llego con los tiempos';
+      const dolores = data.dolores || 'Falta de tiempo y desorganización';
+      const deseos = data.deseos || 'Paz mental y más clientes';
+      const objeciones = data.objeciones || 'Costo e incertidumbre';
+
+      // 1. Arquetipo & Consciencia
+      let arquetipo = 'Emprendedor / Líder Operativo en Transición de Escala';
+      if (prod.toLowerCase().includes('b2b') || prod.toLowerCase().includes('empresa') || prod.toLowerCase().includes('software')) {
+        arquetipo = 'Director / Decisor B2B que busca Eficiencia Operativa y Rentabilidad Predecible';
+      } else if (prod.toLowerCase().includes('inmobiliaria') || prod.toLowerCase().includes('propiedad')) {
+        arquetipo = 'Inversor / Profesional Inmobiliario enfocado en Seguridad y Crecimiento Patrimonial';
+      } else if (prod.toLowerCase().includes('curso') || prod.toLowerCase().includes('coaching') || prod.toLowerCase().includes('mentor')) {
+        arquetipo = 'Profesional / Creador que busca Libertad de Agenda y Monetización de su Conocimiento';
+      }
+
+      const nivelConsciencia = 'Nivel 3: Consciente del Problema y de la Solución (Eugene Schwartz) — Sabe que necesita resolver su cuello de botella pero busca la alternativa más segura y rápida.';
+      const botonEmocional = 'Seguridad, Certeza de Resultados y Recuperación del Tiempo Personal (Liberación del estrés operativo).';
+
+      // 2. 3 Titulares Ganadores para Landing Page (H1)
+      const titular1 = `🎯 Opción 1 (Transformación Directa):\n"Cómo lograr ${trans} sin sufrir por ${dolores.split('\n')[0] || 'la saturación diaria'}."`;
+      const titular2 = `⚡ Opción 2 (Pregunta Detonante / Quiebre de Patrón):\n"¿Cansado de ${det}? Descubre el método para ${trans} en tiempo récord."`;
+      const titular3 = `🏆 Opción 3 (Autoridad & Resultado Garantizado):\n"El sistema probado de ${prod} para multiplicar tus resultados y alcanzar ${deseos.split('\n')[0] || 'tu meta principal'}."`;
+      const titularesText = `${titular1}\n\n${titular2}\n\n${titular3}`;
+
+      // 3. 3 Ganchos para Redes Sociales
+      const hook1 = `📣 Gancho 1 (Dolor Agudo):\n"Si hoy sentís que ${det}, no cometas el error de seguir haciendo lo mismo. Te mostramos cómo pasar de la saturación a ${trans}."`;
+      const hook2 = `📣 Gancho 2 (Voz del Cliente):\n"«${frases.replace(/["']/g, '')}»... Si alguna vez dijiste esto, el problema no es tu capacidad: es que te falta un sistema de ${prod}."`;
+      const hook3 = `📣 Gancho 3 (Aspiración Futura):\n"Imaginate tener ${trans} funcionando en piloto automático. Esto es lo que pasa cuando dejas de apagar incendios y delegas en un proceso profesional."`;
+      const anunciosText = `${hook1}\n\n${hook2}\n\n${hook3}`;
+
+      // 4. Guiones de Desarme de Objeciones
+      const script1 = `🛡️ Frente a dudas sobre precio / inversión:\n"Te entiendo perfectamente. Lo que descubrimos es que el costo real no es contratar ${prod}, sino el dinero y las ventas que se siguen perdiendo todos los meses por culpa de ${dolores.split('\n')[0] || 'no tener este sistema'}. Nuestra meta es que la inversión se pague sola en las primeras semanas."`;
+      const script2 = `🛡️ Frente a dudas sobre tiempo / complejidad:\n"Es normal sentir esa duda. Por eso no te dejamos solo con un tutorial: nosotros estructuramos el proceso paso a paso para que tú sólo tengas que enfocarte en disfrutar de ${trans}."`;
+      const script3 = `🛡️ Frente a malas experiencias pasadas:\n"Muchos de nuestros clientes actuales ya habían probado otras opciones sin éxito. La diferencia con nuestra solución de ${prod} es que está diseñada a medida atacando exactamente ${det} con métricas claras desde el día 1."`;
+      const scriptsText = `${script1}\n\n${script2}\n\n${script3}`;
+
+      // 5. Estrategia de Embudo
+      const estrategiaEmbudo = `Embudo Directo de Alta Conversión:\n1. Campaña de Anuncios en Meta/LinkedIn atacando el detonante («${det}»).\n2. Landing Page con el Titular 1 y Video Explicativo (VSL) de 3 minutos.\n3. Calificación automática vía Agente de IA en WhatsApp.\n4. Agendamiento directo de llamada o cierre consultivo con propuesta a medida.`;
+
+      return {
+        arquetipo: arquetipo,
+        nivel_consciencia: nivelConsciencia,
+        boton_emocional: botonEmocional,
+        titulares: titularesText,
+        anuncios: anunciosText,
+        scripts_objeciones: scriptsText,
+        estrategia_embudo: estrategiaEmbudo
+      };
+    }
+
     function generatePromptAndNext() {
       const producto = document.getElementById('inp-producto').value.trim() || 'Servicios profesionales / Solución especializada';
       const detonante = document.getElementById('inp-detonante').value.trim() || 'Crisis de tiempo y saturación de tareas manuales';
@@ -1140,30 +1270,56 @@ Para iniciar, responde presentándote brevemente desde tu personaje, describe qu
       const deseos = document.getElementById('inp-deseos').value.trim() || 'No especificado';
       const objeciones = document.getElementById('inp-objeciones').value.trim() || 'No especificado';
 
-      // Dashboard Pantalla
+      const formData = {
+        producto: prod,
+        detonante: det,
+        transformacion: trans,
+        miedos: miedos,
+        entorno: entorno,
+        frases: frases,
+        dolores: dolores,
+        deseos: deseos,
+        objeciones: objeciones
+      };
+
+      // Generar Análisis de IA y Neuroventas
+      strategicAnalysis = computeStrategicAnalysis(formData);
+
+      // 1. Renderizar Entregables de IA en Pantalla
+      document.getElementById('res-ia-arquetipo').textContent = strategicAnalysis.arquetipo;
+      document.getElementById('res-ia-consciencia').textContent = strategicAnalysis.nivel_consciencia;
+      document.getElementById('res-ia-boton').textContent = strategicAnalysis.boton_emocional;
+      document.getElementById('res-ia-titulares').innerHTML = strategicAnalysis.titulares.replace(/\n/g, '<br>');
+      document.getElementById('res-ia-anuncios').innerHTML = strategicAnalysis.anuncios.replace(/\n/g, '<br>');
+      document.getElementById('res-ia-scripts').innerHTML = strategicAnalysis.scripts_objeciones.replace(/\n/g, '<br>');
+      document.getElementById('res-ia-embudo').innerHTML = strategicAnalysis.estrategia_embudo.replace(/\n/g, '<br>');
+
+      // 2. Renderizar Datos Base en Pantalla
       document.getElementById('res-producto').textContent = prod;
       document.getElementById('res-detonante').textContent = det;
       document.getElementById('res-transformacion').textContent = trans;
-      
       document.getElementById('res-miedos').textContent = miedos;
       document.getElementById('res-entorno').textContent = entorno;
       document.getElementById('res-frases').textContent = frases;
-      
       document.getElementById('res-dolores').textContent = dolores;
-      document.getElementById('res-deseos').textContent = deseos;
       document.getElementById('res-objeciones').textContent = objeciones;
 
-      // Documento Imprimible
+      // 3. Renderizar en Documento Imprimible / PDF
+      document.getElementById('print-ia-arquetipo').textContent = strategicAnalysis.arquetipo;
+      document.getElementById('print-ia-consciencia').textContent = strategicAnalysis.nivel_consciencia;
+      document.getElementById('print-ia-boton').textContent = strategicAnalysis.boton_emocional;
+      document.getElementById('print-ia-titulares').textContent = strategicAnalysis.titulares;
+      document.getElementById('print-ia-anuncios').textContent = strategicAnalysis.anuncios;
+      document.getElementById('print-ia-scripts').textContent = strategicAnalysis.scripts_objeciones;
+      document.getElementById('print-ia-embudo').textContent = strategicAnalysis.estrategia_embudo;
+
       document.getElementById('print-producto').textContent = prod;
       document.getElementById('print-detonante').textContent = det;
       document.getElementById('print-transformacion').textContent = trans;
-      
       document.getElementById('print-miedos').textContent = miedos;
       document.getElementById('print-entorno').textContent = entorno;
       document.getElementById('print-frases').textContent = frases;
-      
       document.getElementById('print-dolores').textContent = dolores;
-      document.getElementById('print-deseos').textContent = deseos;
       document.getElementById('print-objeciones').textContent = objeciones;
 
       goToStep(5);
@@ -1257,6 +1413,7 @@ Para iniciar, responde presentándote brevemente desde tu personaje, describe qu
           deseos: document.getElementById('inp-deseos').value.trim(),
           objeciones: document.getElementById('inp-objeciones').value.trim()
         },
+        analisis_ia: strategicAnalysis,
         prompt_ia: generatedPrompt
       };
 
@@ -1276,7 +1433,7 @@ Para iniciar, responde presentándote brevemente desde tu personaje, describe qu
           isLeadCaptured = true;
           statusMsg.style.display = 'block';
           statusMsg.style.color = '#22C55E';
-          statusMsg.innerHTML = '🎉 <strong>¡Listo!</strong> Tu dossier fue enviado a <strong>' + email + '</strong>.<br><span style="color: #38BDF8; font-size: 0.95rem; font-weight: 700;">✅ ¡PDF Desbloqueado! Ya puedes descargarlo o imprimirlo abajo.</span>';
+          statusMsg.innerHTML = '🎉 <strong>¡Listo!</strong> Tu dossier con los titulares, anuncios y guiones de venta fue enviado a <strong>' + email + '</strong>.<br><span style="color: #38BDF8; font-size: 0.95rem; font-weight: 700;">✅ ¡PDF Desbloqueado! Ya puedes descargarlo o imprimirlo abajo.</span>';
           btn.innerHTML = '✅ ¡Enviado con Éxito!';
           
           // Actualizar botón de impresión
