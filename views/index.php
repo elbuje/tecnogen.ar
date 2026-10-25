@@ -35,8 +35,8 @@ $page_data = [
             <a href="<?= get_whatsapp_url('Hola TecnoGen! Quiero solicitar una consultoría técnica estratégica.') ?>" target="_blank" rel="noopener noreferrer" class="tg-btn tg-btn-primary">
               Solicitar Consultoría Gratuita →
             </a>
-            <a href="/Mentalidad-Marketing-Neuroventas-con-IA" class="tg-btn tg-btn-secondary" style="border-color: #F59E0B; color: #B45309;">
-              ⚡ Evento Presencial 10 Oct
+            <a href="/cliente-ideal" class="tg-btn tg-btn-secondary">
+              🎯 Generador de Cliente Ideal
             </a>
           </div>
         </div>

@@ -19,19 +19,11 @@ $current_slug = $current_slug ?? '';
         <li><a href="/automatizacion-de-procesos" class="tg-nav-link <?= $current_slug === 'automatizacion-de-procesos' ? 'active' : '' ?>">Servicios</a></li>
         <li><a href="/sobre-nosotros#casos" class="tg-nav-link">Casos de éxito</a></li>
         <li><a href="/sobre-nosotros" class="tg-nav-link <?= $current_slug === 'sobre-nosotros' ? 'active' : '' ?>">Nosotros</a></li>
-        <li>
-          <a href="/Mentalidad-Marketing-Neuroventas-con-IA" class="tg-nav-pill-event">
-            <span class="tg-pill-dot"></span> Evento 10 Oct
-          </a>
-        </li>
       </ul>
     </nav>
 
     <!-- Header Actions -->
     <div class="tg-header-actions">
-      <a href="/Mentalidad-Marketing-Neuroventas-con-IA#entradas" class="tg-btn-entradas">
-        🎟️ Entradas
-      </a>
       <a href="/contacto" class="tg-btn-contactanos">
         Contáctanos
       </a>
@@ -50,12 +42,6 @@ $current_slug = $current_slug ?? '';
     </div>
 
     <div class="tg-mobile-actions">
-      <a href="/Mentalidad-Marketing-Neuroventas-con-IA" class="tg-nav-pill-event" style="display: flex; justify-content: center; width: 100%; padding: 10px;">
-        <span class="tg-pill-dot"></span> Evento Presencial 10 Octubre
-      </a>
-      <a href="/Mentalidad-Marketing-Neuroventas-con-IA#entradas" class="tg-btn-entradas" style="display: flex; justify-content: center; width: 100%; padding: 12px;">
-        🎟️ Comprar Entradas Evento
-      </a>
       <a href="/contacto" class="tg-btn-contactanos" style="display: flex; justify-content: center; width: 100%; padding: 12px;">
         Contáctanos
       </a>
