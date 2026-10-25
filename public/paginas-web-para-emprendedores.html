@@ -94,74 +94,79 @@
   <style>
     /* Estilos propios de la Landing Emprendedores */
     .tg-infografia-wrapper {
-      background: linear-gradient(145deg, #0F172A 0%, #1E293B 100%);
+      background: #FFFFFF;
       border-radius: 20px;
-      padding: 40px 30px;
-      color: #FFFFFF;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+      padding: 44px 36px;
+      color: #0F172A;
+      box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.05), 0 4px 12px -2px rgba(15, 23, 42, 0.02);
       position: relative;
       overflow: hidden;
-      margin: 35px 0 50px;
-      border: 1px solid rgba(255,255,255,0.08);
+      margin: 30px 0 45px;
+      border: 1px solid #E2E8F0;
     }
 
     .tg-infografia-title {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 32px;
     }
 
     .tg-infografia-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 30px;
+      gap: 24px;
       position: relative;
     }
 
     @media (max-width: 820px) {
-      .tg-infografia-grid { grid-template-columns: 1fr; gap: 25px; }
+      .tg-infografia-grid { grid-template-columns: 1fr; gap: 20px; }
+      .tg-infografia-wrapper { padding: 28px 18px; }
     }
 
     .tg-info-card {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 14px;
-      padding: 24px;
-      transition: all 0.3s ease;
+      border-radius: 16px;
+      padding: 26px;
+      transition: all 0.25s ease;
       position: relative;
     }
 
-    .tg-info-card:hover {
-      transform: translateY(-4px);
-      background: rgba(255,255,255,0.07);
+    .tg-info-card-redes {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+    }
+
+    .tg-info-card-web {
+      background: #FFFFFF;
+      border: 2px solid #3B82F6;
+      box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.08);
     }
 
     .tg-info-badge {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
       font-size: 0.78rem;
-      font-weight: 800;
-      padding: 5px 12px;
+      font-weight: 700;
+      padding: 5px 14px;
       border-radius: 9999px;
       text-transform: uppercase;
-      margin-bottom: 12px;
+      letter-spacing: 0.04em;
     }
 
-    /* Animación de pulso */
+    /* Animación de pulso azul */
     .tg-pulse-dot {
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background: #22C55E;
-      box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
-      animation: pulseGreen 2s infinite;
+      background: #2563EB;
+      box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.6);
+      animation: pulseBlue 2s infinite;
       display: inline-block;
     }
 
-    @keyframes pulseGreen {
-      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
-      70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
-      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+    @keyframes pulseBlue {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.6); }
+      70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(37, 99, 235, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
     }
 
     /* Animación del embudo de pasos */
@@ -169,7 +174,7 @@
       display: flex;
       align-items: flex-start;
       gap: 14px;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
       position: relative;
     }
 
@@ -178,13 +183,14 @@
     }
 
     .tg-flow-icon {
-      width: 36px;
-      height: 36px;
+      width: 32px;
+      height: 32px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.1rem;
+      font-size: 0.88rem;
+      font-weight: 800;
       flex-shrink: 0;
     }
 
@@ -362,89 +368,92 @@
     <div class="tg-container">
       
       <div class="tg-infografia-wrapper">
-        <!-- Fondo con efecto Glow -->
-        <div style="position: absolute; top: -50px; right: -50px; width: 250px; height: 250px; background: radial-gradient(circle, rgba(37,99,235,0.25) 0%, rgba(0,0,0,0) 70%); pointer-events: none;"></div>
-
         <div class="tg-infografia-title">
-          <span class="tg-info-badge" style="background: rgba(37,99,235,0.25); color: #38BDF8;">
-            <span class="tg-pulse-dot"></span> INFOGRAFÍA EXPLICATIVA EN VIVO
+          <span class="tg-info-badge" style="background: #EFF6FF; color: #2563EB; border: 1px solid #DBEAFE; margin-bottom: 12px;">
+            <span class="tg-pulse-dot"></span> INFOGRAFÍA EXPLICATIVA
           </span>
-          <h2 style="font-size: 1.7rem; font-weight: 900; color: #FFFFFF; margin: 8px 0;">
+          <h2 style="font-size: 1.85rem; font-weight: 800; color: #0F172A; margin: 10px 0 8px; letter-spacing: -0.02em;">
             ¿Cómo compra un cliente hoy en Internet?
           </h2>
-          <p style="font-size: 0.95rem; color: #94A3B8; max-width: 650px; margin: 0 auto;">
+          <p style="font-size: 1rem; color: #64748B; max-width: 650px; margin: 0 auto; line-height: 1.6;">
             Mirá la diferencia exacta entre intentar vender únicamente por redes sociales versus tener tu propia web posicionada en Google:
           </p>
         </div>
 
         <div class="tg-infografia-grid">
           <!-- Columna A: Redes Sociales -->
-          <div class="tg-info-card" style="border-left: 4px solid #F59E0B;">
-            <div class="tg-info-badge" style="background: rgba(245, 158, 11, 0.2); color: #FBBF24;">
-              📱 CAMINO 1: SOLO REDES SOCIALES (ATENCIÓN DISPERSA)
+          <div class="tg-info-card tg-info-card-redes">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid #E2E8F0;">
+              <span class="tg-info-badge" style="background: #F1F5F9; color: #475569; border: 1px solid #CBD5E1;">
+                📱 CAMINO 1: SOLO REDES SOCIALES
+              </span>
+              <span style="font-size: 0.78rem; color: #94A3B8; font-weight: 600;">Atención Dispersa</span>
             </div>
             
             <div class="tg-flow-step">
-              <div class="tg-flow-icon" style="background: #334155; color: #FBBF24;">1</div>
+              <div class="tg-flow-icon" style="background: #FFFFFF; border: 1px solid #CBD5E1; color: #64748B;">1</div>
               <div>
-                <strong style="color: #FFFFFF; font-size: 0.92rem; display: block;">El usuario está descansando</strong>
-                <span style="font-size: 0.85rem; color: #94A3B8;">Hace scroll en Instagram o TikTok buscando entretenimiento, amigos o videos cortos.</span>
+                <strong style="color: #1E293B; font-size: 0.95rem; display: block; margin-bottom: 2px;">El usuario está descansando</strong>
+                <span style="font-size: 0.88rem; color: #64748B; line-height: 1.45; display: block;">Hace scroll en Instagram o TikTok buscando entretenimiento, amigos o videos cortos.</span>
               </div>
             </div>
 
             <div class="tg-flow-step">
-              <div class="tg-flow-icon" style="background: #334155; color: #FBBF24;">2</div>
+              <div class="tg-flow-icon" style="background: #FFFFFF; border: 1px solid #CBD5E1; color: #64748B;">2</div>
               <div>
-                <strong style="color: #FFFFFF; font-size: 0.92rem; display: block;">Ve una publicación tuya</strong>
-                <span style="font-size: 0.85rem; color: #94A3B8;">Le gusta la foto o te deja un 'like', pero no necesariamente necesita contratarte hoy.</span>
+                <strong style="color: #1E293B; font-size: 0.95rem; display: block; margin-bottom: 2px;">Ve una publicación tuya</strong>
+                <span style="font-size: 0.88rem; color: #64748B; line-height: 1.45; display: block;">Le gusta la foto o te deja un 'like', pero no necesariamente necesita contratarte hoy.</span>
               </div>
             </div>
 
             <div class="tg-flow-step">
-              <div class="tg-flow-icon" style="background: #334155; color: #FBBF24;">3</div>
+              <div class="tg-flow-icon" style="background: #FFFFFF; border: 1px solid #CBD5E1; color: #64748B;">3</div>
               <div>
-                <strong style="color: #FFFFFF; font-size: 0.92rem; display: block;">Llega una notificación y se va</strong>
-                <span style="font-size: 0.85rem; color: #94A3B8;">Le entra un mensaje de un amigo, cambia de video y tu publicación quedó en el olvido.</span>
+                <strong style="color: #1E293B; font-size: 0.95rem; display: block; margin-bottom: 2px;">Llega una notificación y se va</strong>
+                <span style="font-size: 0.88rem; color: #64748B; line-height: 1.45; display: block;">Le entra un mensaje de un amigo, cambia de video y tu publicación quedó en el olvido.</span>
               </div>
             </div>
 
-            <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.82rem; color: #F59E0B;">
-              ⚠️ <strong>Resultado:</strong> Requiere publicar sin parar para mantener la atención. Si frenás, la venta frena.
+            <div style="margin-top: 20px; padding: 12px 14px; background: #FFFBEB; border: 1px solid #FDE68A; border-radius: 10px; font-size: 0.85rem; color: #92400E; line-height: 1.45;">
+              ⚠️ <strong>El cuello de botella:</strong> Requiere publicar sin parar para mantener la atención. Si frenás, la venta frena.
             </div>
           </div>
 
           <!-- Columna B: Google + Tu Landing Web -->
-          <div class="tg-info-card" style="border-left: 4px solid #22C55E; background: rgba(34, 197, 94, 0.05);">
-            <div class="tg-info-badge" style="background: rgba(34, 197, 94, 0.2); color: #4ADE80;">
-              🔍 CAMINO 2: GOOGLE + TU LANDING PAGE (INTENCIÓN PURA)
+          <div class="tg-info-card tg-info-card-web">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid #DBEAFE;">
+              <span class="tg-info-badge" style="background: #EFF6FF; color: #1D4ED8; border: 1px solid #BFDBFE;">
+                🔍 CAMINO 2: GOOGLE + TU LANDING PAGE
+              </span>
+              <span style="font-size: 0.78rem; color: #2563EB; font-weight: 700;">Intención de Compra</span>
             </div>
 
             <div class="tg-flow-step">
-              <div class="tg-flow-icon" style="background: #14532D; color: #4ADE80;">1</div>
+              <div class="tg-flow-icon" style="background: #2563EB; color: #FFFFFF; box-shadow: 0 2px 6px rgba(37,99,235,0.3);">1</div>
               <div>
-                <strong style="color: #FFFFFF; font-size: 0.92rem; display: block;">El cliente tiene una necesidad urgente</strong>
-                <span style="font-size: 0.85rem; color: #94A3B8;">Se le rompió el aire, necesita una torta para el sábado o busca un servicio profesional en su zona.</span>
+                <strong style="color: #0F172A; font-size: 0.95rem; display: block; margin-bottom: 2px;">El cliente tiene una necesidad urgente</strong>
+                <span style="font-size: 0.88rem; color: #475569; line-height: 1.45; display: block;">Se le rompió el aire, necesita una torta para el sábado o busca un servicio profesional en su zona.</span>
               </div>
             </div>
 
             <div class="tg-flow-step">
-              <div class="tg-flow-icon" style="background: #14532D; color: #4ADE80;">2</div>
+              <div class="tg-flow-icon" style="background: #2563EB; color: #FFFFFF; box-shadow: 0 2px 6px rgba(37,99,235,0.3);">2</div>
               <div>
-                <strong style="color: #FFFFFF; font-size: 0.92rem; display: block;">Abre Google y busca con intención de compra</strong>
-                <span style="font-size: 0.85rem; color: #94A3B8;">Escribe: <em>"Manicura a domicilio en Pilar"</em> o <em>"Service de aire en Escobar"</em>.</span>
+                <strong style="color: #0F172A; font-size: 0.95rem; display: block; margin-bottom: 2px;">Abre Google y busca con intención de compra</strong>
+                <span style="font-size: 0.88rem; color: #475569; line-height: 1.45; display: block;">Escribe: <em>"Manicura a domicilio en Pilar"</em> o <em>"Service de aire en Escobar"</em>.</span>
               </div>
             </div>
 
             <div class="tg-flow-step">
-              <div class="tg-flow-icon" style="background: #14532D; color: #4ADE80;">3</div>
+              <div class="tg-flow-icon" style="background: #2563EB; color: #FFFFFF; box-shadow: 0 2px 6px rgba(37,99,235,0.3);">3</div>
               <div>
-                <strong style="color: #FFFFFF; font-size: 0.92rem; display: block;">Aterriza en tu Web y toca WhatsApp</strong>
-                <span style="font-size: 0.85rem; color: #94A3B8;">Ve tus fotos de trabajos, precios claros y un botón para pedirte presupuesto de inmediato.</span>
+                <strong style="color: #0F172A; font-size: 0.95rem; display: block; margin-bottom: 2px;">Aterriza en tu Web y toca WhatsApp</strong>
+                <span style="font-size: 0.88rem; color: #475569; line-height: 1.45; display: block;">Ve tus fotos de trabajos, precios claros y un botón directo para pedirte presupuesto de inmediato.</span>
               </div>
             </div>
 
-            <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.82rem; color: #4ADE80;">
-              ✨ <strong>Resultado:</strong> Clientes calificados que no te conocían te encuentran justo cuando necesitan pagar.
+            <div style="margin-top: 20px; padding: 12px 14px; background: #F0FDF4; border: 1px solid #BBF7D0; border-radius: 10px; font-size: 0.85rem; color: #166534; line-height: 1.45;">
+              ✨ <strong>La ventaja clave:</strong> Clientes calificados que no te conocían te encuentran justo cuando necesitan pagar.
             </div>
           </div>
         </div>
@@ -768,24 +777,24 @@
           </div>
 
           <!-- FORMULARIO DE CAPTURA DEL INFORME & COTIZACIÓN -->
-          <div style="background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); color: #FFFFFF; border-radius: 14px; padding: 32px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
-            <span style="background: rgba(56, 189, 248, 0.2); color: #38BDF8; font-size: 0.75rem; font-weight: 800; padding: 4px 12px; border-radius: 999px;">
-              DESCARGÁ EL REPORTE COMPLETO
+          <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 34px 28px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.04);">
+            <span style="background: #EFF6FF; color: #2563EB; border: 1px solid #DBEAFE; font-size: 0.78rem; font-weight: 800; padding: 4px 14px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.04em;">
+              DESCARGÁ EL REPORTE COMPLETO EN PDF
             </span>
-            <h4 style="font-size: 1.35rem; font-weight: 800; color: #FFFFFF; margin: 12px 0 6px;">
+            <h4 style="font-size: 1.4rem; font-weight: 800; color: #0F172A; margin: 14px 0 8px;">
               ¿Querés que en TecnoGen diseñemos tu Landing Page y la activemos en Google?
             </h4>
-            <p style="font-size: 0.88rem; color: #94A3B8; max-width: 580px; margin: 0 auto 20px;">
+            <p style="font-size: 0.92rem; color: #64748B; max-width: 580px; margin: 0 auto 24px; line-height: 1.5;">
               Ingresá tu nombre y correo para recibir el informe detallado con las palabras clave de tu rubro en PDF y una propuesta a medida sin compromiso.
             </p>
 
             <div style="max-width: 500px; margin: 0 auto;">
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px;">
-                <input type="text" id="lead-web-nombre" class="tg-input" placeholder="Tu Nombre *" required style="background: #1E293B; color: #FFFFFF; border-color: #334155;">
-                <input type="email" id="lead-web-email" class="tg-input" placeholder="Tu Correo Electrónico *" required style="background: #1E293B; color: #FFFFFF; border-color: #334155;">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+                <input type="text" id="lead-web-nombre" class="tg-input" placeholder="Tu Nombre *" required style="background: #FFFFFF; color: #0F172A; border: 1px solid #CBD5E1;">
+                <input type="email" id="lead-web-email" class="tg-input" placeholder="Tu Correo Electrónico *" required style="background: #FFFFFF; color: #0F172A; border: 1px solid #CBD5E1;">
               </div>
-              <div style="margin-bottom: 14px;">
-                <input type="tel" id="lead-web-whatsapp" class="tg-input" placeholder="Tu WhatsApp (para enviarte la maqueta de tu web)" style="background: #1E293B; color: #FFFFFF; border-color: #334155;">
+              <div style="margin-bottom: 16px;">
+                <input type="tel" id="lead-web-whatsapp" class="tg-input" placeholder="Tu WhatsApp (para enviarte la maqueta de tu web)" style="background: #FFFFFF; color: #0F172A; border: 1px solid #CBD5E1;">
               </div>
               <button type="button" id="btn-enviar-scan" class="tg-btn tg-btn-primary" style="width: 100%; padding: 14px; font-size: 1rem; font-weight: 800;" onclick="enviarLeadWeb()">
                 🚀 Recibir Informe & Pedir Presupuesto
