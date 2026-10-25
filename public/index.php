@@ -69,6 +69,13 @@ $routes = [
     "avatar-ideal"                        => __DIR__ . "/../views/cliente-ideal.php",
     "api/guardar-avatar"                  => __DIR__ . "/api/guardar-avatar.php",
 
+    // Páginas Web & Landing Pages para Emprendedores
+    "paginas-web-para-emprendedores"      => __DIR__ . "/../views/paginas-web-para-emprendedores.php",
+    "landing-pages-para-emprendedores"    => __DIR__ . "/../views/paginas-web-para-emprendedores.php",
+    "web-emprendedores"                   => __DIR__ . "/../views/paginas-web-para-emprendedores.php",
+    "tu-negocio-en-google"                => __DIR__ . "/../views/paginas-web-para-emprendedores.php",
+    "api/guardar-lead-web"                => __DIR__ . "/api/guardar-lead-web.php",
+
     // Evento Presencial 10 de Octubre
     "Mentalidad-Marketing-Neuroventas-con-IA" => __DIR__ . "/../views/landing-evento.php",
     "mentalidad-marketing-neuroventas-con-ia" => __DIR__ . "/../views/landing-evento.php",

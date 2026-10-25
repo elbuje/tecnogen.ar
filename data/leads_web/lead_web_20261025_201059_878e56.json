@@ -1,0 +1,19 @@
+{
+    "timestamp": "2026-10-25 20:10:59",
+    "ip": "127.0.0.1",
+    "tipo": "escaner_google_web_emprendedores",
+    "contacto": {
+        "nombre": "Test Emprendedor",
+        "email": "test@tecnogen.ar",
+        "whatsapp": "+5491112345678",
+        "rubro": "Pasteleria",
+        "zona": "Escobar"
+    },
+    "diagnostico": {
+        "busquedas": [
+            "Tortas en Escobar",
+            "Pasteleria artesanal Escobar"
+        ],
+        "titular": "Tortas y Pasteleria en Escobar"
+    }
+}
