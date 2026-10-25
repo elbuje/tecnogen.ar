@@ -423,111 +423,257 @@ $page_data = [
   </section>
 
   <!-- =========================================================================
-       WIDGET INTERACTIVO / LEAD MAGNET: ESCÁNER DE VISIBILIDAD EN GOOGLE
+       WIDGET INTERACTIVO: SIMULADOR HIPERREALISTA DE GOOGLE SEARCH & MAPS
        ========================================================================= -->
   <section id="escaner-google" class="tg-section" style="background: var(--light-bg); padding: 50px 0;">
-    <div class="tg-container" style="max-width: 860px;">
+    <div class="tg-container" style="max-width: 940px;">
       
       <div style="text-align: center; margin-bottom: 30px;">
-        <span class="tg-badge tg-badge-blue" style="margin-bottom: 10px;">HERRAMIENTA GRATUITA TECNOGEN</span>
-        <h2 style="font-size: 1.75rem; font-weight: 900; color: #0F172A;">
-          🔍 Escáner de Visibilidad en Google para tu Negocio
+        <span class="tg-badge tg-badge-blue" style="margin-bottom: 10px;">SIMULADOR EN VIVO · GOOGLE SEARCH & MAPS</span>
+        <h2 style="font-size: 1.85rem; font-weight: 900; color: #0F172A;">
+          Mirá cómo te buscaría hoy un cliente en Google (y a quién le está comprando)
         </h2>
-        <p style="font-size: 0.95rem; color: #64748B;">
-          Elegí tu rubro y zona para descubrir las búsquedas exactas con las que tus clientes hoy buscan tus servicios en Google.
+        <p style="font-size: 0.95rem; color: #64748B; max-width: 680px; margin: 0 auto;">
+          Ingresá el nombre de tu emprendimiento, lo que vendés y tu zona. La herramienta simulará la <strong>pantalla real de resultados de Google</strong> para mostrarte la diferencia entre tener tu propia Landing Page o seguir siendo invisible.
         </p>
       </div>
 
-      <div class="tg-scanner-card">
-        <!-- Paso 1: Configurar Rubro y Zona -->
+      <div class="tg-scanner-card" style="padding: 30px;">
+        
+        <!-- FORMULARIO DE ENTRADA -->
         <div id="scanner-step-1">
-          <div style="margin-bottom: 22px;">
-            <label style="display: block; font-weight: 700; color: #0F172A; margin-bottom: 8px;">
-              1. ¿Cuál es el rubro o producto principal de tu emprendimiento?
-            </label>
-            <input type="text" id="scan-rubro" class="tg-input" placeholder="Ej: Pastelería y tortas para eventos, Reparación de aire acondicionado, Manicura...">
-            
-            <div style="margin-top: 8px;">
-              <span style="font-size: 0.8rem; color: #64748B; margin-right: 6px;">Atajos rápidos:</span>
-              <span class="tg-quick-chip" onclick="setRubro('Pastelería artesanal y tortas de cumpleaños')">🎂 Pastelería</span>
-              <span class="tg-quick-chip" onclick="setRubro('Service e instalación de aire acondicionado')">❄️ Aire Acondicionado</span>
-              <span class="tg-quick-chip" onclick="setRubro('Estética, manicura y pestañas a domicilio')">💅 Manicura / Estética</span>
-              <span class="tg-quick-chip" onclick="setRubro('Servicios contables y monotributo')">⚖️ Contador / Profesional</span>
-              <span class="tg-quick-chip" onclick="setRubro('Indumentaria y ropa de mujer')">👗 Ropa / Moda</span>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-bottom: 18px;">
+            <div>
+              <label style="display: block; font-weight: 700; color: #0F172A; margin-bottom: 6px; font-size: 0.9rem;">
+                1. Nombre de tu Emprendimiento / Marca:
+              </label>
+              <input type="text" id="scan-nombre-negocio" class="tg-input" placeholder="Ej: Dulces Tentaciones, ClimaNorte, Nails Studio...">
+            </div>
+
+            <div>
+              <label style="display: block; font-weight: 700; color: #0F172A; margin-bottom: 6px; font-size: 0.9rem;">
+                2. ¿Qué vendés o qué servicio ofrecés?
+              </label>
+              <input type="text" id="scan-rubro" class="tg-input" placeholder="Ej: Tortas para cumpleaños, Service de aire acondicionado, Manicura...">
+            </div>
+
+            <div>
+              <label style="display: block; font-weight: 700; color: #0F172A; margin-bottom: 6px; font-size: 0.9rem;">
+                3. ¿En qué zona o barrio trabajás?
+              </label>
+              <input type="text" id="scan-zona" class="tg-input" placeholder="Ej: Escobar, Pilar, San Isidro, Quilmes, CABA...">
             </div>
           </div>
 
-          <div style="margin-bottom: 25px;">
-            <label style="display: block; font-weight: 700; color: #0F172A; margin-bottom: 8px;">
-              2. ¿En qué zona o localidad ofrecés tus productos/servicios?
-            </label>
-            <input type="text" id="scan-zona" class="tg-input" placeholder="Ej: Zona Norte (San Isidro, Pilar, Tigre), CABA, Escobar, Todo el país...">
-            
-            <div style="margin-top: 8px;">
-              <span style="font-size: 0.8rem; color: #64748B; margin-right: 6px;">Zonas habituales:</span>
-              <span class="tg-quick-chip" onclick="setZona('Zona Norte GBA (Pilar, Tigre, San Isidro)')">📍 Zona Norte</span>
-              <span class="tg-quick-chip" onclick="setZona('CABA / Buenos Aires')">📍 Capital Federal</span>
-              <span class="tg-quick-chip" onclick="setZona('Zona Oeste GBA')">📍 Zona Oeste</span>
-              <span class="tg-quick-chip" onclick="setZona('Zona Sur GBA')">📍 Zona Sur</span>
-              <span class="tg-quick-chip" onclick="setZona('Envíos a todo el país')">🇦🇷 Todo el país</span>
-            </div>
+          <!-- Atajos rápidos -->
+          <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 10px; padding: 12px 16px; margin-bottom: 22px;">
+            <span style="font-size: 0.8rem; font-weight: 700; color: #475569; display: block; margin-bottom: 6px;">
+              💡 O probá cargando un ejemplo con 1 clic:
+            </span>
+            <span class="tg-quick-chip" onclick="cargarEjemplo('Pastelería Dulce Arte', 'Tortas artesanales y mesas dulces para eventos', 'Zona Norte (Pilar y Escobar)')">🎂 Pastelería en Pilar/Escobar</span>
+            <span class="tg-quick-chip" onclick="cargarEjemplo('Refrigeración San Martín', 'Service e instalación de aire acondicionado split', 'San Martín y Tres de Febrero')">❄️ Service de Aire</span>
+            <span class="tg-quick-chip" onclick="cargarEjemplo('Glow Nails Studio', 'Manicura rusa y extensiones de pestañas a domicilio', 'San Isidro y Martínez')">💅 Estética / Manicura</span>
+            <span class="tg-quick-chip" onclick="cargarEjemplo('Estudio Impositivo M&A', 'Asesoramiento contable para monotributistas y pymes', 'Capital Federal')">⚖️ Contador en CABA</span>
           </div>
 
-          <button type="button" class="tg-btn tg-btn-primary" style="width: 100%; padding: 15px; font-size: 1rem;" onclick="ejecutarEscaneo()">
-            ⚡ Analizar Oportunidades en Google Ahora
+          <button type="button" class="tg-btn tg-btn-primary" style="width: 100%; padding: 15px; font-size: 1.05rem; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 8px;" onclick="ejecutarEscaneo()">
+            🔍 Simular Búsqueda Real en Google
           </button>
         </div>
 
-        <!-- Paso 2: Pantalla de Resultados + Captura de Lead -->
+        <!-- LOADER DE SIMULACIÓN -->
+        <div id="scanner-loading" style="display: none; text-align: center; padding: 40px 20px;">
+          <div style="display: inline-block; width: 45px; height: 45px; border: 4px solid #E2E8F0; border-top-color: #2563EB; border-radius: 50%; animation: spin 0.8s linear infinite;"></div>
+          <h4 style="font-size: 1.15rem; color: #0F172A; margin: 16px 0 6px;">Consultando resultados de búsqueda en Google...</h4>
+          <p style="font-size: 0.85rem; color: #64748B;">Mapeando intenciones de compra y competidores en tu zona.</p>
+        </div>
+
+        <!-- PASO 2: SIMULADOR DE GOOGLE REAL -->
         <div id="scanner-step-2" style="display: none;">
-          <div style="background: #EFF6FF; border: 1px solid #BFDBFE; border-radius: 12px; padding: 22px; margin-bottom: 25px;">
-            <span style="background: #2563EB; color: #FFFFFF; font-size: 0.75rem; font-weight: 800; padding: 3px 10px; border-radius: 999px;">ANÁLISIS COMPLETADO</span>
-            <h3 style="font-size: 1.25rem; font-weight: 800; color: #1E3A8A; margin: 10px 0 6px;">
-              🔍 Búsquedas de Oro Detectadas en tu Zona:
-            </h3>
-            <p style="font-size: 0.88rem; color: #3B82F6; margin-bottom: 14px;">
-              Estas son las frases con las que personas en tu zona buscan en Google cuando quieren comprar tu servicio:
-            </p>
-
-            <div id="scan-results-box" style="background: #FFFFFF; border-radius: 8px; padding: 14px 18px; border: 1px solid #DBEAFE; font-size: 0.95rem; line-height: 1.7; color: #0F172A;">
-              <!-- Se completa con JS -->
+          
+          <!-- Barra Superior con Resumen del Usuario -->
+          <div style="background: #F1F5F9; border-radius: 10px; padding: 12px 18px; margin-bottom: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; font-size: 0.88rem;">
+            <div>
+              <strong style="color: #0F172A;">Tu Negocio:</strong> <span id="res-user-negocio" style="color: #2563EB; font-weight: 700;"></span> · 
+              <strong style="color: #0F172A;">Rubro:</strong> <span id="res-user-rubro"></span> · 
+              <strong style="color: #0F172A;">Zona:</strong> <span id="res-user-zona"></span>
             </div>
-
-            <div style="margin-top: 16px; font-size: 0.88rem; color: #1E40AF;">
-              <strong>✍️ Titular (H1) sugerido para tu Landing Page:</strong>
-              <div id="scan-h1-box" style="font-style: italic; background: #FFFFFF; padding: 10px 14px; border-radius: 6px; margin-top: 6px; border: 1px solid #DBEAFE; color: #0F172A;"></div>
-            </div>
-          </div>
-
-          <!-- Formulario de Captura -->
-          <div style="background: #0F172A; color: #FFFFFF; border-radius: 14px; padding: 30px; text-align: center;">
-            <h4 style="font-size: 1.25rem; font-weight: 800; color: #FFFFFF; margin-bottom: 6px;">
-              📩 Recibí tu Informe Completo + Guía de Landing Page en PDF
-            </h4>
-            <p style="font-size: 0.85rem; color: #94A3B8; max-width: 520px; margin: 0 auto 20px;">
-              Te enviamos el reporte a tu casilla y un asesor de TecnoGen te puede armar un presupuesto sin compromiso adaptado al tamaño de tu negocio.
-            </p>
-
-            <div style="max-width: 480px; margin: 0 auto;">
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px;">
-                <input type="text" id="lead-web-nombre" class="tg-input" placeholder="Tu Nombre *" required style="background: #1E293B; color: #FFFFFF; border-color: #334155;">
-                <input type="email" id="lead-web-email" class="tg-input" placeholder="Tu Email *" required style="background: #1E293B; color: #FFFFFF; border-color: #334155;">
-              </div>
-              <div style="margin-bottom: 14px;">
-                <input type="tel" id="lead-web-whatsapp" class="tg-input" placeholder="Tu WhatsApp (para enviarte cotización)" style="background: #1E293B; color: #FFFFFF; border-color: #334155;">
-              </div>
-              <button type="button" id="btn-enviar-scan" class="tg-btn tg-btn-primary" style="width: 100%; padding: 14px;" onclick="enviarLeadWeb()">
-                🚀 Enviar Informe y Desbloquear Guía PDF
-              </button>
-              <div id="scan-lead-msg" style="margin-top: 14px; font-size: 0.88rem; display: none;"></div>
-            </div>
-          </div>
-
-          <div style="text-align: center; margin-top: 16px;">
-            <button type="button" class="tg-btn" style="background: transparent; color: #64748B; font-size: 0.85rem;" onclick="resetScanner()">
-              ← Probar con otro rubro o zona
+            <button type="button" class="tg-btn" style="background: #FFFFFF; border: 1px solid #CBD5E1; color: #475569; padding: 5px 12px; font-size: 0.8rem;" onclick="resetScanner()">
+              ✏️ Modificar datos
             </button>
           </div>
+
+          <!-- MOCKUP GOOGLE SEARCH INTERFACE -->
+          <div style="background: #FFFFFF; border: 1px solid #DFE1E5; border-radius: 14px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); overflow: hidden; margin-bottom: 25px; font-family: -apple-system, Roboto, Arial, sans-serif;">
+            
+            <!-- Barra de Búsqueda Google -->
+            <div style="padding: 16px 20px; border-bottom: 1px solid #EBEBEB; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+              <!-- Logo Google -->
+              <div style="font-size: 1.45rem; font-weight: 900; letter-spacing: -0.5px; user-select: none;">
+                <span style="color: #4285F4;">G</span><span style="color: #EA4335;">o</span><span style="color: #FBBC05;">o</span><span style="color: #4285F4;">g</span><span style="color: #34A853;">l</span><span style="color: #EA4335;">e</span>
+              </div>
+              
+              <!-- Input con Lupa -->
+              <div style="flex: 1; min-width: 250px; background: #FFFFFF; border: 1px solid #DFE1E5; border-radius: 24px; padding: 8px 16px; display: flex; align-items: center; gap: 10px; box-shadow: 0 1px 6px rgba(32,33,36,0.12);">
+                <span style="color: #9AA0A6;">🔍</span>
+                <span id="google-query-input" style="font-size: 0.95rem; color: #202124; font-weight: 500;"></span>
+                <span style="margin-left: auto; color: #4285F4; font-size: 0.9rem;">🎙️</span>
+              </div>
+            </div>
+
+            <!-- Tabs de Google -->
+            <div style="padding: 0 20px; border-bottom: 1px solid #EBEBEB; display: flex; gap: 20px; font-size: 0.82rem; color: #5F6368; overflow-x: auto;">
+              <span style="padding: 10px 0; color: #1A73E8; border-bottom: 3px solid #1A73E8; font-weight: 700; white-space: nowrap;">Todo</span>
+              <span style="padding: 10px 0; white-space: nowrap;">🗺️ Maps</span>
+              <span style="padding: 10px 0; white-space: nowrap;">Imágenes</span>
+              <span style="padding: 10px 0; white-space: nowrap;">Noticias</span>
+              <span style="padding: 10px 0; white-space: nowrap;">Videos</span>
+            </div>
+
+            <div style="padding: 20px;">
+              <!-- Contador de Resultados -->
+              <div style="font-size: 0.78rem; color: #70757A; margin-bottom: 18px;">
+                Cerca de <span id="google-total-results">840.000</span> resultados (0,38 segundos)
+              </div>
+
+              <!-- BLOQUE 1: GOOGLE MAPS LOCAL PACK (COMPETENCIA) -->
+              <div style="border: 1px solid #DADCE0; border-radius: 10px; padding: 18px; margin-bottom: 24px; background: #FAFAFA;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+                  <strong style="color: #202124; font-size: 0.95rem; display: flex; align-items: center; gap: 6px;">
+                    📍 Lugares en <span id="maps-zona-label"></span>
+                  </strong>
+                  <span style="font-size: 0.75rem; color: #70757A; background: #E8EAED; padding: 3px 8px; border-radius: 4px;">Google Maps</span>
+                </div>
+
+                <!-- Competidores en Maps -->
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                  <div style="background: #FFFFFF; border: 1px solid #E8EAED; border-radius: 8px; padding: 12px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                    <div>
+                      <strong style="color: #1A0DAB; font-size: 0.95rem; display: block;" id="comp-1-name">Servicios y Soluciones (Competidor A)</strong>
+                      <div style="font-size: 0.8rem; color: #70757A; margin-top: 2px;">
+                        <span style="color: #E37400; font-weight: 700;">4.8 ★★★★★</span> (42) · <span id="comp-1-zona"></span>
+                      </div>
+                      <div style="font-size: 0.78rem; color: #188038; font-weight: 600;">Abierto · Atención 24 hs</div>
+                    </div>
+                    <div style="display: flex; gap: 6px;">
+                      <span style="background: #E8F0FE; color: #1A73E8; font-size: 0.75rem; font-weight: 700; padding: 5px 10px; border-radius: 6px;">🌐 Sitio web</span>
+                      <span style="background: #F1F3F4; color: #3C4043; font-size: 0.75rem; font-weight: 700; padding: 5px 10px; border-radius: 6px;">📞 Llamar</span>
+                    </div>
+                  </div>
+
+                  <div style="background: #FFFFFF; border: 1px solid #E8EAED; border-radius: 8px; padding: 12px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                    <div>
+                      <strong style="color: #1A0DAB; font-size: 0.95rem; display: block;" id="comp-2-name">Especialistas del Rubro (Competidor B)</strong>
+                      <div style="font-size: 0.8rem; color: #70757A; margin-top: 2px;">
+                        <span style="color: #E37400; font-weight: 700;">4.7 ★★★★★</span> (31) · <span id="comp-2-zona"></span>
+                      </div>
+                      <div style="font-size: 0.78rem; color: #188038; font-weight: 600;">Abierto · Cierra a las 20:00</div>
+                    </div>
+                    <div style="display: flex; gap: 6px;">
+                      <span style="background: #E8F0FE; color: #1A73E8; font-size: 0.75rem; font-weight: 700; padding: 5px 10px; border-radius: 6px;">🌐 Sitio web</span>
+                      <span style="background: #F1F3F4; color: #3C4043; font-size: 0.75rem; font-weight: 700; padding: 5px 10px; border-radius: 6px;">📞 Llamar</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ALERTA DE OPORTUNIDAD EN MAPS -->
+                <div style="background: #FEF2F2; border: 1px solid #FECACA; border-left: 4px solid #EF4444; border-radius: 6px; padding: 10px 14px; margin-top: 14px; font-size: 0.82rem; color: #991B1B;">
+                  <strong>⚠️ ¿Dónde está tu negocio?</strong> Hoy tu emprendimiento <strong>no figura en Google Maps</strong> porque Google exige tener un sitio web propio verificado para activar el botón de <em>"Sitio Web"</em> y rankear arriba de tu competencia.
+                </div>
+              </div>
+
+              <!-- BLOQUE 2: CÓMO SE VERÍA TU PÁGINA WEB EN GOOGLE (ORGANIC SNIPPET CON TECNOGEN) -->
+              <div style="background: #F0FDF4; border: 2px solid #86EFAC; border-radius: 10px; padding: 18px; margin-bottom: 20px; position: relative;">
+                <div style="position: absolute; top: -11px; right: 16px; background: #16A34A; color: #FFFFFF; font-size: 0.72rem; font-weight: 800; padding: 3px 10px; border-radius: 999px;">
+                  ✨ ASÍ SE VERÍA TU NEGOCIO CON TECNOGEN
+                </div>
+
+                <!-- URL & Favicon -->
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+                  <div style="width: 26px; height: 26px; border-radius: 50%; background: #2563EB; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 800;" id="preview-fav-icon">
+                    T
+                  </div>
+                  <div>
+                    <div style="font-size: 0.82rem; color: #202124; font-weight: 600;" id="preview-brand-name">Tu Emprendimiento</div>
+                    <div style="font-size: 0.75rem; color: #4D5156;" id="preview-url">https://www.tu-negocio.ar › servicios</div>
+                  </div>
+                </div>
+
+                <!-- Title H1 Google Clickable -->
+                <h3 style="font-size: 1.15rem; color: #1A0DAB; margin: 4px 0 6px; font-weight: 600; line-height: 1.35; text-decoration: underline; cursor: pointer;" id="preview-h1-title">
+                  <!-- Se llena con JS -->
+                </h3>
+
+                <!-- Rich Snippet con Estrellas -->
+                <div style="font-size: 0.8rem; color: #70757A; margin-bottom: 6px;">
+                  <span style="color: #E37400; font-weight: 700;">5.0 ★★★★★</span> Valoración: 5.0 · 48 reseñas · <em>Respuesta en menos de 15 min</em>
+                </div>
+
+                <!-- Meta Description -->
+                <p style="font-size: 0.86rem; color: #4D5156; margin: 0 0 12px; line-height: 1.5;" id="preview-meta-desc">
+                  <!-- Se llena con JS -->
+                </p>
+
+                <!-- Botones Sitelinks Directos -->
+                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                  <span style="background: #DCFCE7; border: 1px solid #BBF7D0; color: #166534; font-size: 0.78rem; font-weight: 700; padding: 6px 12px; border-radius: 6px;">
+                    💬 Pedir Presupuesto por WhatsApp
+                  </span>
+                  <span style="background: #FFFFFF; border: 1px solid #E2E8F0; color: #475569; font-size: 0.78rem; padding: 6px 12px; border-radius: 6px;">
+                    📸 Ver Galería de Trabajos
+                  </span>
+                  <span style="background: #FFFFFF; border: 1px solid #E2E8F0; color: #475569; font-size: 0.78rem; padding: 6px 12px; border-radius: 6px;">
+                    ⭐ Opiniones de Clientes Reales
+                  </span>
+                </div>
+              </div>
+
+              <!-- BLOQUE 3: ESTIMACIÓN DE IMPACTO COMERCIAL -->
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 10px; padding: 16px; text-align: center;">
+                <div>
+                  <div style="font-size: 1.5rem; font-weight: 900; color: #2563EB;" id="stat-busquedas">~1.650</div>
+                  <div style="font-size: 0.78rem; color: #64748B;">Búsquedas mensuales estimadas en tu zona</div>
+                </div>
+                <div>
+                  <div style="font-size: 1.5rem; font-weight: 900; color: #EF4444;" id="stat-perdidas">75% - 85%</div>
+                  <div style="font-size: 0.78rem; color: #64748B;">De los clics se los lleva quien tiene web propia</div>
+                </div>
+                <div>
+                  <div style="font-size: 1.5rem; font-weight: 900; color: #16A34A;">24 hs / 7 días</div>
+                  <div style="font-size: 0.78rem; color: #64748B;">Canalizando consultas directas a tu WhatsApp</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- FORMULARIO DE CAPTURA DEL INFORME & COTIZACIÓN -->
+          <div style="background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); color: #FFFFFF; border-radius: 14px; padding: 32px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+            <span style="background: rgba(56, 189, 248, 0.2); color: #38BDF8; font-size: 0.75rem; font-weight: 800; padding: 4px 12px; border-radius: 999px;">
+              DESCARGÁ EL REPORTE COMPLETO
+            </span>
+            <h4 style="font-size: 1.35rem; font-weight: 800; color: #FFFFFF; margin: 12px 0 6px;">
+              ¿Querés que en TecnoGen diseñemos tu Landing Page y la activemos en Google?
+            </h4>
+            <p style="font-size: 0.88rem; color: #94A3B8; max-width: 580px; margin: 0 auto 20px;">
+              Ingresá tu nombre y correo para recibir el informe detallado con las palabras clave de tu rubro en PDF y una propuesta a medida sin compromiso.
+            </p>
+
+            <div style="max-width: 500px; margin: 0 auto;">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px;">
+                <input type="text" id="lead-web-nombre" class="tg-input" placeholder="Tu Nombre *" required style="background: #1E293B; color: #FFFFFF; border-color: #334155;">
+                <input type="email" id="lead-web-email" class="tg-input" placeholder="Tu Correo Electrónico *" required style="background: #1E293B; color: #FFFFFF; border-color: #334155;">
+              </div>
+              <div style="margin-bottom: 14px;">
+                <input type="tel" id="lead-web-whatsapp" class="tg-input" placeholder="Tu WhatsApp (para enviarte la maqueta de tu web)" style="background: #1E293B; color: #FFFFFF; border-color: #334155;">
+              </div>
+              <button type="button" id="btn-enviar-scan" class="tg-btn tg-btn-primary" style="width: 100%; padding: 14px; font-size: 1rem; font-weight: 800;" onclick="enviarLeadWeb()">
+                🚀 Recibir Informe & Pedir Presupuesto
+              </button>
+              <div id="scan-lead-msg" style="margin-top: 14px; font-size: 0.9rem; display: none;"></div>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -670,10 +816,19 @@ $page_data = [
 
   <?php require __DIR__ . '/layout/footer.php'; ?>
 
-  <!-- Scripts del Escáner Interactivo -->
+  <!-- Scripts del Simulador Hiperrealista de Google -->
   <script>
     let currentBusquedas = [];
     let currentTitular = '';
+    let currentNegocio = '';
+    let currentRubro = '';
+    let currentZona = '';
+
+    function cargarEjemplo(negocio, rubro, zona) {
+      document.getElementById('scan-nombre-negocio').value = negocio;
+      document.getElementById('scan-rubro').value = rubro;
+      document.getElementById('scan-zona').value = zona;
+    }
 
     function setRubro(valor) {
       document.getElementById('scan-rubro').value = valor;
@@ -683,36 +838,86 @@ $page_data = [
       document.getElementById('scan-zona').value = valor;
     }
 
+    function cleanKeyword(text) {
+      return text.toLowerCase()
+        .replace(/artesanales|para eventos|a domicilio|profesional|servicio de|service e instalación de|asesoramiento contable para/gi, '')
+        .trim();
+    }
+
     function ejecutarEscaneo() {
-      const rubro = document.getElementById('scan-rubro').value.trim() || 'Servicios profesionales y venta';
+      const negocio = document.getElementById('scan-nombre-negocio').value.trim() || 'Mi Emprendimiento';
+      const rubro = document.getElementById('scan-rubro').value.trim() || 'Servicios y Productos';
       const zona = document.getElementById('scan-zona').value.trim() || 'Buenos Aires';
 
-      // Generar 3 búsquedas clave de Google con intención de compra
-      currentBusquedas = [
-        `"${rubro} en ${zona}"`,
-        `"Presupuesto de ${rubro.toLowerCase()} en ${zona}"`,
-        `"El mejor lugar para ${rubro.toLowerCase()} cerca de mí"`
-      ];
+      currentNegocio = negocio;
+      currentRubro = rubro;
+      currentZona = zona;
 
-      currentTitular = `La Solución Confiable en ${rubro} para Clientes en ${zona} — Atención Directa por WhatsApp`;
-
-      const resultsBox = document.getElementById('scan-results-box');
-      resultsBox.innerHTML = `
-        <div style="margin-bottom: 6px;"><strong>1.</strong> 🔍 <em>${currentBusquedas[0]}</em></div>
-        <div style="margin-bottom: 6px;"><strong>2.</strong> 🔍 <em>${currentBusquedas[1]}</em></div>
-        <div><strong>3.</strong> 🔍 <em>${currentBusquedas[2]}</em></div>
-      `;
-
-      document.getElementById('scan-h1-box').textContent = `"${currentTitular}"`;
-
+      // Mostrar loader simulado
       document.getElementById('scanner-step-1').style.display = 'none';
-      document.getElementById('scanner-step-2').style.display = 'block';
+      document.getElementById('scanner-loading').style.display = 'block';
 
-      document.getElementById('escaner-google').scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() => {
+        // Query de búsqueda típica en Google
+        const kwLimpia = cleanKeyword(rubro);
+        const searchQuery = `${kwLimpia} en ${zona}`;
+        
+        // 1. Cabecera y Resumen de Datos del Usuario
+        document.getElementById('res-user-negocio').textContent = negocio;
+        document.getElementById('res-user-rubro').textContent = rubro;
+        document.getElementById('res-user-zona').textContent = zona;
+        document.getElementById('google-query-input').textContent = searchQuery;
+
+        // 2. Maps Local Pack
+        document.getElementById('maps-zona-label').textContent = zona;
+        document.getElementById('comp-1-name').textContent = `${rubro.split(' ')[0]} & Soluciones ${zona}`;
+        document.getElementById('comp-1-zona').textContent = `Av. Principal, ${zona}`;
+        document.getElementById('comp-2-name').textContent = `Centro de ${rubro.split(' ')[0]} Pro`;
+        document.getElementById('comp-2-zona').textContent = `Centro Comercial, ${zona}`;
+
+        // 3. Resultado Orgánico de tu Futura Web con TecnoGen
+        const initial = negocio.charAt(0).toUpperCase() || 'T';
+        document.getElementById('preview-fav-icon').textContent = initial;
+        document.getElementById('preview-brand-name').textContent = negocio;
+
+        // Generar slug
+        const slug = negocio.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') || 'tu-negocio';
+        document.getElementById('preview-url').textContent = `https://www.${slug}.ar › ${kwLimpia.replace(/\s+/g, '-')}`;
+
+        // Titular H1 persuasivo
+        currentTitular = `${rubro} en ${zona} | ${negocio} · Presupuesto por WhatsApp`;
+        document.getElementById('preview-h1-title').textContent = currentTitular;
+
+        // Meta Description de alta conversión
+        const metaDesc = `¿Buscás ${rubro.toLowerCase()} en ${zona}? En ${negocio} te ofrecemos atención personalizada, fotos de trabajos reales y lista de precios al instante. Tocá acá para chatear directo por WhatsApp.`;
+        document.getElementById('preview-meta-desc').textContent = metaDesc;
+
+        // 4. Búsquedas detectadas para guardar en el lead
+        currentBusquedas = [
+          `"${searchQuery}"`,
+          `"Precio de ${kwLimpia} en ${zona}"`,
+          `"El mejor lugar de ${kwLimpia} cerca de ${zona}"`
+        ];
+
+        // 5. Estadísticas de volumen estimadas según rubro/zona
+        const baseSearches = Math.floor(Math.random() * (2200 - 1200 + 1)) + 1200;
+        document.getElementById('stat-busquedas').textContent = `~${baseSearches.toLocaleString('es-AR')}`;
+        document.getElementById('google-total-results').textContent = `${(baseSearches * 450).toLocaleString('es-AR')}`;
+
+        // Ocultar loader y mostrar resultados
+        document.getElementById('scanner-loading').style.display = 'none';
+        document.getElementById('scanner-step-2').style.display = 'block';
+
+        const scanEl = document.getElementById('escaner-google');
+        if (scanEl) {
+          scanEl.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 700);
     }
 
     function resetScanner() {
       document.getElementById('scanner-step-2').style.display = 'none';
+      document.getElementById('scanner-loading').style.display = 'none';
       document.getElementById('scanner-step-1').style.display = 'block';
     }
 
@@ -720,8 +925,6 @@ $page_data = [
       const nombre = document.getElementById('lead-web-nombre').value.trim();
       const email = document.getElementById('lead-web-email').value.trim();
       const whatsapp = document.getElementById('lead-web-whatsapp').value.trim();
-      const rubro = document.getElementById('scan-rubro').value.trim() || 'No especificado';
-      const zona = document.getElementById('scan-zona').value.trim() || 'No especificada';
       const msg = document.getElementById('scan-lead-msg');
       const btn = document.getElementById('btn-enviar-scan');
 
@@ -733,7 +936,7 @@ $page_data = [
       }
 
       btn.disabled = true;
-      btn.innerHTML = '⏳ Enviando informe...';
+      btn.innerHTML = '⏳ Enviando informe y cotización...';
       msg.style.display = 'none';
 
       try {
@@ -744,8 +947,8 @@ $page_data = [
             nombre: nombre,
             email: email,
             whatsapp: whatsapp,
-            rubro: rubro,
-            zona: zona,
+            rubro: `${currentNegocio} (${currentRubro})`,
+            zona: currentZona,
             busquedas: currentBusquedas,
             titular: currentTitular
           })
@@ -756,7 +959,7 @@ $page_data = [
         if (res.success) {
           msg.style.display = 'block';
           msg.style.color = '#22C55E';
-          msg.innerHTML = '🎉 <strong>¡Informe enviado con éxito a ' + email + '!</strong><br>Revisá tu casilla de correo.';
+          msg.innerHTML = '🎉 <strong>¡Informe enviado con éxito a ' + email + '!</strong><br>Revisá tu casilla de correo. Un asesor de TecnoGen te preparará la propuesta.';
           btn.innerHTML = '✅ ¡Informe Enviado!';
         } else {
           msg.style.display = 'block';
