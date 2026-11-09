@@ -14,6 +14,12 @@ require_once __DIR__ . "/../includes/seo_helper.php";
 $request_uri = parse_url($_SERVER["REQUEST_URI"] ?? "/", PHP_URL_PATH);
 $path = trim($request_uri, "/");
 
+// Redirección permanente 301 de Romaz a su dominio independiente oficial
+if ($path === "romaz" || str_starts_with($path, "romaz/")) {
+    header("Location: https://romaz.com.ar/", true, 301);
+    exit;
+}
+
 // Router table (Friendly URLs)
 $routes = [
     ""                                    => __DIR__ . "/../views/index.php",
@@ -194,6 +200,12 @@ if ($path === "sitemap.xml") {
   </url>
   <url>
     <loc><?= SITE_URL ?>/cliente-ideal</loc>
+    <lastmod><?= date("Y-m-d") ?></lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc><?= SITE_URL ?>/paginas-web-para-emprendedores</loc>
     <lastmod><?= date("Y-m-d") ?></lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
