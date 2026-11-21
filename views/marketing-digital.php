@@ -42,11 +42,14 @@ $page_data = [
         </p>
         
         <div class="tg-hero-cta" style="display: flex; gap: 16px; flex-wrap: wrap; align-items: center;">
-          <a href="<?= get_whatsapp_url('Hola TecnoGen! Quiero solicitar un Plan de Captación de Leads para mi empresa.') ?>" target="_blank" rel="noopener noreferrer" class="tg-btn tg-btn-primary" style="text-transform: uppercase; letter-spacing: 0.5px; font-weight: 800; padding: 16px 32px;">
+          <a href="<?= get_whatsapp_url('Hola TecnoGen! Quiero solicitar un Plan de Captación de Leads para mi empresa.') ?>" target="_blank" rel="noopener noreferrer" title="Solicitar plan de captación de leads por WhatsApp" class="tg-btn tg-btn-primary" style="text-transform: uppercase; letter-spacing: 0.5px; font-weight: 800; padding: 16px 32px;">
             SOLICITAR PLAN DE CAPTACIÓN
           </a>
-          <a href="/crm-whatsapp-ventas" class="tg-btn tg-btn-secondary" style="font-weight: 700; padding: 16px 28px; text-transform: uppercase; font-size: 0.88rem;">
+          <a href="/crm-whatsapp-ventas" title="Ver integración con CRM WhatsApp" class="tg-btn tg-btn-secondary" style="font-weight: 700; padding: 16px 28px; text-transform: uppercase; font-size: 0.88rem;">
             VER INTEGRACIÓN CON CRM →
+          </a>
+          <a href="https://digital.tecnobrain.ar/?utm_source=tecnogen&utm_medium=referral&utm_campaign=alianza" target="_blank" rel="noopener" title="Explorar SEO #1, GEO en IA y Diseño Web en Tecnobrain Digital" class="tg-btn tg-btn-secondary" style="font-weight: 700; padding: 16px 24px; text-transform: uppercase; font-size: 0.85rem;">
+            🚀 SEO #1 &amp; GEO EN IA (TECNOBRAIN DIGITAL)
           </a>
         </div>
       </div>

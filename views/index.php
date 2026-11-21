@@ -274,11 +274,14 @@ $page_data = [
         Agendá una sesión de consultoría técnica sin cargo con los directores de TecnoGen para evaluar tus procesos y diseñar una solución a medida.
       </p>
       <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-        <a href="<?= get_whatsapp_url('Hola TecnoGen! Quiero agendar una consultoría para evaluar cómo implementar IA en mi empresa.') ?>" target="_blank" rel="noopener noreferrer" class="tg-btn tg-btn-primary">
+        <a href="<?= get_whatsapp_url('Hola TecnoGen! Quiero agendar una consultoría para evaluar cómo implementar IA en mi empresa.') ?>" target="_blank" rel="noopener noreferrer" title="Agendar consultoría gratuita por WhatsApp con TecnoGen" class="tg-btn tg-btn-primary">
           Agendar Consultoría por WhatsApp →
         </a>
-        <a href="/contacto" class="tg-btn tg-btn-secondary">
+        <a href="/contacto" title="Abrir formulario de contacto de TecnoGen" class="tg-btn tg-btn-secondary">
           Formulario de Contacto
+        </a>
+        <a href="https://digital.tecnobrain.ar/?utm_source=tecnogen&utm_medium=referral&utm_campaign=alianza" target="_blank" rel="noopener" title="Ir a Tecnobrain Digital: SEO #1, GEO en IA, Diseño Web y Talleres de IA en Vivo" class="tg-btn tg-btn-secondary">
+          🚀 SEO #1, Webs &amp; Talleres IA (Tecnobrain Digital) →
         </a>
       </div>
     </div>

@@ -67,7 +67,7 @@
     <!-- Bottom Copyright -->
     <div class="tg-footer-bottom">
       <div>
-        &copy; <?= date('Y') ?> TecnoGen. Todos los derechos reservados. Unión estratégica de TecnoBrain y GEN de Negocio.
+        &copy; <?= date('Y') ?> TecnoGen. Todos los derechos reservados. Unión estratégica de <a href="https://digital.tecnobrain.ar/?utm_source=tecnogen&utm_medium=referral&utm_campaign=alianza" target="_blank" rel="noopener" title="Visitar Tecnobrain Digital: SEO #1, GEO en IA y Diseño Web" style="color: inherit; text-decoration: underline;">Tecnobrain Digital</a> (<a href="https://tecnobrain.ar/" target="_blank" rel="noopener" title="Visitar Tecnobrain: Infraestructura IT Corporativa" style="color: inherit; text-decoration: underline;">Tecnobrain IT</a>) y GEN de Negocio.
       </div>
       <div>
         Infraestructura Cloud de Alto Rendimiento · Buenos Aires, Argentina

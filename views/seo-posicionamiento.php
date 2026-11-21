@@ -37,9 +37,12 @@ $page_data = [
           <p class="tg-hero-subtitle">
             Optimizamos tu arquitectura web y contenidos para que tu empresa lidere las búsquedas de Google y sea citada por ChatGPT, Perplexity y Gemini en consultas comerciales.
           </p>
-          <div class="tg-hero-cta">
-            <a href="<?= get_whatsapp_url('Hola TecnoGen! Quiero solicitar una auditoría SEO para mi sitio web.') ?>" target="_blank" rel="noopener noreferrer" class="tg-btn tg-btn-primary">
+          <div class="tg-hero-cta" style="display: flex; gap: 14px; flex-wrap: wrap; align-items: center;">
+            <a href="<?= get_whatsapp_url('Hola TecnoGen! Quiero solicitar una auditoría SEO para mi sitio web.') ?>" target="_blank" rel="noopener noreferrer" title="Solicitar auditoría SEO gratuita por WhatsApp con TecnoGen" class="tg-btn tg-btn-primary">
               Solicitar Auditoría SEO Gratuita →
+            </a>
+            <a href="https://digital.tecnobrain.ar/agencia-seo-argentina?utm_source=tecnogen&utm_medium=referral&utm_campaign=alianza" target="_blank" rel="noopener" title="Probar Simulador de Google #1 y ver casos reales de Tecnobrain Digital" class="tg-btn tg-btn-secondary">
+              🔍 Ver Casos #1 &amp; Simulador Google (Tecnobrain) →
             </a>
           </div>
         </div>

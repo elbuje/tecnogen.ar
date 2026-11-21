@@ -203,11 +203,14 @@ $page_data = [
             En las redes sociales la gente entra a entretenerse. En <strong>Google</strong> entran cuando ya decidieron comprar. Creamos tu Landing Page rápida, profesional y optimizada para que te encuentren en tu zona y te pidan presupuesto directo por WhatsApp las 24 horas.
           </p>
           <div class="tg-hero-cta">
-            <a href="#escaner-google" class="tg-btn tg-btn-primary">
+            <a href="#escaner-google" title="Probar escáner gratuito de búsquedas en Google" class="tg-btn tg-btn-primary">
               🚀 Probar Escáner de Búsquedas en Google →
             </a>
-            <a href="<?= get_whatsapp_url('Hola TecnoGen! Quiero consultar por el diseño de una Landing Page para mi emprendimiento.') ?>" target="_blank" rel="noopener noreferrer" class="tg-btn tg-btn-secondary">
+            <a href="<?= get_whatsapp_url('Hola TecnoGen! Quiero consultar por el diseño de una Landing Page para mi emprendimiento.') ?>" target="_blank" rel="noopener noreferrer" title="Consultar diseño de Landing Page por WhatsApp" class="tg-btn tg-btn-secondary">
               💬 Hablar por WhatsApp
+            </a>
+            <a href="https://digital.tecnobrain.ar/diseno-web-empresas?utm_source=tecnogen&utm_medium=referral&utm_campaign=alianza" target="_blank" rel="noopener" title="Ver Diseño Web orientado a conversión y SEO #1 en Tecnobrain Digital" class="tg-btn tg-btn-secondary">
+              🌐 Diseño Web Corporativo (Tecnobrain) →
             </a>
           </div>
         </div>
