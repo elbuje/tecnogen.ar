@@ -64,6 +64,21 @@
 
     </div>
 
+    <div style="border-top: 1px solid rgba(255,255,255,0.08); padding: 18px 0; margin-top: 24px; display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; font-size: 0.82rem; color: var(--text-light-muted);">
+      <span style="color: #fff; font-weight: 700;">Ecosistema Tecnobrain:</span>
+      <a href="https://tecnobrain.ar/soporte-tecnico-para-empresas" target="_blank" rel="noopener" title="Soporte técnico informático para empresas" style="color: #94a3b8; text-decoration: none;">Soporte Técnico</a>
+      <a href="https://tecnobrain.ar/administracion-implementacion-servidores" target="_blank" rel="noopener" title="Administración e implementación de servidores" style="color: #94a3b8; text-decoration: none;">Servidores</a>
+      <a href="https://tecnobrain.ar/instalacion-redes-informaticas-mikrotik" target="_blank" rel="noopener" title="Redes empresariales y MikroTik" style="color: #94a3b8; text-decoration: none;">Redes MikroTik</a>
+      <a href="https://tecnobrain.ar/microsoft-365-para-empresas" target="_blank" rel="noopener" title="Microsoft 365 para empresas con Factura A" style="color: #94a3b8; text-decoration: none;">Microsoft 365</a>
+      <a href="https://tecnobrain.ar/google-workspace-para-empresas" target="_blank" rel="noopener" title="Google Workspace para empresas" style="color: #94a3b8; text-decoration: none;">Google Workspace</a>
+      <a href="https://tecnobrain.ar/agencia-automatizacion-procesos-ia" target="_blank" rel="noopener" title="Sistemas con IA que leen documentos y automatizan procesos" style="color: #94a3b8; text-decoration: none;">IA Documental</a>
+      <a href="https://digital.tecnobrain.ar/diseno-web-empresas" target="_blank" rel="noopener" title="Diseño web profesional para empresas" style="color: #38BDF8; text-decoration: none;">Diseño Web</a>
+      <a href="https://digital.tecnobrain.ar/agencia-seo-argentina" target="_blank" rel="noopener" title="Posicionamiento SEO en Google Argentina" style="color: #38BDF8; text-decoration: none;">SEO Google</a>
+      <a href="https://digital.tecnobrain.ar/posicionamiento-en-ia-geo" target="_blank" rel="noopener" title="Posicionamiento en motores de IA (GEO)" style="color: #38BDF8; text-decoration: none;">Posicionamiento en IA</a>
+      <a href="https://campus.tecnobrain.ar/campus-virtual-para-coaches-mentores-marca-personal" target="_blank" rel="noopener" title="Campus virtual y comunidades digitales propias" style="color: #94a3b8; text-decoration: none;">Campus &amp; Comunidades</a>
+      <a href="https://ecommerce.tecnobrain.ar" target="_blank" rel="noopener" title="Tienda B2B e insumos IT Tecnobrain E-Commerce" style="color: #94a3b8; text-decoration: none;">E-Commerce IT</a>
+    </div>
+
     <!-- Bottom Copyright -->
     <div class="tg-footer-bottom">
       <div>
